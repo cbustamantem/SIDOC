@@ -1,0 +1,77 @@
+
+<h1>Investigaciones</h1>
+<div style='float:right;margin-top:-20px;'>
+	<img src="archivos_de_disenho/images/icon-add.png"/><a href="#agregarInvestigacion" id="agregarInvestigacion" >Agregar Investigacion</a>
+</div>
+<span>Busqueda </span><br>
+<form id="myform" action="index.php?id=registro&seccion=investigaciones" method="post">
+<input  id="busqueda" name="busqueda" placeholder="Busqueda de investigaciones" value="{tpl-busqueda}"/>
+ <button id="buscar" style="width:80px;">Buscar</button>
+ <div id="resultado_busqueda">
+ {tpl-datos}
+ </div>
+ </form>
+ <script type="text/javascript">
+	<!--
+	$(document).ready(function(){
+		$("#buscar").click(function() {			
+			//MTD_BUSCAR_VADEMECUM();
+			$("#myform").submit();
+			});
+		
+		
+        $('#bubble_especialidad').CreateBubblePopup({
+                       themePath: '/composite.templates/consultorio/archivos_de_disenho/images/jquerybubblepopup-theme/',
+                       themeName: 'all-azure',
+                       position : 'right-middle',
+                       innerHtml: '.... ', mouseOver: 'hide'
+        });
+        $("#agregarInvestigacion").click(function() {
+        	MTD_MOSTRAR_FORMULARIO_INVESTIGACIONES();
+			});		
+	});		
+	
+		    
+			
+//-->
+</script>
+<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				$('#example').dataTable({
+					 "sScrollY": "250px"
+		            ,"bPaginate": false
+		            ,"bFilter": false
+		            ,"bJQueryUI": true
+		            ,"bInfo": true
+		            ,"bSort": true
+					,"oLanguage": {
+						"sProcessing":     "Procesando...",
+					    "sLengthMenu":     "Mostrar _MENU_ registros",
+					    "sZeroRecords":    "No se encontraron resultados",
+					    "sEmptyTable":     "Ningún dato disponible en esta tabla",
+					    "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+					    "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+					    "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+					    "sInfoPostFix":    "",
+					    "sSearch":         "Buscar:",
+					    "sUrl":            "",
+					    "sInfoThousands":  ",",
+					    "sLoadingRecords": "Cargando...",
+					    "oPaginate": {
+					        "sFirst":    "Primero",
+					        "sLast":     "Último",
+					        "sNext":     "Siguiente",
+					        "sPrevious": "Anterior"
+					    },
+					    "fnInfoCallback": null,
+					    "oAria": {
+					        "sSortAscending":  ": Activar para ordernar la columna de manera ascendente",
+					        "sSortDescending": ": Activar para ordernar la columna de manera descendente"
+					    }
+						}
+					
+				}
+				);	
+			
+			} );
+		</script>

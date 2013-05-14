@@ -1,0 +1,84 @@
+<h3>Registrese y obtenga su Clinica en l&iacute;nea</h3>
+
+	<div id="contact2" style='height:350px;'>
+			<ul>
+				<li>			
+					<label for="nombre" id="lb_nombre" >*Nombre:</label>
+					<input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" value=""/>
+				</li>
+				<li>	
+					<label for="nombre" id="lb_apellido">*Apellido:</label>
+					<input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido" value=""/>
+				</li>			
+				<li>
+					<label for="registroMedico" id="lb_registro_medico">*Registro M&eacute;dico:</label>
+					<input type="text" id="registro_medico" name="registro_medico" placeholder="ingrese su Registro Medico" value=""/>
+				</li>
+				<li>
+					<label for="cedula" id="lb_cedula">*Cedula:</label>
+					<input type="text" id="cedula" name="cedula" placeholder="Ingrese su nro de cedula" value="" />			
+				</li>
+				<li>
+					<label for="direccion">Direccion:</label>
+					<input type="text" id="direccion" name="direccion" placeholder="Ingrese su direccii&oacute;n" value=""/>
+				</li>
+				<li>
+					<label for="telefono">Tel&eacute;fono:</label>
+					<input type="text" id="telefono" name="telefono" placeholder="Ingrese su nro telefonico"  value=""/>			
+				</li>
+				<li>
+					<label for="especializacion" id="especializacion">*Especialidad</label>
+					<select id="especialidad" name="especialidad" style="width:250px;">
+						{tpl-opciones-especialidad}
+					</select>			
+				</li>
+				<li>
+				<label for="tratam" id="tratam">Tratamiento</label>
+					<select id="tratamiento" name="tratamiento" style="width:200px;">
+						<option value="Dr.">Dr.</option>
+						<option value="Dra.">Dra.</option>
+						<option value="Prof. Dr.">Prof. Dr.</option>
+						<option value="Prof. Dra.">Prof. Dra.</option>
+						<option value="Lic.">Lic.</option>
+					</select>			
+				</li>
+				<li>
+					<label for="telefonoCelular" id="lb_telefono_celular">Tel&eacute;fono celular:</label>
+					<input type="text" id="telefono_celular" name="telefono_celular" placeholder="Ingrese su nro telefonico movil"  value=""/>			
+				</li>
+				
+				<li>
+					<label for="email" id="lb_email">*Email / Usuario</label>
+					<input type="email" id="email" name="email" placeholder="Ingrese su direccion de correo" value="" />			
+				</li>
+				<li>
+					<label for="password1" id="lb_contrasenha">*Contrase&ntilde;a</label>
+					<input type="password" id="contrasenha" name="contrasenha" placeholder="Ingrese su contrase&ntilde;a" value="" />			
+				</li>
+				<li>
+					<label for="password2" id="lb_contrasenha">*Contrase&ntilde;a (nuevamente)</label>
+					<input type="password" id="contrasenha2" name="contrasenha2" placeholder="Ingrese su contrase&ntilde;a" value="" />			
+				</li>
+				
+			</ul>	
+			<label id="bubble_registrar" style="float:right;"></label><br>
+			<button id="btnSubmit">Ingresar</button>							
+			</div>	
+
+<script type="text/javascript">
+	<!--
+	$(document).ready(function(){
+		$("#btnSubmit").click(function() {
+			MTD_AGREGAR_USUARIO();
+			});
+		
+        $('#bubble_registrar').CreateBubblePopup({
+                       themePath: '/composite.templates/consultorio/archivos_de_disenho/images/jquerybubblepopup-theme/',
+                       themeName: 'all-azure',
+                       position : 'right-middle',
+                       innerHtml: 'Se ha agregado <br>el producto al carrito ', mouseOver: 'hide'
+        });
+	});			
+//-->
+</script>
+
