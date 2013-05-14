@@ -1,0 +1,35 @@
+<h1>Bienvenido a su Clinica en l&iacute;nea</h1>
+<div id="contact">
+	<h3>Ingrese sus datos personales</h3>
+	
+	<fieldset>
+			<label for="email">Usuario:</label>
+			<input type="email" id="usuario" name="usuario" placeholder="ingrese su direccion de correo" />
+			<label for="name">Password:</label>
+			<input type="password" id="password" name="password" placeholder="Ingrese su password" />			
+						
+			<button id="btnSubmit" style="float:right;">Ingresar</button><br>
+			<label id="bubble_registrar" style="float:right; width:200px;"></label><br>
+			<span><a href="index.php?id=registro&registro=true">Registrese ahora!</a> <br> <a href="#recuperarPassword" onclick="javascript:MTD_MOSTRAR_RECUPERAR_PASSWORD()">Olvido su contrase&ntilde;a</a></span> 			
+		</fieldset>
+
+</div>
+<script type="text/javascript">
+	<!--
+	$(document).ready(function(){
+		$("#btnSubmit").click(function() {
+			MTD_VALIDAR_USUARIO();
+			});
+		
+        $('#bubble_registrar').CreateBubblePopup({
+        	 themePath: path_template + 'images/jquerybubblepopup-theme/',
+ 	        themeName: 'orange',
+ 	        position: 'top',
+ 	        innerHtml: 'Se ha registrado exitosamente, favor ingrese sus datos!', mouseOver: 'hide'
+        });
+        {tpl-nuevo-registro}
+	});			
+//-->
+</script>
+<h3>Que es el Doctor en Linea</h3>
+	<span>Sed diamaccusantium doloremque laudantium, totam rem aperiam Sed diamaccusantium doloremque laudantium, totam rem aperiam</span>

@@ -1,0 +1,45 @@
+<h5>Registro Historial de  {tpl-nombre-paciente}</h5>
+
+			<span style="padding:0px 0px 0px 0px; line-height:2px; " >Motivo</span>
+			<textarea id="motivos" class="textarea-styled" onfocus="setbg('blue');" onblur="setbg('white')"></textarea>			
+		
+			<span style="padding:0px 0px 0px 0px; line-height:2px; " >Diagn&oacute;stico</span>
+			<textarea id="diagnosticos" class="textarea-styled" onfocus="setbg('blue');" onblur="setbg('white')"></textarea>
+	<div style='width:635px; height:110px;display:block; '>
+	 <div style='width:310px; height:70px;float:left;display:inline;'>
+			<p style="padding:0px 0px 0px 0px; line-height:2px; text-align:left; width:200px;left:0px;  height:5px;margin:0px 0px 0px 0px;" >Tratamientos / Medicaciones</p>
+			<textarea id="tratamientos" class="textarea-styled" style='width:290px;' onfocus="setbg('blue');" onblur="setbg('white')"></textarea>
+	 </div>
+	 <div style='width:310px; height:70px;float:left;display:inline;'>			
+			<span style="padding:0px 0px 0px 0px; line-height:2px; " >Indicaciones</span>
+			<textarea id="indicaciones" class="textarea-styled" style='width:290px;' onfocus="setbg('blue');" onblur="setbg('white')"></textarea>
+	 </div>		
+	</div>
+			<span style="padding:0px 0px 0px 0px; line-height:2px; " >Estudios</span><br>
+			<textarea id="estudios" class="textarea-styled" onfocus="setbg('blue');" onblur="setbg('white')"></textarea>								
+										
+			<button id="btnSubmitHistorial" style='margin-top:-20px;'>Ingresar Historial</button>							
+			<input type="hidden" id="id_paciente" value="{tpl-id-paciente}"/>		
+			<label id="bubble_registrar" style="float:right;"></label><br>	
+	
+
+<script type="text/javascript">
+	<!--
+	$(document).ready(function(){
+		$("#btnSubmitHistorial").click(function() 
+		{			
+			$("#btnSubmitHistorial").attr("disabled", true);
+			MTD_AGREGAR_HISTORIAL();
+		});
+		
+        $('#bubble_registrar').CreateBubblePopup({
+                       themePath: '/composite.templates/consultorio/archivos_de_disenho/images/jquerybubblepopup-theme/',
+                       themeName: 'all-azure',
+                       position : 'right-middle',
+                       innerHtml: 'Se ha agregado <br>el producto al carrito ', mouseOver: 'hide'
+        });       
+	});	
+	
+//-->
+</script>
+

@@ -1,0 +1,63 @@
+<div id='contenedor_resultado'>
+<h3>Agregue una nueva investigaci&oacute;n</h3>
+<div id="contact2" style='height:265px; width:500px;'>
+	<label for="titulo" id="lb_titulo" >*Titulo:</label>
+	<input type="text" style="width:480px;" id="titulo" name="titulo" placeholder="Ingrese el titulo" value=""/>
+	<br>
+	<label for="lbautores" id="lb_autores" >*Autores:</label>
+	<textarea id="autores" name="autores" style='height:40px; width:480px;' class="textarea-styled"></textarea>	
+	<label for="lb_descripcion" id="lb_descripcion" >*Descripcion:</label>
+	<textarea id="descripcion" name="descripcion" style='height:100px; width:480px;' class="textarea-styled"></textarea>
+	<br>
+	<label id="bubble_registrar_investigacion" style="float:right;right:0px;"></label>
+	<button id="btnSubmitInvestigacion" >Ingresar Investigaci&oacute;n</button>
+							
+						
+</div>	
+	<form id="myform2"  enctype="multipart/form-data" action="archivos_de_disenho/formularios-programas/sistema-medico/uploadify.php" method="post"  > 
+		<div id="queue"></div>
+			
+		<input id="file_upload" name="file_upload" type="file" multiple="true">
+	</form>	
+			
+
+</div>	
+
+
+	<script type="text/javascript">
+		
+		$(function() {
+			$('#file_upload').uploadify({
+				'method'   : 'post',
+				'formData'     : {
+					'timestamp' : '{tpl-timestamp}',
+					'token'     : '{tpl-token}'	,
+					'{tpl-session-name}' : '{tpl-session-id}' 
+				},
+				'swf'      : 'archivos_de_disenho/formularios-programas/sistema-medico/uploadify.swf',
+				'uploader' : 'archivos_de_disenho/formularios-programas/sistema-medico/uploadify.php'
+			});
+		});
+	</script>
+	<script type="text/javascript">
+	<!--
+	$(document).ready(function(){
+		$("#btnSubmitInvestigacion").click(function() {
+			MTD_AGREGAR_INVESTIGACION();
+			});
+		
+        $('#bubble_registrar_investigacion').CreateBubblePopup({
+        	 themePath: path_template + 'images/jquerybubblepopup-theme/',
+ 	        themeName: 'orange',
+ 	        position: 'top', 	     
+ 	        innerHtml: 'Se ha registrado exitosamente, favor ingrese sus datos!', mouseOver: 'hide'
+        });
+        $('.jquerybubblepopup').css('z-index','1');
+       
+	});			
+//-->
+</script>
+<div style="width:100px;heigth:50px;" id="status-message"></div>
+</div>
+	
+	

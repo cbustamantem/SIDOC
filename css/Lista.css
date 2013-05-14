@@ -1,0 +1,238 @@
+.borde_inferior {
+	border-bottom: solid #f3ae01 1px;
+	padding-bottom: 1px;
+}
+
+.borde_inferior2 {
+	border-bottom: solid #f3ae01 3px;
+	padding-bottom: 1px;
+}
+
+.campo_datos {
+	width: 100%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.columna_izquierda {
+	width: 235px;
+}
+
+.columna_derecha {
+	width: 215px;
+}
+
+.dia_agendado {
+	background-color: #f5ba00;
+	color: white;
+	font-weight: bold;
+}
+
+h6 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #143989;
+	background: transparent;
+	margin-left: 4%;
+	margin-right: 4%;
+	font-size: 16px;
+}
+
+.contenido {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	padding: 0 0 0 5
+}
+
+.etiqueta {
+	color: #0066FF;
+}
+
+.etiqueta_legend {
+	color: #0066FF;
+}
+
+.etiqueta_fieldset {
+	padding: 8 6 6 6;
+	-moz-border-radius: 7px;
+	border: 1px solid #CCCCCC;
+}
+
+.etiqueta_fieldset_cuestionario {
+	padding: 8 6 6 6;
+	-moz-border-radius: 7px;
+}
+
+.etiqueta_formulario {
+	padding: 8 6 6 6;
+	border: none;
+}
+
+.legend_formulario_carga {
+	-moz-border-radius: 7px;
+	color: #fff;
+	background: #193984;
+	border: 1px solid #781351;
+	padding: 5px 6px;
+	font-family: verdana;
+	font-size: 12px;
+}
+
+.etiqueta_columna_principal_central {
+	padding: 0 7 0 7;
+}
+
+.etiqueta_fieldset_principal {
+	max-height: auto;
+	height: 460;
+}
+
+.etiqueta_fieldset_login {
+	width: 400px;
+	-moz-border-radius: 7px;
+}
+
+.espacion {
+	height: 50px
+}
+
+.enlace {
+	color: #0066FF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.enlace_calendario {
+	color: #999999;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.enlace_calendario:hover {
+	color: #f3ae01;
+}
+
+.fondo_encabezado {
+	border-top: solid #FFFFFF 3px;
+	background-color: #FFFFFF;
+}
+
+.linea_hr {
+	border: none;
+	border-bottom: dashed #999999 1px;
+	width: 99%;
+}
+
+.fondo_encabezado2 {
+	border-top: solid orange 1px;
+	padding: 5 0 0 0;
+	font-size: 7px;
+}
+
+.seccion {
+	color: #f3ae01;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.elemento_formulario {
+	width: 100%;
+}
+
+.sin_bordes {
+	padding: 3 3 3 3;
+	-moz-border-radius: 5px;
+}
+
+.titulo_principal {
+	color: #032b81;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 36px;
+}
+
+.titulo_secundario {
+	color: white;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 15px;
+}
+
+.texto {
+	color: #032b81;
+}
+
+.etiqueta,.texto,.elemento_formulario,.dia_agendado {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+
+
+.estilo_label {
+	font-family: verdana;
+	font-size: 12px;
+	margin-right: 0.5em;
+}
+
+.columna_id {
+	width: 30px;
+}
+
+.columna_datos {
+	width: 200px;
+}
+
+.columna_respuesta_foro {
+	width: *;
+}
+
+.columna_fecha {
+	width: 100px;
+}
+
+.columna_tema {
+	width: *;
+}
+
+.columna_opciones {
+	width: 100px;
+}
+
+.columna_fecha,.columna_tema,.columna_opcion {
+	height: 20px;
+}
+
+.columna_fecha,.columna_tema,.columna_opciones {
+	padding: 0 0 0 5;
+}
+
+.fila_diferenciada {
+	background-color: #ededed;
+}
+
+.fila_resaltada {
+	color: white;
+	background-color: #fabd24;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.fila_resaltada,.fila_no_resaltada,.fila_diferenciada {
+	cursor: pointer;
+}
+
+.fila_no_resaltada {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+}
+
+.usuario {
+	width: 120px;
+}
+
+.titulo_listado {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: 12px;
+	background: url( '../imagenes/BarraVerticalCaja.gif' );
+}

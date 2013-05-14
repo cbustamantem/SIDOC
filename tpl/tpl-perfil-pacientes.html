@@ -1,0 +1,50 @@
+<div id="contenedor_resultado">
+<h3>Registro del Paciente : {tb-nombre} {tb-apellido}</h3> 
+
+	<div id="contact2"  style='height:350px;width:580px;margin-left:0px;padding:0px 0px 0px 0px;'>
+			<ul style='margin-left:0px; padding:5px 0px 5px 5px;'>
+				<li>			
+					<label for="nombre" id="lb_nombre" >*Nombre:</label>
+					<input type="text" id="id_paciente" name="id_paciente" value="{tb-id-paciente}" style="display:none;" disabled/>
+					<input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" value="{tb-nombre}" disabled/>
+				</li>
+				<li>	
+					<label for="nombre" id="lb_apellido">*Apellido:</label>
+					<input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido" value="{tb-apellido}" disabled/>
+				</li>							
+				<li>
+					<label for="cedula" id="lb_cedula">*C&eacute;dula:</label>
+					<input type="text" id="cedula" name="cedula" placeholder="Ingrese su nro de cedula" value="{tb-cedula}" disabled/>			
+				</li>
+				<li>
+					<label for="telefono">Tel&eacute;fono:</label>
+					<input type="text" id="telefono" name="telefono" placeholder="Ingrese su nro telefonico"  value="{tb-telefono}" disabled/>			
+				</li>
+				<li>
+					<label for="telefonoCelular" id="lb_telefono_celular">*Tel&eacute;fono celular:</label>
+					<input type="text" id="telefono_celular" name="telefono_celular" placeholder="Ingrese su nro telefonico movil"  value="{tb-telefono-celular}" disabled/>			
+				</li>
+				<li>
+					<label for="lbdireccion" id="lb_direccion">Direcci&oacute;n:</label>
+					<input type="text" id="direccion" name="direccion" placeholder="Ingrese su direccion"  value="{tb-direccion}" disabled/>			
+				</li>
+				<li>
+					<label for="lbseguro" id="lb_seguro">Seguro M&eacute;dico:</label>
+					<input type="text" id="seguro_medico" name="seguro_medico" placeholder="Ingrese su Seguro Medico"  value="{tb-seguro-medico}" disabled/>			
+				</li>
+				<li>
+					<label for="lbnrocontrato" id="lbnrocontrato">N&uacute;mero de Contrato:</label>
+					<input type="text" id="nro_contrato" name="nro_contrato" placeholder="Ingrese su Numero de Contrato"  value="{tb-nro-contrato}" disabled/>			
+				</li>
+				<li>
+					<label for="lbfechanacmiento" id="lbfechanacimiento">Fecha de Nacimiento:</label>
+					<input type="text" id="fecha_nacimiento" name="fecha_nacimiento" placeholder="Ingrese su Fecha de Nacimiento"  value="{tb-fecha-nacimiento}" disabled/>			
+				</li>
+				<li>
+					<label for="lbobservacion" id="lbobservacion">Observaci&oacute;n:</label>
+					<textarea  class="textarea-styled" style="width:260px; height:60px;">{tb-observacion}</textarea>			
+				</li>					
+			</ul>	
+			</div>	
+
+</div>

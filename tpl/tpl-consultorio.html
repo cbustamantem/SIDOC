@@ -1,0 +1,70 @@
+<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				$('#example').dataTable({
+					"iDisplayLength": 5,
+					"aLengthMenu": [[5, 10], [5,10]],
+					"oLanguage": {
+						"sProcessing":     "Procesando...",
+					    "sLengthMenu":     "Mostrar _MENU_ registros",
+					    "sZeroRecords":    "No se encontraron resultados",
+					    "sEmptyTable":     "Ningún dato disponible en esta tabla",
+					    "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+					    "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+					    "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+					    "sInfoPostFix":    "",
+					    "sSearch":         "Buscar:",
+					    "sUrl":            "",
+					    "sInfoThousands":  ",",
+					    "sLoadingRecords": "Cargando...",
+					    "oPaginate": {
+					        "sFirst":    "Primero",
+					        "sLast":     "Último",
+					        "sNext":     "Siguiente",
+					        "sPrevious": "Anterior"
+					    },
+					    "fnInfoCallback": null,
+					    "oAria": {
+					        "sSortAscending":  ": Activar para ordernar la columna de manera ascendente",
+					        "sSortDescending": ": Activar para ordernar la columna de manera descendente"
+					    }
+						}
+					
+				}
+				);	
+			
+			} );
+		</script>
+<div class="menu-principal">
+	<h3> Listado de pacientes </h3>
+
+	<div id="container">
+			<div class="full_width big">
+	<table cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%">
+	<thead>
+		<tr>
+			<th>C.I.</th>
+			<th>Nombre</th>
+			<th>Apellido</th>	
+			<th>Opcion</th>
+		</tr>
+	</thead>
+	<tbody>
+		{tpl-listado-pacientes}
+		
+		</tbody>
+	<script>
+$(document).ready(function() {
+	  var oTable = $('#example').dataTable();
+
+	  // Sort immediately with column 2 (at position 1 in the array. More could be sorted with additional array elements
+	  oTable.fnSort( [ [0,'desc'] ] );
+	} );
+	  </script>
+</table>
+	</div>
+	</div>
+	<br>	
+ </div>
+ <button id="btnSubmit" OnClick="location.href='index.php?id=registro&seccion=nuevo_paciente'">Nuevo Paciente</button>	
+ 
+ 
