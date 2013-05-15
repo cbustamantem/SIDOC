@@ -60,46 +60,6 @@ class CLASS_WEB_INTRANET
 		        $obj_consultorio = new CLASS_CONSULTORIO($this->vlc_db_conexion );
 		        $vlf_codigo_html_seccion = $obj_consultorio->MTD_RETORNAR_CODIGO_HTML();
 		    }
-		    elseif ($vlf_seccion == 'nuevo_paciente')
-		    {
-		    	include ('CLASS_ABM_PACIENTES.php');
-		        $obj_pacientes = new CLASS_ABM_PACIENTES($this->vlc_db_conexion );
-		        $obj_pacientes->MTD_INICIALIZAR_PAGINA();
-		        $vlf_codigo_html_seccion = $obj_pacientes->MTD_RETORNAR_CODIGO_HTML();
-		    }
-		    elseif ($vlf_seccion == 'historial_paciente')
-		    {
-		    	include ('CLASS_HISTORIAL.php');
-		    	$obj_historial = new CLASS_HISTORIAL($this->vlc_db_conexion );
-		    	$vlf_codigo_html_seccion = $obj_historial->MTD_RETORNAR_CODIGO_HTML();
-		    }
-		    elseif ($vlf_seccion == 'nuevo_historial')
-		    {
-		    	
-		    	include ('CLASS_ABM_HISTORIAL.php');
-		    	$obj_historial = new CLASS_ABM_HISTORIAL($this->vlc_db_conexion );
-		    	$obj_historial->MTD_INICIALIZAR_PAGINA();
-		    	$vlf_codigo_html_seccion = $obj_historial->MTD_RETORNAR_CODIGO_HTML();
-		    }
-		    elseif ($vlf_seccion == 'perfil')
-		    {	 
-		    	include ('CLASS_ABM_PERFIL.php');
-		    	$obj_perfil = new CLASS_ABM_PERFIL($this->vlc_db_conexion );
-		    	$obj_perfil->MTD_INICIALIZAR_PAGINA();
-		    	$vlf_codigo_html_seccion = $obj_perfil->MTD_RETORNAR_CODIGO_HTML();
-		    }
-		    elseif ($vlf_seccion == 'vademecum')
-		    {
-		    	include ('CLASS_VADEMECUM.php');
-		    	$obj_perfil = new CLASS_VADEMECUM($this->vlc_db_conexion );
-		    	$obj_perfil->MTD_INICIALIZAR_PAGINA();
-		    	$vlf_codigo_html_seccion = $obj_perfil->MTD_RETORNAR_CODIGO_HTML();
-		    }
-		    elseif ($vlf_seccion == 'informaciones')
-		    {
-		    	$seccion="<div style='width:630px;height:450px;overflow-y:scroll'>{informaciones}</div>";
-		    	$vlf_codigo_html_seccion = $seccion;
-		    }
 		    elseif ($vlf_seccion == 'investigaciones')
 		    {		    	
 		    			    	
@@ -108,17 +68,7 @@ class CLASS_WEB_INTRANET
 		    	$obj_perfil->MTD_INICIALIZAR_PAGINA();
 		    	$vlf_codigo_html_seccion = $obj_perfil->MTD_RETORNAR_CODIGO_HTML();
 		    }
-		    elseif ($vlf_seccion == 'sociales')
-		    {
-		    	$seccion="<div style='width:630px;height:450px;overflow-y:scroll'>{sociales}</div>";
-		    	$vlf_codigo_html_seccion = $seccion;
-		    }
-		    elseif ($vlf_seccion == 'eventos')
-		    {
-		    	$seccion="<div style='width:630px;height:450px;overflow-y:scroll'>{listadonoticias}</div>";
-		    	$vlf_codigo_html_seccion = $seccion;
-		    }
-		    elseif ($vlf_seccion == 'salir')
+		   elseif ($vlf_seccion == 'salir')
 		    {
 		 		$obj_session->logout();
 		 		header ( "Location: index.php" );
@@ -126,11 +76,7 @@ class CLASS_WEB_INTRANET
 	    }	    	   
 	    else
 	    {
-	    	LOGGER::LOG("Web: menu principal ");
-	    	include('CLASS_ABM_PACIENTES.php');
-	    	$pacientes = new CLASS_ABM_PACIENTES($this->vlc_db_conexion);
-	    	$vlf_codigo_html_seccion = FN_LEER_TPL('tpl/tpl_contenido_principal.html');
-	    	$vlf_codigo_html_seccion = FN_REEMPLAZAR('{tpl-ultimos-pacientes}',$pacientes->MTD_DB_LISTAR_ULTIMOS_PACIENTES(),$vlf_codigo_html_seccion );	        
+	    	LOGGER::LOG("Web: menu principal ");	    	
 	    }
 	    
 	    //---------------------------

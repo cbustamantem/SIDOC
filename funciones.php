@@ -3,12 +3,12 @@
 
               Datos de la Etiqueta
 =#= ini-instrucciones-cmp =#=
-Función:			Sistema Medico
+Función:			Sistema de Gestion de Documentos
 Instrucciones:		No es necesario pasar parametros
 Desarrollado por:	Carlos Bustamante
 e-mail:				cbustamantem@gmail.com
-Creado:				20/10/2012
-Modificado:			20/10/2012
+Creado:				13/05/2013
+Modificado:			13/05/2013
 =#= fin-instrucciones-cmp =#=
 */
 
@@ -60,11 +60,11 @@ function formulario_sistema_medico()
 	//-----------------------------
 	//- LECTURA DEL TPL PRINCIPAL
 	//-----------------------------
-	//$vlf_codigo_html_principal = leer_tpl_de_etiqueta_o_formularios_programas('formularios-programas','area-clientes','tpl/tpl_frm_principal.html');
-	//$vlf_codigo_html_menu = leer_tpl_de_etiqueta_o_formularios_programas('formularios-programas','area-clientes','tpl/tpl_frm_menu_principal.html');
+	$vlf_codigo_html_principal = FN_LEER_TPL('tpl/tpl-index-frame.html');
+	$vlf_codigo_html_contenido = FN_LEER_TPL('tpl/tpl-index-contenido.html');
+	$vlf_codigo_html_menu 	   = FN_LEER_TPL('tpl/tpl-index-menu.html');
 	
-	$vlf_codigo_html_principal = FN_LEER_TPL('tpl/tpl_frm_principal.html');
-	$vlf_codigo_html_menu = FN_LEER_TPL('tpl/tpl_frm_menu_principal.html');
+
 	$obj_session = new CLASS_SESSION($vlf_mysql_conexion);
 	// -> se va a la seccion admin
 	$vlf_session_activada = $obj_session->MTD_START();
@@ -75,26 +75,16 @@ function formulario_sistema_medico()
 	}
 	else
 	{
-		$vlf_codigo_html_principal  = FN_LOGIN();
+		//$vlf_codigo_html_principal  = FN_LOGIN();
 	}
 	
+	//------------------------------
+	// APLICAR CONTENIDO
+	//-------------------------------
+	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-contenido}",$vlf_codigo_html_contenido,$vlf_codigo_html_principal);	
+	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-menu-principal}",$vlf_codigo_html_menu,$vlf_codigo_html_principal);	
 	
-	//---------------------------
-	//- FIX URL PATH    -
-	//---------------------------
-	$vlf_composite_template = $cmp['template web'];
-	$vlf_composite_template .= 'archivos_de_disenho';
-	$vlf_codigo_html_principal = str_replace('archivos_de_disenho', $vlf_composite_template, $vlf_codigo_html_principal);
 	return $vlf_codigo_html_principal;
-	 
 	
-	//-------------------------------------------------------------------------------------------------------------------
-	/*global $bd, $composite_cod_sitio, $cmp, $id;
-	
-	$codigo_html=leer_tpl_de_etiqueta_o_formularios_programas('formularios-programas','sistema-medico','tpl/login.html');
-	
-	$codigo_html=str_replace("archivos_de_disenho/",$cmp['template web']."archivos_de_disenho/",$codigo_html);
-	return $codigo_html;
-	*/
 }
 ?>

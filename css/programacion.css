@@ -1,0 +1,51 @@
+
+
+body#quienes div.contenido b{
+	color: #02834B;
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+body#quienes h3{
+	color: #555;
+}
+
+body#quienes .contenido h2,
+body#quienes .contenido h3{
+	font-size:16px;
+	color:#02834B;
+	font-weight:bold;
+}
+/*div.contenido b{
+	color: #555;
+    font-size: 12pt;
+    font-weight: 600;
+}*/
+
+/* PARA LA PAGINA LISTA ARCHIVOS QUE ES EXTRAIDA DE QUIENES SOMOS/ CODIGOS DE ETICA/ POLITICAS DE LA INSTITUCION */
+
+	ul#archivos_lista{
+		float:left;
+		width:100%;
+		margin:10px 0 0;
+		padding:0;
+	}
+	ul#archivos_lista li{
+		float:left;
+		width:310px;
+		padding:0 0 10px 25px;
+		margin-bottom:15px;
+		border-bottom:1px solid #ccc;
+		background:url(../admin/images/icons/page_white_acrobat.png) no-repeat left top;
+	}
+	.ml{margin-left:45px;}
+	
+#contenedor .col_derecha .contenido .img_right ul li{ list-style:none;}
+
+#contenedor .col_derecha .contenido .img_right ul{ margin-top:0; margin-bottom:0; padding-top:0; padding-bottom:0}
+
+#slider ul{
+float:left;
+padding:0 !important;
+
+}

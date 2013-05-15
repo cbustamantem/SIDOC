@@ -1,0 +1,123 @@
+<div class="menu-principal">
+	<div style="width:700px; height:150px;display:block;">				
+		<div style="width:300px; height:150px;display:inline;float:left;margin-top:-10px;">	
+		<h3>Ultimos pacientes</h3>			
+			{tpl-ultimos-pacientes}
+		</div>
+		<div style="width:305px;  height:150px;display:inline;float:left;margin-top:-10px; ">	
+		<h3>Noticias</h3>	
+			<div style='width:295px; height:130px; margin-left:0px;'>
+		<div id="right-column-backtones-informaciones2">
+	    <dl style="height:150px;width:160px;">	     
+	        <!-- MARCO EXTERNO !-->
+	        <dd style="height:250px;width:260px;margin-left:0px;text-align:left; float:left;padding-left:0px; ">
+	        <div  id="contenedor-seleccion-noticias2">
+	              <!-- FLECHA ARRIBA !-->	      
+			  	<div id="bloque_noticias" class="bloque_noticias">
+			  	<br>
+			  		{ultimasnoticias}
+	  			 </div>  
+			  </div> <!-- div -->					   
+	              <!-- FLECHA ABAJO !-->
+	                
+	        </div>
+	        </dd>
+	    </dl>		
+	 </div>	
+			
+		</div>
+	</div>
+	<h3>Informaciones</h3>
+	<div style='width:690px; height:130px; '>
+		<div id="right-column-backtones-informaciones2">
+	    <dl style="height:150px;width:160px;">	     
+	        <!-- MARCO EXTERNO !-->
+	        <dd style="height:250px;width:160px;text-align:left; float:left;padding-left:0px; ">
+	        <div  id="contenedor-seleccion-informaciones2">
+	              <!-- FLECHA ARRIBA !-->	            
+			  	<div id="bloque_informaciones" class="bloque_informaciones">
+			  	<br>
+			  		{informaciones}
+	  			 </div>  
+			  </div> <!-- div -->		
+			 
+	              <!-- FLECHA ABAJO !-->
+	                
+	        </div>
+	        </dd>
+	    </dl>		
+	 </div>	
+ </div>
+ 
+ <script type="text/javascript">
+var top_informaciones=0;
+var index_informaciones=0;
+var maximo_informaciones=10;
+var minimo_informaciones=0;
+var top_noticias=0;
+var index_noticias=0;
+var maximo_noticias=5;
+var minimo_noticias=0;
+
+function rotarinformaciones()
+{
+	 top_informaciones= top_informaciones  - 50;
+     $("#bloque_informaciones").animate({"top": top_informaciones}, "slow");
+    
+}
+function reloadinformaciones()
+{
+	 top_informaciones= -10;
+     $("#bloque_informaciones").animate({"top": top_informaciones}, "slow");
+    
+}
+function rotarnoticias()
+{
+	 top_noticias= top_noticias  - 50;    
+     $("#bloque_noticias").animate({"top": top_noticias}, "slow");
+}
+function reloadnoticias()
+{
+	 top_noticias= 0;    
+     $("#bloque_noticias").animate({"top": top_noticias}, "slow");
+}
+function cycle_informaciones()
+{		
+	//document.example.src = imgBanner[index].src;
+
+	if (index_informaciones < maximo_informaciones)
+	{
+		if (index_informaciones > 0)
+		{
+			rotarinformaciones();
+		}
+	}
+	else if  (index_informaciones > maximo_informaciones)
+	{
+		index_informaciones=0;
+		
+		reloadinformaciones();
+	}
+	
+
+	if (index_noticias < maximo_noticias)
+	{
+		if (index_noticias > 0)
+		{
+			rotarnoticias();
+		}
+	}
+	else if  (index_noticias > maximo_noticias)
+	{
+		index_noticias=0;		
+		reloadnoticias();
+	}
+	index_noticias++;
+	index_informaciones++;
+	setTimeout("cycle_informaciones()",4000);
+			
+	return;
+}
+
+cycle_informaciones();
+</script>

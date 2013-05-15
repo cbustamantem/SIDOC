@@ -1,0 +1,23 @@
+<h5>Registro Historial de  {tpl-nombre-paciente}</h5>
+			<span style="padding:0px 0px 0px 0px; line-height:2px; " >Fecha: {tpl-fecha}</span><br><br>
+			<span style="padding:0px 0px 0px 0px; line-height:2px; " >Motivo</span>
+			<textarea id="motivos" class="textarea-styled" disabled style='width:550px;'onfocus="setbg('blue');" onblur="setbg('white')">{tpl-motivo}</textarea>			
+		
+			<span style="padding:0px 0px 0px 0px; line-height:2px; " >Diagn&oacute;stico</span>
+			<textarea id="diagnosticos" class="textarea-styled"  disabled style='width:550px;' onfocus="setbg('blue');" onblur="setbg('white')">{tpl-diagnostico}</textarea>
+	<div style='width:600px; height:110px;display:block; '>
+	 <div style='width:280px; height:70px;float:left;display:inline;'> 
+	 		<span style="padding:0px 0px 0px 0px; line-height:2px; text-align:left;" >Tratamientos / Medicaciones</span>
+			<textarea id="tratamientos" class="textarea-styled" disabled style='width:265px;' onfocus="setbg('blue');" onblur="setbg('white')">{tpl-tratamientos}</textarea>
+			
+	 </div>
+	 <div style='width:300px; height:70px;float:left;display:inline;'>
+			
+			<span style="padding:0px 0px 0px 0px; line-height:2px; " >Indicaciones</span>
+			<textarea id="indicaciones" class="textarea-styled" disabled style='width:265px;' onfocus="setbg('blue');" onblur="setbg('white')">{tpl-indicaciones}</textarea>
+	 </div>		
+	</div>
+			<span style="padding:0px 0px 0px 0px; line-height:2px; " >Estudios</span><br>
+			<textarea id="estudios" class="textarea-styled"  disabled style='width:550px;' onfocus="setbg('blue');" onblur="setbg('white')">{tpl-estudios}</textarea>								
+			<input type="hidden" id="id_paciente" value="{tpl-id-paciente}"/>			
+
