@@ -48,6 +48,7 @@ function formulario_sistema_medico()
 	include_once ('class/CLASS_SESSION.php');
 	include_once ('class/CLASS_WEB_INTRANET.php');
 	include_once ('class/CLASS_WEB_MENU_PRINCIPAL.php');
+	include_once ('class/CLASS_WEB_RUTA.php');
 	include_once('login.php');
 	
 	//-----------------------------
@@ -82,14 +83,23 @@ function formulario_sistema_medico()
 	// MENU PRINCIPAL 
 	//---------------------------
 	$vl_cod_html_menu ="";
-    $obj_menu = new CLASS_WEB_MENU_PRINCIPAL($vlf_mysql_conexion);
-    $obj_menu->MTD_INICIALIZA_MENU();
+    $obj_menu = new CLASS_WEB_MENU_PRINCIPAL($vlf_mysql_conexion);    
     $vl_cod_html_menu =$obj_menu->MTD_RETORNAR_CODIGO_HTML();  
+
+    //---------------------------
+	// RUTA
+	//---------------------------
+	$vl_cod_html_ruta ="";
+    $obj_ruta = new CLASS_WEB_RUTA($vlf_mysql_conexion);    
+    $vl_cod_html_ruta =$obj_ruta->MTD_RETORNAR_CODIGO_HTML();  
+
+   
 	//------------------------------
 	// APLICAR CONTENIDO
 	//-------------------------------
 	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-contenido}",$vlf_codigo_html_contenido,$vlf_codigo_html_principal);	
 	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-menu-principal}",$vl_cod_html_menu,$vlf_codigo_html_principal);	
+	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-ruta}",$vl_cod_html_ruta,$vlf_codigo_html_principal);	
 	
 	return $vlf_codigo_html_principal;
 	
