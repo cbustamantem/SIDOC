@@ -31,9 +31,9 @@ class CLASS_WEB_INTRANET
         //-----------------------------------------
         include_once ('CLASS_WEB_MENU_PRINCIPAL.php');
         $vl_cod_html_menu ="";
-     //   $obj_menu = new CLASS_WEB_MENU_PRINCIPAL();
-       // $obj_menu->MTD_INICIALIZA_MENU();
-      //  $vl_cod_html_menu =$obj_menu->MTD_RETORNAR_CODIGO_HTML();  
+        $obj_menu = new CLASS_WEB_MENU_PRINCIPAL();
+        $obj_menu->MTD_INICIALIZA_MENU();
+        $vl_cod_html_menu =$obj_menu->MTD_RETORNAR_CODIGO_HTML();  
         //-----------------------------------------
         // LECTURA DEL TPL BASE
         //-----------------------------------------

@@ -1,5 +1,5 @@
 <?php
-class CLASS_WEB_MENU_PRINCIPAL
+class CLASS_WEB_RUTA
 {
     private $vlc_codigo_html;
     private $vlc_codigo_menues;
