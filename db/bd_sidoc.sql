@@ -26,7 +26,7 @@ CREATE TABLE `categorias` (
   `idcategoria` int(11) NOT NULL AUTO_INCREMENT,
   `categoria` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`idcategoria`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -35,6 +35,7 @@ CREATE TABLE `categorias` (
 
 LOCK TABLES `categorias` WRITE;
 /*!40000 ALTER TABLE `categorias` DISABLE KEYS */;
+INSERT INTO `categorias` VALUES (1,'Manuales'),(2,'Procedimientos'),(3,'Normas'),(4,'Reglamento Interno'),(5,'Otros');
 /*!40000 ALTER TABLE `categorias` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -104,13 +105,13 @@ DROP TABLE IF EXISTS `subcategorias`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `subcategorias` (
-  `idsubcategoria` int(11) NOT NULL,
+  `idsubcategoria` int(11) NOT NULL AUTO_INCREMENT,
   `idcategoria` int(11) DEFAULT NULL,
   `subcategoria` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`idsubcategoria`),
   KEY `fk_subcategorias_1_idx` (`idcategoria`),
   CONSTRAINT `fk_subcategorias_1` FOREIGN KEY (`idcategoria`) REFERENCES `categorias` (`idcategoria`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -119,6 +120,7 @@ CREATE TABLE `subcategorias` (
 
 LOCK TABLES `subcategorias` WRITE;
 /*!40000 ALTER TABLE `subcategorias` DISABLE KEYS */;
+INSERT INTO `subcategorias` VALUES (1,1,'Administrativo'),(2,1,'Financiero'),(3,1,'RR.HH');
 /*!40000 ALTER TABLE `subcategorias` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -170,4 +172,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-05-14 23:46:01
+-- Dump completed on 2013-05-16 17:52:28
