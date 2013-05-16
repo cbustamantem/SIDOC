@@ -1,8 +1,7 @@
 <?php
 class CLASS_WEB_RUTA
 {
-    private $vlc_codigo_html;
-    private $vlc_codigo_menues;
+    private $vlc_codigo_html;   
     private $vlc_conexion;
     function __construct ($conexion)
     {
@@ -10,8 +9,7 @@ class CLASS_WEB_RUTA
         $this->vlc_codigo_menues="";
         $this->vlc_codigo_html= "";
         $this->vlc_conexion= $conexion;
-        $this->MTD_INICIALIZA_MENU();
-        $this->MTD_IMPLEMENTAR_MENUES();        
+        $this->MTD_INICIALIZA_MENU();            
         /*
          * TODO:
          * reemplazar los banners
@@ -21,47 +19,41 @@ class CLASS_WEB_RUTA
     }
     function MTD_INICIALIZA_MENU()
     {
-       $menues = array();
-       $menues =  FN_RUN_QUERY("select idcategoria, categoria from categorias", 2,$this->vlc_conexion);
-       $codigo_html = "<ul class='sf-menu'>";
-       $codigo_submenu="";
-       foreach($menues as $menu)
-       {
-            $codigo_html.="<li class='current'><a href='index.php?seccion=productos&categoria=".$menu[0]."' title='".$menu[1]."'>".$menu[1]."</a>";
-            $submenues = array();
-            $submenues = FN_RUN_QUERY("select idsubcategoria,subcategoria from subcategorias where idcategoria=".$menu[0],2,$this->vlc_conexion );
-            if ($submenues)
+
+        $ruta= ' <ul id="sub_botonera">  <li><a class="activo" href="index.php" title="Inicio"> Inicio</a> </li>';
+        $categoria ="";
+        $subcategoria ="";
+        if (isset($_GET["categoria"]))
+        {
+            $datos = array();
+            $categoria =FN_RECIBIR_VARIABLES("categoria");
+            $datos = FN_RUN_QUERY("SELECT categoria from categorias where idcategoria=".$categoria ,1,$this->vlc_conexion);
+            if ($datos)
             {
-                $codigo_submenu="<ul>";
-                foreach ($submenues as $submenu) 
-                {                    
-                    $codigo_submenu.="<li><a href='index.php?seccion=productos&categoria=".$menu[0]."&subcategoria=".$submenu[0]."' title='".$submenu[1]."'>".$submenu[1]."</a></li>";
-                }
-                $codigo_submenu.="</ul>";
-                $codigo_html.=$codigo_submenu;
-                $codigo_submenu="";
+                $ruta.= '<li><a class="activo" href="index.php?categoria='.$categoria .'" title="'.$datos[0][0].'">'.$datos[0][0].'</a> </li>';
             }
+        }
+        if (isset($_GET["subcategoria"]))
+        {
+            $subcategoria=FN_RECIBIR_VARIABLES("subcategoria");
+            $datos = array();
+            $datos = FN_RUN_QUERY("SELECT subcategoria from subcategorias where idsubcategoria=".$subcategoria,1,$this->vlc_conexion);
+
+            if ($datos)
+            {
+                $ruta.= '<li><a class="activo"  href="index.php?categoria='.$categoria .'&subcategoria='.$subcategoria.'" title="'.$datos[0][0].'">'.$datos[0][0].'</a> </li>';
+            }
+        }
+        if (isset($_GET["administracion"]))
+        {
             
-            $codigo_html.="</li>";
-       }
-       $codigo_html.="</ul>";
-       $this->vlc_codigo_html= $codigo_html;
+            $ruta.= '<li><a class="activo"  href="index.php?administracion=1" title="Administracion">Administraci&oacute;n</a> </li>';
+            
+        }
+        $ruta.="</ul>";
+        $this->vlc_codigo_html=$ruta;
     }
-    function MTD_ASIGNAR_MENU($vp_link,$vp_titulo)
-    {
-     
-       
-    }
-    function MTD_IMPLEMENTAR_MENUES()
-    {
-        /*
-         * TODO:
-         * Remplazar la lista de menues con la asignada en la variable de la clase
-         * {lista-menues}
-         */
-       
-    }
-    
+
     function MTD_RETORNAR_CODIGO_HTML()
     {
         return $this->vlc_codigo_html;
