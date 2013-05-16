@@ -195,7 +195,7 @@
                                 $('#documentViewer').FlexPaperViewer(
                                         { config : {
 
-                                            SWFFile : 'docs/Paper.pdf.swf',
+                                            SWFFile : 'docs/recuperacion.pdf.swf',
 
                                             Scale : 0.6,
                                             ZoomTransition : 'easeOut',
