@@ -1,79 +1,37 @@
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>FUNDACIÓN PARAGUAYA | SIDOC</title>
-
-<meta name="description" content="" />
-<meta name="keywords" content="" />
-<meta name="googlebot" content="Index, Follow" />
-<meta name="robots" content="all" />
-<link rel="shortcut icon" href="favicon.ico" />
-<link href="css/fundacionparaguaya.css" rel="stylesheet" type="text/css" />
-<link href="css/programacion.css" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-<script type="text/javascript" src="js/selectivizr-min.js"></script>
-<script type="text/javascript" src="js/modernizr-2.5.3.js"></script>
-<script type="text/javascript" src="js/easySlider1.7.js"></script>
-<!-- By Dennis Bareiro -->
-
-<!--flex-->
-<link rel="stylesheet" type="text/css" href="css/flexpaper.css" />
+    <meta name="description" content="" />
+    <meta name="robots" content="all" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="css/fundacionparaguaya.css" rel="stylesheet" type="text/css" />
+    <link href="css/programacion.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="{{ asset('js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/selectivizr-min.js"></script>
+    <script type="text/javascript" src="{{ asset('js/modernizr-2.5.3.js"></script>
+    <script type="text/javascript" src="{{ asset('js/easySlider1.7.js"></script>
+    <!--flex-->
+    <link rel="stylesheet" type="text/css" href="css/flexpaper.css" />
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/flexpaper.js"></script>
     <script type="text/javascript" src="js/flexpaper_handlers.js"></script>
-<!--Fin Flex-->
-
-
-<script type="text/javascript">
-    $(document).ready(function(){
-    
-        <!-- "DesplegarMenuHeader" -->
-        $('.down').click(function(){
-            var id=$(this).attr('id');
-            $('.'+id).slideToggle('normal');
-        })
-        
-        <!-- "DesplegarBotonesFooter" -->
-        $('#menufooter li').hover(function(){
-            var dato=$(this).attr('class');
-            $('.'+dato+' div').animate({'top':'-30px'}, 200);
-        },function(){
-            var dato=$(this).attr('class');
-            $('.'+dato+' div').animate({'top':'0'},50);
-        })
-        
-        $('#txt_busqueda')
-            .focus(function(){
-                if($(this).val() == 'Buscar...'){ $(this).val(''); }
-            })
-            .blur(function(){
-                if($(this).val() == ''){ $(this).val('Buscar...'); }
-            });
-    })
- </script>
- 
-<script src="js/application.js" type="text/javascript"></script>
-
-<!--[if IE]>
+    <!--Fin Flex-->
+    <!--[if IE]>
     <style>
         #txt_busqueda{ border:0; }
     </style>
-<![endif]-->
-
-
-<!--[if IE 7]>
+    <![endif]-->
+    <!--[if IE 7]>
     <style>
         .headerbottom{
             height:110px;
         }
         
         #contenedor{ padding:0; }
-
     </style>
-<![endif]-->
+    <![endif]-->
 <!-- Productos-Detalles -  Fancybox -->
 
     <script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
@@ -90,29 +48,29 @@
             
         });
     </script><!-- easySlider 1.7 -->
-<link type="text/css" href="js/easySlider/screen.css" rel="stylesheet" media="screen" />    
-    <script type="text/javascript">
-        $(document).ready(function(){   
-            $("#slider").easySlider({
-                auto: true, 
-                continuous: true
-            });
-        }); 
+    <link type="text/css" href="js/easySlider/screen.css" rel="stylesheet" media="screen" />    
+        <script type="text/javascript">
+            $(document).ready(function(){   
+                $("#slider").easySlider({
+                    auto: true, 
+                    continuous: true
+                });
+            }); 
     </script><!-- superfish 1.4.8 -->
-<meta http-equiv="content-type" content="text/html;charset=utf-8">
-<link rel="stylesheet" type="text/css" href="js/superfish/superfish.css" media="screen">
-<link rel="stylesheet" type="text/css" href="js/superfish/superfish-vertical.css" media="screen">
-<script type="text/javascript" src="js/superfish/hoverIntent.js"></script>
-<script type="text/javascript" src="js/superfish/superfish.js"></script>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="js/superfish/superfish.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="js/superfish/superfish-vertical.css" media="screen">
+    <script type="text/javascript" src="js/superfish/hoverIntent.js"></script>
+    <script type="text/javascript" src="js/superfish/superfish.js"></script>
 
-<script type="text/javascript">
+    <script type="text/javascript">
 
-    // initialise plugins
-    jQuery(function(){
-        jQuery('ul.sf-menu').superfish();
-    });
+        // initialise plugins
+        jQuery(function(){
+            jQuery('ul.sf-menu').superfish();
+        });
 
-</script>
+    </script>
 </head>
 
 <body class="esp" id="quienes">
@@ -147,105 +105,84 @@
             </div><!-- fin header -->
         </div><!-- fin bgheader -->
         
-        <div class="bgcontenido">
-       
+        <div class="bgcontenido">       
             <div class="s960 divcentrado" id="contenedor">
-               
-               
                 <h1>Quiénes Somos</h1>
-            
                 <div class="left col_izquierda">
-                
-                <!-- MENU DESPLEGABLE SUPERFISH -->
-                <ul class="sf-menu">
-                                        <li class="current">
-                        <a href="#" title="Filosofía">Filosofía</a>
-                                                    <ul>
-                                                                    <li><a href="quienes.php?id=67&tipo=contenido" title="Nuestra Visión">Nuestra Visión</a></li>
-                                                                    <li><a href="quienes.php?id=68&tipo=contenido" title="Nuestra Misión">Nuestra Misión</a></li>
-                                                                    <li><a href="quienes.php?id=69&tipo=contenido" title="Objetivos Estratégicos">Objetivos Estratégicos</a></li>
-                                                                    <li><a href="quienes.php?id=70&tipo=contenido" title="Nuestros Principios">Nuestros Principios</a></li>
-                                                            </ul>
-                                            </li>                   
-                                        <li class="current">
-                        <a href="#" title="Nuestros Programas">Nuestros Programas</a>
-                                                    <ul>
-                                                                    <li><a href="quienes.php?id=71&tipo=contenido" title="Microfinanzas">Microfinanzas</a></li>
-                                                                    <li><a href="quienes.php?id=74&tipo=contenido" title="Educacion Emprendedora">Educacion Emprendedora</a></li>
-                                                                    <li><a href="quienes.php?id=75&tipo=contenido" title="Escuelas Autosuficientes">Escuelas Autosuficientes</a></li>
-                                                            </ul>
-                                            </li>                   
-                                        <li class="current">
-                        <a href="quienes.php?id=73" title="Historia">Historia</a>
-                                            </li>                   
-                                        <li class="current">
-                        <a href="quienes.php?id=86" title="Memorias y Documentos">Memorias y Documentos</a>
-                                            </li>                   
-                                        <li class="current">
-                        <a href="quienes.php?id=76" title="Consejo de Administración">Consejo de Administración</a>
-                                            </li>                   
-                                        <li class="current">
-                        <a href="#" title="Gerentes">Gerentes</a>
-                                                    <ul>
-                                                                    <li><a href="quienes.php?id=88&tipo=contenido" title="Gerentes">Gerentes</a></li>
-                                                                    <li><a href="quienes.php?id=89&tipo=contenido" title="Gerentes de Área">Gerentes de Área</a></li>
-                                                            </ul>
-                                            </li>                   
-                                        <li class="current">
-                        <a href="quienes.php?id=90" title="Oficinas Regionales">Oficinas Regionales</a>
-                                            </li>                   
-                                        <li class="current">
-                        <a href="#" title="Código de Ética y Políticas">Código de Ética y Políticas</a>
-                                                    <ul>
-                                                                    <li><a href="quienes.php?id=92&tipo=contenido" title="Código de Ética">Código de Ética</a></li>
-                                                                    <li><a href="quienes.php?id=93&tipo=contenido" title="Políticas de la Institución">Políticas de la Institución</a></li>
-                                                            </ul>
-                                            </li>                   
-                                        <li class="current">
-                        <a href="#" title="Logros y Premios">Logros y Premios</a>
-                                                    <ul>
-                                                                    <li><a href="quienes.php?id=96&tipo=contenido" title="Logros">Logros</a></li>
-                                                                    <li><a href="quienes.php?id=97&tipo=contenido" title="Premios">Premios</a></li>
-                                                            </ul>
-                                            </li>                   
-                                        <li class="current">
-                        <a href="http://www.senatur.gov.py/" title="Acerca de Paraguay">Acerca de Paraguay</a>
-                                            </li>                   
-                                  
-                    
-                    
-                
-                </ul>
-                <!-- FIN MENU DESPLEGABLE SUPERFISH -->
 
+                    <!-- MENU DESPLEGABLE SUPERFISH -->
+                    <ul class="sf-menu">
+                       <li class="current">
+                            <a href="#" title="Filosofía">Filosofía</a>
+                            <ul>
+                                <li><a href="quienes.php?id=67&tipo=contenido" title="Nuestra Visión">Nuestra Visión</a></li>
+                                <li><a href="quienes.php?id=68&tipo=contenido" title="Nuestra Misión">Nuestra Misión</a></li>
+                                <li><a href="quienes.php?id=69&tipo=contenido" title="Objetivos Estratégicos">Objetivos Estratégicos</a></li>
+                                <li><a href="quienes.php?id=70&tipo=contenido" title="Nuestros Principios">Nuestros Principios</a></li>
+                            </ul>
+                        </li>                   
+                        <li class="current">
+                            <a href="#" title="Nuestros Programas">Nuestros Programas</a>
+                                <ul>
+                                    <li><a href="quienes.php?id=71&tipo=contenido" title="Microfinanzas">Microfinanzas</a></li>
+                                    <li><a href="quienes.php?id=74&tipo=contenido" title="Educacion Emprendedora">Educacion Emprendedora</a></li>
+                                    <li><a href="quienes.php?id=75&tipo=contenido" title="Escuelas Autosuficientes">Escuelas Autosuficientes</a></li>
+                                </ul>
+                        </li>                   
+                        <li class="current">
+                            <a href="quienes.php?id=73" title="Historia">Historia</a>
+                        </li>                   
+                                            <li class="current">
+                            <a href="quienes.php?id=86" title="Memorias y Documentos">Memorias y Documentos</a>
+                        </li>                   
+                        <li class="current">
+                            <a href="quienes.php?id=76" title="Consejo de Administración">Consejo de Administración</a>
+                        </li>                   
+                        <li class="current">
+                            <a href="#" title="Gerentes">Gerentes</a>
+                                <ul>
+                                    <li><a href="quienes.php?id=88&tipo=contenido" title="Gerentes">Gerentes</a></li>
+                                    <li><a href="quienes.php?id=89&tipo=contenido" title="Gerentes de Área">Gerentes de Área</a></li>
+                                </ul>
+                        </li>                   
+                        <li class="current">
+                            <a href="quienes.php?id=90" title="Oficinas Regionales">Oficinas Regionales</a>
+                        </li>                   
+                        <li class="current">
+                            <a href="#" title="Código de Ética y Políticas">Código de Ética y Políticas</a>
+                                <ul>
+                                    <li><a href="quienes.php?id=92&tipo=contenido" title="Código de Ética">Código de Ética</a></li>
+                                    <li><a href="quienes.php?id=93&tipo=contenido" title="Políticas de la Institución">Políticas de la Institución</a></li>
+                                </ul>
+                        </li>                   
+                        <li class="current">
+                            <a href="#" title="Logros y Premios">Logros y Premios</a>
+                                <ul>
+                                    <li><a href="quienes.php?id=96&tipo=contenido" title="Logros">Logros</a></li>
+                                    <li><a href="quienes.php?id=97&tipo=contenido" title="Premios">Premios</a></li>
+                                </ul>
+                        </li>                   
+                        <li class="current">
+                            <a href="http://www.senatur.gov.py/" title="Acerca de Paraguay">Acerca de Paraguay</a>
+                        </li>                   
+                    </ul>
+                    <!-- FIN MENU DESPLEGABLE SUPERFISH -->
 
-               </div><!-- fin col_izquierda -->
-                
+                </div><!-- fin col_izquierda -->
             
                 <div class="right col_derecha">
-                
                 <h2>Filosofía</h2>                                      
-                        <!-- Sub Botonera-->
+                <!-- Sub Botonera-->            
+                <ul id="sub_botonera">
+                    <li><a class="activo" href="quienes.php?id=67&tipo=contenido" title="Nuestra Visión"> Nuestra Visión </a> </li>
+                    <li><a  href="quienes.php?id=68&tipo=contenido" title="Nuestra Misión"> Nuestra Misión </a> </li>
+                    <li><a  href="quienes.php?id=69&tipo=contenido" title="Objetivos Estratégicos"> Objetivos Estratégicos </a> </li>
+                    <li><a  href="quienes.php?id=70&tipo=contenido" title="Nuestros Principios"> Nuestros Principios </a> </li>
+                </ul><!-- fin sub_botonera -->
                                             
-                    
-                                
-                                    <ul id="sub_botonera">
-                                                                            <li><a class="activo" href="quienes.php?id=67&tipo=contenido" title="Nuestra Visión"> Nuestra Visión </a> </li>
-                                
-                                                                            <li><a  href="quienes.php?id=68&tipo=contenido" title="Nuestra Misión"> Nuestra Misión </a> </li>
-                                
-                                                                            <li><a  href="quienes.php?id=69&tipo=contenido" title="Objetivos Estratégicos"> Objetivos Estratégicos </a> </li>
-                                
-                                                                            <li><a  href="quienes.php?id=70&tipo=contenido" title="Nuestros Principios"> Nuestros Principios </a> </li>
-                                
-                                    
-                                    </ul><!-- fin sub_botonera -->
-                                            
-              
-                    <div class="contenido">
-                    <h2>Lista de documentos</h2>      
+                <div class="contenido">
+                <h2>Lista de documentos</h2>      
                     <div class="contenido ">
-                        <p><p><p class="MsoNormal"><span style="font-size: 10pt; line-height: 115%; font-family: Verdana, sans-serif; background-position: initial initial; background-repeat: initial initial;">
                             
                             <div id="documentViewer" class="flexpaper_viewer" style="width:770px;height:500px"></div>
                             <script type="text/javascript">
@@ -288,17 +225,11 @@
                                 );
                             </script>
 
-                            
-                    </span></p></p></p>                               
         </div><!-- fin contenido -->    
-                    </div><!-- fin contenido -->                   
-                    
-                </div><!-- fin col_derecha -->
-
-
-              <div class="clear"></div>
-             
-            </div> <!--fin contenedor -->
+        </div><!-- fin contenido -->                   
+        </div><!-- fin col_derecha -->
+        <div class="clear"></div>
+    </div> <!--fin contenedor -->
               
         </div><!-- fin bgcontenido -->
     </div><!-- fin bg -->
