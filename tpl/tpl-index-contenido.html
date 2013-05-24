@@ -11,49 +11,7 @@
                         <!-- Sub Botonera-->                                                             
                        {tpl-ruta}                
                     <div class="contenido">
-                            <div id="documentViewer" class="flexpaper_viewer" style="width:750px;height:500px; "></div>
-                            <script type="text/javascript">
-                                function getDocumentUrl(document){
-                                    return "php/services/view.php?doc={doc}&format={format}&page={page}".replace("{doc}",document);
-                                }
-
-                                var startDocument = "Paper";
-
-                                $('#documentViewer').FlexPaperViewer(
-                                        { config : {
-
-                                            SWFFile : 'docs/Paper.pdf.swf',
-
-                                            Scale : 0.6,
-                                            ZoomTransition : 'easeOut',
-                                            ZoomTime : 0.5,
-                                            ZoomInterval : 0.2, 
-                                            FitPageOnLoad : true,
-                                            FitWidthOnLoad : false,
-                                            FullScreenAsMaxWindow : false,
-                                            ProgressiveLoading : false,
-                                            MinZoomSize : 0.2,
-                                            MaxZoomSize : 5,
-                                            SearchMatchAll : false,
-                                            InitViewMode : 'Portrait',
-                                            RenderingOrder : 'flash',
-                                            StartAtPage : '',
-
-                                            ViewModeToolsVisible : true,
-                                            ZoomToolsVisible : true,
-                                            NavToolsVisible : true,
-                                            CursorToolsVisible : true,
-                                            SearchToolsVisible : false,
-                                            PrintEnabled : false,
-                                             PrintToolsVisible : false,
-                                            WMode : 'window',
-                                            localeChain: 'es_ES'
-                                        }}
-                                );
-                            </script>
-
-                            
-                    </span></p></p></p> 
+                             {tpl-body}
                     </div><!-- fin contenido -->                   
                     
                 </div><!-- fin col_derecha -->

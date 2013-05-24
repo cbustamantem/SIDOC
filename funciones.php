@@ -81,10 +81,8 @@ function formulario_sistema_medico()
 	}
 	//---------------------------
 	// MENU PRINCIPAL 
-	//---------------------------
-	$vl_cod_html_menu ="";
-    $obj_menu = new CLASS_WEB_MENU_PRINCIPAL($vlf_mysql_conexion);    
-    $vl_cod_html_menu =$obj_menu->MTD_RETORNAR_CODIGO_HTML();  
+	//---------------------------	
+    $obj_menu = new CLASS_WEB_MENU_PRINCIPAL($vlf_mysql_conexion);        
 
     //---------------------------
 	// RUTA
@@ -93,13 +91,40 @@ function formulario_sistema_medico()
     $obj_ruta = new CLASS_WEB_RUTA($vlf_mysql_conexion);    
     $vl_cod_html_ruta =$obj_ruta->MTD_RETORNAR_CODIGO_HTML();  
 
+    //LOGICA SITIO
+    //if isset documento
+    $body="n/n";
+    if (isset($_GET['documento']))
+    {
+    	//TODO: mostrar el documento
+    	$body = FN_LEER_TPL('tpl/tpl-documento.html');
+    }
+    else if(isset($_GET['busqueda']))
+   	{
+   		//TODO: mostrar resultados de busqueda
+   	}
+   	else if( (isset($_GET['categoria'])) &&   (! isset($_GET['subcategoria'])) )
+   	{
+   		//TODO: mostrar categorias
+   	}
+   	else if( (isset($_GET['categoria'])) &&   (isset($_GET['subcategoria'])) )
+   	{
+   		//TODO: mostrar subcategorias
+   	}
+   	else
+   	{
+   		//TODO: mostrar index
+   	}
+
    
 	//------------------------------
 	// APLICAR CONTENIDO
 	//-------------------------------
 	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-contenido}",$vlf_codigo_html_contenido,$vlf_codigo_html_principal);	
-	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-menu-principal}",$vl_cod_html_menu,$vlf_codigo_html_principal);	
+	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-menu-principal}",$obj_menu->MTD_RETORNAR_CODIGO_HTML(),$vlf_codigo_html_principal);	
 	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-ruta}",$vl_cod_html_ruta,$vlf_codigo_html_principal);	
+	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-body}",$body,$vlf_codigo_html_principal);	
+
 	
 	return $vlf_codigo_html_principal;
 	
