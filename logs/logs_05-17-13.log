@@ -1,0 +1,32 @@
+Fri May 17 9:34:17 PYT 2013: Sessions -> Default
+Fri May 17 9:34:17 PYT 2013: Sessions -> logged_in
+Fri May 17 9:34:17 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='' AND ip='127.0.0.1'
+Fri May 17 9:34:17 PYT 2013: Session Logout
+Fri May 17 11:40:18 PYT 2013: Sessions -> Default
+Fri May 17 11:40:18 PYT 2013: Sessions -> logged_in
+Fri May 17 11:40:18 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='' AND ip='127.0.0.1'
+Fri May 17 11:40:18 PYT 2013: Session Logout
+Fri May 17 11:40:20 PYT 2013: Sessions -> Default
+Fri May 17 11:40:20 PYT 2013: Sessions -> logged_in
+Fri May 17 11:40:20 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='' AND ip='127.0.0.1'
+Fri May 17 11:40:20 PYT 2013: Session Logout
+Fri May 17 11:40:24 PYT 2013: Sessions -> Default
+Fri May 17 11:40:24 PYT 2013: Sessions -> logged_in
+Fri May 17 11:40:24 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='' AND ip='127.0.0.1'
+Fri May 17 11:40:24 PYT 2013: Session Logout
+Fri May 17 11:40:26 PYT 2013: Sessions -> Default
+Fri May 17 11:40:26 PYT 2013: Sessions -> logged_in
+Fri May 17 11:40:26 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='' AND ip='127.0.0.1'
+Fri May 17 11:40:26 PYT 2013: Session Logout
+Fri May 17 11:40:27 PYT 2013: Sessions -> Default
+Fri May 17 11:40:27 PYT 2013: Sessions -> logged_in
+Fri May 17 11:40:27 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='' AND ip='127.0.0.1'
+Fri May 17 11:40:27 PYT 2013: Session Logout
+Fri May 17 11:40:29 PYT 2013: Sessions -> Default
+Fri May 17 11:40:29 PYT 2013: Sessions -> logged_in
+Fri May 17 11:40:29 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='' AND ip='127.0.0.1'
+Fri May 17 11:40:29 PYT 2013: Session Logout
+Fri May 17 11:40:32 PYT 2013: Sessions -> Default
+Fri May 17 11:40:32 PYT 2013: Sessions -> logged_in
+Fri May 17 11:40:32 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='' AND ip='127.0.0.1'
+Fri May 17 11:40:32 PYT 2013: Session Logout
