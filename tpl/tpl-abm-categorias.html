@@ -1,0 +1,30 @@
+<h3>Registro de Categorias</h3>
+
+	<div id="contact3"  style='height:350px;'>
+			<ul>
+				<li>			
+					<label for="descripcion" id="lb_descripcion" >*Descripcion:</label>
+					<input type="text" id="descripcion" name="descripcion" placeholder="Ingrese su descripcion" value=""/>
+				</li>
+			</ul>	
+			<label id="bubble_registrar" style="float:right;"></label><br>
+			<button id="btnSubmit">Ingresar Categoria</button>							
+			</div>	
+
+<script type="text/javascript">
+	<!--
+	$(document).ready(function(){
+		$("#btnSubmit").click(function() {
+			MTD_AGREGAR_PACIENTE();
+			});
+		
+        $('#bubble_registrar').CreateBubblePopup({
+                       themePath: '/composite.templates/consultorio/archivos_de_disenho/images/jquerybubblepopup-theme/',
+                       themeName: 'all-azure',
+                       position : 'right-middle',
+                       innerHtml: 'Se ha agregado <br>el producto al carrito ', mouseOver: 'hide'
+        });
+	});			
+//-->
+</script>
+
