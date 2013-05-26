@@ -23,6 +23,7 @@ class CLASS_WEB_RUTA
         $ruta= ' <ul id="sub_botonera">  <li><a class="activo" href="index.php" title="Inicio"> Inicio</a> </li>';
         $categoria ="";
         $subcategoria ="";
+        $titulo="<h2>Listado de Documentos</h2>";
         if (isset($_GET["categoria"]))
         {
             $datos = array();
@@ -32,6 +33,8 @@ class CLASS_WEB_RUTA
             {
                 $ruta.= '<li><a class="activo" href="index.php?categoria='.$categoria .'" title="'.$datos[0][0].'">'.$datos[0][0].'</a> </li>';
             }
+            
+            $titulo="<h2>Categorias: ".$datos[0][0]."</h2>";
         }
         if (isset($_GET["subcategoria"]))
         {
@@ -43,15 +46,16 @@ class CLASS_WEB_RUTA
             {
                 $ruta.= '<li><a class="activo"  href="index.php?categoria='.$categoria .'&subcategoria='.$subcategoria.'" title="'.$datos[0][0].'">'.$datos[0][0].'</a> </li>';
             }
+            $titulo="<h2>Sub Categorias: ".$datos[0][0]."</h2>";
         }
         if (isset($_GET["administracion"]))
         {
             
             $ruta.= '<li><a class="activo"  href="index.php?administracion=1" title="Administracion">Administraci&oacute;n</a> </li>';
-            
+            $titulo="<h2>Administracion de documentos</h2>";   
         }
         $ruta.="</ul>";
-        $this->vlc_codigo_html=$ruta;
+        $this->vlc_codigo_html=$titulo.$ruta;
     }
 
     function MTD_RETORNAR_CODIGO_HTML()

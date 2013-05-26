@@ -23,27 +23,38 @@ class CLASS_WEB_MENU_PRINCIPAL
     {
        $menues = array();
        $menues =  FN_RUN_QUERY("select idcategoria, categoria from categorias", 2,$this->vlc_conexion);
-       $codigo_html = "<ul class='sf-menu'>";
+       $codigo_html = "<ul class='sf-menu' style='margin-top:60px;'>";
        $codigo_submenu="";
-       foreach($menues as $menu)
+       if (isset($_GET['administracion']))
        {
-            $codigo_html.="<li class='current'><a href='index.php?seccion=productos&categoria=".$menu[0]."' title='".$menu[1]."'>".$menu[1]."</a>";
-            $submenues = array();
-            $submenues = FN_RUN_QUERY("select idsubcategoria,subcategoria from subcategorias where idcategoria=".$menu[0],2,$this->vlc_conexion );
-            if ($submenues)
-            {
-                $codigo_submenu="<ul>";
-                foreach ($submenues as $submenu) 
-                {                    
-                    $codigo_submenu.="<li><a href='index.php?seccion=productos&categoria=".$menu[0]."&subcategoria=".$submenu[0]."' title='".$submenu[1]."'>".$submenu[1]."</a></li>";
-                }
-                $codigo_submenu.="</ul>";
-                $codigo_html.=$codigo_submenu;
-                $codigo_submenu="";
-            }
-            
-            $codigo_html.="</li>";
+            $codigo_html.="<li class='current'><a href='index.php?administracion=1&seccion=categorias' title='Categorias'>Categorias</a>";
+            $codigo_html.="<li class='current'><a href='index.php?administracion=1&seccion=subcategorias' title='SubCategorias'>SubCategorias</a>";
+            $codigo_html.="<li class='current'><a href='index.php?administracion=1&seccion=usuarios' title='Usuarios'>Usuarios</a>";
+            $codigo_html.="<li class='current'><a href='index.php?administracion=1&seccion=perfiles' title='Perfil de Acceso'>Perfil de Acceso</a>";
        }
+       else
+       {
+           
+           foreach($menues as $menu)
+           {
+                $codigo_html.="<li class='current'><a href='index.php?seccion=documentos&categoria=".$menu[0]."' title='".$menu[1]."'>".$menu[1]."</a>";
+                $submenues = array();
+                $submenues = FN_RUN_QUERY("select idsubcategoria,subcategoria from subcategorias where idcategoria=".$menu[0],2,$this->vlc_conexion );
+                if ($submenues)
+                {
+                    $codigo_submenu="<ul>";
+                    foreach ($submenues as $submenu) 
+                    {                    
+                        $codigo_submenu.="<li><a href='index.php?seccion=documentos&categoria=".$menu[0]."&subcategoria=".$submenu[0]."' title='".$submenu[1]."'>".$submenu[1]."</a></li>";
+                    }
+                    $codigo_submenu.="</ul>";
+                    $codigo_html.=$codigo_submenu;
+                    $codigo_submenu="";
+                }
+                
+                $codigo_html.="</li>";
+           }
+        }
        $codigo_html.="</ul>";
        $this->vlc_codigo_html= $codigo_html;
     }

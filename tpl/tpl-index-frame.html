@@ -126,16 +126,16 @@
             <div class="s960 divcentrado" id="header">
                   
             <div class="headertop">
+
                     <ul class="botonera">
                         <li><a href="./" title="Inicio"><img src="images/btn_inicio.png" width="36" height="37" alt="Inicio" /></a></li>
                         <li><a id="btn_quienes" href="index.php" title="INICIO">INICIO</a></li>
-                        <li><a id="btn_involucrate" href="index.php?seccion=administracion" title="ADMINISTRACION">ADMINISTRACION</a></li>
+                        <li><a id="btn_involucrate" href="index.php?seccion=administracion&administracion=1" title="ADMINISTRACION">ADMINISTRACION</a></li>
                         
                     </ul><!-- fin botonera -->
-<!--{tpl-login} -->                     
-                </div><!-- fin headertop -->
                 
-                                <div class="headerbottom">
+                </div><!-- fin headertop -->
+                            <div class="headerbottom">
                     <div class="logotipo"><a href="./" title="Fundacion Paraguaya"><img src="images/logo_fundacionparaguaya.jpg" width="183" height="108" alt="Fundación Paraguaya" /></a></div><!-- fin logotipo -->
                     
                     <div class="right s400">
@@ -147,7 +147,9 @@
                             <a href="#" onclick="if(($('#txt_busqueda').val()!='') && ($('#txt_busqueda').val()!='Buscar...')){ location.href='busqueda.php?buscar='+$('#txt_busqueda').val(); }else{ alert('Ingrese la informacion a buscar'); }" title="Buscar"><img src="images/ico_buscador.png" width="26" height="26" alt="Buscar" /></a>
                         </form><!-- fin buscador -->
                     </div><!-- fin right -->
+
                 </div><!-- fin headerbottom -->                
+
             </div><!-- fin header -->
         </div><!-- fin bgheader -->
         

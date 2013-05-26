@@ -57,28 +57,19 @@ function formulario_sistema_medico()
 	//$vlf_mssql_conexion= FN_DB_MSSQL_CONEXION();
 	$vlf_mysql_conexion= FN_DB_MYSQL_CONEXION();
 	//$resultest = FN_RUN_QUERY("select * from clientes",6,$vlf_mysql_conexion);
-	
+	FN_NET_LOGGER("INCICIO SISTEMA");
 	//
 	//-----------------------------
 	//- LECTURA DEL TPL PRINCIPAL
 	//-----------------------------
 	$vlf_codigo_html_principal = FN_LEER_TPL('tpl/tpl-index-frame.html');
 	$vlf_codigo_html_contenido = FN_LEER_TPL('tpl/tpl-index-contenido.html');
-	//$vlf_codigo_html_menu 	   = FN_LEER_TPL('tpl/tpl-index-menu.html');
+	$vl_cod_html_login 	   = FN_LEER_TPL('tpl/tpl-index-login.html');
 	
 
 	$obj_session = new CLASS_SESSION($vlf_mysql_conexion);
 	// -> se va a la seccion admin
-	$vlf_session_activada = $obj_session->MTD_START();
-	if ($vlf_session_activada == true)
-	{
-		$obj_intranet = new CLASS_WEB_INTRANET ($vlf_mysql_conexion);
-		$vlf_codigo_html_principal = $obj_intranet->MTD_RETORNAR_CODIGO_HTML ();
-	}
-	else
-	{
-		//$vlf_codigo_html_principal  = FN_LOGIN();
-	}
+	
 	//---------------------------
 	// MENU PRINCIPAL 
 	//---------------------------	
@@ -92,7 +83,6 @@ function formulario_sistema_medico()
     $vl_cod_html_ruta =$obj_ruta->MTD_RETORNAR_CODIGO_HTML();  
 
     //LOGICA SITIO
-    //if isset documento
     $body="n/n";
     if (isset($_GET['documento']))
     {
@@ -111,9 +101,26 @@ function formulario_sistema_medico()
    	{
    		//TODO: mostrar subcategorias
    	}
+   	else if(isset($_GET['administracion']))
+   	{
+   		LOGGER::LOG("Seccion administracion ");
+   		//TODO: mostrar subcategorias
+   		$vlf_session_activada = true;
+		if ($vlf_session_activada == true)
+		{
+			$obj_intranet = new CLASS_WEB_INTRANET ($vlf_mysql_conexion);
+			$body= $obj_intranet->MTD_RETORNAR_CODIGO_HTML ();
+		}
+		else
+		{
+			//$vlf_codigo_html_principal  = FN_LOGIN();
+		}
+   	}
    	else
    	{
    		//TODO: mostrar index
+   		//$vlf_session_activada = $obj_session->MTD_START();
+		
    	}
 
    
@@ -123,6 +130,7 @@ function formulario_sistema_medico()
 	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-contenido}",$vlf_codigo_html_contenido,$vlf_codigo_html_principal);	
 	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-menu-principal}",$obj_menu->MTD_RETORNAR_CODIGO_HTML(),$vlf_codigo_html_principal);	
 	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-ruta}",$vl_cod_html_ruta,$vlf_codigo_html_principal);	
+	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-login}",$vl_cod_html_login,$vlf_codigo_html_principal);	
 	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-body}",$body,$vlf_codigo_html_principal);	
 
 	
