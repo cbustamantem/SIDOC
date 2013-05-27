@@ -1,0 +1,135 @@
+
+<h1>Documentoes</h1>
+<div style='float:right;margin-top:-20px;'>
+	<img src="archivos_de_disenho/images/icon-add.png"/><a href="#agregarDocumento" id="agregarDocumento" >Agregar Documento</a>
+</div>
+<span>Busqueda </span><br>
+<form id="myform" action="index.php?id=registro&seccion=investigaciones" method="post">
+<input  id="busqueda" name="busqueda" placeholder="Busqueda de investigaciones" value="{tpl-busqueda}"/>
+ <button id="buscar" style="width:80px;">Buscar</button>
+ <div id="resultado_busqueda">
+ {tpl-datos}
+ </div>
+ </form>
+ <script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				$('#example').dataTable({
+					 "sScrollY": "250px"
+		            ,"bPaginate": false
+		            ,"bFilter": false
+		            ,"bJQueryUI": true
+		            ,"bInfo": true
+		            ,"bSort": true
+					,"oLanguage": {
+						"sProcessing":     "Procesando...",
+					    "sLengthMenu":     "Mostrar _MENU_ registros",
+					    "sZeroRecords":    "No se encontraron resultados",
+					    "sEmptyTable":     "Ningún dato disponible en esta tabla",
+					    "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+					    "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
+					    "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
+					    "sInfoPostFix":    "",
+					    "sSearch":         "Buscar:",
+					    "sUrl":            "",
+					    "sInfoThousands":  ",",
+					    "sLoadingRecords": "Cargando...",
+					    "oPaginate": {
+					        "sFirst":    "Primero",
+					        "sLast":     "Último",
+					        "sNext":     "Siguiente",
+					        "sPrevious": "Anterior"
+					    },
+					    "fnInfoCallback": null,
+					    "oAria": {
+					        "sSortAscending":  ": Activar para ordernar la columna de manera ascendente",
+					        "sSortDescending": ": Activar para ordernar la columna de manera descendente"
+					    }
+						}
+					
+				}
+				);	
+			
+			} );
+
+		</script>
+ <script type="text/javascript">
+	<!--
+		var operaciones_ajax="operaciones.php";
+	$(document).ready(function(){
+		$("#buscar").click(function() {			
+			//MTD_BUSCAR_VADEMECUM();
+			$("#myform").submit();
+			});
+		
+		
+        
+        $("#agregarDocumento").click(function() {
+        	MTD_MOSTRAR_FORMULARIO_DOCUMENTOS();
+			});		
+	});					 
+	function MTD_MOSTRAR_FORMULARIO_DOCUMENTOS()
+	{
+		var codigo ="";
+	    var mensaje_error="";    
+
+	    
+	    // Load dialog on click	
+	    //$('#basic-modal-content').modal();
+		var parametros 	= {operacion: "mostrar_abm_documentos"};	
+		$.ajax({
+	        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+	        success: function(data) 
+	        {
+	        	$("#basic-modal-content").empty();
+	        	$("#basic-modal-content").append(data);
+	        	$('#basic-modal-content').modal();    	
+	        	
+	         }
+	    });
+	   
+	  	
+	}
+	function MTD_AGREGAR_DOCUMENTO()
+	{
+
+		var codigo ="";
+	    var mensaje_error="";    
+	    var titulo="";
+	    var descripcion="";
+	    var autores="";
+	    titulo=$("#titulo").val();
+	    autores=$("#autores").val();
+	    descripcion=$("#descripcion").val();
+	    	//Load dialog on click	
+	        //$('#basic-modal-content').modal();
+	    	var parametros 	= {operacion: "ingresar_documento", titulo: titulo, descripcion: descripcion, autores: autores};
+	     
+	        // Load dialog on click	
+	        //$('#basic-modal-content').modal();
+	   if (titulo !=""   && descripcion != "" && autores !="" )
+	   {
+	    	$.ajax({
+	            url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+	            success: function(data) 
+	            {
+	            	if (data == "1")
+	            	{
+	            		$("#contenedor_resultado").empty();
+	               	 	$("#contenedor_resultado").append("<br><br><h3>Investigacion creada exitosamente </h3>");	
+	            	}
+	            	else
+	            	{
+	            		alert(data);
+	            	}
+	             }
+	        });
+	   }
+	   else
+	   {
+	   		alert("Atencion,<br> Debera ingresar un titulo, una descripcion y un autor");		   
+	   }
+	   
+	}	    
+			
+//-->
+</script>

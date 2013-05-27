@@ -29,6 +29,7 @@ class CLASS_WEB_MENU_PRINCIPAL
        {
             $codigo_html.="<li class='current'><a href='index.php?administracion=1&seccion=categorias' title='Categorias'>Categorias</a>";
             $codigo_html.="<li class='current'><a href='index.php?administracion=1&seccion=subcategorias' title='SubCategorias'>SubCategorias</a>";
+            $codigo_html.="<li class='current'><a href='index.php?administracion=1&seccion=documentos' title='Documentos'>Documentos</a>";
             $codigo_html.="<li class='current'><a href='index.php?administracion=1&seccion=usuarios' title='Usuarios'>Usuarios</a>";
             $codigo_html.="<li class='current'><a href='index.php?administracion=1&seccion=perfiles' title='Perfil de Acceso'>Perfil de Acceso</a>";
        }

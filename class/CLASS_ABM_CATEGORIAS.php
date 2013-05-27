@@ -4,11 +4,13 @@ class CLASS_ABM_CATEGORIAS
 	private $id_categoria;
 	private $categoria;
 	private $codigo_html;
+	private $db_cn;
 
 	function __construct ($vp_cn)
     {
-    	$this->vlc_db_cn = $vp_cn;
+    	$this->db_cn = $vp_cn;
         $this->MTD_LIMPIAR_VARIABLES();
+        $this->MTD_INICIALIZAR_PAGINA ();
                      
     }
     function MTD_LIMPIAR_VARIABLES()
@@ -25,43 +27,59 @@ class CLASS_ABM_CATEGORIAS
     	LOGGER::LOG("Asignando el template:");
     	
     	$vlc_codigo_html=FN_LEER_TPL('tpl/tpl-abm-categorias.html');
-    	
+    	$vlc_codigo_html = FN_REEMPLAZAR("{tpl-lista-categorias}",$this->MTD_LISTAR_CATEGORIAS(),$vlc_codigo_html );
     	$this->vlc_codigo_html= $vlc_codigo_html;
         
        
     }
-    function MTD_ACTUALIZAR_MEMBRETE()
+    function MTD_LISTAR_CATEGORIAS()
     {
-    	LOGGER::LOG("ACTUALIZAR MEMBRETE");
-    	$encabezado="";
-    	$pie="";
-    	$encabezado = FN_RECIBIR_VARIABLES ("encabezado");
-    	$pie		= FN_RECIBIR_VARIABLES ("pie");
-    	$sql ="UPDATE usuarios set encabezado_membrete='$encabezado' , pie_membrete='$pie'  where id_usuario=".$_SESSION['uid']." limit 1";
-    	$resultado = false;
-    	LOGGER::LOG("ACTUALIZAR MEMBRETE > SQL: ".$sql);
-    	$resultado = FN_RUN_NONQUERY($sql,$this->vlc_db_cn);
+    	$codigo_html="";
+    	$datos=array();
+    	$datos = FN_RUN_QUERY("SELECT idcategoria, categoria from categorias",2,$this->db_cn);
+    	$encabezado= array();
+    	$codigo_html='<table class=" table table-bordered " id="example">
+    	<thead>
+        <tr>
+            <th>#</th>
+            <th>Descripcion</th>            
+            <th>Opciones</th>            
+        </tr>
+        </thead>
+    	<tbody>        
+        ';
+        foreach ($datos as $key => $value) 
+        {
+        	$codigo_html.='
+        	<tr >
+        	<td>'.$value[0].'</td>
+            <td>'.$value[1].'</td>
+            <td>
+      
+				  <div class="btn-group">
+				    <a class="btn" href="#Editar" onclick="javascript:MTD_EDITAR_CATEGORIA('.$value[0].')"><i class="icon-edit"></i></a>
+				    <a class="btn" href="#Eliminar" onclick="javascript:MTD_ELIMINAR_CATEGORIA('.$value[0].')"><i class="icon-remove-circle"></i></a>				    				    
+				  </div>
+				
+            </td>
+            </tr>
+        	';        	
+        	
+        }
+        $codigo_html.="    </tbody> </table>";
+        return $codigo_html;
     	
-    	if ($resultado == true)
-    	{
-    		return "0";
-    	}
-    	else
-    	{
-    		return "Error en la operacion de actualizar membrete";
-    	}
-    	
+		
     }
-    function MTD_AGREGAR_ESPECIALIDAD()
+    function MTD_AGREGAR_CATEGORIA()
     {
-    	LOGGER::LOG("AGREGAR ESPECIALIDAD");
-    	$anho=FN_RECIBIR_VARIABLES("anho");
-    	$especialidad=FN_RECIBIR_VARIABLES("especialidad");
-    	$sql="INSERT INTO especialidades (anho,especialidad,id_doctor) values
-    	('".$anho."','".$especialidad."',".$_SESSION['uid'].");";
+    	LOGGER::LOG("AGREGAR CATEGORIA");
+    	$descripcion=FN_RECIBIR_VARIABLES("descripcion");
+    	
+    	$sql="INSERT INTO categorias (categoria) values ('".$descripcion."');";
     	$resultado=false;
-    	LOGGER::LOG("AGREGAR ESPECIALIDAD: SQL:".$sql);
-    	$resultado= FN_RUN_NONQUERY($sql,$this->vlc_db_cn );
+    	LOGGER::LOG("AGREGAR CATEGORIAS: SQL:".$sql);
+    	$resultado= FN_RUN_NONQUERY($sql,$this->db_cn );
     	if ($resultado == true)
     	{
     		return "0";
@@ -70,6 +88,24 @@ class CLASS_ABM_CATEGORIAS
     	{
     		return "Error en la operacion de insercion de especialidad";
     	}
+    }
+    function MTD_ELIMINAR_CATEGORIA()
+    {
+        LOGGER::LOG("ELIMINAR CATEGORIA");
+        $idcategoria=FN_RECIBIR_VARIABLES("idcategoria");
+        
+        $sql="DELETE  from categorias  where idcategoria= ".$idcategoria." limit 1;";
+        $resultado=false;
+        LOGGER::LOG("ELIMINAR CATEGORIAS: SQL:".$sql);
+        $resultado= FN_RUN_NONQUERY($sql,$this->db_cn );
+        if ($resultado == true)
+        {
+            return "0";
+        }
+        else
+        {
+            return "Error en la operacion de ELIMINAR de CATEGORIAS";
+        }
     }
    	function MTD_RECIBIR_DATOS_DB ($vp_arreglo_datos)
     {   
@@ -117,54 +153,8 @@ class CLASS_ABM_CATEGORIAS
 		}
 				
 	}   
-	function MTD_DB_LISTAR_MEMBRETE()
-	{
-		$resultado = array();
-		$sql = "SELECT encabezado_membrete, pie_membrete from usuarios where id_usuario = ".$_SESSION['uid'];
-		$resultado= FN_RUN_QUERY($sql, 2,$this->vlc_db_cn);
-		return $resultado;
-	}
-    function MTD_DB_LISTAR_ESPECIALIDAD($vp_filtrar = false)
-    {
-    	$vlf_sql=" 
-    		SELECT
-    		id_especialidad,
-    		anho, 
-			especialidad						
-			FROM especialidades 
-    		WHERE id_doctor =".$_SESSION['uid'];
-        if ($vp_filtrar)
-        {
-            $vlf_sql .= "where id_cliente=" . $this->vlc_id_cliente;
-        }
-       
-        $vlf_arreglo_datos = FN_RUN_QUERY($vlf_sql,6, $this->vlc_db_cn );
-        return $vlf_arreglo_datos;
-    }
-    function MTD_DB_AGREGAR ()
-    {
-        $resultado = false;
-        $vlf_sql = "
-        INSERT INTO clientes
-    	( 
-    	nombre_cliente, 
-			apellido_cliente, 
-			holding, 
-			empresa, 
-			sucursal
-			)
-		VALUES
-    	('".		
-		$this->vlc_nombre_cliente . "','".
-		$this->vlc_apellido_cliente . "','". 
-		$this->vlc_holding . "','".
-		$this->vlc_empresa. "','".
-		$this->vlc_sucursal. "');";
-                
-        $resultado = FN_RUN_NONQUERY($vlf_sql, $this->vlc_db_cn );
-        //echo "sql: $vlf_sql";        
-        return $resultado;
-    }
+	
+   
     function MTD_DB_ACTUALIZAR ()
     {
         $resultado = false;

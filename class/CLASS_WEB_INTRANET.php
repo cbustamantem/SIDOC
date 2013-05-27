@@ -35,19 +35,28 @@ class CLASS_WEB_INTRANET
 	    {
 	        $vlf_seccion = $_REQUEST['seccion'];
 		  
-		    if ($vlf_seccion == 'consultorio')
+		    if ($vlf_seccion == 'categorias')
 		    {
-		        include ('CLASS_CONSULTORIO.php');
-		        $obj_consultorio = new CLASS_CONSULTORIO($this->vlc_db_conexion );
-		        $vlf_codigo_html_seccion = $obj_consultorio->MTD_RETORNAR_CODIGO_HTML();
+		    	LOGGER::LOG("Web: seccion categorias");
+		        include ('CLASS_ABM_CATEGORIAS.php');
+		        $obj_seccion = new CLASS_ABM_CATEGORIAS($this->vlc_db_conexion );
+		        $this->vlc_codigo_html  = $obj_seccion->MTD_RETORNAR_CODIGO_HTML();
 		    }
-		    elseif ($vlf_seccion == 'investigaciones')
+		    elseif ($vlf_seccion == 'subcategorias')
+		    {
+		    	LOGGER::LOG("Web: seccion subcategorias");
+		        include ('CLASS_ABM_SUBCATEGORIAS.php');
+		        $obj_seccion = new CLASS_ABM_SUBCATEGORIAS($this->vlc_db_conexion );
+		        $this->vlc_codigo_html  = $obj_seccion->MTD_RETORNAR_CODIGO_HTML();
+		    }
+
+		    elseif ($vlf_seccion == 'documentos')
 		    {		    	
 		    			    	
-		    	include ('CLASS_INVESTIGACIONES.php');
-		    	$obj_perfil = new CLASS_INVESTIGACIONES($this->vlc_db_conexion );
+		    	include ('CLASS_DOCUMENTOS.php');
+		    	$obj_perfil = new CLASS_DOCUMENTOS($this->vlc_db_conexion );
 		    	$obj_perfil->MTD_INICIALIZAR_PAGINA();
-		    	$vlf_codigo_html_seccion = $obj_perfil->MTD_RETORNAR_CODIGO_HTML();
+		    	$this->vlc_codigo_html = $obj_perfil->MTD_RETORNAR_CODIGO_HTML();
 		    }
 		    elseif ($vlf_seccion == 'salir')
 		    {
@@ -67,12 +76,10 @@ class CLASS_WEB_INTRANET
 	    }
 	    
 	    
-	    $vlf_codigo_html_principal = FN_REEMPLAZAR('{tpl-contenido}', $vlf_codigo_html_seccion, $vlf_codigo_html_principal);
-	   
 	    //-----------------------------
 	    //- RETORNO DE CODIGO HTML UP -
 	    //-----------------------------
-	    $this->vlc_codigo_html= $vlf_codigo_html_principal;
+	   // $this->vlc_codigo_html= $vlf_codigo_html_principal;
              
         
         
@@ -84,8 +91,8 @@ class CLASS_WEB_INTRANET
         //-------------------------------------------
         // IMPRIME EL CODIGO HTML
         //-------------------------------------------
-        $this->vlc_codigo_html = $vlf_codigo_html_principal;
-        return $this->vlc_codigo_html;
+       // $this->vlc_codigo_html = $vlf_codigo_html_principal;
+        //return $this->vlc_codigo_html;
     }
     function MTD_RETORNAR_CODIGO_HTML ()
     {

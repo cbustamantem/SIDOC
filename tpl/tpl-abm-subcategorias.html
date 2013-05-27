@@ -1,0 +1,133 @@
+<h3>Registro de SubCategorias</h3>
+
+	<form class="form-horizontal" action="">
+  <div class="control-group">
+    <label class="control-label"  for="inputDescripcion">Descripcion</label>    
+    <div class="controls">
+      <input type="text" id="descripcion" placeholder="Ingrese la descripcion de la subcategoria">
+      {tpl-lista-categorias}
+      <button  type="button" class="btn btn-info" id="btnIngresar"><i class="icon-check icon-white"></i> Ingresar</button>     
+      <input type="hidden" id="id"/>
+    </div>
+  </div>   
+</form>
+<script type="text/javascript" charset="utf-8">
+	var operaciones_ajax="operaciones.php";
+	$(document).ready(function(){
+		$("#btnIngresar").click(function() {
+			MTD_AGREGAR_SUBCATEGORIA();
+			});			
+	});			
+	function MTD_AGREGAR_SUBCATEGORIA()
+	{
+		var descripcion ="";
+		var idcategoria ="";
+	    var mensaje_error="";    
+
+	    descripcion     		=$("#descripcion").val();
+	    idcategoria 			=$("#lst_categorias :selected").val();
+	    // Load dialog on click	
+	    //$('#basic-modal-content').modal();
+		var parametros 	= {operacion: "agregar_subcategoria", descripcion: descripcion, idcategoria:idcategoria};	
+		$.ajax({
+	        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+	        success: function(data) 
+	        {
+	        	
+	        	if (data == "0")
+                    {
+                    	//location.href="index.php?id=registro&seccion=consultorio";
+                        //ENVIAR AL FORMULARIO DE LOGIN
+                        //TODO ACTUALIZAR GRILLA
+                        MTD_LISTAR_SUBCATEGORIA();
+                    }
+                    else 
+                    {
+
+                    }
+	         }
+	    });	    	   	
+	}
+
+	function MTD_LISTAR_SUBCATEGORIA()
+	{		
+	    var mensaje_error="";    
+		var parametros 	= {operacion: "listar_subcategorias"};	
+		$.ajax({
+	        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+	        success: function(data) 
+	        {
+	        	 $("#resultado_subcategorias").empty();
+        	 	$("#resultado_subcategorias").append(data);     
+        	 	$('#example').dataTable( {
+					"sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
+					"sPaginationType": "bootstrap",
+					
+					"oLanguage": {
+						"sLengthMenu": "_MENU_ records per page"
+					}
+				} );   	 	        	        
+         	}
+    });
+	}
+
+	function MTD_ELIMINAR_SUBCATEGORIA(vp_id_subcategoria)
+	{
+		var descripcion ="";
+	    var mensaje_error="";    
+
+	    descripcion     		=$("#descripcion").val();
+	    // Load dialog on click	
+	    //$('#basic-modal-content').modal();
+	    var conf = confirm("Esta seguro de eliminar la subcategoria #" + vp_id_subcategoria);
+
+	    if(conf == true)
+	    {
+
+			    var parametros 	= {operacion: "eliminar_subcategoria", idsubcategoria: vp_id_subcategoria};	
+				$.ajax({
+			        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+			        success: function(data) 
+			        {
+			        	
+			        	if (data == "0")
+		                    {
+		                    	//location.href="index.php?id=registro&seccion=consultorio";
+		                        //ENVIAR AL FORMULARIO DE LOGIN
+		                        //TODO ACTUALIZAR GRILLA
+		                        MTD_LISTAR_SUBCATEGORIA();
+		                    }
+		                    else 
+		                    {
+		                    	
+		                    }
+			         }
+			    });	  
+
+	    }
+
+		  	   	
+	}
+	function MTD_ACTUALIZAR_SUBCATEGORIA()
+	{
+		var codigo ="";
+	    var mensaje_error="";    
+
+	    
+	    // Load dialog on click	
+	    //$('#basic-modal-content').modal();
+		var parametros 	= {operacion: "mostrar_editar_datos_personales"};	
+		$.ajax({
+	        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+	        success: function(data) 
+	        {
+	        	$("#basic-modal-content").empty();
+	        	$("#basic-modal-content").append(data);
+	        	$('#basic-modal-content').modal();    		        
+	         }
+	    });  	
+	}
+</script>
+<div id="resultado_subcategorias">
+{tpl-lista-subcategorias}
+</div>

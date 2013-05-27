@@ -25,8 +25,9 @@ include_once 'includes/FN_OBTENER_DATOS_ARREGLO.php';
 include_once 'includes/FN_GENERADOR_JSON.php';
 include_once ('includes/FN_NET_LOGGER.php');
 include_once ('includes/FN_RECIBIR_VARIABLES.php');
+include_once ('includes/FN_LEER_TPL.php');
 include_once ('class/LOGGER.php');
-include_once ('class/CLASS_SESSION.php');
+//include_once ('class/CLASS_SESSION.php');
 
 
 //-----------------------------
@@ -94,123 +95,79 @@ if (isset($_POST['operacion']))
 		include ('class/CLASS_ABM_USUARIOS.php');
 		$obj = new CLASS_ABM_USUARIOS($vlf_mysql_conexion);
 		MTD_RETORNAR_HTML($obj->MTD_RECUPERAR_PASSWORD());
-	}
-	else if ($vl_operacion == "mostrar_publicidad")
-	{
-		LOGGER::LOG("--- OPERACIONES: Mostrar Publicidad--");
-		include ('class/CLASS_VADEMECUM.php');
-		$obj = new CLASS_VADEMECUM($vlf_mysql_conexion );
-		$cod_producto= FN_RECIBIR_VARIABLES("cod_producto");
-		LOGGER::LOG("--- OPERACIONES: Mostrar Publicidad Producto:".$cod_producto);
-		$vl_cod_html_base =  $obj->MTD_BUSCAR_PROSPECTO($cod_producto);
-		echo utf8_encode($vl_cod_html_base);				
-	}
-	else if ($vl_operacion == "mostrar_perfil_doctor")
-	{	
-		LOGGER::LOG("--- OPERACIONES: mostrar_perfil_doctor--");
-		include ('class/CLASS_ABM_USUARIOS.php');
-		$obj = new CLASS_ABM_USUARIOS($vlf_mysql_conexion);
-		echo $obj->MTD_MOSTRAR_PERFIL_DOCTOR();	
 	}	
-	else 
+	else  
 	{
-		$obj_session = new CLASS_SESSION($vlf_mysql_conexion);
-		if ($obj_session->check_session())
-		{
+		//$obj_session = new CLASS_SESSION($vlf_mysql_conexion);
+		//if ($obj_session->check_session())
+
+		
 			switch ($vl_operacion)
 			{
 				//**************************************************
 				//* SECCION : AGREGAR USUARIO
 				//**************************************************
-				case "agregar_paciente":
-					LOGGER::LOG("--- OPERACIONES: Agregar Paciente  --");
-					include ('class/CLASS_ABM_PACIENTES.php');
-					$obj = new CLASS_ABM_PACIENTES($vlf_mysql_conexion );
-					$vl_cod_html_base = $obj->MTD_AGREGAR_PACIENTE();
-					MTD_RETORNAR_HTML($vl_cod_html_base);
+				case "agregar_categoria":
+
+
+					LOGGER::LOG("--- OPERACIONES: Agregar Categoria  --");
+					include ('class/CLASS_ABM_CATEGORIAS.php');
+					$obj = new CLASS_ABM_CATEGORIAS($vlf_mysql_conexion );
+					MTD_RETORNAR_HTML($obj->MTD_AGREGAR_CATEGORIA()); 																
+				break;
+				
+
+				case "listar_categorias":
+					LOGGER::LOG("--- OPERACIONES: Listar Categoria  --");
+					include ('class/CLASS_ABM_CATEGORIAS.php');
+					$obj = new CLASS_ABM_CATEGORIAS($vlf_mysql_conexion );					
+					$vl_cod_html_base = $obj->MTD_LISTAR_CATEGORIAS();
+					MTD_RETORNAR_HTML($vl_cod_html_base); 
 				//$vl_cod_html_seccion= $obj_web_busqueda->MTD_REALIZAR_BUSQUEDA();
 				break;
-				case "editar_paciente":
-					LOGGER::LOG("--- OPERACIONES: Editar Paciente  --");
-					include ('class/CLASS_ABM_PACIENTES.php');
-					$obj = new CLASS_ABM_PACIENTES($vlf_mysql_conexion );
-					$vl_cod_html_base = $obj->MTD_EDITAR_PACIENTE();
-					MTD_RETORNAR_HTML($vl_cod_html_base);
-					//$vl_cod_html_seccion= $obj_web_busqueda->MTD_REALIZAR_BUSQUEDA();
-					break;			
-				case "agregar_historial":
-					LOGGER::LOG("--- OPERACIONES: Agregar Historial  --");
-					include ('class/CLASS_ABM_HISTORIAL.php');
-					$obj = new CLASS_ABM_HISTORIAL($vlf_mysql_conexion );
-					$vl_cod_html_base = $obj->MTD_AGREGAR_HISTORIAL();
-					MTD_RETORNAR_HTML($vl_cod_html_base);
+
+				case "eliminar_categoria":
+					LOGGER::LOG("--- OPERACIONES: Eliminar Categoria  --");
+					include ('class/CLASS_ABM_CATEGORIAS.php');
+					$obj = new CLASS_ABM_CATEGORIAS($vlf_mysql_conexion );					
+					MTD_RETORNAR_HTML($obj->MTD_ELIMINAR_CATEGORIA()); 
 				//$vl_cod_html_seccion= $obj_web_busqueda->MTD_REALIZAR_BUSQUEDA();
 				break;
-				case "agregar_especialidad":
-					LOGGER::LOG("--- OPERACIONES: Agregar Especialidad--");
-					include ('class/CLASS_ABM_PERFIL.php');
-					$obj = new CLASS_ABM_PERFIL($vlf_mysql_conexion );
-									
-					$vl_cod_html_base =  $obj->MTD_AGREGAR_ESPECIALIDAD();
-					LOGGER::LOG("Agregar Especialidad >".$vl_cod_html_base );
-					MTD_RETORNAR_HTML($vl_cod_html_base);
+
+
+				case "agregar_subcategoria":
+
+
+					LOGGER::LOG("--- OPERACIONES: Agregar Categoria  --");
+					include ('class/CLASS_ABM_SUBCATEGORIAS.php');
+					$obj = new CLASS_ABM_SUBCATEGORIAS($vlf_mysql_conexion );
+					MTD_RETORNAR_HTML($obj->MTD_AGREGAR_SUBCATEGORIA()); 																
 				break;
-				case "listar_especialidades":
-					LOGGER::LOG("--- OPERACIONES: Listar Especialidad--");
-					include ('class/CLASS_ABM_PERFIL.php');
-					$obj = new CLASS_ABM_PERFIL($vlf_mysql_conexion );						
-					$vl_cod_html_base =  $obj->MTD_LISTAR_ESPECIALIDADES();					
-					MTD_RETORNAR_HTML2($vl_cod_html_base);
+				
+
+				case "listar_subcategorias":
+					LOGGER::LOG("--- OPERACIONES: Listar Categoria  --");
+					include ('class/CLASS_ABM_SUBCATEGORIAS.php');
+					$obj = new CLASS_ABM_SUBCATEGORIAS($vlf_mysql_conexion );					
+					$vl_cod_html_base = $obj->MTD_LISTAR_SUBCATEGORIAS();
+					MTD_RETORNAR_HTML($vl_cod_html_base); 
+				//$vl_cod_html_seccion= $obj_web_busqueda->MTD_REALIZAR_BUSQUEDA();
 				break;
-				case "buscar_vademecum":
-					LOGGER::LOG("--- Operaciones: Buscar Vademecum--");
-					include ('class/CLASS_VADEMECUM.php');
-					$obj = new CLASS_VADEMECUM($vlf_mysql_conexion );
-					$vl_cod_html_base =  $obj->MTD_BUSCAR_VADEMECUM();
-					MTD_RETORNAR_HTML($vl_cod_html_base);
-					break;
-				case "mostrar_vademecum":
-					LOGGER::LOG("--- Operaciones: mostrar Vademecum--");
-					include ('class/CLASS_VADEMECUM.php');
-					$obj = new CLASS_VADEMECUM($vlf_mysql_conexion );
-					$vl_cod_html_base = $obj->MTD_MOSTRAR_VADEMECUM();
-					MTD_RETORNAR_HTML($vl_cod_html_base);
-					break;
-				case "mostrar_vademecum_detalle":
-					LOGGER::LOG("--- Operaciones: mostrar Vademecum detalle--");
-					include ('class/CLASS_VADEMECUM.php');
-					$obj = new CLASS_VADEMECUM($vlf_mysql_conexion );
-					$codigo = FN_RECIBIR_VARIABLES("cod_producto");
-					$vl_cod_html_base =  $obj->MTD_BUSCAR_PROSPECTO($codigo);
-					echo utf8_encode($vl_cod_html_base);
-					break;
-				case "eliminar_especialidad":
-					LOGGER::LOG("--- OPERACIONES: Eliminar Especialidad--");
-					include ('class/CLASS_ABM_PERFIL.php');
-					LOGGER::LOG("Eliminar Especialidad-- 1");
-					$obj = new CLASS_ABM_PERFIL($vlf_mysql_conexion );
-					LOGGER::LOG("Eliminar Especialidad-- 2");
-					$vl_cod_html_base =  $obj->MTD_ELIMINAR_ESPECIALIDAD();
-					LOGGER::LOG("Eliminar Especialidad-- ret:" + $vl_cod_html_base );
-					MTD_RETORNAR_HTML($vl_cod_html_base);
+
+				case "eliminar_subcategoria":
+					LOGGER::LOG("--- OPERACIONES: Eliminar Categoria  --");
+					include ('class/CLASS_ABM_SUBCATEGORIAS.php');
+					$obj = new CLASS_ABM_SUBCATEGORIAS($vlf_mysql_conexion );					
+					MTD_RETORNAR_HTML($obj->MTD_ELIMINAR_SUBCATEGORIA()); 
+				//$vl_cod_html_seccion= $obj_web_busqueda->MTD_REALIZAR_BUSQUEDA();
 				break;
-				case "actualizar_membrete":
-					LOGGER::LOG("--- OPERACIONES: Actualizar Membrete--");
-					include ('class/CLASS_ABM_PERFIL.php');
-					LOGGER::LOG("Actualizar Membrete-- ");
-					$obj = new CLASS_ABM_PERFIL($vlf_mysql_conexion );
-					LOGGER::LOG("Actualizar Membrete-- 2");
-					$vl_cod_html_base =  $obj->MTD_ACTUALIZAR_MEMBRETE();
-					LOGGER::LOG("Actualizar Membrete-- ret:" + $vl_cod_html_base );
-					MTD_RETORNAR_HTML($vl_cod_html_base);
-				break;		
-				case "mostrar_abm_investigaciones": 				
-					LOGGER::LOG("--- OPERACIONES: Mostrar ABM Investigaciones--");
-					include ('class/CLASS_INVESTIGACIONES.php');
-					$obj = new CLASS_INVESTIGACIONES($vlf_mysql_conexion );
+				case "mostrar_abm_documentos": 				
+					LOGGER::LOG("--- OPERACIONES: Mostrar ABM Documentos--");
+					include ('class/CLASS_DOCUMENTOS.php');
+					$obj = new CLASS_DOCUMENTOS($vlf_mysql_conexion );
 					$_SESSION["investigacion_file"]="";
 					$_SESSION["investigacion_status"]="";
-					$vl_cod_html_base = utf8_encode( $obj->MTD_FORMULARIO_INVESTIGACIONES());
+					$vl_cod_html_base = utf8_encode( $obj->MTD_FORMULARIO_DOCUMENTOS());
 					MTD_RETORNAR_HTML($vl_cod_html_base);
 				break;
 				case "ingresar_investigacion": 				
@@ -267,7 +224,7 @@ if (isset($_POST['operacion']))
 						
 							
 			}
-		}	
+		//
 	}
 	
 }

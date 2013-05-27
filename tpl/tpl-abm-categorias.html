@@ -1,30 +1,131 @@
 <h3>Registro de Categorias</h3>
 
-	<div id="contact3"  style='height:350px;'>
-			<ul>
-				<li>			
-					<label for="descripcion" id="lb_descripcion" >*Descripcion:</label>
-					<input type="text" id="descripcion" name="descripcion" placeholder="Ingrese su descripcion" value=""/>
-				</li>
-			</ul>	
-			<label id="bubble_registrar" style="float:right;"></label><br>
-			<button id="btnSubmit">Ingresar Categoria</button>							
-			</div>	
-
-<script type="text/javascript">
-	<!--
+	<form class="form-horizontal" action="">
+  <div class="control-group">
+    <label class="control-label"  for="inputDescripcion">Descripcion</label>
+    <div class="controls">
+      <input type="text" id="descripcion" placeholder="Ingrese la descripcion de la categoria">
+      <button  type="button" class="btn btn-info" id="btnIngresar"><i class="icon-check icon-white"></i> Ingresar</button>
+      <button type="button" class="btn btn-info" id="btnActualizar" style="display:none;"><i class="icon-refresh icon-white"></i> Actualizarc</button>
+      <input type="hidden" id="id"/>
+    </div>
+  </div>   
+</form>
+<script type="text/javascript" charset="utf-8">
+	var operaciones_ajax="operaciones.php";
 	$(document).ready(function(){
-		$("#btnSubmit").click(function() {
-			MTD_AGREGAR_PACIENTE();
-			});
-		
-        $('#bubble_registrar').CreateBubblePopup({
-                       themePath: '/composite.templates/consultorio/archivos_de_disenho/images/jquerybubblepopup-theme/',
-                       themeName: 'all-azure',
-                       position : 'right-middle',
-                       innerHtml: 'Se ha agregado <br>el producto al carrito ', mouseOver: 'hide'
-        });
+		$("#btnIngresar").click(function() {
+			MTD_AGREGAR_CATEGORIA();
+			});			
 	});			
-//-->
-</script>
+	function MTD_AGREGAR_CATEGORIA()
+	{
+		var descripcion ="";
+	    var mensaje_error="";    
 
+	    descripcion     		=$("#descripcion").val();
+	    // Load dialog on click	
+	    //$('#basic-modal-content').modal();
+		var parametros 	= {operacion: "agregar_categoria", descripcion: descripcion};	
+		$.ajax({
+	        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+	        success: function(data) 
+	        {
+	        	
+	        	if (data == "0")
+                    {
+                    	//location.href="index.php?id=registro&seccion=consultorio";
+                        //ENVIAR AL FORMULARIO DE LOGIN
+                        //TODO ACTUALIZAR GRILLA
+                        MTD_LISTAR_CATEGORIA();
+                    }
+                    else 
+                    {
+
+                    }
+	         }
+	    });	    	   	
+	}
+
+	function MTD_LISTAR_CATEGORIA()
+	{		
+	    var mensaje_error="";    
+		var parametros 	= {operacion: "listar_categorias"};	
+		$.ajax({
+	        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+	        success: function(data) 
+	        {
+	        	 $("#resultado_categorias").empty();
+        	 	$("#resultado_categorias").append(data);     
+        	 	$('#example').dataTable( {
+					"sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
+					"sPaginationType": "bootstrap",
+					
+					"oLanguage": {
+						"sLengthMenu": "_MENU_ records per page"
+					}
+				} );   	 	        	        
+         	}
+    });
+	}
+
+	function MTD_ELIMINAR_CATEGORIA(vp_id_categoria)
+	{
+		var descripcion ="";
+	    var mensaje_error="";    
+
+	    descripcion     		=$("#descripcion").val();
+	    // Load dialog on click	
+	    //$('#basic-modal-content').modal();
+	    var conf = confirm("Esta seguro de eliminar la categoria #" + vp_id_categoria);
+
+	    if(conf == true)
+	    {
+
+			    var parametros 	= {operacion: "eliminar_categoria", idcategoria: vp_id_categoria};	
+				$.ajax({
+			        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+			        success: function(data) 
+			        {
+			        	
+			        	if (data == "0")
+		                    {
+		                    	//location.href="index.php?id=registro&seccion=consultorio";
+		                        //ENVIAR AL FORMULARIO DE LOGIN
+		                        //TODO ACTUALIZAR GRILLA
+		                        MTD_LISTAR_CATEGORIA();
+		                    }
+		                    else 
+		                    {
+		                    	
+		                    }
+			         }
+			    });	  
+
+	    }
+
+		  	   	
+	}
+	function MTD_ACTUALIZAR_CATEGORIA()
+	{
+		var codigo ="";
+	    var mensaje_error="";    
+
+	    
+	    // Load dialog on click	
+	    //$('#basic-modal-content').modal();
+		var parametros 	= {operacion: "mostrar_editar_datos_personales"};	
+		$.ajax({
+	        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+	        success: function(data) 
+	        {
+	        	$("#basic-modal-content").empty();
+	        	$("#basic-modal-content").append(data);
+	        	$('#basic-modal-content').modal();    		        
+	         }
+	    });  	
+	}
+</script>
+<div id="resultado_categorias">
+{tpl-lista-categorias}
+</div>
