@@ -119,8 +119,12 @@ function formulario_sistema_medico()
    	else
    	{
    		//TODO: mostrar index
+<<<<<<< HEAD
    		//$vlf_session_activada = $obj_session->MTD_START();
 		
+=======
+   		$body = FN_LEER_TPL('tpl/tpl-lista-docu.html');
+>>>>>>> fdd988134b332df980e5dbf1807f91baf7a91227
    	}
 
    

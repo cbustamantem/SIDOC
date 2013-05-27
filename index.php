@@ -1,4 +1,4 @@
-<?
+<?php
 // Turn off all error reporting
 error_reporting(0);
 // Same as error_reporting(E_ALL);
