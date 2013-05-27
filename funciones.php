@@ -114,6 +114,7 @@ function formulario_sistema_medico()
    	else
    	{
    		//TODO: mostrar index
+   		$body = FN_LEER_TPL('tpl/tpl-lista-docu.html');
    	}
 
    
