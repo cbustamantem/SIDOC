@@ -17,7 +17,7 @@ include_once ("includes/FN_NET_LOGGER.php");
 $_SESSION['investigacion_status']="enviando";
 $verifyToken = md5('unique_salt' . $_POST['timestamp']);
 FN_NET_LOGGER("Upload Archivo:".$_FILES['Filedata']['tmp_name']);
-$targetFolder = '/var/www/consultorio/investigaciones/';  // Relative to the root
+$targetFolder = '/var/www/fundacion/docs/';  // Relative to the root
 $archivo= $_SESSION['uid']."_".time().".pdf";
 $_SESSION['investigacion_file']=$archivo;
 

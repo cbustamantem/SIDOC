@@ -160,6 +160,27 @@ FROM documentos ";
     	LOGGER::LOG("BUSCAR_DOCUMENTOS :\n".$html);
     	return $html;
     }
+    function MTD_SELECCION_CATEGORIAS()
+    {
+        $codigo_html="";
+        $datos = array();
+        $datos = FN_RUN_QUERY("SELECT 
+                        cab.idcategoria,
+                        cab.categoria,
+                        sub.idsubcategoria,
+                        sub.subcategoria
+                        from categorias as cab
+                        left join subcategorias as sub ON (cab.idcategoria = sub.idcategoria)
+                        order by cab.categoria, sub.subcategoria " , 4 , $this->vlc_db_cn);
+        
+        $codigo_html="<select id='lst_categorias'>";
+        foreach($datos as $key => $value)
+        {
+            $codigo_html.="<option value='".$value[0].":".$value[2]."'>".$value[1]." - ".$value[3]."</option>";
+        }
+        $codigo_html.="</select>";
+        return $codigo_html;
+    }
     function MTD_AGREGAR_DOCUMENTO()
     {
     	LOGGER::LOG("MTD_AGREGAR_DOCUMENTO :\n");
@@ -169,20 +190,36 @@ FROM documentos ";
     	$titulo="";
     	$descripcion="";
     	$archivo="";
-    	$autores="";
+    	$etiquetas="";
+        $categoria="";
+        $categorias= array();
     	$titulo=FN_RECIBIR_VARIABLES("titulo");
     	$descripcion=FN_RECIBIR_VARIABLES("descripcion");
-    	$autores 	=FN_RECIBIR_VARIABLES("autores");
+    	$etiquetas 	=FN_RECIBIR_VARIABLES("etiquetas");
+        $categoria  =FN_RECIBIR_VARIABLES("categoria");
+        
+        
     	if ($_SESSION["investigacion_status"] == "OK")
     	{
-    		$archivo="docs/".$_SESSION['investigacion_file'];
+    		$archivo="/var/www/fundacion/docs/".$_SESSION['investigacion_file'];
+            $imagen="/var/www/fundacion/thumbs/".$_SESSION['investigacion_file'];
+            $imagen = FN_REEMPLAZAR("pdf","jpg",$imagen);
+            FN_THUMBNAIL($archivo,$imagen);
     		LOGGER::LOG("MTD_AGREGAR_DOCUMENTO> uploaded {OK} ");
     		LOGGER::LOG("MTD_AGREGAR_DOCUMENTO> Titulo: $titulo" );
     		LOGGER::LOG("MTD_AGREGAR_DOCUMENTO> Descripcion: $descripcion" );
     		LOGGER::LOG("MTD_AGREGAR_DOCUMENTO> Archivo: $archivo" );
-    		LOGGER::LOG("MTD_AGREGAR_DOCUMENTO> Autores: $autores" );
-    		$sql="INSERT INTO investigaciones (nombre,descripcion,archivo,id_doctor,autores) VALUES"
-    		." ('$titulo','$descripcion','$archivo',".$_SESSION['uid'].",'".$autores."')";
+    		LOGGER::LOG("MTD_AGREGAR_DOCUMENTO> Categorias:".$categoria );
+            $categorias = explode(":",$categoria);
+
+    		$sql="INSERT INTO documentos (titulo,descripcion,rutadocumento,rutaimagen,etiquetas,idcategoria,idsubcategoria) VALUES"
+    		." ('$titulo',
+                '$descripcion',
+                '$archivo',
+                '".$imagen."',
+                '".$etiquetas."',
+                '".$categorias[0]."',
+                '".$categorias[1]."')";
     		$resultado=FN_RUN_NONQUERY($sql,$this->vlc_db_cn);
     		LOGGER::LOG("MTD_AGREGAR_DOCUMENTO>".$sql);
     		LOGGER::LOG("MTD_AGREGAR_DOCUMENTO> Investigacion creada exitosamente");
@@ -238,6 +275,9 @@ FROM documentos ";
     	 $theData=FN_REEMPLAZAR("{tpl-token}", md5('unique_salt' . $timestamp), $theData);
     	 $theData=FN_REEMPLAZAR("{tpl-session-name}", session_name(), $theData);
     	 $theData=FN_REEMPLAZAR("{tpl-session-id}", session_id(), $theData);
+         $theData=FN_REEMPLAZAR("{tpl-lista-categoria}", $this->MTD_SELECCION_CATEGORIAS(), $theData);
+
+         
     	 return $theData;
     	}
     	else

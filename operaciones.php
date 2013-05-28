@@ -27,6 +27,8 @@ include_once ('includes/FN_NET_LOGGER.php');
 include_once ('includes/FN_RECIBIR_VARIABLES.php');
 include_once ('includes/FN_LEER_TPL.php');
 include_once ('class/LOGGER.php');
+include_once ('includes/FN_THUMBNAIL.php');
+
 //include_once ('class/CLASS_SESSION.php');
 
 
@@ -105,7 +107,7 @@ if (isset($_POST['operacion']))
 			switch ($vl_operacion)
 			{
 				//**************************************************
-				//* SECCION : AGREGAR USUARIO
+				//* SECCION : CATEGORIAS
 				//**************************************************
 				case "agregar_categoria":
 
@@ -134,10 +136,10 @@ if (isset($_POST['operacion']))
 				//$vl_cod_html_seccion= $obj_web_busqueda->MTD_REALIZAR_BUSQUEDA();
 				break;
 
-
+				//**************************************************
+				//* SECCION : SUBCATEGORIAS
+				//**************************************************
 				case "agregar_subcategoria":
-
-
 					LOGGER::LOG("--- OPERACIONES: Agregar Categoria  --");
 					include ('class/CLASS_ABM_SUBCATEGORIAS.php');
 					$obj = new CLASS_ABM_SUBCATEGORIAS($vlf_mysql_conexion );
@@ -161,6 +163,11 @@ if (isset($_POST['operacion']))
 					MTD_RETORNAR_HTML($obj->MTD_ELIMINAR_SUBCATEGORIA()); 
 				//$vl_cod_html_seccion= $obj_web_busqueda->MTD_REALIZAR_BUSQUEDA();
 				break;
+
+
+				//**************************************************
+				//* SECCION : DOCUMENTOS
+				//**************************************************
 				case "mostrar_abm_documentos": 				
 					LOGGER::LOG("--- OPERACIONES: Mostrar ABM Documentos--");
 					include ('class/CLASS_DOCUMENTOS.php');
@@ -170,13 +177,18 @@ if (isset($_POST['operacion']))
 					$vl_cod_html_base = utf8_encode( $obj->MTD_FORMULARIO_DOCUMENTOS());
 					MTD_RETORNAR_HTML($vl_cod_html_base);
 				break;
-				case "ingresar_investigacion": 				
-					LOGGER::LOG("--- OPERACIONES: ingresar_investigacion--");
-					include ('class/CLASS_INVESTIGACIONES.php');
-					$obj = new CLASS_INVESTIGACIONES($vlf_mysql_conexion );
-					$vl_cod_html_base = utf8_encode( $obj->MTD_AGREGAR_INVESTIGACION());
+				case "ingresar_documento": 				
+					LOGGER::LOG("--- OPERACIONES: ingresar_documento--");
+					include ('class/CLASS_DOCUMENTOS.php');
+					$obj = new CLASS_DOCUMENTOS($vlf_mysql_conexion );
+					$vl_cod_html_base = utf8_encode( $obj->MTD_AGREGAR_DOCUMENTO());
 					MTD_RETORNAR_HTML($vl_cod_html_base);
 				break;
+
+
+
+
+
 				case "mostrar_cambiar_contrasenha":
 					LOGGER::LOG("--- OPERACIONES: Mostrar Cambiar Password --");
 					include ('class/CLASS_ABM_USUARIOS.php');

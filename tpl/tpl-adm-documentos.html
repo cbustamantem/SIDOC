@@ -13,54 +13,14 @@
  </div>
  </form>
 
- <script type="text/javascript" charset="utf-8">
-			$(document).ready(function() {
-				$('#example').dataTable({
-					 "sScrollY": "250px"
-		            ,"bPaginate": false
-		            ,"bFilter": false
-		            ,"bJQueryUI": true
-		            ,"bInfo": true
-		            ,"bSort": true
-					,"oLanguage": {
-						"sProcessing":     "Procesando...",
-					    "sLengthMenu":     "Mostrar _MENU_ registros",
-					    "sZeroRecords":    "No se encontraron resultados",
-					    "sEmptyTable":     "Ningún dato disponible en esta tabla",
-					    "sInfo":           "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
-					    "sInfoEmpty":      "Mostrando registros del 0 al 0 de un total de 0 registros",
-					    "sInfoFiltered":   "(filtrado de un total de _MAX_ registros)",
-					    "sInfoPostFix":    "",
-					    "sSearch":         "Buscar:",
-					    "sUrl":            "",
-					    "sInfoThousands":  ",",
-					    "sLoadingRecords": "Cargando...",
-					    "oPaginate": {
-					        "sFirst":    "Primero",
-					        "sLast":     "Último",
-					        "sNext":     "Siguiente",
-					        "sPrevious": "Anterior"
-					    },
-					    "fnInfoCallback": null,
-					    "oAria": {
-					        "sSortAscending":  ": Activar para ordernar la columna de manera ascendente",
-					        "sSortDescending": ": Activar para ordernar la columna de manera descendente"
-					    }
-						}
-					
-				}
-				);	
-			
-			} );
 
-		</script>
  <script type="text/javascript">
 	<!--
 		var operaciones_ajax="operaciones.php";
 	$(document).ready(function(){
 
 		$("#buscar").click(function() {			
-			//MTD_BUSCAR_VADEMECUM();
+			
 			$("#myform").submit();
 			});
 				       
@@ -97,17 +57,19 @@
 	    var mensaje_error="";    
 	    var titulo="";
 	    var descripcion="";
-	    var autores="";
+	    var etiquetas="";
+	    var categoria="";
 	    titulo=$("#titulo").val();
-	    autores=$("#autores").val();
+	    etiquetas=$("#etiquetas").val();
 	    descripcion=$("#descripcion").val();
+	    categoria = $("#lst_categorias :selected").val();
 	    	//Load dialog on click	
 	        //$('#basic-modal-content').modal();
-	    	var parametros 	= {operacion: "ingresar_documento", titulo: titulo, descripcion: descripcion, autores: autores};
+	    	var parametros 	= {operacion: "ingresar_documento", titulo: titulo, descripcion: descripcion, etiquetas: etiquetas,categoria: categoria};
 	     
 	        // Load dialog on click	
 	        //$('#basic-modal-content').modal();
-	   if (titulo !=""   && descripcion != "" && autores !="" )
+	   if (titulo !=""   && descripcion != "" )
 	   {
 	    	$.ajax({
 	            url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
@@ -135,3 +97,4 @@
 //-->
 </script>
 <div id ="basic-modal-content">&nbsp;</div>
+<div id ="contenedor-resultado">&nbsp;</div>
