@@ -175,7 +175,7 @@ FROM documentos ";
     	$autores 	=FN_RECIBIR_VARIABLES("autores");
     	if ($_SESSION["investigacion_status"] == "OK")
     	{
-    		$archivo="investigaciones/".$_SESSION['investigacion_file'];
+    		$archivo="docs/".$_SESSION['investigacion_file'];
     		LOGGER::LOG("MTD_AGREGAR_DOCUMENTO> uploaded {OK} ");
     		LOGGER::LOG("MTD_AGREGAR_DOCUMENTO> Titulo: $titulo" );
     		LOGGER::LOG("MTD_AGREGAR_DOCUMENTO> Descripcion: $descripcion" );
@@ -225,7 +225,8 @@ FROM documentos ";
     function MTD_FORMULARIO_DOCUMENTOS()
     {
     	LOGGER::LOG("MTD_FORMULARIO_DOCUMENTOS :\n");
-    	$template='tpl/tpl-abm-investigaciones.html';
+
+    	$template='tpl/tpl-abm-documentos.html';
     	if (file_exists($template)) 
     	{
     	 $fh  = fopen($template, 'r');	
@@ -241,6 +242,7 @@ FROM documentos ";
     	}
     	else
     	{
+            LOGGER::LOG("MTD_FORMULARIO_DOCUMENTOS : NO SE ENCONTRO TEMPLATE");
     		return "---";
     	}
     	 

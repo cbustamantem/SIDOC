@@ -34,39 +34,12 @@
     
     <script type="text/javascript" src="js/flexpaper.js"></script>
     <script type="text/javascript" src="js/flexpaper_handlers.js"></script>
-   
+   <script type="text/javascript"  src="js/jquery.simplemodal.js"></script>
+   <script type="text/javascript"  src="js/basic.js"></script>
+   <link href="css/basic.css" rel="stylesheet" type="text/css" />
 <!--Fin Flex-->
 
-
-<!-- By Dennis Bareiro -->
-<script type="text/javascript">
-    $(document).ready(function(){
-    
-        <!-- "DesplegarMenuHeader" -->
-        $('.down').click(function(){
-            var id=$(this).attr('id');
-            $('.'+id).slideToggle('normal');
-        })
-        
-        <!-- "DesplegarBotonesFooter" -->
-        $('#menufooter li').hover(function(){
-            var dato=$(this).attr('class');
-            $('.'+dato+' div').animate({'top':'-30px'}, 200);
-        },function(){
-            var dato=$(this).attr('class');
-            $('.'+dato+' div').animate({'top':'0'},50);
-        })
-        
-        $('#txt_busqueda')
-            .focus(function(){
-                if($(this).val() == 'Buscar...'){ $(this).val(''); }
-            })
-            .blur(function(){
-                if($(this).val() == ''){ $(this).val('Buscar...'); }
-            });
-    })
- </script>
-
+ 
 <!--[if IE]>
     <style>
         #txt_busqueda{ border:0; }
@@ -116,7 +89,7 @@
 <script type="text/javascript" src="js/superfish/hoverIntent.js"></script>
 <script type="text/javascript" src="js/superfish/superfish.js"></script>
 <script type="text/javascript" src="js/DT_bootstrap.js"></script>
-<script type="text/javascript" src="js/bootstrap-modal.js"></script>
+
 <link rel="stylesheet" type="text/css" href="css/DT_bootstrap.css">
 <script type="text/javascript">
 
@@ -127,18 +100,6 @@
 
 </script>
 
-<<<<<<< HEAD
-=======
-<script src="js/jquery.js"></script>
-<script src="css/bootstrap/js/bootstrap.min.js"></script>
-<script language="javascript">
-    $('.dropdown-toggle').dropdown();
-    $('.dropdown-menu').find('form').click(function (e) {
-        e.stopPropagation();
-      });
-</script>
-
->>>>>>> fdd988134b332df980e5dbf1807f91baf7a91227
 </head>
 
 <body class="esp" id="quienes">
@@ -155,8 +116,7 @@
                         <li><a id="btn_involucrate" href="index.php?seccion=administracion&administracion=1" title="ADMINISTRACION">ADMINISTRACION</a></li>
                         
                     </ul><!-- fin botonera -->
-<<<<<<< HEAD
-=======
+
 <!--{tpl-login} --> 
 
 <div class="navbar navbar-fixed-top">
@@ -186,13 +146,6 @@
     </div>
 </div>
 
-
-
-
-
-                </div><!-- fin headertop -->
->>>>>>> fdd988134b332df980e5dbf1807f91baf7a91227
-                
                 </div><!-- fin headertop -->
                             <div class="headerbottom">
                     <div class="logotipo"><a href="./" title="Fundacion Paraguaya"><img src="images/logo_fundacionparaguaya.jpg" width="183" height="108" alt="Fundación Paraguaya" /></a></div><!-- fin logotipo -->

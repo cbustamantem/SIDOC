@@ -1,0 +1,61 @@
+<div id='contenedor_resultado'>
+<h3>Agregue un documento</h3>
+<div id="contact2" style='height:265px; width:500px;'>
+	<label for="titulo" id="lb_titulo" >*Titulo:</label>
+	<input type="text" style="width:480px;" id="titulo" name="titulo" placeholder="Ingrese el titulo" value=""/>
+	<br>
+	<label for="lbautores" id="lb_autores" >*Etiquetas:</label>
+	<textarea id="etiquetas" name="etiquetas" style='height:40px; width:480px;' class="textarea-styled"></textarea>	
+	<label for="Categoria" id="lb_categoria" >*Categoria:</label>
+	{tpl-lista-categoria}	
+	<label for="Descripcion" id="lb_descripcion" >*Descripcion:</label>
+	<textarea id="descripcion" name="descripcion" style='height:100px; width:480px;' class="textarea-styled"></textarea>
+	<br>
+	<div style='float:right;margin-top:10px;'>
+	<button  type="button" class="btn btn-info" id="btnSubmitDocumento"><i class="icon-upload icon-white"></i> Subir 		Documento</button>	
+	</div>	
+							
+						
+</div>	
+<br><br>
+	<form id="myform2"  enctype="multipart/form-data" action="uploadify.php" method="post"  > 
+		<div id="queue"></div>
+			
+		<input id="file_upload" name="file_upload" type="file" multiple="true">
+	</form>	
+			
+
+</div>	
+<br><br>
+
+	<script type="text/javascript">
+		
+		$(function() {
+			$('#file_upload').uploadify({
+				'method'   : 'post',
+				'formData'     : {
+					'timestamp' : '{tpl-timestamp}',
+					'token'     : '{tpl-token}'	,
+					'{tpl-session-name}' : '{tpl-session-id}' 
+				},
+				'swf'      : 'uploadify.swf',
+				'uploader' : 'uploadify.php'
+			});
+		});
+	</script>
+	<script type="text/javascript">
+	<!--
+	$(document).ready(function(){
+		$("#btnSubmitDocumento").click(function() {
+			MTD_AGREGAR_DOCUMENTO();
+			});
+		
+      
+	});			
+//-->
+</script>
+<br><br>
+<div style="width:100px;heigth:50px;" id="status-message"></div>
+</div>
+	
+	

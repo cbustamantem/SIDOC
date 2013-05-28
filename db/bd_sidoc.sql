@@ -26,7 +26,7 @@ CREATE TABLE `categorias` (
   `idcategoria` int(11) NOT NULL AUTO_INCREMENT,
   `categoria` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`idcategoria`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -35,7 +35,7 @@ CREATE TABLE `categorias` (
 
 LOCK TABLES `categorias` WRITE;
 /*!40000 ALTER TABLE `categorias` DISABLE KEYS */;
-INSERT INTO `categorias` VALUES (1,'Manuales'),(2,'Procedimientos'),(3,'Normas'),(4,'Reglamento Interno'),(5,'Otros');
+INSERT INTO `categorias` VALUES (1,'Manuales'),(2,'Procedimientos'),(3,'Normas'),(4,'Reglamento Interno'),(5,'Otros'),(6,'Finanzas');
 /*!40000 ALTER TABLE `categorias` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -53,9 +53,15 @@ CREATE TABLE `documentos` (
   `documento` text NOT NULL,
   `fecha` datetime NOT NULL,
   `idsubcategoria` int(11) NOT NULL,
+  `idcategoria` int(11) NOT NULL,
+  `rutadocumento` varchar(500) DEFAULT NULL,
+  `rutaimagen` varchar(500) DEFAULT NULL,
+  `etiquetas` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`iddocumento`),
   KEY `fk_documentos_1_idx` (`idsubcategoria`),
-  CONSTRAINT `fk_documentos_1` FOREIGN KEY (`idsubcategoria`) REFERENCES `subcategorias` (`idsubcategoria`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `fk_documentos_2_idx` (`idcategoria`),
+  CONSTRAINT `fk_documentos_1` FOREIGN KEY (`idsubcategoria`) REFERENCES `subcategorias` (`idsubcategoria`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_documentos_2` FOREIGN KEY (`idcategoria`) REFERENCES `categorias` (`idcategoria`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -172,4 +178,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2013-05-23 21:32:05
+-- Dump completed on 2013-05-28  1:07:38
