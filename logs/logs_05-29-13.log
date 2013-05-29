@@ -1,0 +1,449 @@
+Wed May 29 0:00:22 PYT 2013: Upload Archivo:/tmp/phpnj7HdJ
+Wed May 29 0:00:22 PYT 2013: Upload Archivo: Fie: _1369800022.pdf
+Wed May 29 0:00:22 PYT 2013: Upload Archivo: OK _1369800022.pdf
+Wed May 29 0:00:22 PYT 2013: ingregsar comando: pdf2swf /var/pdfflex/_1369800022.pdf -o /var/pdfflex/_1369800022.pdfswf -f -T 9 -t -s storeallcharacters
+Wed May 29 0:01:51 PYT 2013: --- OPERACIONES --
+Wed May 29 0:01:51 PYT 2013: --- OPERACIONES: ingresar_documento--
+Wed May 29 0:01:51 PYT 2013: no agregar nada
+Wed May 29 0:01:51 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Wed May 29 0:01:51 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Wed May 29 0:01:51 PYT 2013: MTD_AGREGAR_DOCUMENTO : file _1369800022.pdf
+Wed May 29 0:01:51 PYT 2013: MTD_AGREGAR_DOCUMENTO : status OK
+Wed May 29 0:03:08 PYT 2013: --- OPERACIONES --
+Wed May 29 0:03:08 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Wed May 29 0:03:08 PYT 2013: no agregar nada
+Wed May 29 0:03:08 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Wed May 29 0:03:09 PYT 2013: INCICIO SISTEMA
+Wed May 29 0:03:27 PYT 2013: Upload Archivo:/tmp/phpaTVPMO
+Wed May 29 0:03:27 PYT 2013: Upload Archivo: Fie: _1369800207.pdf
+Wed May 29 0:03:27 PYT 2013: Upload Archivo: OK _1369800207.pdf
+Wed May 29 0:03:27 PYT 2013: ingregsar comando: pdf2swf /var/pdfflex/_1369800207.pdf -o /var/pdfflex//directory/_1369800207.pdf.swf -f -T 9 -t -s storeallcharacters
+Wed May 29 0:03:32 PYT 2013: --- OPERACIONES --
+Wed May 29 0:03:32 PYT 2013: --- OPERACIONES: ingresar_documento--
+Wed May 29 0:03:32 PYT 2013: no agregar nada
+Wed May 29 0:03:32 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Wed May 29 0:03:32 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Wed May 29 0:03:32 PYT 2013: MTD_AGREGAR_DOCUMENTO : file _1369800207.pdf
+Wed May 29 0:03:32 PYT 2013: MTD_AGREGAR_DOCUMENTO : status OK
+Wed May 29 0:06:08 PYT 2013: INCICIO SISTEMA
+Wed May 29 0:06:08 PYT 2013: Seccion administracion 
+Wed May 29 0:06:08 PYT 2013: Web: 
+Wed May 29 0:06:08 PYT 2013: no agregar nada
+Wed May 29 0:06:08 PYT 2013: BUSCAR_DOCUMENTOS
+Wed May 29 0:06:08 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Wed May 29 0:06:08 PYT 2013: BUSCAR_DOCUMENTOS :
+<table  cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%" >
+    		<thead>
+    		<tr>
+    		<th>Titulo</th>
+    		<th>Descripcion</th>
+    		
+    		</tr>
+    		</thead>
+    		<tbody><TR><TD>asdfas</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=9'>asdfasdf</a></TD></TR><TR><TD>asdfas</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=10'>asdfasdf</a></TD></TR><TR><TD>gdfgdfg</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=11'>gdchcvbcvbcvb</a></TD></TR></tbody></table>
+Wed May 29 0:06:10 PYT 2013: --- OPERACIONES --
+Wed May 29 0:06:10 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Wed May 29 0:06:10 PYT 2013: no agregar nada
+Wed May 29 0:06:10 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Wed May 29 0:06:10 PYT 2013: INCICIO SISTEMA
+Wed May 29 0:06:29 PYT 2013: Upload Archivo:/tmp/phpwQ0s8C
+Wed May 29 0:06:29 PYT 2013: Upload Archivo: Fie: _1369800389.pdf
+Wed May 29 0:06:29 PYT 2013: Upload Archivo: OK _1369800389.pdf
+Wed May 29 0:06:29 PYT 2013: ingregsar comando: pdf2swf /var/pdfflex/_1369800389.pdf -o /var/pdfflex/directory/_1369800389.pdf.swf -f -T 9 -t -s storeallcharacters
+Wed May 29 0:06:35 PYT 2013: --- OPERACIONES --
+Wed May 29 0:06:35 PYT 2013: --- OPERACIONES: ingresar_documento--
+Wed May 29 0:06:35 PYT 2013: no agregar nada
+Wed May 29 0:06:35 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Wed May 29 0:06:35 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Wed May 29 0:06:35 PYT 2013: MTD_AGREGAR_DOCUMENTO : file _1369800389.pdf
+Wed May 29 0:06:35 PYT 2013: MTD_AGREGAR_DOCUMENTO : status OK
+Wed May 29 0:06:36 PYT 2013: MTD_AGREGAR_DOCUMENTO> uploaded {OK} 
+Wed May 29 0:06:36 PYT 2013: MTD_AGREGAR_DOCUMENTO> Titulo: bala
+Wed May 29 0:06:36 PYT 2013: MTD_AGREGAR_DOCUMENTO> Descripcion: desc
+Wed May 29 0:06:36 PYT 2013: MTD_AGREGAR_DOCUMENTO> Archivo: /var/pdfflex/_1369800389.pdf
+Wed May 29 0:06:36 PYT 2013: MTD_AGREGAR_DOCUMENTO> Categorias:6:
+Wed May 29 0:06:36 PYT 2013: MTD_AGREGAR_DOCUMENTO>INSERT INTO documentos (titulo,descripcion,rutadocumento,rutaimagen,etiquetas,idcategoria,idsubcategoria) VALUES ('bala',
+                'desc',
+                '/var/pdfflex/_1369800389.pdf',
+                '/var/www/fundacion/thumbs/_1369800389.jpg',
+                'etiquetas',
+                '6',
+                '')
+Wed May 29 0:06:36 PYT 2013: MTD_AGREGAR_DOCUMENTO> Investigacion creada exitosamente
+Wed May 29 0:07:09 PYT 2013: INCICIO SISTEMA
+Wed May 29 0:07:12 PYT 2013: --- OPERACIONES --
+Wed May 29 0:07:12 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Wed May 29 0:07:12 PYT 2013: no agregar nada
+Wed May 29 0:07:12 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Wed May 29 0:07:12 PYT 2013: INCICIO SISTEMA
+Wed May 29 0:07:30 PYT 2013: Upload Archivo:/tmp/phpQQ8NAm
+Wed May 29 0:07:30 PYT 2013: Upload Archivo: Fie: _1369800450.pdf
+Wed May 29 0:07:30 PYT 2013: Upload Archivo: OK _1369800450.pdf
+Wed May 29 0:07:30 PYT 2013: ingregsar comando: pdf2swf /var/pdfflex/_1369800450.pdf -o /var/pdfflex/directory/_1369800450.pdf.swf -f -T 9 -t -s storeallcharacters
+Wed May 29 0:07:37 PYT 2013: --- OPERACIONES --
+Wed May 29 0:07:37 PYT 2013: --- OPERACIONES: ingresar_documento--
+Wed May 29 0:07:37 PYT 2013: no agregar nada
+Wed May 29 0:07:37 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Wed May 29 0:07:37 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Wed May 29 0:07:37 PYT 2013: MTD_AGREGAR_DOCUMENTO : file _1369800450.pdf
+Wed May 29 0:07:37 PYT 2013: MTD_AGREGAR_DOCUMENTO : status OK
+Wed May 29 0:07:37 PYT 2013: MTD_AGREGAR_DOCUMENTO> uploaded {OK} 
+Wed May 29 0:07:37 PYT 2013: MTD_AGREGAR_DOCUMENTO> Titulo: subir
+Wed May 29 0:07:37 PYT 2013: MTD_AGREGAR_DOCUMENTO> Descripcion: descrip
+Wed May 29 0:07:37 PYT 2013: MTD_AGREGAR_DOCUMENTO> Archivo: /var/pdfflex/_1369800450.pdf
+Wed May 29 0:07:37 PYT 2013: MTD_AGREGAR_DOCUMENTO> Categorias:6:
+Wed May 29 0:07:37 PYT 2013: MTD_AGREGAR_DOCUMENTO>INSERT INTO documentos (titulo,descripcion,rutadocumento,rutaimagen,etiquetas,idcategoria,idsubcategoria) VALUES ('subir',
+                'descrip',
+                '/var/pdfflex/_1369800450.pdf',
+                '/var/www/fundacion/thumbs/_1369800450.jpg',
+                'etiqueta',
+                '6',
+                '')
+Wed May 29 0:07:37 PYT 2013: MTD_AGREGAR_DOCUMENTO> Investigacion creada exitosamente
+Wed May 29 0:21:27 PYT 2013: INCICIO SISTEMA
+Wed May 29 0:21:31 PYT 2013: INCICIO SISTEMA
+Wed May 29 0:21:32 PYT 2013: INCICIO SISTEMA
+Wed May 29 0:21:53 PYT 2013: INCICIO SISTEMA
+Wed May 29 0:25:20 PYT 2013: INCICIO SISTEMA
+Wed May 29 0:28:11 PYT 2013: INCICIO SISTEMA
+Wed May 29 0:28:51 PYT 2013: INCICIO SISTEMA
+Wed May 29 0:29:20 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:01:56 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:02:46 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:03:53 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:04:29 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:04:29 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:04:48 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:04:48 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:05:17 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:05:17 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:05:40 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:05:40 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:08:22 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:08:22 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:08:23 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:08:23 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:10:09 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:10:09 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:13:57 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:13:57 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:14:53 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:14:53 PYT 2013: Seccion administracion 
+Wed May 29 1:14:53 PYT 2013: Web: 
+Wed May 29 1:14:53 PYT 2013: Web: menu principal 
+Wed May 29 1:14:54 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:14:54 PYT 2013: Seccion administracion 
+Wed May 29 1:14:54 PYT 2013: Web: 
+Wed May 29 1:14:54 PYT 2013: Web: seccion categorias
+Wed May 29 1:14:54 PYT 2013: Asignando el template:
+Wed May 29 1:15:02 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:15:02 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:15:20 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:15:20 PYT 2013: Seccion administracion 
+Wed May 29 1:15:20 PYT 2013: Web: 
+Wed May 29 1:15:20 PYT 2013: Web: menu principal 
+Wed May 29 1:15:21 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:15:21 PYT 2013: Seccion administracion 
+Wed May 29 1:15:21 PYT 2013: Web: 
+Wed May 29 1:15:21 PYT 2013: no agregar nada
+Wed May 29 1:15:21 PYT 2013: BUSCAR_DOCUMENTOS
+Wed May 29 1:15:21 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Wed May 29 1:15:21 PYT 2013: BUSCAR_DOCUMENTOS :
+<table  cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%" >
+    		<thead>
+    		<tr>
+    		<th>Titulo</th>
+    		<th>Descripcion</th>
+    		
+    		</tr>
+    		</thead>
+    		<tbody><TR><TD>asdfas</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=9'>asdfasdf</a></TD></TR><TR><TD>asdfas</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=10'>asdfasdf</a></TD></TR><TR><TD>gdfgdfg</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=11'>gdchcvbcvbcvb</a></TD></TR><TR><TD>bala</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=12'>desc</a></TD></TR><TR><TD>subir</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=13'>descrip</a></TD></TR></tbody></table>
+Wed May 29 1:15:26 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:15:26 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:16:04 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:16:04 PYT 2013: Seccion administracion 
+Wed May 29 1:16:04 PYT 2013: Web: 
+Wed May 29 1:16:04 PYT 2013: no agregar nada
+Wed May 29 1:16:04 PYT 2013: BUSCAR_DOCUMENTOS
+Wed May 29 1:16:04 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Wed May 29 1:16:04 PYT 2013: BUSCAR_DOCUMENTOS :
+<table  cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%" >
+    		<thead>
+    		<tr>
+    		<th>Titulo</th>
+    		<th>Descripcion</th>
+    		
+    		</tr>
+    		</thead>
+    		<tbody><TR><TD>asdfas</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=9'>asdfasdf</a></TD></TR><TR><TD>asdfas</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=10'>asdfasdf</a></TD></TR><TR><TD>gdfgdfg</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=11'>gdchcvbcvbcvb</a></TD></TR><TR><TD>bala</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=12'>desc</a></TD></TR><TR><TD>subir</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=13'>descrip</a></TD></TR></tbody></table>
+Wed May 29 1:16:04 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:16:04 PYT 2013: Seccion administracion 
+Wed May 29 1:16:04 PYT 2013: Web: 
+Wed May 29 1:16:04 PYT 2013: no agregar nada
+Wed May 29 1:16:04 PYT 2013: BUSCAR_DOCUMENTOS
+Wed May 29 1:16:04 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Wed May 29 1:16:04 PYT 2013: BUSCAR_DOCUMENTOS :
+<table  cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%" >
+    		<thead>
+    		<tr>
+    		<th>Titulo</th>
+    		<th>Descripcion</th>
+    		
+    		</tr>
+    		</thead>
+    		<tbody><TR><TD>asdfas</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=9'>asdfasdf</a></TD></TR><TR><TD>asdfas</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=10'>asdfasdf</a></TD></TR><TR><TD>gdfgdfg</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=11'>gdchcvbcvbcvb</a></TD></TR><TR><TD>bala</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=12'>desc</a></TD></TR><TR><TD>subir</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=13'>descrip</a></TD></TR></tbody></table>
+Wed May 29 1:16:05 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:16:05 PYT 2013: Seccion administracion 
+Wed May 29 1:16:05 PYT 2013: Web: 
+Wed May 29 1:16:05 PYT 2013: no agregar nada
+Wed May 29 1:16:05 PYT 2013: BUSCAR_DOCUMENTOS
+Wed May 29 1:16:05 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Wed May 29 1:16:05 PYT 2013: BUSCAR_DOCUMENTOS :
+<table  cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%" >
+    		<thead>
+    		<tr>
+    		<th>Titulo</th>
+    		<th>Descripcion</th>
+    		
+    		</tr>
+    		</thead>
+    		<tbody><TR><TD>asdfas</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=9'>asdfasdf</a></TD></TR><TR><TD>asdfas</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=10'>asdfasdf</a></TD></TR><TR><TD>gdfgdfg</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=11'>gdchcvbcvbcvb</a></TD></TR><TR><TD>bala</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=12'>desc</a></TD></TR><TR><TD>subir</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=13'>descrip</a></TD></TR></tbody></table>
+Wed May 29 1:16:43 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:16:43 PYT 2013: Seccion administracion 
+Wed May 29 1:16:43 PYT 2013: Web: 
+Wed May 29 1:16:43 PYT 2013: no agregar nada
+Wed May 29 1:16:43 PYT 2013: BUSCAR_DOCUMENTOS
+Wed May 29 1:16:43 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Wed May 29 1:16:43 PYT 2013: BUSCAR_DOCUMENTOS :
+<table  cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%" >
+    		<thead>
+    		<tr>
+    		<th>Titulo</th>
+    		<th>Descripcion</th>
+    		
+    		</tr>
+    		</thead>
+    		<tbody><TR><TD>asdfas</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=9'>asdfasdf</a></TD></TR><TR><TD>asdfas</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=10'>asdfasdf</a></TD></TR><TR><TD>gdfgdfg</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=11'>gdchcvbcvbcvb</a></TD></TR><TR><TD>bala</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=12'>desc</a></TD></TR><TR><TD>subir</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=13'>descrip</a></TD></TR></tbody></table>
+Wed May 29 1:16:47 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:16:47 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:17:12 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:17:12 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:17:13 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:17:13 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:17:13 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:17:13 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:17:30 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:17:30 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:17:30 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:17:30 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:17:31 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:17:31 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:17:31 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:17:31 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:17:31 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:17:31 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:17:31 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:17:31 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:17:32 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:17:32 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:17:32 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:17:32 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:17:32 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:17:32 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:17:53 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:17:53 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:17:54 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:17:54 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:17:54 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:17:54 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:17:54 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:17:54 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:17:57 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:18:00 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:18:01 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:18:02 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:18:04 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:18:04 PYT 2013: Seccion administracion 
+Wed May 29 1:18:04 PYT 2013: Web: 
+Wed May 29 1:18:04 PYT 2013: Web: menu principal 
+Wed May 29 1:18:05 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:18:05 PYT 2013: Seccion administracion 
+Wed May 29 1:18:05 PYT 2013: Web: 
+Wed May 29 1:18:05 PYT 2013: Web: seccion categorias
+Wed May 29 1:18:05 PYT 2013: Asignando el template:
+Wed May 29 1:18:06 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:18:06 PYT 2013: Seccion administracion 
+Wed May 29 1:18:06 PYT 2013: Web: 
+Wed May 29 1:18:06 PYT 2013: Web: seccion subcategorias
+Wed May 29 1:18:06 PYT 2013: Asignando el template:
+Wed May 29 1:18:07 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:18:07 PYT 2013: Seccion administracion 
+Wed May 29 1:18:07 PYT 2013: Web: 
+Wed May 29 1:18:07 PYT 2013: no agregar nada
+Wed May 29 1:18:07 PYT 2013: BUSCAR_DOCUMENTOS
+Wed May 29 1:18:07 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Wed May 29 1:18:07 PYT 2013: BUSCAR_DOCUMENTOS :
+<table  cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%" >
+    		<thead>
+    		<tr>
+    		<th>Titulo</th>
+    		<th>Descripcion</th>
+    		
+    		</tr>
+    		</thead>
+    		<tbody><TR><TD>asdfas</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=9'>asdfasdf</a></TD></TR><TR><TD>asdfas</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=10'>asdfasdf</a></TD></TR><TR><TD>gdfgdfg</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=11'>gdchcvbcvbcvb</a></TD></TR><TR><TD>bala</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=12'>desc</a></TD></TR><TR><TD>subir</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=13'>descrip</a></TD></TR></tbody></table>
+Wed May 29 1:18:10 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:18:10 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:18:22 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:18:22 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:18:23 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:18:23 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:18:55 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:18:55 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:18:55 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:18:55 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:18:56 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:18:56 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:19:17 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:19:17 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:20:15 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:20:15 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:20:17 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:20:17 PYT 2013: Seccion administracion 
+Wed May 29 1:20:17 PYT 2013: Web: 
+Wed May 29 1:20:17 PYT 2013: Web: menu principal 
+Wed May 29 1:20:19 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:20:19 PYT 2013: Seccion administracion 
+Wed May 29 1:20:19 PYT 2013: Web: 
+Wed May 29 1:20:19 PYT 2013: no agregar nada
+Wed May 29 1:20:19 PYT 2013: BUSCAR_DOCUMENTOS
+Wed May 29 1:20:19 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Wed May 29 1:20:19 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Wed May 29 1:20:20 PYT 2013: --- OPERACIONES --
+Wed May 29 1:20:20 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Wed May 29 1:20:20 PYT 2013: no agregar nada
+Wed May 29 1:20:20 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Wed May 29 1:20:21 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:20:21 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:21:44 PYT 2013: Upload Archivo:/tmp/phppmJtFk
+Wed May 29 1:21:44 PYT 2013: Upload Archivo: Fie: _1369804904.pdf
+Wed May 29 1:21:44 PYT 2013: Upload Archivo: OK _1369804904.pdf
+Wed May 29 1:21:44 PYT 2013: ingregsar comando: pdf2swf /var/pdfflex/_1369804904.pdf -o /var/pdfflex/directory/_1369804904.pdf.swf -f -T 9 -t -s storeallcharacters
+Wed May 29 1:21:47 PYT 2013: --- OPERACIONES --
+Wed May 29 1:21:47 PYT 2013: --- OPERACIONES: ingresar_documento--
+Wed May 29 1:21:47 PYT 2013: no agregar nada
+Wed May 29 1:21:47 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Wed May 29 1:21:47 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Wed May 29 1:21:47 PYT 2013: MTD_AGREGAR_DOCUMENTO : file _1369804904.pdf
+Wed May 29 1:21:47 PYT 2013: MTD_AGREGAR_DOCUMENTO : status OK
+Wed May 29 1:22:02 PYT 2013: MTD_AGREGAR_DOCUMENTO> uploaded {OK} 
+Wed May 29 1:22:02 PYT 2013: MTD_AGREGAR_DOCUMENTO> Titulo: LEY FEDERAL DE PROCEDIMIENTO ADMINISTRATIVO
+Wed May 29 1:22:02 PYT 2013: MTD_AGREGAR_DOCUMENTO> Descripcion: Nueva Ley publicada en el Diario Oficial de la Federación el 4 de agosto de 1994
+Wed May 29 1:22:02 PYT 2013: MTD_AGREGAR_DOCUMENTO> Archivo: /var/pdfflex/_1369804904.pdf
+Wed May 29 1:22:02 PYT 2013: MTD_AGREGAR_DOCUMENTO> Categorias:1:1
+Wed May 29 1:22:02 PYT 2013: MTD_AGREGAR_DOCUMENTO>INSERT INTO documentos (titulo,descripcion,rutadocumento,rutaimagen,etiquetas,idcategoria,idsubcategoria) VALUES ('LEY FEDERAL DE PROCEDIMIENTO ADMINISTRATIVO',
+                'Nueva Ley publicada en el Diario Oficial de la Federación el 4 de agosto de 1994',
+                '/var/pdfflex/_1369804904.pdf',
+                'thumbs/_1369804904.jpg',
+                'ley leyes',
+                '1',
+                '1')
+Wed May 29 1:22:02 PYT 2013: MTD_AGREGAR_DOCUMENTO> Investigacion creada exitosamente
+Wed May 29 1:22:15 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:22:15 PYT 2013: Seccion administracion 
+Wed May 29 1:22:15 PYT 2013: Web: 
+Wed May 29 1:22:15 PYT 2013: no agregar nada
+Wed May 29 1:22:15 PYT 2013: BUSCAR_DOCUMENTOS
+Wed May 29 1:22:15 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Wed May 29 1:22:15 PYT 2013: BUSCAR_DOCUMENTOS :
+<table  cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%" >
+    		<thead>
+    		<tr>
+    		<th>Titulo</th>
+    		<th>Descripcion</th>
+    		
+    		</tr>
+    		</thead>
+    		<tbody><TR><TD>LEY FEDERAL DE PROCEDIMIENTO ADMINISTRATIVO</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=14'>Nueva Ley publicada en el Diario Oficial de la Fed</a></TD></TR></tbody></table>
+Wed May 29 1:22:19 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:22:19 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:22:52 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:22:52 PYT 2013: Seccion administracion 
+Wed May 29 1:22:52 PYT 2013: Web: 
+Wed May 29 1:22:52 PYT 2013: Web: menu principal 
+Wed May 29 1:22:54 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:22:54 PYT 2013: Seccion administracion 
+Wed May 29 1:22:54 PYT 2013: Web: 
+Wed May 29 1:22:54 PYT 2013: no agregar nada
+Wed May 29 1:22:54 PYT 2013: BUSCAR_DOCUMENTOS
+Wed May 29 1:22:54 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Wed May 29 1:22:54 PYT 2013: BUSCAR_DOCUMENTOS :
+<table  cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%" >
+    		<thead>
+    		<tr>
+    		<th>Titulo</th>
+    		<th>Descripcion</th>
+    		
+    		</tr>
+    		</thead>
+    		<tbody><TR><TD>LEY FEDERAL DE PROCEDIMIENTO ADMINISTRATIVO</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=14'>Nueva Ley publicada en el Diario Oficial de la Fed</a></TD></TR></tbody></table>
+Wed May 29 1:22:55 PYT 2013: --- OPERACIONES --
+Wed May 29 1:22:55 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Wed May 29 1:22:55 PYT 2013: no agregar nada
+Wed May 29 1:22:55 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Wed May 29 1:22:55 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:22:55 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 1:24:40 PYT 2013: Upload Archivo:/tmp/phpx99Abl
+Wed May 29 1:24:40 PYT 2013: Upload Archivo: Fie: _1369805080.pdf
+Wed May 29 1:24:40 PYT 2013: Upload Archivo: OK _1369805080.pdf
+Wed May 29 1:24:40 PYT 2013: ingregsar comando: pdf2swf /var/pdfflex/_1369805080.pdf -o /var/pdfflex/directory/_1369805080.pdf.swf -f -T 9 -t -s storeallcharacters
+Wed May 29 1:24:42 PYT 2013: --- OPERACIONES --
+Wed May 29 1:24:42 PYT 2013: --- OPERACIONES: ingresar_documento--
+Wed May 29 1:24:42 PYT 2013: no agregar nada
+Wed May 29 1:24:42 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Wed May 29 1:24:42 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Wed May 29 1:24:42 PYT 2013: MTD_AGREGAR_DOCUMENTO : file _1369805080.pdf
+Wed May 29 1:24:42 PYT 2013: MTD_AGREGAR_DOCUMENTO : status OK
+Wed May 29 1:24:43 PYT 2013: MTD_AGREGAR_DOCUMENTO> uploaded {OK} 
+Wed May 29 1:24:43 PYT 2013: MTD_AGREGAR_DOCUMENTO> Titulo: Oracle Certified Java Programmer
+Wed May 29 1:24:43 PYT 2013: MTD_AGREGAR_DOCUMENTO> Descripcion: Enterprise Java developers are in high demand in the IT marketplace today.  Expand your knowledge of Java EE and related technologies today with comprehensive, expert-led training from Oracle University.  Then validate what you know with a Java EE certification and move your career forward. \n
+Wed May 29 1:24:43 PYT 2013: MTD_AGREGAR_DOCUMENTO> Archivo: /var/pdfflex/_1369805080.pdf
+Wed May 29 1:24:43 PYT 2013: MTD_AGREGAR_DOCUMENTO> Categorias:5:
+Wed May 29 1:24:43 PYT 2013: MTD_AGREGAR_DOCUMENTO>INSERT INTO documentos (titulo,descripcion,rutadocumento,rutaimagen,etiquetas,idcategoria,idsubcategoria) VALUES ('Oracle Certified Java Programmer',
+                'Enterprise Java developers are in high demand in the IT marketplace today.  Expand your knowledge of Java EE and related technologies today with comprehensive, expert-led training from Oracle University.  Then validate what you know with a Java EE certification and move your career forward. \n',
+                '/var/pdfflex/_1369805080.pdf',
+                'thumbs/_1369805080.jpg',
+                'java',
+                '5',
+                '')
+Wed May 29 1:24:43 PYT 2013: MTD_AGREGAR_DOCUMENTO> Investigacion creada exitosamente
+Wed May 29 1:24:46 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:24:46 PYT 2013: Seccion administracion 
+Wed May 29 1:24:46 PYT 2013: Web: 
+Wed May 29 1:24:46 PYT 2013: no agregar nada
+Wed May 29 1:24:46 PYT 2013: BUSCAR_DOCUMENTOS
+Wed May 29 1:24:46 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Wed May 29 1:24:46 PYT 2013: BUSCAR_DOCUMENTOS :
+<table  cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%" >
+    		<thead>
+    		<tr>
+    		<th>Titulo</th>
+    		<th>Descripcion</th>
+    		
+    		</tr>
+    		</thead>
+    		<tbody><TR><TD>LEY FEDERAL DE PROCEDIMIENTO ADMINISTRATIVO</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=14'>Nueva Ley publicada en el Diario Oficial de la Fed</a></TD></TR><TR><TD>Oracle Certified Java Programmer</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=15'>Enterprise Java developers are in high demand in t</a></TD></TR></tbody></table>
+Wed May 29 1:24:51 PYT 2013: INCICIO SISTEMA
+Wed May 29 1:24:51 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar

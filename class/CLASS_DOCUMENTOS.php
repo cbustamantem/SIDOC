@@ -201,10 +201,11 @@ FROM documentos ";
         
     	if ($_SESSION["investigacion_status"] == "OK")
     	{
-    		$archivo="/var/www/fundacion/docs/".$_SESSION['investigacion_file'];
+    		$archivo="/var/pdfflex/".$_SESSION['investigacion_file'];
             $imagen="/var/www/fundacion/thumbs/".$_SESSION['investigacion_file'];
             $imagen = FN_REEMPLAZAR("pdf","jpg",$imagen);
             FN_THUMBNAIL($archivo,$imagen);
+            $imagen = FN_REEMPLAZAR("/var/www/fundacion/","",$imagen);            
     		LOGGER::LOG("MTD_AGREGAR_DOCUMENTO> uploaded {OK} ");
     		LOGGER::LOG("MTD_AGREGAR_DOCUMENTO> Titulo: $titulo" );
     		LOGGER::LOG("MTD_AGREGAR_DOCUMENTO> Descripcion: $descripcion" );

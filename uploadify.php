@@ -17,7 +17,7 @@ include_once ("includes/FN_NET_LOGGER.php");
 $_SESSION['investigacion_status']="enviando";
 $verifyToken = md5('unique_salt' . $_POST['timestamp']);
 FN_NET_LOGGER("Upload Archivo:".$_FILES['Filedata']['tmp_name']);
-$targetFolder = '/var/www/fundacion/docs/';  // Relative to the root
+$targetFolder = '/var/pdfflex/';  // Relative to the root
 $archivo= $_SESSION['uid']."_".time().".pdf";
 $_SESSION['investigacion_file']=$archivo;
 
@@ -37,6 +37,10 @@ if (!empty($_FILES)) {
 		{ 
 			$_SESSION['investigacion_status'] ="OK";
 			FN_NET_LOGGER("Upload Archivo: OK ".$_SESSION['investigacion_file']);
+			$comando = 'pdf2swf '.$targetFile.' -o '.$targetFolder.'directory/'.$archivo.'.swf -f -T 9 -t -s storeallcharacters';
+			FN_NET_LOGGER('ingregsar comando: '.$comando);
+			system($comando);
+
 		}
 		else
 		{
@@ -53,6 +57,7 @@ if (!empty($_FILES)) {
 	
 	
 	
+
 
 }
 

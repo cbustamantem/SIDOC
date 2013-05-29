@@ -49,6 +49,7 @@ function formulario_sistema_medico()
 	include_once ('class/CLASS_WEB_INTRANET.php');
 	include_once ('class/CLASS_WEB_MENU_PRINCIPAL.php');
 	include_once ('class/CLASS_WEB_RUTA.php');
+	include_once ('class/CLASS_LISTADO_DOCUMENTOS.php');
 	include_once('login.php');
 	
 	//-----------------------------
@@ -84,10 +85,12 @@ function formulario_sistema_medico()
 
     //LOGICA SITIO
     $body="n/n";
+    $body = FN_LEER_TPL('tpl/tpl-lista-docu.html');
     if (isset($_GET['documento']))
     {
     	//TODO: mostrar el documento
-    	$body = FN_LEER_TPL('tpl/tpl-documento.html');
+    	$obj_listado = new CLASS_LISTADO_DOCUMENTOS($vlf_mysql_conexion);
+    	$body = $obj_listado->MTD_RETORNAR_CODIGO_HTML();
     }
     else if(isset($_GET['busqueda']))
    	{
@@ -119,7 +122,8 @@ function formulario_sistema_medico()
    	else
    	{
    		//TODO: mostrar index
-
+   		$obj_listado = new CLASS_LISTADO_DOCUMENTOS($vlf_mysql_conexion);
+    	$body = $obj_listado->MTD_RETORNAR_CODIGO_HTML();
    		//$vlf_session_activada = $obj_session->MTD_START();
 
    	}
