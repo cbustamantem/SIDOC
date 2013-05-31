@@ -1,0 +1,95 @@
+Fri May 31 0:00:01 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:00:01 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:00:09 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:00:09 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:00:28 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:00:28 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:02:10 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:02:10 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:03:32 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:03:32 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:04:12 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:04:12 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:04:28 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:04:28 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:04:45 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:04:45 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:06:35 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:06:35 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:06:51 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:06:51 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:07:09 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:07:09 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:07:24 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:07:24 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:07:58 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:07:58 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:08:11 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:08:11 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:08:17 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:08:17 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:08:33 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:08:33 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:08:54 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:08:54 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:09:40 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:09:40 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:09:51 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:09:51 PYT 2013: Seccion administracion 
+Fri May 31 0:09:51 PYT 2013: Web: 
+Fri May 31 0:09:51 PYT 2013: Web: menu principal 
+Fri May 31 0:09:57 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:09:57 PYT 2013: Seccion administracion 
+Fri May 31 0:09:57 PYT 2013: Web: 
+Fri May 31 0:09:57 PYT 2013: Web: seccion subcategorias
+Fri May 31 0:09:57 PYT 2013: Asignando el template:
+Fri May 31 0:10:02 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:10:02 PYT 2013: Seccion administracion 
+Fri May 31 0:10:02 PYT 2013: Web: 
+Fri May 31 0:10:02 PYT 2013: no agregar nada
+Fri May 31 0:10:02 PYT 2013: BUSCAR_DOCUMENTOS
+Fri May 31 0:10:02 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Fri May 31 0:10:02 PYT 2013: BUSCAR_DOCUMENTOS :
+<table  cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%" >
+    		<thead>
+    		<tr>
+    		<th>Titulo</th>
+    		<th>Descripcion</th>
+    		
+    		</tr>
+    		</thead>
+    		<tbody><TR><TD>BPM for dummies</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=1'>bpm</a></TD></TR></tbody></table>
+Fri May 31 0:10:07 PYT 2013: --- OPERACIONES --
+Fri May 31 0:10:07 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Fri May 31 0:10:07 PYT 2013: no agregar nada
+Fri May 31 0:10:07 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Fri May 31 0:10:22 PYT 2013: Upload Archivo:/tmp/php3qRk4c
+Fri May 31 0:10:22 PYT 2013: Upload Archivo: Fie: _1369973422.pdf
+Fri May 31 0:10:22 PYT 2013: Upload Archivo: OK _1369973422.pdf
+Fri May 31 0:10:22 PYT 2013: ingregsar comando: pdf2swf /var/pdfflex/_1369973422.pdf -o /var/pdfflex/directory/_1369973422.pdf.swf -f -T 9 -t -s storeallcharacters
+Fri May 31 0:10:27 PYT 2013: --- OPERACIONES --
+Fri May 31 0:10:27 PYT 2013: --- OPERACIONES: ingresar_documento--
+Fri May 31 0:10:27 PYT 2013: no agregar nada
+Fri May 31 0:10:27 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Fri May 31 0:10:27 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Fri May 31 0:10:27 PYT 2013: MTD_AGREGAR_DOCUMENTO : file _1369973422.pdf
+Fri May 31 0:10:27 PYT 2013: MTD_AGREGAR_DOCUMENTO : status OK
+Fri May 31 0:10:30 PYT 2013: MTD_AGREGAR_DOCUMENTO> uploaded {OK} 
+Fri May 31 0:10:30 PYT 2013: MTD_AGREGAR_DOCUMENTO> Titulo: Otro documento
+Fri May 31 0:10:30 PYT 2013: MTD_AGREGAR_DOCUMENTO> Descripcion: dfasfds
+Fri May 31 0:10:30 PYT 2013: MTD_AGREGAR_DOCUMENTO> Archivo: /var/pdfflex/_1369973422.pdf
+Fri May 31 0:10:30 PYT 2013: MTD_AGREGAR_DOCUMENTO> Categorias:6:
+Fri May 31 0:10:30 PYT 2013: MTD_AGREGAR_DOCUMENTO>INSERT INTO documentos (titulo,descripcion,rutadocumento,rutaimagen,etiquetas,idcategoria,idsubcategoria) VALUES ('Otro documento',
+                'dfasfds',
+                '/var/pdfflex/_1369973422.pdf',
+                'thumbs/_1369973422.jpg',
+                'dfjs;alfajsdf;a',
+                '6',
+                '')
+Fri May 31 0:10:30 PYT 2013: MTD_AGREGAR_DOCUMENTO> Investigacion creada exitosamente
+Fri May 31 0:10:58 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:10:58 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri May 31 0:11:02 PYT 2013: INCICIO SISTEMA
+Fri May 31 0:11:02 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar

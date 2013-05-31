@@ -447,3 +447,33 @@ Wed May 29 1:24:46 PYT 2013: BUSCAR_DOCUMENTOS :
     		<tbody><TR><TD>LEY FEDERAL DE PROCEDIMIENTO ADMINISTRATIVO</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=14'>Nueva Ley publicada en el Diario Oficial de la Fed</a></TD></TR><TR><TD>Oracle Certified Java Programmer</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=15'>Enterprise Java developers are in high demand in t</a></TD></TR></tbody></table>
 Wed May 29 1:24:51 PYT 2013: INCICIO SISTEMA
 Wed May 29 1:24:51 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 21:29:16 PYT 2013: --- OPERACIONES --
+Wed May 29 21:29:16 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Wed May 29 21:29:16 PYT 2013: no agregar nada
+Wed May 29 21:29:16 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Wed May 29 21:31:06 PYT 2013: --- OPERACIONES --
+Wed May 29 21:31:06 PYT 2013: --- OPERACIONES: ingresar_documento--
+Wed May 29 21:31:06 PYT 2013: no agregar nada
+Wed May 29 21:31:06 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Wed May 29 21:31:06 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Wed May 29 21:31:06 PYT 2013: MTD_AGREGAR_DOCUMENTO : file 
+Wed May 29 21:31:06 PYT 2013: MTD_AGREGAR_DOCUMENTO : status 
+Wed May 29 21:31:06 PYT 2013: MTD_AGREGAR_DOCUMENTO>  debe seleccionar un archivo
+Wed May 29 21:43:33 PYT 2013: INCICIO SISTEMA
+Wed May 29 21:43:33 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 21:47:47 PYT 2013: INCICIO SISTEMA
+Wed May 29 21:47:49 PYT 2013: INCICIO SISTEMA
+Wed May 29 21:47:51 PYT 2013: INCICIO SISTEMA
+Wed May 29 21:47:54 PYT 2013: INCICIO SISTEMA
+Wed May 29 21:47:55 PYT 2013: INCICIO SISTEMA
+Wed May 29 21:47:56 PYT 2013: INCICIO SISTEMA
+Wed May 29 21:47:59 PYT 2013: INCICIO SISTEMA
+Wed May 29 21:47:59 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 21:50:08 PYT 2013: INCICIO SISTEMA
+Wed May 29 21:50:08 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed May 29 21:51:33 PYT 2013: INCICIO SISTEMA
+Wed May 29 21:51:33 PYT 2013: Seccion administracion 
+Wed May 29 21:51:33 PYT 2013: Web: 
+Wed May 29 21:51:33 PYT 2013: Web: menu principal 
