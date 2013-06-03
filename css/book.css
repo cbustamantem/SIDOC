@@ -5,7 +5,7 @@
   margin: 10px;
 }
 
-.book img { vertical-align: middle; }
+.book img { vertical-align: top; }
 
 /*
  *  In order for this to work, you must use Modernizer

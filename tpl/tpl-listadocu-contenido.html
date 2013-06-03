@@ -1,19 +1,15 @@
-    <div class="span3">
-    	<h3>{tpl-titulo-documento}</h3>
-    	<div id="book1" class="book">
-  					<a href="{tpl-link-documento}" target="_blank" onClick="window.open(this.href, this.target, 'width=300,height=400'); return false;">
-  						<img style="max-width: 80px; max-height: 120px;" src="{tpl-imagen-documento}" />
-  					</a>
 
-  		</div>
-    </div>
-    <div class="span3">
-    	<div  style="padding-top:2em; margin-left: -5em; width:248px;">
-    		<div>
-    			<p>
-    				{tpl-descripcion} ;dklsjf;adslkfjads;fkldsjf;kldsfj, jdf;lkadsjf;adsklfjds sdkfasdj;f;adsklfja s;dflasjdf;j;fjds adsf;klasjf;asdklfj dfk;asjf;<br>
-					<a href="{tpl-link-documento}" target="_blank" onClick="window.open(this.href, this.target, 'width=300,height=400'); return false;"><i class="icon-file"></i>Leer documento</a>
-				</p>
-			</div>
-    	</div>	
+    <div class="span3" style="min-height:206px;">
+    	<h3>{tpl-titulo-documento}</h3>
+        <div>
+          <p style="text-align:justify;">
+            <a id="book1" class="book" href="{tpl-link-documento}" target="_blank" onClick="window.open(this.href, this.target, 'width=300,height=400'); return false;" style="float: left;  margin-right:1em;">
+              <img style="max-width: 80px; max-height: 120px;" src="{tpl-imagen-documento}"/>
+            </a>
+          <span style="margin:0 0 0 1.5em;">
+           {tpl-descripcion}
+            <a href="{tpl-link-documento}" target="_blank" onClick="window.open(this.href, this.target, 'width=300,height=400'); return false;"><i class="icon-file"></i>Leer documento</a>
+            </span>
+          </p>
+        </div>
 	</div>

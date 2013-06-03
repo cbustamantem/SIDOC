@@ -1,13 +1,28 @@
 <?php
+ // Zebra Pagination
+require_once 'lib/Zebra_Pagination.php';
 class CLASS_LISTADO_DOCUMENTOS
 {	
 	private $vlc_codigo_html;
 	private $vlc_busqueda="";
     private $vlc_db_cn;
+    private $paginas = 4; // Cantidad de paginas a mostrar
+    private $nropaginas;
+
+    function getNroPaginas(){
+    	return $this->nropaginas;
+    }
+
+    function setNroPaginas($nropaginas){
+    	$this->nropaginas = $nropaginas;
+    }	
+ 
     function __construct ($vp_cn)
     {
+    	
     	$this->vlc_db_cn = $vp_cn;       
         $this->MTD_INICIALIZAR_PAGINA();
+
         
     }
   
@@ -33,9 +48,16 @@ class CLASS_LISTADO_DOCUMENTOS
     	}
     	$codigo_html = FN_REEMPLAZAR("{lista-documentos}",$lista_documentos,$codigo_html);
     	$this->vlc_codigo_html = $codigo_html;
+    	print($this->getNroPaginas());
 	}
+	
 	function MTD_LISTAR_DOCUMENTOS()
 	{
+		$totaldocumentos = FN_CONTAR_REGISTRO('select count(iddocumento) from documentos',$this->vlc_db_cn);
+		$paginacion = new Zebra_Pagination();
+		$paginacion->records($totaldocumentos);
+		$paginacion->records_per_page($this->paginas);
+
 		$sql="
 			SELECT
 			iddocumento,
@@ -50,22 +72,31 @@ class CLASS_LISTADO_DOCUMENTOS
 			etiquetas
 			FROM documentos
  		     ";
-		$where="";
+		$where =  " LIMIT ".((($paginacion->get_page() - 1) * 
+				$this->paginas) . ', ' . $this->paginas);
+
 		if (isset($_GET['categoria']))
 		{
-			$where =  " idcategoria=".FN_RECIBIR_VARIABLES('categoria');			
+			$where =  " idcategoria=".FN_RECIBIR_VARIABLES('categoria').' LIMIT '.((($paginacion->get_page() - 1) * 
+				$this->paginas) . ', ' . $this->paginas);
+
 		}
 		if (isset($_GET['subcategoria']))
 		{
-			$where .=  " AND idsubcategoria=".FN_RECIBIR_VARIABLES('subcategoria');			
+			$where .=  " AND idsubcategoria=".FN_RECIBIR_VARIABLES('subcategoria').' LIMIT '.((($paginacion->get_page() - 1) * 
+				$paginas) . ', ' . $paginas);			
 		}
 		$datos = array();
 		$datos = FN_RUN_QUERY($sql.$where,10,$this->vlc_db_cn);
+		
+		$this->setNroPaginas($paginacion->render());
+
 		return $datos;
 	}
+
 	function MTD_RETORNAR_CODIGO_HTML()
 	{
-		return $this->vlc_codigo_html;
+		return $this->vlc_codigo_html.$this->getNroPaginas();
 	}
 
 

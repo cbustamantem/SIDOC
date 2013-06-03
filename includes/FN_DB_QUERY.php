@@ -63,5 +63,24 @@
 	    
 		
 		return $estado_consulta;
-	}	
+	}
+
+	function FN_CONTAR_REGISTRO()
+	{
+		$estado_consulta = 0;
+
+		$resultado_consulta = mysql_query ( $vp_query,$vp_conexion);
+		if (mysql_error())
+		{
+			//ec[0] Error en la consulta sql: ".pg_last_error() ;
+			$estado_consulta = 0;			
+		}
+		else
+		{
+			$estado_consulta = $resultado_consulta;		   
+		}
+	    
+		
+		return $estado_consulta;
+	}
 ?>
