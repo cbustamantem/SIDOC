@@ -46,15 +46,21 @@ class CLASS_LISTADO_DOCUMENTOS
 			$tpl_documentos = FN_REEMPLAZAR("{tpl-descripcion}",$value[2],$tpl_documentos);			
     		$lista_documentos .=$tpl_documentos;
     	}
+    	$paginar = $this->getNroPaginas();
+    	$codigo_html = FN_REEMPLAZAR( "{paginacion}",$paginar, $codigo_html );
     	$codigo_html = FN_REEMPLAZAR("{lista-documentos}",$lista_documentos,$codigo_html);
+    	
     	$this->vlc_codigo_html = $codigo_html;
-    	print($this->getNroPaginas());
+    	
 	}
 	
 	function MTD_LISTAR_DOCUMENTOS()
 	{
-		$totaldocumentos = FN_CONTAR_REGISTRO('select count(iddocumento) from documentos',$this->vlc_db_cn);
+
+		$totaldocumentos = FN_CONTAR_REGISTRO('select * from documentos',$this->vlc_db_cn);
+		LOGGER::LOG('contas pio '.$totaldocumentos);
 		$paginacion = new Zebra_Pagination();
+		$paginacion->labels('Anterior', 'Siguiente');
 		$paginacion->records($totaldocumentos);
 		$paginacion->records_per_page($this->paginas);
 
@@ -89,15 +95,12 @@ class CLASS_LISTADO_DOCUMENTOS
 		$datos = array();
 		$datos = FN_RUN_QUERY($sql.$where,10,$this->vlc_db_cn);
 		
-		$this->setNroPaginas($paginacion->render());
-
+		$this->setNroPaginas($paginacion->render(true));
 		return $datos;
 	}
 
 	function MTD_RETORNAR_CODIGO_HTML()
 	{
-		return $this->vlc_codigo_html.$this->getNroPaginas();
+		return $this->vlc_codigo_html;
 	}
-
-
 }

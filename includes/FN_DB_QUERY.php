@@ -65,22 +65,10 @@
 		return $estado_consulta;
 	}
 
-	function FN_CONTAR_REGISTRO()
+	function FN_CONTAR_REGISTRO($vp_query,$vp_conexion)
 	{
-		$estado_consulta = 0;
-
-		$resultado_consulta = mysql_query ( $vp_query,$vp_conexion);
-		if (mysql_error())
-		{
-			//ec[0] Error en la consulta sql: ".pg_last_error() ;
-			$estado_consulta = 0;			
-		}
-		else
-		{
-			$estado_consulta = $resultado_consulta;		   
-		}
-	    
-		
-		return $estado_consulta;
+		$result = mysql_query($vp_query);
+		$numero = mysql_num_rows($result);
+		return $numero;
 	}
 ?>

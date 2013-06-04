@@ -125,6 +125,7 @@ function formulario_sistema_medico()
    		$obj_listado = new CLASS_LISTADO_DOCUMENTOS($vlf_mysql_conexion);
     	$body = $obj_listado->MTD_RETORNAR_CODIGO_HTML();
    		//$vlf_session_activada = $obj_session->MTD_START();
+   		
 
    	}
 
@@ -136,7 +137,7 @@ function formulario_sistema_medico()
 	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-menu-principal}",$obj_menu->MTD_RETORNAR_CODIGO_HTML(),$vlf_codigo_html_principal);	
 	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-ruta}",$vl_cod_html_ruta,$vlf_codigo_html_principal);	
 	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-login}",$vl_cod_html_login,$vlf_codigo_html_principal);	
-	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-body}",$body,$vlf_codigo_html_principal);	
+	$vlf_codigo_html_principal = FN_REEMPLAZAR("{tpl-body}",$body,$vlf_codigo_html_principal);
 
 	
 	return $vlf_codigo_html_principal;
