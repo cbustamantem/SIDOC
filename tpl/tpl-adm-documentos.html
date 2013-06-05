@@ -93,7 +93,44 @@
 	   }
 	   
 	}	    
-			
+	function MTD_ELIMINAR_DOCUMENTO(vp_id_documento)
+	{
+		var descripcion ="";
+	    var mensaje_error="";    
+
+	    descripcion     		=$("#descripcion").val();
+	    // Load dialog on click	
+	    //$('#basic-modal-content').modal();
+	    var conf = confirm("Esta seguro de eliminar el documento #" + vp_id_documento);
+
+	    if(conf == true)
+	    {
+
+			    var parametros 	= {operacion: "eliminar_documento", id_documento: vp_id_documento};	
+				$.ajax({
+			        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+			        success: function(data) 
+			        {
+			        	
+			        	if (data == "0")
+		                    {
+		                    	//location.href="index.php?id=registro&seccion=consultorio";
+		                        //ENVIAR AL FORMULARIO DE LOGIN
+		                        //TODO ACTUALIZAR GRILLA
+		                        //MTD_LISTAR_CATEGORIA();
+		                        alert("Documento Eliminado");
+		                    }
+		                    else 
+		                    {
+		                    	
+		                    }
+			         }
+			    });	  
+
+	    }
+
+		  	   	
+	}		
 //-->
 </script>
 <div id ="basic-modal-content">&nbsp;</div>

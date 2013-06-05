@@ -184,7 +184,13 @@ if (isset($_POST['operacion']))
 					$vl_cod_html_base = utf8_encode( $obj->MTD_AGREGAR_DOCUMENTO());
 					MTD_RETORNAR_HTML($vl_cod_html_base);
 				break;
-
+				case "eliminar_documento": 				
+					LOGGER::LOG("--- OPERACIONES: eliminar_documento--");
+					include ('class/CLASS_DOCUMENTOS.php');
+					$obj = new CLASS_DOCUMENTOS($vlf_mysql_conexion );
+					$vl_cod_html_base =  $obj->MTD_ELIMINAR_DOCUMENTO();
+					MTD_RETORNAR_HTML($vl_cod_html_base);
+				break;
 
 
 

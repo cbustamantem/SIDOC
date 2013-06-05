@@ -93,13 +93,14 @@ class CLASS_DOCUMENTOS
     		<thead>
     		<tr>
     		<th>Titulo</th>
-    		<th>Descripcion</th>    		
+    		<th>Descripcion</th>            
     		</tr>
     		</thead>
     		<tbody>';
     		foreach ($arreglo as $datos)
     		{
-    			$html.="<TR><TD>".substr($datos[1],0,70)."</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=".$datos[0]."'>".substr($datos[2],0,50)."</a></TD></TR>";
+    			$html.="<TR><TD>".substr($datos[1],0,70)."</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=".$datos[0]."'>".substr($datos[2],0,50)."</a></TD>
+                ";
     		}
     		$html.="</tbody></table>";
     		 
@@ -145,19 +146,29 @@ FROM documentos ";
     		$html='<table  cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%" >
     		<thead>
     		<tr>
+            <th>#</th>
     		<th>Titulo</th>
     		<th>Descripcion</th>
-    		
+    		<th>Opciones</th>
     		</tr>
     		</thead>
     		<tbody>';
     		foreach ($arreglo as $datos)
     		{
-    			$html.="<TR><TD>".substr($datos[1],0,70)."</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=".$datos[0]."'>".substr($datos[2],0,50)."</a></TD></TR>";
+    			$html.="<TR><TD>".$datos[0]."</TD><TD>".substr($datos[1],0,70)."</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=".$datos[0]."'>".substr($datos[2],0,50)."</a></TD> 
+                ".'<td>
+      
+                  <div class="btn-group">
+                    <a class="btn" href="#Editar" onclick="javascript:MTD_EDITAR_DOCUMENTO('.$datos[0].')"><i class="icon-edit"></i></a>
+                    <a class="btn" href="#Eliminar" onclick="javascript:MTD_ELIMINAR_DOCUMENTO('.$datos[0].')"><i class="icon-remove-circle"></i></a>                                       
+                  </div>
+                
+            </td>
+                </TR>';
     		}
     		$html.="</tbody></table>";    		 
     	}
-    	LOGGER::LOG("BUSCAR_DOCUMENTOS :\n".$html);
+    	LOGGER::LOG("BUSCAR_DOCUMENTOS :\n");
     	return $html;
     }
     function MTD_SELECCION_CATEGORIAS()
@@ -259,7 +270,24 @@ FROM documentos ";
     	}
     	*/
     }
-   
+    function MTD_ELIMINAR_DOCUMENTO()
+    {
+        LOGGER::LOG("ELIMINAR DOCUMENTO");
+        $id_documento=FN_RECIBIR_VARIABLES("id_documento");
+        
+        $sql="DELETE  from documentos  where iddocumento= ".$id_documento." limit 1;";
+        $resultado=false;
+        LOGGER::LOG("ELIMINAR DOCUMENTOS: SQL:".$sql);
+        $resultado= FN_RUN_NONQUERY($sql,$this->db_cn );
+        if ($resultado == true)
+        {
+            return "0";
+        }
+        else
+        {
+            return "Error en la operacion de ELIMINAR de DOCUMENTOS";
+        }
+    } 
     function MTD_FORMULARIO_DOCUMENTOS()
     {
     	LOGGER::LOG("MTD_FORMULARIO_DOCUMENTOS :\n");
