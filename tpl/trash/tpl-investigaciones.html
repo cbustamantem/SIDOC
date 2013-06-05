@@ -11,7 +11,31 @@
  {tpl-datos}
  </div>
  </form>
- <script type="text/javascript" charset="utf-8">
+ <script type="text/javascript">
+	<!--
+	$(document).ready(function(){
+		$("#buscar").click(function() {			
+			//MTD_BUSCAR_VADEMECUM();
+			$("#myform").submit();
+			});
+		
+		
+        $('#bubble_especialidad').CreateBubblePopup({
+                       themePath: '/composite.templates/consultorio/archivos_de_disenho/images/jquerybubblepopup-theme/',
+                       themeName: 'all-azure',
+                       position : 'right-middle',
+                       innerHtml: '.... ', mouseOver: 'hide'
+        });
+        $("#agregarInvestigacion").click(function() {
+        	MTD_MOSTRAR_FORMULARIO_INVESTIGACIONES();
+			});		
+	});		
+	
+		    
+			
+//-->
+</script>
+<script type="text/javascript" charset="utf-8">
 			$(document).ready(function() {
 				$('#example').dataTable({
 					 "sScrollY": "250px"
@@ -50,29 +74,4 @@
 				);	
 			
 			} );
-alert('CARGO?');
 		</script>
- <script type="text/javascript">
-	<!--
-	$(document).ready(function(){
-		$("#buscar").click(function() {			
-			//MTD_BUSCAR_VADEMECUM();
-			$("#myform").submit();
-			});
-		
-		
-        $('#bubble_especialidad').CreateBubblePopup({
-                       themePath: '/composite.templates/consultorio/archivos_de_disenho/images/jquerybubblepopup-theme/',
-                       themeName: 'all-azure',
-                       position : 'right-middle',
-                       innerHtml: '.... ', mouseOver: 'hide'
-        });
-        $("#agregarInvestigacion").click(function() {
-        	MTD_MOSTRAR_FORMULARIO_INVESTIGACIONES();
-			});		
-	});		
-	
-		    
-			
-//-->
-</script>

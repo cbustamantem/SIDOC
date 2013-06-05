@@ -6,7 +6,7 @@ class CLASS_LISTADO_DOCUMENTOS
 	private $vlc_codigo_html;
 	private $vlc_busqueda="";
     private $vlc_db_cn;
-    private $paginas = 4; // Cantidad de paginas a mostrar
+    private $paginas = 2; // Cantidad de paginas a mostrar
     private $nropaginas;
 
     function getNroPaginas(){
@@ -78,12 +78,11 @@ class CLASS_LISTADO_DOCUMENTOS
 			etiquetas
 			FROM documentos
  		     ";
-		$where =  " LIMIT ".((($paginacion->get_page() - 1) * 
-				$this->paginas) . ', ' . $this->paginas);
+		
 
 		if (isset($_GET['categoria']))
 		{
-			$where =  " idcategoria=".FN_RECIBIR_VARIABLES('categoria').' LIMIT '.((($paginacion->get_page() - 1) * 
+			$where =  " WHERE idcategoria=".FN_RECIBIR_VARIABLES('categoria').' LIMIT '.((($paginacion->get_page() - 1) * 
 				$this->paginas) . ', ' . $this->paginas);
 
 		}
@@ -95,6 +94,8 @@ class CLASS_LISTADO_DOCUMENTOS
 		$datos = array();
 		$datos = FN_RUN_QUERY($sql.$where,10,$this->vlc_db_cn);
 		
+		$where .=  " LIMIT ".((($paginacion->get_page() - 1) * 
+				$this->paginas) . ', ' . $this->paginas);
 		$this->setNroPaginas($paginacion->render(true));
 		return $datos;
 	}

@@ -94,14 +94,23 @@ function formulario_sistema_medico()
     }
     else if(isset($_GET['busqueda']))
    	{
+   			//TODO: mostrar el documento
+    	$obj_listado = new CLASS_LISTADO_DOCUMENTOS($vlf_mysql_conexion);
+    	$body = $obj_listado->MTD_RETORNAR_CODIGO_HTML();
    		//TODO: mostrar resultados de busqueda
    	}
    	else if( (isset($_GET['categoria'])) &&   (! isset($_GET['subcategoria'])) )
    	{
+   			//TODO: mostrar el documento
+    	$obj_listado = new CLASS_LISTADO_DOCUMENTOS($vlf_mysql_conexion);
+    	$body = $obj_listado->MTD_RETORNAR_CODIGO_HTML();
    		//TODO: mostrar categorias
    	}
    	else if( (isset($_GET['categoria'])) &&   (isset($_GET['subcategoria'])) )
    	{
+   			//TODO: mostrar el documento
+    	$obj_listado = new CLASS_LISTADO_DOCUMENTOS($vlf_mysql_conexion);
+    	$body = $obj_listado->MTD_RETORNAR_CODIGO_HTML();
    		//TODO: mostrar subcategorias
    	}
    	else if(isset($_GET['administracion']))
