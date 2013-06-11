@@ -11,13 +11,13 @@
     	<h3>{tpl-titulo-documento}</h3>
         <div>
           <p style="text-align:justify;">
-            <a id="book1" class="book" href="{tpl-link-documento}" target="_blank" onClick="window.open(this.href, this.target, 'width=300,height=400'); return false;" style="float: left;  margin-right:1em;">
+            <a id="book1" class="book" href="{tpl-link-documento}" target="_blank" onClick="window.open(this.href, this.target, 'width=' + screen.width + ',height=' + screen.height +'); return false;" style="float: left;  margin-right:1em;">
               <img style="max-width: 80px; max-height: 120px;" src="{tpl-imagen-documento}"/>
             </a>
           <span style="margin:0 0 0 1.5em;">
            {tpl-descripcion}
            <br>
-            <a href="{tpl-link-documento}" target="_blank" onClick="window.open(this.href, this.target, 'width=300,height=400'); return false;"><i class="icon-file"></i>Leer documento</a>
+            <a href="{tpl-link-documento}" target="_blank" onClick="window.open(this.href, this.target, 'width=' + screen.width + ',height=' + screen.height +'); return false;"><i class="icon-file"></i>Leer documento</a>
             </span>
           </p>
         </div>

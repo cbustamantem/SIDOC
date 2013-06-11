@@ -31,7 +31,7 @@ function FN_FILE_LOGGER($vp_mensaje)
     //$vf_estampa_tiempo=date('l jS \of F Y h:i:s A');
     $vf_estampa_tiempo=date("D M j G:i:s T Y");
     //INGRESA EL LOG
-    $vf_nombre_archivo = "/var/www/fundacion/logs/logs_".$vf_fecha.".log";
+    $vf_nombre_archivo = CONFIG::log_path."logs_".$vf_fecha.".log";
     
     $vf_file_handler = fopen("$vf_nombre_archivo", 'a');
 

@@ -50,6 +50,28 @@
 	   
 	  	
 	}
+	function MTD_EDITAR_DOCUMENTO(id_documento)
+	{
+		var codigo ="";
+	    var mensaje_error="";    
+
+	    
+	    // Load dialog on click	
+	    //$('#basic-modal-content').modal();
+		var parametros 	= {operacion: "editar_documentos", id_documento: id_documento};	
+		$.ajax({
+	        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+	        success: function(data) 
+	        {
+	        	$("#basic-modal-content").empty();
+	        	$("#basic-modal-content").append(data);
+	        	$('#basic-modal-content').modal();    	
+	        	
+	         }
+	    });
+	   
+	  	
+	}
 	function MTD_AGREGAR_DOCUMENTO()
 	{
 
@@ -78,7 +100,7 @@
 	            	if (data == "1")
 	            	{
 	            		$("#contenedor_resultado").empty();
-	               	 	$("#contenedor_resultado").append("<br><br><h3>Investigacion creada exitosamente </h3>");	
+	               	 	$("#contenedor_resultado").append("<br><br><h3>Documentacion creada exitosamente </h3>");	
 	            	}
 	            	else
 	            	{
@@ -92,7 +114,52 @@
 	   		alert("Atencion,<br> Debera ingresar un titulo, una descripcion y un autor");		   
 	   }
 	   
-	}	    
+	}	 
+	function MTD_ACTUALIZAR_DOCUMENTO()
+	{
+
+		
+	    var mensaje_error="";    
+	    var id_documento ="";
+	    var titulo="";
+	    var descripcion="";
+	    var etiquetas="";
+	    var categoria="";
+	    id_documento=$("#id_documento").val();
+	    titulo=$("#titulo").val();
+	    etiquetas=$("#etiquetas").val();
+	    descripcion=$("#descripcion").val();
+	    categoria = $("#lst_categorias :selected").val();
+	    	//Load dialog on click	
+	        //$('#basic-modal-content').modal();
+	    	var parametros 	= {operacion: "actualizar_documento",id_documento: id_documento, titulo: titulo, descripcion: descripcion, etiquetas: etiquetas,categoria: categoria};
+	     
+	        // Load dialog on click	
+	        //$('#basic-modal-content').modal();
+	   if (titulo !=""   && descripcion != "" )
+	   {
+	    	$.ajax({
+	            url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+	            success: function(data) 
+	            {
+	            	if (data == "1")
+	            	{
+	            		$("#contenedor_resultado").empty();
+	               	 	$("#contenedor_resultado").append("<br><br><h3>Documentacion actualizada exitosamente </h3>");	
+	            	}
+	            	else
+	            	{
+	            		alert(data);
+	            	}
+	             }
+	        });
+	   }
+	   else
+	   {
+	   		alert("Atencion,<br> Debera ingresar un titulo, una descripcion y un autor");		   
+	   }
+	   
+	}	   
 	function MTD_ELIMINAR_DOCUMENTO(vp_id_documento)
 	{
 		var descripcion ="";

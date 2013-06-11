@@ -58,7 +58,7 @@ class CLASS_LISTADO_DOCUMENTOS
 	{
 
 		$totaldocumentos = FN_CONTAR_REGISTRO('select * from documentos',$this->vlc_db_cn);
-		LOGGER::LOG('contas pio '.$totaldocumentos);
+
 		$paginacion = new Zebra_Pagination();
 		$paginacion->labels('Anterior', 'Siguiente');
 		$paginacion->records($totaldocumentos);
@@ -82,14 +82,14 @@ class CLASS_LISTADO_DOCUMENTOS
 
 		if (isset($_GET['categoria']))
 		{
-			$where =  " WHERE idcategoria=".FN_RECIBIR_VARIABLES('categoria').' LIMIT '.((($paginacion->get_page() - 1) * 
-				$this->paginas) . ', ' . $this->paginas);
+			$where =  " WHERE idcategoria=".FN_RECIBIR_VARIABLES('categoria');
+
 
 		}
 		if (isset($_GET['subcategoria']))
 		{
-			$where .=  " AND idsubcategoria=".FN_RECIBIR_VARIABLES('subcategoria').' LIMIT '.((($paginacion->get_page() - 1) * 
-				$paginas) . ', ' . $paginas);			
+			$where .=  " AND idsubcategoria=".FN_RECIBIR_VARIABLES('subcategoria'); 
+
 		}
 		$datos = array();
 		$datos = FN_RUN_QUERY($sql.$where,10,$this->vlc_db_cn);

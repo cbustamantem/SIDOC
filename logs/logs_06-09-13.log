@@ -1,0 +1,1076 @@
+Sun Jun 9 14:46:44 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 14:46:44 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 14:46:44 PYT 2013: contas pio 2
+Sun Jun 9 14:50:50 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 14:50:50 PYT 2013: Seccion administracion 
+Sun Jun 9 14:50:50 PYT 2013: Web: 
+Sun Jun 9 14:50:50 PYT 2013: Web: menu principal 
+Sun Jun 9 14:50:52 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 14:50:52 PYT 2013: Seccion administracion 
+Sun Jun 9 14:50:52 PYT 2013: Web: 
+Sun Jun 9 14:50:52 PYT 2013: Web: seccion categorias
+Sun Jun 9 14:50:52 PYT 2013: Asignando el template:
+Sun Jun 9 14:50:53 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 14:50:53 PYT 2013: Seccion administracion 
+Sun Jun 9 14:50:53 PYT 2013: Web: 
+Sun Jun 9 14:50:53 PYT 2013: Web: seccion subcategorias
+Sun Jun 9 14:50:53 PYT 2013: Asignando el template:
+Sun Jun 9 14:50:54 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 14:50:54 PYT 2013: Seccion administracion 
+Sun Jun 9 14:50:54 PYT 2013: Web: 
+Sun Jun 9 14:50:54 PYT 2013: no agregar nada
+Sun Jun 9 14:50:54 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 14:50:54 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 14:50:54 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 14:50:58 PYT 2013: --- OPERACIONES --
+Sun Jun 9 14:50:58 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 14:50:58 PYT 2013: no agregar nada
+Sun Jun 9 14:50:58 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 14:50:59 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 14:50:59 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 14:50:59 PYT 2013: contas pio 2
+Sun Jun 9 14:52:45 PYT 2013: --- OPERACIONES --
+Sun Jun 9 14:52:45 PYT 2013: --- OPERACIONES: ingresar_documento--
+Sun Jun 9 14:52:45 PYT 2013: no agregar nada
+Sun Jun 9 14:52:45 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Sun Jun 9 14:52:45 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Sun Jun 9 14:52:45 PYT 2013: MTD_AGREGAR_DOCUMENTO : file 
+Sun Jun 9 14:52:45 PYT 2013: MTD_AGREGAR_DOCUMENTO : status 
+Sun Jun 9 14:52:45 PYT 2013: MTD_AGREGAR_DOCUMENTO>  debe seleccionar un archivo
+Sun Jun 9 14:53:15 PYT 2013: --- OPERACIONES --
+Sun Jun 9 14:53:15 PYT 2013: --- OPERACIONES: ingresar_documento--
+Sun Jun 9 14:53:15 PYT 2013: no agregar nada
+Sun Jun 9 14:53:15 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Sun Jun 9 14:53:15 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Sun Jun 9 14:53:15 PYT 2013: MTD_AGREGAR_DOCUMENTO : file 
+Sun Jun 9 14:53:15 PYT 2013: MTD_AGREGAR_DOCUMENTO : status 
+Sun Jun 9 14:53:15 PYT 2013: MTD_AGREGAR_DOCUMENTO>  debe seleccionar un archivo
+Sun Jun 9 14:53:18 PYT 2013: --- OPERACIONES --
+Sun Jun 9 14:53:18 PYT 2013: --- OPERACIONES: ingresar_documento--
+Sun Jun 9 14:53:18 PYT 2013: no agregar nada
+Sun Jun 9 14:53:18 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Sun Jun 9 14:53:18 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Sun Jun 9 14:53:18 PYT 2013: MTD_AGREGAR_DOCUMENTO : file 
+Sun Jun 9 14:53:18 PYT 2013: MTD_AGREGAR_DOCUMENTO : status 
+Sun Jun 9 14:53:18 PYT 2013: MTD_AGREGAR_DOCUMENTO>  debe seleccionar un archivo
+Sun Jun 9 14:55:12 PYT 2013: --- OPERACIONES --
+Sun Jun 9 14:55:12 PYT 2013: --- OPERACIONES: ingresar_documento--
+Sun Jun 9 14:55:12 PYT 2013: no agregar nada
+Sun Jun 9 14:55:12 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Sun Jun 9 14:55:12 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Sun Jun 9 14:55:12 PYT 2013: MTD_AGREGAR_DOCUMENTO : file 
+Sun Jun 9 14:55:12 PYT 2013: MTD_AGREGAR_DOCUMENTO : status 
+Sun Jun 9 14:55:12 PYT 2013: MTD_AGREGAR_DOCUMENTO>  debe seleccionar un archivo
+Sun Jun 9 14:55:49 PYT 2013: --- OPERACIONES --
+Sun Jun 9 14:55:49 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 14:55:49 PYT 2013: no agregar nada
+Sun Jun 9 14:55:49 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 14:55:50 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 14:55:50 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 14:55:50 PYT 2013: contas pio 2
+Sun Jun 9 14:56:00 PYT 2013: Upload Archivo:
+Sun Jun 9 14:56:00 PYT 2013: Upload Archivo: Fie: _1370804160.pdf
+Sun Jun 9 14:56:00 PYT 2013: Upload Archivo: FAIL
+Sun Jun 9 14:56:19 PYT 2013: --- OPERACIONES --
+Sun Jun 9 14:56:19 PYT 2013: --- OPERACIONES: ingresar_documento--
+Sun Jun 9 14:56:19 PYT 2013: no agregar nada
+Sun Jun 9 14:56:19 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Sun Jun 9 14:56:19 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Sun Jun 9 14:56:19 PYT 2013: MTD_AGREGAR_DOCUMENTO : file _1370804160.pdf
+Sun Jun 9 14:56:19 PYT 2013: MTD_AGREGAR_DOCUMENTO : status FAIL
+Sun Jun 9 14:56:19 PYT 2013: MTD_AGREGAR_DOCUMENTO>  debe seleccionar un archivo
+Sun Jun 9 14:59:35 PYT 2013: --- OPERACIONES --
+Sun Jun 9 14:59:35 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 14:59:35 PYT 2013: no agregar nada
+Sun Jun 9 14:59:35 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 14:59:35 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 14:59:35 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 14:59:35 PYT 2013: contas pio 2
+Sun Jun 9 14:59:44 PYT 2013: Upload Archivo:
+Sun Jun 9 14:59:44 PYT 2013: Upload Archivo: Fie: _1370804384.pdf
+Sun Jun 9 14:59:44 PYT 2013: Upload Archivo: FAIL
+Sun Jun 9 14:59:45 PYT 2013: --- OPERACIONES --
+Sun Jun 9 14:59:45 PYT 2013: --- OPERACIONES: ingresar_documento--
+Sun Jun 9 14:59:45 PYT 2013: no agregar nada
+Sun Jun 9 14:59:45 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Sun Jun 9 14:59:45 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Sun Jun 9 14:59:45 PYT 2013: MTD_AGREGAR_DOCUMENTO : file _1370804384.pdf
+Sun Jun 9 14:59:45 PYT 2013: MTD_AGREGAR_DOCUMENTO : status FAIL
+Sun Jun 9 14:59:45 PYT 2013: MTD_AGREGAR_DOCUMENTO>  debe seleccionar un archivo
+Sun Jun 9 15:03:24 PYT 2013: Upload Archivo:
+Sun Jun 9 15:03:24 PYT 2013: Upload Archivo: Fie: _1370804604.pdf
+Sun Jun 9 15:03:24 PYT 2013: Upload Archivo: FAIL
+Sun Jun 9 15:04:29 PYT 2013: Upload Archivo:
+Sun Jun 9 15:04:29 PYT 2013: Upload Archivo: Fie: _1370804669.pdf
+Sun Jun 9 15:04:29 PYT 2013: Upload Archivo: FAIL
+Sun Jun 9 15:10:00 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 15:10:00 PYT 2013: Seccion administracion 
+Sun Jun 9 15:10:00 PYT 2013: Web: 
+Sun Jun 9 15:10:00 PYT 2013: Web: seccion subcategorias
+Sun Jun 9 15:10:00 PYT 2013: Asignando el template:
+Sun Jun 9 15:10:08 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 15:10:08 PYT 2013: Seccion administracion 
+Sun Jun 9 15:10:08 PYT 2013: Web: 
+Sun Jun 9 15:10:08 PYT 2013: Web: menu principal 
+Sun Jun 9 15:10:10 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 15:10:10 PYT 2013: Seccion administracion 
+Sun Jun 9 15:10:10 PYT 2013: Web: 
+Sun Jun 9 15:10:10 PYT 2013: no agregar nada
+Sun Jun 9 15:10:10 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 15:10:10 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 15:10:10 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 15:10:12 PYT 2013: --- OPERACIONES --
+Sun Jun 9 15:10:12 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 15:10:12 PYT 2013: no agregar nada
+Sun Jun 9 15:10:12 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 15:10:13 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 15:10:13 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 15:10:13 PYT 2013: contas pio 2
+Sun Jun 9 15:10:34 PYT 2013: Upload Archivo:
+Sun Jun 9 15:10:34 PYT 2013: Upload Archivo: Fie: _1370805034.pdf
+Sun Jun 9 15:10:34 PYT 2013: Upload Archivo: FAIL
+Sun Jun 9 15:10:36 PYT 2013: --- OPERACIONES --
+Sun Jun 9 15:10:36 PYT 2013: --- OPERACIONES: ingresar_documento--
+Sun Jun 9 15:10:36 PYT 2013: no agregar nada
+Sun Jun 9 15:10:36 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Sun Jun 9 15:10:36 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Sun Jun 9 15:10:36 PYT 2013: MTD_AGREGAR_DOCUMENTO : file _1370805034.pdf
+Sun Jun 9 15:10:36 PYT 2013: MTD_AGREGAR_DOCUMENTO : status FAIL
+Sun Jun 9 15:10:36 PYT 2013: MTD_AGREGAR_DOCUMENTO>  debe seleccionar un archivo
+Sun Jun 9 15:10:39 PYT 2013: --- OPERACIONES --
+Sun Jun 9 15:10:39 PYT 2013: --- OPERACIONES: ingresar_documento--
+Sun Jun 9 15:10:39 PYT 2013: no agregar nada
+Sun Jun 9 15:10:39 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Sun Jun 9 15:10:39 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Sun Jun 9 15:10:39 PYT 2013: MTD_AGREGAR_DOCUMENTO : file _1370805034.pdf
+Sun Jun 9 15:10:39 PYT 2013: MTD_AGREGAR_DOCUMENTO : status FAIL
+Sun Jun 9 15:10:39 PYT 2013: MTD_AGREGAR_DOCUMENTO>  debe seleccionar un archivo
+Sun Jun 9 15:17:45 PYT 2013: Upload Archivo:
+Sun Jun 9 15:17:45 PYT 2013: Upload Archivo: Fie: _1370805465.pdf
+Sun Jun 9 15:17:45 PYT 2013: Upload Archivo: FAIL
+Sun Jun 9 15:19:18 PYT 2013: Upload Archivo:
+Sun Jun 9 15:19:18 PYT 2013: Upload Archivo: File: _1370805558.pdf
+Sun Jun 9 15:19:18 PYT 2013: Upload Archivo: FAIL
+Sun Jun 9 15:21:03 PYT 2013: Upload Archivo:
+Sun Jun 9 15:21:03 PYT 2013: Upload Archivo: File: _1370805663.pdf
+Sun Jun 9 15:21:03 PYT 2013: Upload Archivo: moviendo archivos  to /var/pdfflex/_1370805663.pdf
+Sun Jun 9 15:21:03 PYT 2013: Upload Archivo: FAIL
+Sun Jun 9 15:24:46 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 15:24:46 PYT 2013: Seccion administracion 
+Sun Jun 9 15:24:46 PYT 2013: Web: 
+Sun Jun 9 15:24:46 PYT 2013: no agregar nada
+Sun Jun 9 15:24:46 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 15:24:46 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 15:24:46 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 15:24:53 PYT 2013: --- OPERACIONES --
+Sun Jun 9 15:24:53 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 15:24:53 PYT 2013: no agregar nada
+Sun Jun 9 15:24:53 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 15:24:53 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 15:24:53 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 15:24:53 PYT 2013: contas pio 2
+Sun Jun 9 15:25:03 PYT 2013: Upload Archivo:
+Sun Jun 9 15:25:03 PYT 2013: Upload Archivo: File: _1370805903.pdf
+Sun Jun 9 15:25:03 PYT 2013: Upload Archivo: moviendo archivos  to /var/pdfflex/_1370805903.pdf
+Sun Jun 9 15:25:03 PYT 2013: Upload Archivo: FAIL
+Sun Jun 9 15:26:14 PYT 2013: --- OPERACIONES --
+Sun Jun 9 15:26:14 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 15:26:14 PYT 2013: no agregar nada
+Sun Jun 9 15:26:14 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 15:26:15 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 15:26:15 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 15:26:15 PYT 2013: contas pio 2
+Sun Jun 9 15:26:31 PYT 2013: Upload Archivo:/tmp/php4uI3hK
+Sun Jun 9 15:26:31 PYT 2013: Upload Archivo: File: _1370805991.pdf
+Sun Jun 9 15:26:31 PYT 2013: Upload Archivo: moviendo archivos /tmp/php4uI3hK to /var/pdfflex/_1370805991.pdf
+Sun Jun 9 15:26:31 PYT 2013: Upload Archivo: OK _1370805991.pdf
+Sun Jun 9 15:26:31 PYT 2013: ingregsar comando: pdf2swf /var/pdfflex/_1370805991.pdf -o /var/pdfflex/directory/_1370805991.pdf.swf -f -T 9 -t -s storeallcharacters
+Sun Jun 9 15:26:44 PYT 2013: --- OPERACIONES --
+Sun Jun 9 15:26:44 PYT 2013: --- OPERACIONES: ingresar_documento--
+Sun Jun 9 15:26:44 PYT 2013: no agregar nada
+Sun Jun 9 15:26:44 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Sun Jun 9 15:26:44 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Sun Jun 9 15:26:44 PYT 2013: MTD_AGREGAR_DOCUMENTO : file _1370805991.pdf
+Sun Jun 9 15:26:44 PYT 2013: MTD_AGREGAR_DOCUMENTO : status OK
+Sun Jun 9 15:26:47 PYT 2013: MTD_AGREGAR_DOCUMENTO> uploaded {OK} 
+Sun Jun 9 15:26:47 PYT 2013: MTD_AGREGAR_DOCUMENTO> Titulo: asdf
+Sun Jun 9 15:26:47 PYT 2013: MTD_AGREGAR_DOCUMENTO> Descripcion: sa
+Sun Jun 9 15:26:47 PYT 2013: MTD_AGREGAR_DOCUMENTO> Archivo: /var/pdfflex/_1370805991.pdf
+Sun Jun 9 15:26:47 PYT 2013: MTD_AGREGAR_DOCUMENTO> Categorias:6:
+Sun Jun 9 15:26:47 PYT 2013: MTD_AGREGAR_DOCUMENTO>INSERT INTO documentos (titulo,descripcion,rutadocumento,rutaimagen,etiquetas,idcategoria,idsubcategoria) VALUES ('asdf',
+                'sa',
+                '/var/pdfflex/_1370805991.pdf',
+                'thumbs/_1370805991.jpg',
+                'sa',
+                '6',
+                '')
+Sun Jun 9 15:26:47 PYT 2013: MTD_AGREGAR_DOCUMENTO> Investigacion creada exitosamente
+Sun Jun 9 15:28:18 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 15:28:18 PYT 2013: Seccion administracion 
+Sun Jun 9 15:28:18 PYT 2013: Web: 
+Sun Jun 9 15:28:18 PYT 2013: no agregar nada
+Sun Jun 9 15:28:18 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 15:28:18 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 15:28:18 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 15:28:20 PYT 2013: --- OPERACIONES --
+Sun Jun 9 15:28:20 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 15:28:20 PYT 2013: no agregar nada
+Sun Jun 9 15:28:20 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 15:28:21 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 15:28:21 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 15:28:21 PYT 2013: contas pio 3
+Sun Jun 9 15:29:04 PYT 2013: Upload Archivo:/tmp/phpWchodr
+Sun Jun 9 15:29:04 PYT 2013: Upload Archivo: File: _1370806144.pdf
+Sun Jun 9 15:29:04 PYT 2013: Upload Archivo: moviendo archivos /tmp/phpWchodr to /var/pdfflex/_1370806144.pdf
+Sun Jun 9 15:29:04 PYT 2013: Upload Archivo: OK _1370806144.pdf
+Sun Jun 9 15:29:04 PYT 2013: ingregsar comando: pdf2swf /var/pdfflex/_1370806144.pdf -o /var/pdfflex/directory/_1370806144.pdf.swf -f -T 9 -t -s storeallcharacters
+Sun Jun 9 15:29:15 PYT 2013: --- OPERACIONES --
+Sun Jun 9 15:29:15 PYT 2013: --- OPERACIONES: ingresar_documento--
+Sun Jun 9 15:29:15 PYT 2013: no agregar nada
+Sun Jun 9 15:29:15 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Sun Jun 9 15:29:15 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Sun Jun 9 15:29:15 PYT 2013: MTD_AGREGAR_DOCUMENTO : file _1370806144.pdf
+Sun Jun 9 15:29:15 PYT 2013: MTD_AGREGAR_DOCUMENTO : status OK
+Sun Jun 9 15:30:30 PYT 2013: MTD_AGREGAR_DOCUMENTO> uploaded {OK} 
+Sun Jun 9 15:30:30 PYT 2013: MTD_AGREGAR_DOCUMENTO> Titulo: Begining Android Development
+Sun Jun 9 15:30:30 PYT 2013: MTD_AGREGAR_DOCUMENTO> Descripcion: Begining Android development
+Sun Jun 9 15:30:30 PYT 2013: MTD_AGREGAR_DOCUMENTO> Archivo: /var/pdfflex/_1370806144.pdf
+Sun Jun 9 15:30:30 PYT 2013: MTD_AGREGAR_DOCUMENTO> Categorias:5:
+Sun Jun 9 15:30:30 PYT 2013: MTD_AGREGAR_DOCUMENTO>INSERT INTO documentos (titulo,descripcion,rutadocumento,rutaimagen,etiquetas,idcategoria,idsubcategoria) VALUES ('Begining Android Development',
+                'Begining Android development',
+                '/var/pdfflex/_1370806144.pdf',
+                'thumbs/_1370806144.jpg',
+                'android',
+                '5',
+                '')
+Sun Jun 9 15:30:30 PYT 2013: MTD_AGREGAR_DOCUMENTO> Investigacion creada exitosamente
+Sun Jun 9 15:30:30 PYT 2013: --- OPERACIONES --
+Sun Jun 9 15:30:30 PYT 2013: --- OPERACIONES: ingresar_documento--
+Sun Jun 9 15:30:30 PYT 2013: no agregar nada
+Sun Jun 9 15:30:30 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Sun Jun 9 15:30:30 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Sun Jun 9 15:30:30 PYT 2013: MTD_AGREGAR_DOCUMENTO : file _1370806144.pdf
+Sun Jun 9 15:30:30 PYT 2013: MTD_AGREGAR_DOCUMENTO : status OK
+Sun Jun 9 15:31:46 PYT 2013: MTD_AGREGAR_DOCUMENTO> uploaded {OK} 
+Sun Jun 9 15:31:46 PYT 2013: MTD_AGREGAR_DOCUMENTO> Titulo: Begining Android Development
+Sun Jun 9 15:31:46 PYT 2013: MTD_AGREGAR_DOCUMENTO> Descripcion: Begining Android development
+Sun Jun 9 15:31:46 PYT 2013: MTD_AGREGAR_DOCUMENTO> Archivo: /var/pdfflex/_1370806144.pdf
+Sun Jun 9 15:31:46 PYT 2013: MTD_AGREGAR_DOCUMENTO> Categorias:5:
+Sun Jun 9 15:31:46 PYT 2013: MTD_AGREGAR_DOCUMENTO>INSERT INTO documentos (titulo,descripcion,rutadocumento,rutaimagen,etiquetas,idcategoria,idsubcategoria) VALUES ('Begining Android Development',
+                'Begining Android development',
+                '/var/pdfflex/_1370806144.pdf',
+                'thumbs/_1370806144.jpg',
+                'android',
+                '5',
+                '')
+Sun Jun 9 15:31:46 PYT 2013: MTD_AGREGAR_DOCUMENTO> Investigacion creada exitosamente
+Sun Jun 9 15:34:32 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 15:34:32 PYT 2013: Seccion administracion 
+Sun Jun 9 15:34:32 PYT 2013: Web: 
+Sun Jun 9 15:34:32 PYT 2013: no agregar nada
+Sun Jun 9 15:34:32 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 15:34:32 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 15:34:32 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 15:34:39 PYT 2013: --- OPERACIONES --
+Sun Jun 9 15:34:39 PYT 2013: --- OPERACIONES: eliminar_documento--
+Sun Jun 9 15:34:39 PYT 2013: no agregar nada
+Sun Jun 9 15:34:39 PYT 2013: ELIMINAR DOCUMENTO
+Sun Jun 9 15:34:39 PYT 2013: ELIMINAR DOCUMENTOS: SQL:DELETE  from documentos  where iddocumento= 16 limit 1;
+Sun Jun 9 15:34:48 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 15:34:48 PYT 2013: Seccion administracion 
+Sun Jun 9 15:34:48 PYT 2013: Web: 
+Sun Jun 9 15:34:48 PYT 2013: no agregar nada
+Sun Jun 9 15:34:48 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 15:34:48 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 15:34:48 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 15:34:53 PYT 2013: --- OPERACIONES --
+Sun Jun 9 15:34:53 PYT 2013: --- OPERACIONES: eliminar_documento--
+Sun Jun 9 15:34:53 PYT 2013: no agregar nada
+Sun Jun 9 15:34:53 PYT 2013: ELIMINAR DOCUMENTO
+Sun Jun 9 15:34:53 PYT 2013: ELIMINAR DOCUMENTOS: SQL:DELETE  from documentos  where iddocumento= 17 limit 1;
+Sun Jun 9 15:34:56 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 15:34:56 PYT 2013: Seccion administracion 
+Sun Jun 9 15:34:56 PYT 2013: Web: 
+Sun Jun 9 15:34:56 PYT 2013: no agregar nada
+Sun Jun 9 15:34:56 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 15:34:56 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 15:34:56 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 15:34:59 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 15:34:59 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 15:34:59 PYT 2013: contas pio 3
+Sun Jun 9 15:36:53 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 15:36:53 PYT 2013: Seccion administracion 
+Sun Jun 9 15:36:53 PYT 2013: Web: 
+Sun Jun 9 15:36:53 PYT 2013: Web: menu principal 
+Sun Jun 9 16:15:54 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:15:54 PYT 2013: Seccion administracion 
+Sun Jun 9 16:15:54 PYT 2013: Web: 
+Sun Jun 9 16:15:54 PYT 2013: Web: menu principal 
+Sun Jun 9 16:20:57 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:20:57 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 16:20:57 PYT 2013: contas pio 3
+Sun Jun 9 16:21:13 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:21:13 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 16:21:13 PYT 2013: contas pio 3
+Sun Jun 9 16:21:17 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:21:17 PYT 2013: Seccion administracion 
+Sun Jun 9 16:21:17 PYT 2013: Web: 
+Sun Jun 9 16:21:17 PYT 2013: Web: menu principal 
+Sun Jun 9 16:21:19 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:21:19 PYT 2013: Seccion administracion 
+Sun Jun 9 16:21:19 PYT 2013: Web: 
+Sun Jun 9 16:21:19 PYT 2013: no agregar nada
+Sun Jun 9 16:21:19 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 16:21:19 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 16:21:19 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 16:21:24 PYT 2013: --- OPERACIONES --
+Sun Jun 9 16:21:26 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:21:26 PYT 2013: Seccion administracion 
+Sun Jun 9 16:21:26 PYT 2013: Web: 
+Sun Jun 9 16:21:26 PYT 2013: no agregar nada
+Sun Jun 9 16:21:26 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 16:21:26 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 16:21:26 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 16:21:30 PYT 2013: --- OPERACIONES --
+Sun Jun 9 16:21:33 PYT 2013: --- OPERACIONES --
+Sun Jun 9 16:21:34 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:21:34 PYT 2013: Seccion administracion 
+Sun Jun 9 16:21:34 PYT 2013: Web: 
+Sun Jun 9 16:21:34 PYT 2013: no agregar nada
+Sun Jun 9 16:21:34 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 16:21:34 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 16:21:34 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 16:21:35 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:21:35 PYT 2013: Seccion administracion 
+Sun Jun 9 16:21:35 PYT 2013: Web: 
+Sun Jun 9 16:21:35 PYT 2013: no agregar nada
+Sun Jun 9 16:21:35 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 16:21:35 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 16:21:35 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 16:21:35 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:21:35 PYT 2013: Seccion administracion 
+Sun Jun 9 16:21:35 PYT 2013: Web: 
+Sun Jun 9 16:21:35 PYT 2013: no agregar nada
+Sun Jun 9 16:21:35 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 16:21:35 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 16:21:35 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 16:29:07 PYT 2013: --- OPERACIONES --
+Sun Jun 9 16:29:13 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:29:13 PYT 2013: Seccion administracion 
+Sun Jun 9 16:29:13 PYT 2013: Web: 
+Sun Jun 9 16:29:13 PYT 2013: no agregar nada
+Sun Jun 9 16:29:13 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 16:29:13 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 16:29:13 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 16:29:16 PYT 2013: --- OPERACIONES --
+Sun Jun 9 16:29:19 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:29:19 PYT 2013: Seccion administracion 
+Sun Jun 9 16:29:19 PYT 2013: Web: 
+Sun Jun 9 16:29:19 PYT 2013: no agregar nada
+Sun Jun 9 16:29:19 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 16:29:19 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 16:29:19 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 16:33:07 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:33:07 PYT 2013: Seccion administracion 
+Sun Jun 9 16:33:07 PYT 2013: Web: 
+Sun Jun 9 16:33:07 PYT 2013: no agregar nada
+Sun Jun 9 16:33:07 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 16:33:07 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 16:33:07 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 16:33:09 PYT 2013: --- OPERACIONES --
+Sun Jun 9 16:33:09 PYT 2013: --- OPERACIONES: eliminar_documento--
+Sun Jun 9 16:33:09 PYT 2013: no agregar nada
+Sun Jun 9 16:33:09 PYT 2013: ELIMINAR DOCUMENTO
+Sun Jun 9 16:33:09 PYT 2013: ELIMINAR DOCUMENTOS: SQL:DELETE  from documentos  where iddocumento= 18 limit 1;
+Sun Jun 9 16:33:12 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:33:12 PYT 2013: Seccion administracion 
+Sun Jun 9 16:33:12 PYT 2013: Web: 
+Sun Jun 9 16:33:12 PYT 2013: no agregar nada
+Sun Jun 9 16:33:12 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 16:33:12 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 16:33:12 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 16:33:14 PYT 2013: --- OPERACIONES --
+Sun Jun 9 16:33:14 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 16:33:14 PYT 2013: no agregar nada
+Sun Jun 9 16:33:14 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 16:33:15 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:33:15 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 16:33:15 PYT 2013: contas pio 2
+Sun Jun 9 16:39:20 PYT 2013: Upload Archivo:/tmp/php1y1IcO
+Sun Jun 9 16:39:20 PYT 2013: Upload Archivo: File: _1370810360.pdf
+Sun Jun 9 16:39:20 PYT 2013: Upload Archivo: moviendo archivos /tmp/php1y1IcO to /var/pdfflex/_1370810360.pdf
+Sun Jun 9 16:39:20 PYT 2013: Upload Archivo: OK _1370810360.pdf
+Sun Jun 9 16:39:20 PYT 2013: ingregsar comando: pdf2swf /var/pdfflex/_1370810360.pdf -o /var/pdfflex/directory/_1370810360.pdf.swf -f -T 9 -t -s storeallcharacters
+Sun Jun 9 16:39:58 PYT 2013: --- OPERACIONES --
+Sun Jun 9 16:39:58 PYT 2013: --- OPERACIONES: ingresar_documento--
+Sun Jun 9 16:39:58 PYT 2013: no agregar nada
+Sun Jun 9 16:39:58 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Sun Jun 9 16:39:58 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Sun Jun 9 16:39:58 PYT 2013: MTD_AGREGAR_DOCUMENTO : file _1370810360.pdf
+Sun Jun 9 16:39:58 PYT 2013: MTD_AGREGAR_DOCUMENTO : status OK
+Sun Jun 9 16:41:45 PYT 2013: MTD_AGREGAR_DOCUMENTO> uploaded {OK} 
+Sun Jun 9 16:41:45 PYT 2013: MTD_AGREGAR_DOCUMENTO> Titulo: Java Certified Development
+Sun Jun 9 16:41:45 PYT 2013: MTD_AGREGAR_DOCUMENTO> Descripcion: Java Certified Developer
+Sun Jun 9 16:41:45 PYT 2013: MTD_AGREGAR_DOCUMENTO> Archivo: /var/pdfflex/_1370810360.pdf
+Sun Jun 9 16:41:45 PYT 2013: MTD_AGREGAR_DOCUMENTO> Categorias:5:
+Sun Jun 9 16:41:45 PYT 2013: MTD_AGREGAR_DOCUMENTO>INSERT INTO documentos (titulo,descripcion,rutadocumento,rutaimagen,etiquetas,idcategoria,idsubcategoria) VALUES ('Java Certified Development',
+                'Java Certified Developer',
+                '/var/pdfflex/_1370810360.pdf',
+                'thumbs/_1370810360.jpg',
+                'java',
+                '5',
+                '')
+Sun Jun 9 16:41:45 PYT 2013: MTD_AGREGAR_DOCUMENTO> Investigacion creada exitosamente
+Sun Jun 9 16:41:54 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:41:54 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 16:41:54 PYT 2013: contas pio 3
+Sun Jun 9 16:45:22 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:45:22 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 16:45:22 PYT 2013: contas pio 3
+Sun Jun 9 16:45:23 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:45:23 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 16:45:23 PYT 2013: contas pio 3
+Sun Jun 9 16:45:24 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:45:24 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 16:45:24 PYT 2013: contas pio 3
+Sun Jun 9 16:45:24 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:45:24 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 16:45:24 PYT 2013: contas pio 3
+Sun Jun 9 16:45:25 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:45:25 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 16:45:25 PYT 2013: contas pio 3
+Sun Jun 9 16:45:26 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:45:26 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 16:45:26 PYT 2013: contas pio 3
+Sun Jun 9 16:45:26 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:45:26 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 16:45:26 PYT 2013: contas pio 3
+Sun Jun 9 16:45:26 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:45:26 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 16:45:26 PYT 2013: contas pio 3
+Sun Jun 9 16:45:27 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:45:27 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 16:45:27 PYT 2013: contas pio 3
+Sun Jun 9 16:45:27 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:45:27 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 16:45:27 PYT 2013: contas pio 3
+Sun Jun 9 16:45:28 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:45:28 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 16:45:28 PYT 2013: contas pio 3
+Sun Jun 9 16:49:53 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:49:53 PYT 2013: Seccion administracion 
+Sun Jun 9 16:49:53 PYT 2013: Web: 
+Sun Jun 9 16:49:53 PYT 2013: Web: menu principal 
+Sun Jun 9 16:49:54 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:49:54 PYT 2013: Seccion administracion 
+Sun Jun 9 16:49:54 PYT 2013: Web: 
+Sun Jun 9 16:49:54 PYT 2013: Web: seccion categorias
+Sun Jun 9 16:49:54 PYT 2013: Asignando el template:
+Sun Jun 9 16:49:55 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:49:55 PYT 2013: Seccion administracion 
+Sun Jun 9 16:49:55 PYT 2013: Web: 
+Sun Jun 9 16:49:55 PYT 2013: Web: seccion subcategorias
+Sun Jun 9 16:49:55 PYT 2013: Asignando el template:
+Sun Jun 9 16:49:58 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 16:49:58 PYT 2013: Seccion administracion 
+Sun Jun 9 16:49:58 PYT 2013: Web: 
+Sun Jun 9 16:49:58 PYT 2013: no agregar nada
+Sun Jun 9 16:49:58 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 16:49:58 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 16:49:58 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 17:01:10 PYT 2013: --- OPERACIONES --
+Sun Jun 9 17:01:10 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 17:01:10 PYT 2013: no agregar nada
+Sun Jun 9 17:01:10 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 17:01:10 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 17:01:10 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 17:01:10 PYT 2013: contas pio 3
+Sun Jun 9 17:16:06 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 17:16:06 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 17:16:06 PYT 2013: contas pio 3
+Sun Jun 9 17:16:07 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 17:16:07 PYT 2013: Seccion administracion 
+Sun Jun 9 17:16:07 PYT 2013: Web: 
+Sun Jun 9 17:16:07 PYT 2013: Web: menu principal 
+Sun Jun 9 17:16:08 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 17:16:08 PYT 2013: Seccion administracion 
+Sun Jun 9 17:16:08 PYT 2013: Web: 
+Sun Jun 9 17:16:08 PYT 2013: Web: seccion categorias
+Sun Jun 9 17:16:08 PYT 2013: Asignando el template:
+Sun Jun 9 17:16:09 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 17:16:09 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 17:16:09 PYT 2013: contas pio 3
+Sun Jun 9 17:16:11 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 17:16:11 PYT 2013: Seccion administracion 
+Sun Jun 9 17:16:11 PYT 2013: Web: 
+Sun Jun 9 17:16:11 PYT 2013: Web: menu principal 
+Sun Jun 9 17:16:13 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 17:16:13 PYT 2013: Seccion administracion 
+Sun Jun 9 17:16:13 PYT 2013: Web: 
+Sun Jun 9 17:16:13 PYT 2013: no agregar nada
+Sun Jun 9 17:16:13 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 17:16:13 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 17:16:13 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 17:21:13 PYT 2013: --- OPERACIONES --
+Sun Jun 9 17:21:13 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 17:21:13 PYT 2013: no agregar nada
+Sun Jun 9 17:21:13 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 17:21:13 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 17:21:13 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 17:21:13 PYT 2013: contas pio 3
+Sun Jun 9 17:32:18 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 17:32:18 PYT 2013: Seccion administracion 
+Sun Jun 9 17:32:18 PYT 2013: Web: 
+Sun Jun 9 17:32:18 PYT 2013: no agregar nada
+Sun Jun 9 17:32:18 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 17:32:18 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 17:32:18 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 17:32:19 PYT 2013: --- OPERACIONES --
+Sun Jun 9 17:32:19 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 17:32:19 PYT 2013: no agregar nada
+Sun Jun 9 17:32:19 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 17:32:19 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 17:32:19 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 17:32:19 PYT 2013: contas pio 3
+Sun Jun 9 17:33:15 PYT 2013: --- OPERACIONES --
+Sun Jun 9 17:33:15 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 17:33:15 PYT 2013: no agregar nada
+Sun Jun 9 17:33:15 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 17:33:15 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 17:33:15 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 17:33:15 PYT 2013: contas pio 3
+Sun Jun 9 17:45:28 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 17:45:28 PYT 2013: Seccion administracion 
+Sun Jun 9 17:45:28 PYT 2013: Web: 
+Sun Jun 9 17:45:28 PYT 2013: Web: menu principal 
+Sun Jun 9 17:46:55 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 17:46:55 PYT 2013: Seccion administracion 
+Sun Jun 9 17:46:55 PYT 2013: Web: 
+Sun Jun 9 17:46:55 PYT 2013: no agregar nada
+Sun Jun 9 17:46:55 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 17:46:55 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 17:46:55 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 17:47:02 PYT 2013: --- OPERACIONES --
+Sun Jun 9 17:47:02 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 17:47:02 PYT 2013: no agregar nada
+Sun Jun 9 17:47:02 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 17:47:03 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 17:47:03 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 17:47:03 PYT 2013: contas pio 3
+Sun Jun 9 18:03:11 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:03:11 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:03:11 PYT 2013: no agregar nada
+Sun Jun 9 18:03:11 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:04:07 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:04:07 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:04:07 PYT 2013: no agregar nada
+Sun Jun 9 18:04:07 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:04:09 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:04:09 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:04:09 PYT 2013: no agregar nada
+Sun Jun 9 18:04:09 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:04:11 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:04:11 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:04:11 PYT 2013: no agregar nada
+Sun Jun 9 18:04:11 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:05:09 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:05:09 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:05:11 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:05:11 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:05:12 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:05:12 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:05:14 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:05:14 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:05:32 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:05:32 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:05:32 PYT 2013: no agregar nada
+Sun Jun 9 18:05:32 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:05:44 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:05:44 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:05:44 PYT 2013: no agregar nada
+Sun Jun 9 18:05:44 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:06:04 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:06:04 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:06:04 PYT 2013: no agregar nada
+Sun Jun 9 18:06:04 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:06:16 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:06:16 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:06:16 PYT 2013: no agregar nada
+Sun Jun 9 18:06:16 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:06:32 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:06:32 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:06:32 PYT 2013: no agregar nada
+Sun Jun 9 18:06:32 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:07:04 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:07:04 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:07:04 PYT 2013: no agregar nada
+Sun Jun 9 18:07:04 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:07:18 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:07:18 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:07:18 PYT 2013: no agregar nada
+Sun Jun 9 18:07:18 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:07:53 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:07:53 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:07:53 PYT 2013: no agregar nada
+Sun Jun 9 18:07:53 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:07:53 PYT 2013: TPL:<div id='contenedor_resultado'>
+<h3>Agregue un documento</h3>
+<div id="contact2" style='height:265px; width:500px;'>
+	<label for="titulo" id="lb_titulo" >*Titulo:</label>
+	<input type="hidden" id="id_documento" value="{tpl-id_documento}">
+	<input type="text" style="width:480px;" id="titulo" name="titulo" placeholder="Ingrese el titulo" value="{tpl-titulo}"/>
+	<br>
+	<label for="lbautores" id="lb_autores" >*Etiquetas:</label>
+	<textarea id="etiquetas" name="etiquetas" style='height:40px; width:480px;' class="textarea-styled">{tpl-etiquetas}</textarea>	
+	<label for="Categoria" id="lb_categoria" >*Categoria:</label>
+	{tpl-lista-categoria}
+	<label for="Descripcion" id="lb_descripcion" >*Descripcion:</label>
+	<textarea id="descripcion" name="descripcion" style='height:100px; width:480px;' class="textarea-styled">{tpl-descripcion}</textarea>
+	<br>
+	<div style='float:right;margin-top:10px;'>
+	<button  type="button" class="btn btn-info" id="btnSubmitDocumento"><i class="icon-upload icon-white"></i> Ingresar 		Documento</button>	
+	</div>	
+							
+						
+</div>
+<br><br><br>
+	<form id="myform2"  enctype="multipart/form-data" action="uploadify.php" method="post"  > 
+		<div id="queue"></div>
+			
+		<input id="file_upload" name="file_upload" type="file" multiple="true">
+	</form>	
+			
+
+</div>	
+<br><br>
+
+	<script type="text/javascript">
+		
+		$(function() {
+			$('#file_upload').uploadify({
+				'method'   : 'post',
+				'formData'     : {
+					'timestamp' : '{tpl-timestamp}',
+					'token'     : '{tpl-token}'	,
+					'{tpl-session-name}' : '{tpl-session-id}' 
+				},
+				'swf'      : 'uploadify.swf',
+				'uploader' : 'uploadify.php'
+			});
+		});
+	</script>
+	<script type="text/javascript">
+	<!--
+	$(document).ready(function(){
+		$("#btnSubmitDocumento").click(function() {
+			MTD_AGREGAR_DOCUMENTO();
+			});
+		
+      
+	});			
+//-->
+</script>
+<br><br>
+<div style="width:100px;heigth:50px;" id="status-message"></div>
+</div>
+	
+	
+
+Sun Jun 9 18:08:04 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:08:04 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:08:04 PYT 2013: no agregar nada
+Sun Jun 9 18:08:04 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:08:04 PYT 2013: TPL:<div id='contenedor_resultado'>
+<h3>Agregue un documento</h3>
+<div id="contact2" style='height:265px; width:500px;'>
+	<label for="titulo" id="lb_titulo" >*Titulo:</label>
+	<input type="hidden" id="id_documento" value="{tpl-id_documento}">
+	<input type="text" style="width:480px;" id="titulo" name="titulo" placeholder="Ingrese el titulo" value="{tpl-titulo}"/>
+	<br>
+	<label for="lbautores" id="lb_autores" >*Etiquetas:</label>
+	<textarea id="etiquetas" name="etiquetas" style='height:40px; width:480px;' class="textarea-styled">{tpl-etiquetas}</textarea>	
+	<label for="Categoria" id="lb_categoria" >*Categoria:</label>
+	{tpl-lista-categoria}
+	<label for="Descripcion" id="lb_descripcion" >*Descripcion:</label>
+	<textarea id="descripcion" name="descripcion" style='height:100px; width:480px;' class="textarea-styled">{tpl-descripcion}</textarea>
+	<br>
+	<div style='float:right;margin-top:10px;'>
+	<button  type="button" class="btn btn-info" id="btnSubmitDocumento"><i class="icon-upload icon-white"></i> Ingresar 		Documento</button>	
+	</div>	
+							
+						
+</div>
+<br><br><br>
+	<form id="myform2"  enctype="multipart/form-data" action="uploadify.php" method="post"  > 
+		<div id="queue"></div>
+			
+		<input id="file_upload" name="file_upload" type="file" multiple="true">
+	</form>	
+			
+
+</div>	
+<br><br>
+
+	<script type="text/javascript">
+		
+		$(function() {
+			$('#file_upload').uploadify({
+				'method'   : 'post',
+				'formData'     : {
+					'timestamp' : '{tpl-timestamp}',
+					'token'     : '{tpl-token}'	,
+					'{tpl-session-name}' : '{tpl-session-id}' 
+				},
+				'swf'      : 'uploadify.swf',
+				'uploader' : 'uploadify.php'
+			});
+		});
+	</script>
+	<script type="text/javascript">
+	<!--
+	$(document).ready(function(){
+		$("#btnSubmitDocumento").click(function() {
+			MTD_AGREGAR_DOCUMENTO();
+			});
+		
+      
+	});			
+//-->
+</script>
+<br><br>
+<div style="width:100px;heigth:50px;" id="status-message"></div>
+</div>
+	
+	
+
+Sun Jun 9 18:08:06 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:08:06 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:08:06 PYT 2013: no agregar nada
+Sun Jun 9 18:08:06 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:08:06 PYT 2013: TPL:<div id='contenedor_resultado'>
+<h3>Agregue un documento</h3>
+<div id="contact2" style='height:265px; width:500px;'>
+	<label for="titulo" id="lb_titulo" >*Titulo:</label>
+	<input type="hidden" id="id_documento" value="{tpl-id_documento}">
+	<input type="text" style="width:480px;" id="titulo" name="titulo" placeholder="Ingrese el titulo" value="{tpl-titulo}"/>
+	<br>
+	<label for="lbautores" id="lb_autores" >*Etiquetas:</label>
+	<textarea id="etiquetas" name="etiquetas" style='height:40px; width:480px;' class="textarea-styled">{tpl-etiquetas}</textarea>	
+	<label for="Categoria" id="lb_categoria" >*Categoria:</label>
+	{tpl-lista-categoria}
+	<label for="Descripcion" id="lb_descripcion" >*Descripcion:</label>
+	<textarea id="descripcion" name="descripcion" style='height:100px; width:480px;' class="textarea-styled">{tpl-descripcion}</textarea>
+	<br>
+	<div style='float:right;margin-top:10px;'>
+	<button  type="button" class="btn btn-info" id="btnSubmitDocumento"><i class="icon-upload icon-white"></i> Ingresar 		Documento</button>	
+	</div>	
+							
+						
+</div>
+<br><br><br>
+	<form id="myform2"  enctype="multipart/form-data" action="uploadify.php" method="post"  > 
+		<div id="queue"></div>
+			
+		<input id="file_upload" name="file_upload" type="file" multiple="true">
+	</form>	
+			
+
+</div>	
+<br><br>
+
+	<script type="text/javascript">
+		
+		$(function() {
+			$('#file_upload').uploadify({
+				'method'   : 'post',
+				'formData'     : {
+					'timestamp' : '{tpl-timestamp}',
+					'token'     : '{tpl-token}'	,
+					'{tpl-session-name}' : '{tpl-session-id}' 
+				},
+				'swf'      : 'uploadify.swf',
+				'uploader' : 'uploadify.php'
+			});
+		});
+	</script>
+	<script type="text/javascript">
+	<!--
+	$(document).ready(function(){
+		$("#btnSubmitDocumento").click(function() {
+			MTD_AGREGAR_DOCUMENTO();
+			});
+		
+      
+	});			
+//-->
+</script>
+<br><br>
+<div style="width:100px;heigth:50px;" id="status-message"></div>
+</div>
+	
+	
+
+Sun Jun 9 18:08:09 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:08:09 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:08:09 PYT 2013: no agregar nada
+Sun Jun 9 18:08:09 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:08:09 PYT 2013: TPL:<div id='contenedor_resultado'>
+<h3>Agregue un documento</h3>
+<div id="contact2" style='height:265px; width:500px;'>
+	<label for="titulo" id="lb_titulo" >*Titulo:</label>
+	<input type="hidden" id="id_documento" value="{tpl-id_documento}">
+	<input type="text" style="width:480px;" id="titulo" name="titulo" placeholder="Ingrese el titulo" value="{tpl-titulo}"/>
+	<br>
+	<label for="lbautores" id="lb_autores" >*Etiquetas:</label>
+	<textarea id="etiquetas" name="etiquetas" style='height:40px; width:480px;' class="textarea-styled">{tpl-etiquetas}</textarea>	
+	<label for="Categoria" id="lb_categoria" >*Categoria:</label>
+	{tpl-lista-categoria}
+	<label for="Descripcion" id="lb_descripcion" >*Descripcion:</label>
+	<textarea id="descripcion" name="descripcion" style='height:100px; width:480px;' class="textarea-styled">{tpl-descripcion}</textarea>
+	<br>
+	<div style='float:right;margin-top:10px;'>
+	<button  type="button" class="btn btn-info" id="btnSubmitDocumento"><i class="icon-upload icon-white"></i> Ingresar 		Documento</button>	
+	</div>	
+							
+						
+</div>
+<br><br><br>
+	<form id="myform2"  enctype="multipart/form-data" action="uploadify.php" method="post"  > 
+		<div id="queue"></div>
+			
+		<input id="file_upload" name="file_upload" type="file" multiple="true">
+	</form>	
+			
+
+</div>	
+<br><br>
+
+	<script type="text/javascript">
+		
+		$(function() {
+			$('#file_upload').uploadify({
+				'method'   : 'post',
+				'formData'     : {
+					'timestamp' : '{tpl-timestamp}',
+					'token'     : '{tpl-token}'	,
+					'{tpl-session-name}' : '{tpl-session-id}' 
+				},
+				'swf'      : 'uploadify.swf',
+				'uploader' : 'uploadify.php'
+			});
+		});
+	</script>
+	<script type="text/javascript">
+	<!--
+	$(document).ready(function(){
+		$("#btnSubmitDocumento").click(function() {
+			MTD_AGREGAR_DOCUMENTO();
+			});
+		
+      
+	});			
+//-->
+</script>
+<br><br>
+<div style="width:100px;heigth:50px;" id="status-message"></div>
+</div>
+	
+	
+
+Sun Jun 9 18:08:21 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:08:21 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:08:21 PYT 2013: no agregar nada
+Sun Jun 9 18:08:21 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:08:21 PYT 2013: TPL:<div id='contenedor_resultado'>
+<h3>Agregue un documento</h3>
+<div id="contact2" style='height:265px; width:500px;'>
+	<label for="titulo" id="lb_titulo" >*Titulo:</label>
+	<input type="hidden" id="id_documento" value="{tpl-id_documento}">
+	<input type="text" style="width:480px;" id="titulo" name="titulo" placeholder="Ingrese el titulo" value="{tpl-titulo}"/>
+	<br>
+	<label for="lbautores" id="lb_autores" >*Etiquetas:</label>
+	<textarea id="etiquetas" name="etiquetas" style='height:40px; width:480px;' class="textarea-styled">{tpl-etiquetas}</textarea>	
+	<label for="Categoria" id="lb_categoria" >*Categoria:</label>
+	{tpl-lista-categoria}
+	<label for="Descripcion" id="lb_descripcion" >*Descripcion:</label>
+	<textarea id="descripcion" name="descripcion" style='height:100px; width:480px;' class="textarea-styled">{tpl-descripcion}</textarea>
+	<br>
+	<div style='float:right;margin-top:10px;'>
+	<button  type="button" class="btn btn-info" id="btnSubmitDocumento"><i class="icon-upload icon-white"></i> Ingresar 		Documento</button>	
+	</div>	
+							
+						
+</div>
+<br><br><br>
+	<form id="myform2"  enctype="multipart/form-data" action="uploadify.php" method="post"  > 
+		<div id="queue"></div>
+			
+		<input id="file_upload" name="file_upload" type="file" multiple="true">
+	</form>	
+			
+
+</div>	
+<br><br>
+
+	<script type="text/javascript">
+		
+		$(function() {
+			$('#file_upload').uploadify({
+				'method'   : 'post',
+				'formData'     : {
+					'timestamp' : '{tpl-timestamp}',
+					'token'     : '{tpl-token}'	,
+					'{tpl-session-name}' : '{tpl-session-id}' 
+				},
+				'swf'      : 'uploadify.swf',
+				'uploader' : 'uploadify.php'
+			});
+		});
+	</script>
+	<script type="text/javascript">
+	<!--
+	$(document).ready(function(){
+		$("#btnSubmitDocumento").click(function() {
+			MTD_AGREGAR_DOCUMENTO();
+			});
+		
+      
+	});			
+//-->
+</script>
+<br><br>
+<div style="width:100px;heigth:50px;" id="status-message"></div>
+</div>
+	
+	
+
+Sun Jun 9 18:09:54 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:09:54 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:09:54 PYT 2013: no agregar nada
+Sun Jun 9 18:09:54 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:09:54 PYT 2013: TPL:
+Sun Jun 9 18:10:18 PYT 2013: --- OPERACIONES --
+Sun Jun 9 18:10:18 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Sun Jun 9 18:10:18 PYT 2013: no agregar nada
+Sun Jun 9 18:10:18 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Sun Jun 9 18:10:18 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 18:10:18 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 18:10:18 PYT 2013: contas pio 3
+Sun Jun 9 19:04:29 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 19:04:29 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sun Jun 9 19:04:29 PYT 2013: contas pio 3
+Sun Jun 9 19:11:52 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 19:11:52 PYT 2013: Seccion administracion 
+Sun Jun 9 19:11:52 PYT 2013: Web: 
+Sun Jun 9 19:11:52 PYT 2013: Web: menu principal 
+Sun Jun 9 19:11:54 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 19:11:54 PYT 2013: Seccion administracion 
+Sun Jun 9 19:11:54 PYT 2013: Web: 
+Sun Jun 9 19:12:05 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 19:12:05 PYT 2013: Seccion administracion 
+Sun Jun 9 19:12:05 PYT 2013: Web: 
+Sun Jun 9 19:13:04 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 19:13:04 PYT 2013: Seccion administracion 
+Sun Jun 9 19:13:04 PYT 2013: Web: 
+Sun Jun 9 19:13:57 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 19:13:57 PYT 2013: Seccion administracion 
+Sun Jun 9 19:13:57 PYT 2013: Web: 
+Sun Jun 9 19:14:09 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 19:14:09 PYT 2013: Seccion administracion 
+Sun Jun 9 19:14:09 PYT 2013: Web: 
+Sun Jun 9 19:14:09 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 19:14:09 PYT 2013: Seccion administracion 
+Sun Jun 9 19:14:09 PYT 2013: Web: 
+Sun Jun 9 19:14:09 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 19:14:09 PYT 2013: Seccion administracion 
+Sun Jun 9 19:14:09 PYT 2013: Web: 
+Sun Jun 9 19:14:10 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 19:14:10 PYT 2013: Seccion administracion 
+Sun Jun 9 19:14:10 PYT 2013: Web: 
+Sun Jun 9 19:14:33 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 19:14:33 PYT 2013: Seccion administracion 
+Sun Jun 9 19:14:33 PYT 2013: Web: 
+Sun Jun 9 19:14:33 PYT 2013: no agregar nada
+Sun Jun 9 19:14:33 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 19:14:33 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 19:14:33 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 19:18:27 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 19:18:27 PYT 2013: Seccion administracion 
+Sun Jun 9 19:18:27 PYT 2013: Web: 
+Sun Jun 9 19:18:27 PYT 2013: no agregar nada
+Sun Jun 9 19:18:27 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 19:18:27 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 19:18:27 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Sun Jun 9 19:19:18 PYT 2013: INCICIO SISTEMA
+Sun Jun 9 19:19:18 PYT 2013: Seccion administracion 
+Sun Jun 9 19:19:18 PYT 2013: Web: 
+Sun Jun 9 19:19:18 PYT 2013: no agregar nada
+Sun Jun 9 19:19:18 PYT 2013: BUSCAR_DOCUMENTOS
+Sun Jun 9 19:19:18 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Sun Jun 9 19:19:18 PYT 2013: BUSCAR_DOCUMENTOS :
+

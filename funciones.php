@@ -30,6 +30,7 @@ function formulario_sistema_medico()
 	//-------------------------------------
 	//- INCLUYE LAS FUNCIONES PRINCIPALES -
 	//-------------------------------------
+	include_once ('includes/FN_CONFIGURACION.php');
 	include_once ('includes/FN_DB_CONEXION.php');
 	include_once ('includes/FN_DB_QUERY.php');
 	include_once ('includes/FN_HTML_ARMAR_GRILLA.php');

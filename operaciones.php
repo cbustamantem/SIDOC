@@ -12,6 +12,7 @@ $vlf_tpl = "tpl/tpl_frm_principal.html";
 //-------------------------------------
 //- INCLUYE LAS FUNCIONES PRINCIPALES -
 //-------------------------------------
+include_once ('includes/FN_CONFIGURACION.php');
 include_once ('includes/FN_DB_CONEXION.php');
 include_once ('includes/FN_DB_QUERY.php');
 include_once ('includes/FN_HTML_ARMAR_GRILLA.php');
@@ -174,7 +175,7 @@ if (isset($_POST['operacion']))
 					$obj = new CLASS_DOCUMENTOS($vlf_mysql_conexion );
 					$_SESSION["investigacion_file"]="";
 					$_SESSION["investigacion_status"]="";
-					$vl_cod_html_base = utf8_encode( $obj->MTD_FORMULARIO_DOCUMENTOS());
+					$vl_cod_html_base = utf8_encode( $obj->MTD_FORMULARIO_DOCUMENTOS("Ingresar"));
 					MTD_RETORNAR_HTML($vl_cod_html_base);
 				break;
 				case "ingresar_documento": 				
@@ -191,7 +192,20 @@ if (isset($_POST['operacion']))
 					$vl_cod_html_base =  $obj->MTD_ELIMINAR_DOCUMENTO();
 					MTD_RETORNAR_HTML($vl_cod_html_base);
 				break;
-
+				case "editar_documentos": 				
+					LOGGER::LOG("--- OPERACIONES: editar_documentos--");
+					include ('class/CLASS_DOCUMENTOS.php');
+					$obj = new CLASS_DOCUMENTOS($vlf_mysql_conexion );
+					$vl_cod_html_base =  $obj->MTD_EDITAR_DOCUMENTOS();
+					MTD_RETORNAR_HTML2($vl_cod_html_base);
+				break;
+			case "actualizar_documento": 				
+					LOGGER::LOG("--- OPERACIONES: actualizar_documento--");
+					include ('class/CLASS_DOCUMENTOS.php');
+					$obj = new CLASS_DOCUMENTOS($vlf_mysql_conexion );
+					$vl_cod_html_base = utf8_encode( $obj->MTD_ACTUALIZAR_DOCUMENTO());
+					MTD_RETORNAR_HTML($vl_cod_html_base);
+				break;
 
 
 

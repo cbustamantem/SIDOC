@@ -10,24 +10,24 @@ if($configManager->getConfig('admin.password')==null){
 	exit;
 }
 ?>
-
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
     <head>
-        <title>FlexPaper AdaptiveUI PHP Example</title>
+        <title>Visor de documentos</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <style type="text/css" media="screen">
 			html, body	{ height:100%; }
 			body { margin:0; padding:0; overflow:auto; }
 			#flashContent { display:none; }
         </style>
+
 		<link rel="stylesheet" type="text/css" href="../css/flexpaper.css" />
 		<script type="text/javascript" src="../js/jquery.min.js"></script>
 		<script type="text/javascript" src="../js/flexpaper.js"></script>
 		<script type="text/javascript" src="../js/flexpaper_handlers.js"></script>
     </head>
     <body>
-    <div style="position:absolute;left:10px;top:10px;">
-		<div id="documentViewer" class="flexpaper_viewer" style="width:1070px;height:500px"></div>
+    <div style="">
+		<div id="documentViewer" class="flexpaper_viewer" style="width:auto;margin:0px 0px 0px 0px;height:100%;"></div>
 
 	        <script type="text/javascript">
 		        function getDocumentUrl(document){
@@ -48,13 +48,14 @@ if($configManager->getConfig('admin.password')==null){
 						 ZoomTransition : 'easeOut',
 						 ZoomTime : 0.5,
 						 ZoomInterval : 0.2,
-						 FitPageOnLoad : false,
+						 FitPageOnLoad : true,
 						 FitWidthOnLoad : true,
 						 FullScreenAsMaxWindow : false,
 						 ProgressiveLoading : false,
 						 MinZoomSize : 0.2,
 						 MaxZoomSize : 5,
 						 SearchMatchAll : false,
+
 						 InitViewMode : 'Portrait',
 						 RenderingOrder : '<?php echo ($configManager->getConfig('renderingorder.primary') . ',' . $configManager->getConfig('renderingorder.secondary')) ?>',
 

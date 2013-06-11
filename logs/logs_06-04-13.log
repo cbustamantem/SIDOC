@@ -762,3 +762,62 @@ Tue Jun 4 23:55:39 PYT 2013: BUSCAR_DOCUMENTOS
 Tue Jun 4 23:55:39 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
 Tue Jun 4 23:55:39 PYT 2013: BUSCAR_DOCUMENTOS :
 
+Tue Jun 4 23:58:06 PYT 2013: INCICIO SISTEMA
+Tue Jun 4 23:58:06 PYT 2013: Seccion administracion 
+Tue Jun 4 23:58:06 PYT 2013: Web: 
+Tue Jun 4 23:58:06 PYT 2013: no agregar nada
+Tue Jun 4 23:58:06 PYT 2013: BUSCAR_DOCUMENTOS
+Tue Jun 4 23:58:06 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Tue Jun 4 23:58:06 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Tue Jun 4 23:58:12 PYT 2013: --- OPERACIONES --
+Tue Jun 4 23:58:12 PYT 2013: --- OPERACIONES: Mostrar ABM Documentos--
+Tue Jun 4 23:58:12 PYT 2013: no agregar nada
+Tue Jun 4 23:58:12 PYT 2013: MTD_FORMULARIO_DOCUMENTOS :
+
+Tue Jun 4 23:58:20 PYT 2013: Upload Archivo:/tmp/php3fi0yd
+Tue Jun 4 23:58:20 PYT 2013: Upload Archivo: Fie: _1370404700.pdf
+Tue Jun 4 23:58:20 PYT 2013: Upload Archivo: OK _1370404700.pdf
+Tue Jun 4 23:58:20 PYT 2013: ingregsar comando: pdf2swf /var/pdfflex/_1370404700.pdf -o /var/pdfflex/directory/_1370404700.pdf.swf -f -T 9 -t -s storeallcharacters
+Tue Jun 4 23:58:21 PYT 2013: --- OPERACIONES --
+Tue Jun 4 23:58:21 PYT 2013: --- OPERACIONES: ingresar_documento--
+Tue Jun 4 23:58:21 PYT 2013: no agregar nada
+Tue Jun 4 23:58:21 PYT 2013: MTD_AGREGAR_DOCUMENTO :
+
+Tue Jun 4 23:58:21 PYT 2013: MTD_AGREGAR_DOCUMENTO : uid 
+Tue Jun 4 23:58:21 PYT 2013: MTD_AGREGAR_DOCUMENTO : file _1370404700.pdf
+Tue Jun 4 23:58:21 PYT 2013: MTD_AGREGAR_DOCUMENTO : status OK
+Tue Jun 4 23:58:25 PYT 2013: MTD_AGREGAR_DOCUMENTO> uploaded {OK} 
+Tue Jun 4 23:58:25 PYT 2013: MTD_AGREGAR_DOCUMENTO> Titulo: adsfasfd
+Tue Jun 4 23:58:25 PYT 2013: MTD_AGREGAR_DOCUMENTO> Descripcion: asfd
+Tue Jun 4 23:58:25 PYT 2013: MTD_AGREGAR_DOCUMENTO> Archivo: /var/pdfflex/_1370404700.pdf
+Tue Jun 4 23:58:25 PYT 2013: MTD_AGREGAR_DOCUMENTO> Categorias:6:
+Tue Jun 4 23:58:25 PYT 2013: MTD_AGREGAR_DOCUMENTO>INSERT INTO documentos (titulo,descripcion,rutadocumento,rutaimagen,etiquetas,idcategoria,idsubcategoria) VALUES ('adsfasfd',
+                'asfd',
+                '/var/pdfflex/_1370404700.pdf',
+                'thumbs/_1370404700.jpg',
+                'asdasdf',
+                '6',
+                '')
+Tue Jun 4 23:58:25 PYT 2013: MTD_AGREGAR_DOCUMENTO> Investigacion creada exitosamente
+Tue Jun 4 23:58:29 PYT 2013: INCICIO SISTEMA
+Tue Jun 4 23:58:29 PYT 2013: Seccion administracion 
+Tue Jun 4 23:58:29 PYT 2013: Web: 
+Tue Jun 4 23:58:29 PYT 2013: no agregar nada
+Tue Jun 4 23:58:29 PYT 2013: BUSCAR_DOCUMENTOS
+Tue Jun 4 23:58:29 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Tue Jun 4 23:58:29 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Tue Jun 4 23:58:34 PYT 2013: --- OPERACIONES --
+Tue Jun 4 23:58:34 PYT 2013: --- OPERACIONES: eliminar_documento--
+Tue Jun 4 23:58:34 PYT 2013: no agregar nada
+Tue Jun 4 23:58:34 PYT 2013: ELIMINAR DOCUMENTO
+Tue Jun 4 23:58:34 PYT 2013: ELIMINAR DOCUMENTOS: SQL:DELETE  from documentos  where iddocumento= 18 limit 1;
+Tue Jun 4 23:58:36 PYT 2013: INCICIO SISTEMA
+Tue Jun 4 23:58:36 PYT 2013: Seccion administracion 
+Tue Jun 4 23:58:36 PYT 2013: Web: 
+Tue Jun 4 23:58:36 PYT 2013: no agregar nada
+Tue Jun 4 23:58:36 PYT 2013: BUSCAR_DOCUMENTOS
+Tue Jun 4 23:58:36 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Tue Jun 4 23:58:36 PYT 2013: BUSCAR_DOCUMENTOS :
+

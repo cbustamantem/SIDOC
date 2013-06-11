@@ -4,10 +4,10 @@
   <div class="control-group">
     <label class="control-label"  for="inputDescripcion">Descripcion</label>
     <div class="controls">
-      <input type="text" id="descripcion" placeholder="Ingrese la descripcion de la categoria">
-      <button  type="button" class="btn btn-info" id="btnIngresar"><i class="icon-check icon-white"></i> Ingresar</button>
-      <button type="button" class="btn btn-info" id="btnActualizar" style="display:none;"><i class="icon-refresh icon-white"></i> Actualizar</button>
-      <input type="hidden" id="id"/>
+      <input type="hidden" id="id_documento" value="{tpl-id-documento}">
+      <input type="text" id="descripcion" placeholder="Ingrese la descripcion de la categoria" value="{tpl-descripcion}">
+      <button  type="button" class="btn btn-info" id="btn{tpl-accion}"><i class="icon-check icon-white"></i> {tpl-accion}</button>
+      
     </div>
   </div>   
 </form>
@@ -16,6 +16,9 @@
 	$(document).ready(function(){
 		$("#btnIngresar").click(function() {
 			MTD_AGREGAR_CATEGORIA();
+			});		
+		$("#btnActualizar").click(function() {
+			MTD_ACTUALIZAR_CATEGORIA();
 			});			
 	});			
 	function MTD_AGREGAR_CATEGORIA()

@@ -2,17 +2,18 @@
 <h3>Agregue un documento</h3>
 <div id="contact2" style='height:265px; width:500px;'>
 	<label for="titulo" id="lb_titulo" >*Titulo:</label>
-	<input type="text" style="width:480px;" id="titulo" name="titulo" placeholder="Ingrese el titulo" value=""/>
+	<input type="hidden" id="id_documento" value="{tpl-id_documento}">
+	<input type="text" style="width:480px;" id="titulo" name="titulo" placeholder="Ingrese el titulo" value="{tpl-titulo}"/>
 	<br>
 	<label for="lbautores" id="lb_autores" >*Etiquetas:</label>
-	<textarea id="etiquetas" name="etiquetas" style='height:40px; width:480px;' class="textarea-styled"></textarea>	
+	<textarea id="etiquetas" name="etiquetas" style='height:40px; width:480px;' class="textarea-styled">{tpl-etiquetas}</textarea>	
 	<label for="Categoria" id="lb_categoria" >*Categoria:</label>
-	{tpl-lista-categoria}	
+	{tpl-lista-categoria}
 	<label for="Descripcion" id="lb_descripcion" >*Descripcion:</label>
-	<textarea id="descripcion" name="descripcion" style='height:100px; width:480px;' class="textarea-styled"></textarea>
+	<textarea id="descripcion" name="descripcion" style='height:100px; width:480px;' class="textarea-styled">{tpl-descripcion}</textarea>
 	<br>
 	<div style='float:right;margin-top:10px;'>
-	<button  type="button" class="btn btn-info" id="btnSubmitDocumento"><i class="icon-upload icon-white"></i> Ingresar 		Documento</button>	
+	<button  type="button" class="btn btn-info" id="btn{tpl-accion}Documento"><i class="icon-upload icon-white"></i> {tpl-accion}	Documento</button>	
 	</div>	
 							
 						
@@ -46,8 +47,11 @@
 	<script type="text/javascript">
 	<!--
 	$(document).ready(function(){
-		$("#btnSubmitDocumento").click(function() {
+		$("#btnIngresarDocumento").click(function() {
 			MTD_AGREGAR_DOCUMENTO();
+			});
+		$("#btnActualizarDocumento").click(function() {
+			MTD_ACTUALIZAR_DOCUMENTO();
 			});
 		
       

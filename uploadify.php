@@ -1,28 +1,31 @@
 <?php
+session_start();
 $session_name = session_name();
 if (!isset($_POST[$session_name])) {
 	exit;
 } else {
 	session_id($_POST[$session_name]);
-	session_start();
 }
 /*
 Uploadify
 Copyright (c) 2012 Reactive Apps, Ronnie Garcia
 Released under the MIT License <http://www.opensource.org/licenses/mit-license.php> 
 */
+include_once ('includes/FN_CONFIGURACION.php');
 include_once ("includes/FN_NET_LOGGER.php");
 // Define a destination
 // Relative to the root
 $_SESSION['investigacion_status']="enviando";
 $verifyToken = md5('unique_salt' . $_POST['timestamp']);
 FN_NET_LOGGER("Upload Archivo:".$_FILES['Filedata']['tmp_name']);
-$targetFolder = '/var/pdfflex/';  // Relative to the root
+
+$targetFolder = CONFIG::docs_path;  // Relative to the root
 $archivo= $_SESSION['uid']."_".time().".pdf";
 $_SESSION['investigacion_file']=$archivo;
 
-FN_NET_LOGGER("Upload Archivo: Fie: ".$archivo);
-if (!empty($_FILES)) {
+FN_NET_LOGGER("Upload Archivo: File: ".$_SESSION['investigacion_file']);
+if (!empty($_FILES)) 
+{
 	$tempFile = $_FILES['Filedata']['tmp_name'];
 	$targetPath = $targetFolder;
 	//$targetFile =  str_replace('//','/',$targetPath) . $_FILES['Filedata']['name'];
@@ -33,6 +36,7 @@ if (!empty($_FILES)) {
 	
 	if (in_array($fileParts['extension'],$fileTypes)) 
 	{
+		FN_NET_LOGGER("Upload Archivo: moviendo archivos ".$tempFile. " to ".$targetFile);
 		if (move_uploaded_file($tempFile,$targetFile))
 		{ 
 			$_SESSION['investigacion_status'] ="OK";
@@ -54,9 +58,6 @@ if (!empty($_FILES)) {
 		FN_NET_LOGGER("Upload Archivo: INVALIDO");
 		echo 'Archivo invalido.';
 	}
-	
-	
-	
 
 
 }
