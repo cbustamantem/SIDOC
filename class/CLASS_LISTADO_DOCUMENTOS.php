@@ -6,7 +6,7 @@ class CLASS_LISTADO_DOCUMENTOS
 	private $vlc_codigo_html;
 	private $vlc_busqueda="";
     private $vlc_db_cn;
-    private $paginas = 2; // Cantidad de paginas a mostrar
+    private $paginas = 20; // Cantidad de paginas a mostrar
     private $nropaginas;
 
     function getNroPaginas(){
