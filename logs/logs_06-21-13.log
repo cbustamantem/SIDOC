@@ -1172,3 +1172,28 @@ Fri Jun 21 11:19:00 PYT 2013: Sessions -> logged_in
 Fri Jun 21 11:19:00 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='cgga4ftldlp82a3f073p8lr7o7' AND ip='127.0.0.1'
 Fri Jun 21 11:19:00 PYT 2013: Session Logout
 Fri Jun 21 11:19:00 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri Jun 21 11:19:54 PYT 2013: --- OPERACIONES --
+Fri Jun 21 11:19:54 PYT 2013: --- OPERACIONES: Validar usuario  --
+Fri Jun 21 11:19:54 PYT 2013: Check Login 
+Fri Jun 21 11:19:54 PYT 2013: Check Login > set variables
+Fri Jun 21 11:19:54 PYT 2013: Check Login > user emilio2@fundacionparaguaya.org 
+Fri Jun 21 11:19:54 PYT 2013: Check Login > all variables set 
+Fri Jun 21 11:19:54 PYT 2013: Check Login > login fail 
+Fri Jun 21 11:19:54 PYT 2013: --- OPERACIONES: usuario no valido--
+Fri Jun 21 11:19:58 PYT 2013: --- OPERACIONES --
+Fri Jun 21 11:19:58 PYT 2013: --- OPERACIONES: Validar usuario  --
+Fri Jun 21 11:19:58 PYT 2013: Check Login 
+Fri Jun 21 11:19:58 PYT 2013: Check Login > set variables
+Fri Jun 21 11:19:58 PYT 2013: Check Login > user emilio2@fundacionparaguaya.org.py 
+Fri Jun 21 11:19:58 PYT 2013: Check Login > all variables set 
+Fri Jun 21 11:19:58 PYT 2013: Sessions -> set data session 
+Fri Jun 21 11:19:58 PYT 2013: Check Login > login success for user emilio2@fundacionparaguaya.org.py
+Fri Jun 21 11:19:58 PYT 2013: --- OPERACIONES: usuario valido--
+Fri Jun 21 11:19:58 PYT 2013: INCICIO SISTEMA
+Fri Jun 21 11:19:58 PYT 2013: Sessions -> logged_in
+Fri Jun 21 11:19:58 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 71 AND token='bdf7cf785958757c1bc5b1b470e357b2' AND session='cgga4ftldlp82a3f073p8lr7o7' AND ip='127.0.0.1'
+Fri Jun 21 11:19:58 PYT 2013: Sessions -> Session chequed for :emilio2@fundacionparaguaya.org.py from 127.0.0.1
+Fri Jun 21 11:19:58 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Fri Jun 21 15:20:01 UTC 2013: Sessions -> logged_in
+Fri Jun 21 15:20:01 UTC 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 71 AND token='bdf7cf785958757c1bc5b1b470e357b2' AND session='cgga4ftldlp82a3f073p8lr7o7' AND ip='127.0.0.1'
+Fri Jun 21 15:20:01 UTC 2013: Sessions -> Session chequed for :emilio2@fundacionparaguaya.org.py from 127.0.0.1
