@@ -5,15 +5,29 @@
     <label class="control-label"  for="inputDescripcion">Descripcion</label>
     <div class="controls">
       <input type="hidden" id="id_documento" value="{tpl-id-documento}">
-      <input type="text" id="descripcion" placeholder="Ingrese la descripcion de la categoria" value="{tpl-descripcion}">
-      <button  type="button" class="btn btn-info" id="btn{tpl-accion}"><i class="icon-check icon-white"></i> {tpl-accion}</button>
+      <input type="text" id="descripcion" placeholder="Ingrese la descripcion de la categoria" value="">
+      <button  type="button" class="btn btn-info" id="btnIngresar"><i class="icon-check icon-white"></i> Ingresar</button>
       
     </div>
   </div>   
 </form>
 <script type="text/javascript" charset="utf-8">
+
+/* Table initialisation 
+$(document).ready(function() {
+
+} );
+*/
 	var operaciones_ajax="operaciones.php";
 	$(document).ready(function(){
+		$('#example').dataTable( {
+		"sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
+		"sPaginationType": "bootstrap",
+		
+		"oLanguage": {
+			"sLengthMenu": "_MENU_ records per page"
+		}
+		} );
 		$("#btnIngresar").click(function() {
 			MTD_AGREGAR_CATEGORIA();
 			});		

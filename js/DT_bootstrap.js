@@ -147,7 +147,7 @@ if ( $.fn.DataTable.TableTools ) {
 }
 
 
-/* Table initialisation */
+/* Table initialisation 
 $(document).ready(function() {
 	$('#example').dataTable( {
 		"sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
@@ -158,3 +158,4 @@ $(document).ready(function() {
 		}
 	} );
 } );
+*/

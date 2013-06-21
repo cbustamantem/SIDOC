@@ -1,6 +1,6 @@
-<h3>Registrese y obtenga su Clinica en l&iacute;nea</h3>
+<h3>Registro de Usuarios</h3>
 
-	<div id="contact2" style='height:350px;'>
+	<div id="contact2" style='height:350px;width:900px;display:inline;'>
 			<ul>
 				<li>			
 					<label for="nombre" id="lb_nombre" >*Nombre:</label>
@@ -9,11 +9,7 @@
 				<li>	
 					<label for="nombre" id="lb_apellido">*Apellido:</label>
 					<input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido" value=""/>
-				</li>			
-				<li>
-					<label for="registroMedico" id="lb_registro_medico">*Registro M&eacute;dico:</label>
-					<input type="text" id="registro_medico" name="registro_medico" placeholder="ingrese su Registro Medico" value=""/>
-				</li>
+				</li>							
 				<li>
 					<label for="cedula" id="lb_cedula">*Cedula:</label>
 					<input type="text" id="cedula" name="cedula" placeholder="Ingrese su nro de cedula" value="" />			
@@ -25,23 +21,7 @@
 				<li>
 					<label for="telefono">Tel&eacute;fono:</label>
 					<input type="text" id="telefono" name="telefono" placeholder="Ingrese su nro telefonico"  value=""/>			
-				</li>
-				<li>
-					<label for="especializacion" id="especializacion">*Especialidad</label>
-					<select id="especialidad" name="especialidad" style="width:250px;">
-						{tpl-opciones-especialidad}
-					</select>			
-				</li>
-				<li>
-				<label for="tratam" id="tratam">Tratamiento</label>
-					<select id="tratamiento" name="tratamiento" style="width:200px;">
-						<option value="Dr.">Dr.</option>
-						<option value="Dra.">Dra.</option>
-						<option value="Prof. Dr.">Prof. Dr.</option>
-						<option value="Prof. Dra.">Prof. Dra.</option>
-						<option value="Lic.">Lic.</option>
-					</select>			
-				</li>
+				</li>						
 				<li>
 					<label for="telefonoCelular" id="lb_telefono_celular">Tel&eacute;fono celular:</label>
 					<input type="text" id="telefono_celular" name="telefono_celular" placeholder="Ingrese su nro telefonico movil"  value=""/>			
@@ -61,8 +41,8 @@
 				</li>
 				
 			</ul>	
-			<label id="bubble_registrar" style="float:right;"></label><br>
-			<button id="btnSubmit">Ingresar</button>							
+			
+			<button id="btnSubmit" onclick="javascript:MTD_AGREGAR_USUARIO()">Ingresar</button>							
 			</div>	
 
 <script type="text/javascript">
@@ -70,14 +50,7 @@
 	$(document).ready(function(){
 		$("#btnSubmit").click(function() {
 			MTD_AGREGAR_USUARIO();
-			});
-		
-        $('#bubble_registrar').CreateBubblePopup({
-                       themePath: '/composite.templates/consultorio/archivos_de_disenho/images/jquerybubblepopup-theme/',
-                       themeName: 'all-azure',
-                       position : 'right-middle',
-                       innerHtml: 'Se ha agregado <br>el producto al carrito ', mouseOver: 'hide'
-        });
+			});		      
 	});			
 //-->
 </script>

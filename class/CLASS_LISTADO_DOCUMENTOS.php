@@ -38,7 +38,7 @@ class CLASS_LISTADO_DOCUMENTOS
     	{
 			$tpl_documentos = $documento;
 			$archivo = FN_REEMPLAZAR("/var/pdfflex/","",$value[7]);
-			$link="php/simple_document.php?doc=".$archivo;
+			$link="visor.php?doc=".$archivo;
 		
 			$tpl_documentos = FN_REEMPLAZAR("{tpl-titulo-documento}",$value[1],$tpl_documentos);
 			$tpl_documentos = FN_REEMPLAZAR("{tpl-link-documento}",$link,$tpl_documentos);

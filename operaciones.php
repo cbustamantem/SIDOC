@@ -30,7 +30,7 @@ include_once ('includes/FN_LEER_TPL.php');
 include_once ('class/LOGGER.php');
 include_once ('includes/FN_THUMBNAIL.php');
 
-//include_once ('class/CLASS_SESSION.php');
+include_once ('class/CLASS_SESSION.php');
 
 
 //-----------------------------
@@ -60,12 +60,22 @@ if (isset($_POST['operacion']))
 {
 	$vl_operacion = FN_RECIBIR_VARIABLES('operacion');
 
+
 	if ($vl_operacion == "agregar_usuario")
 	{
 		LOGGER::LOG("--- OPERACIONES: Agregar Usuario  --");
 		include ('class/CLASS_ABM_USUARIOS.php');
 		$obj_usuarios = new CLASS_ABM_USUARIOS($vlf_mysql_conexion );
 		$vl_cod_html_base = $obj_usuarios->MTD_AGREGAR_USUARIO();
+		MTD_RETORNAR_HTML($vl_cod_html_base);
+		//$vl_cod_html_seccion= $obj_web_busqueda->MTD_REALIZAR_BUSQUEDA();		
+	}
+	else if ($vl_operacion == "mostrar_agregar_usuarios")
+	{
+		LOGGER::LOG("--- OPERACIONES: MOSTRAR Agregar Usuario  --");
+		include ('class/CLASS_ABM_USUARIOS.php');
+		$obj_usuarios = new CLASS_ABM_USUARIOS($vlf_mysql_conexion );
+		$vl_cod_html_base = $obj_usuarios->MTD_MOSTRAR_AGREGAR_USUARIO();
 		MTD_RETORNAR_HTML($vl_cod_html_base);
 		//$vl_cod_html_seccion= $obj_web_busqueda->MTD_REALIZAR_BUSQUEDA();		
 	}
@@ -101,9 +111,9 @@ if (isset($_POST['operacion']))
 	}	
 	else  
 	{
-		//$obj_session = new CLASS_SESSION($vlf_mysql_conexion);
-		//if ($obj_session->check_session())
-
+		$obj_session = new CLASS_SESSION($vlf_mysql_conexion);
+		if ($obj_session->check_session())
+		{
 		
 			switch ($vl_operacion)
 			{
@@ -206,9 +216,6 @@ if (isset($_POST['operacion']))
 					$vl_cod_html_base = utf8_encode( $obj->MTD_ACTUALIZAR_DOCUMENTO());
 					MTD_RETORNAR_HTML($vl_cod_html_base);
 				break;
-
-
-
 				case "mostrar_cambiar_contrasenha":
 					LOGGER::LOG("--- OPERACIONES: Mostrar Cambiar Password --");
 					include ('class/CLASS_ABM_USUARIOS.php');
@@ -239,6 +246,12 @@ if (isset($_POST['operacion']))
 					$obj = new CLASS_ABM_USUARIOS($vlf_mysql_conexion);
 					echo utf8_encode($obj->MTD_ACTUALIZAR_DATOS_PERSONALES());
 					break;
+				case "eliminar_perfil":
+				LOGGER::LOG("--- OPERACIONES: eliminar perfil --");
+				include ('class/CLASS_ABM_USUARIOS.php');
+				$obj = new CLASS_ABM_USUARIOS($vlf_mysql_conexion);
+				echo utf8_encode($obj->MTD_ELIMINAR_PERFIL());
+				break;
 					
 				case "cambiar_password":
 					LOGGER::LOG("--- OPERACIONES: Cambiar Password --");
@@ -256,7 +269,7 @@ if (isset($_POST['operacion']))
 						
 							
 			}
-		//
+		}
 	}
 	
 }

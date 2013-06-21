@@ -1,18 +1,51 @@
-<div  style='width:440px; padding:0px 0px 0px 0px; margin: 0px 0px 0px 0px; padding-top:0px; margin-top:10px;height:80px;display:block; border:1px solid white; position:absolute;right:0px;'>
-	<div style="width:190px; height:80px;display:inline;float:left;text-align:left;"	>
-	 Correo electr&oacute;nico 
-	 <input type="text" id="usuario" name="usuario"  style="width:150px;"/>
-	 <a href="index.php?id=registro&registro=true" style="margin-top:-16px;">Registrese ahora!</a>				
-	</div>
-	<div style="width:150px;height:80px; display:inline;float:left;text-align:left;">
-	Contrase&ntilde;a
-	 <input type="password" id="password" name="password" style="width:100px;" style="padding:0px 0px 0px 0px; margin: 0px 0px 0px 0px;"/>				
-	 <a href="#recuperarPassword" style="margin-top:-16px;" onclick="javascript:MTD_MOSTRAR_RECUPERAR_PASSWORD()">Olvido su contrase&ntilde;a?</a>
-	</div>
-	<div style="width:90px; height:60px;display:inline;float:left;padding-top:22px;line-height:0px;">					
-		<button class="" id="btnSubmit" style="width:70px;" >Ingresar</button>
-		<label id="bubble_registrar" style=" width:100px;"></label>				
-	</div>
-		
-  </div>
+  <div class="navbar navbar-top" >
+    <div class="container"><!-- Collapsable nav bar -->
+      <!-- Start of the nav bar content -->
+      
+            <a href="/" class="logo"></a>
+                
+            <div class="actionButtons pull-right" style="margin-right:0px; ">
+                <div class="btn-group" class="pull-left">
+
+                    <ul style="nav">
+      
+                <!-- here comes the important part -->
+ 
+           <li class="dropdown" id="menu1">
+             <a  data-toggle="dropdown"  class="dropdown-toggle btn  btn-primary"><i class="icon-user icon-white"></i> Ingrese
+                <b class="caret"></b>
+             </a>
+             <div class="dropdown-menu">
+               <form style="margin: 0px;" accept-charset="UTF-8" action="index" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+                 <fieldset class='textbox' style="padding:10px; width:250px;height:110px;">
+                    <ul style="width:250px; ">
+                        <li>
+                             <div class="input-prepend"  style="width:220px;">
+                            <span class="add-on" ><i class="icon-envelope"></i></span>
+      <input class="span2" id="username" type="text"  placeholder="Usuario"  style="height:30px;width:210px">
+    </div>                   
+                        </li>
+                        <li>
+                               <div class="input-prepend">
+                            <span class="add-on"><i class="icon-lock"></i></span>
+      <input class="span2" id="password" type="password"  placeholder="Contrase&ntilde;a"  style="height:30px;width:210px">
+    </div>     
+               </li>
+               <li>
+                <input class="btn btn-info" name="btnValidarUsuario3" id="btnValidarUsuario" type="button" value="Log In" />
+                <div id="msgErrorValidar"></div>
+               </li>
+           </ul>
+                   
+                 </fieldset>
+               </form>
+             </div>
+           </li>
+ 
+        </ul>
+                    
+                </div>
+            </div>
+        </div>
+   
 </div>

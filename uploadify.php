@@ -19,7 +19,7 @@ $_SESSION['investigacion_status']="enviando";
 $verifyToken = md5('unique_salt' . $_POST['timestamp']);
 FN_NET_LOGGER("Upload Archivo:".$_FILES['Filedata']['tmp_name']);
 
-$targetFolder = CONFIG::docs_path;  // Relative to the root
+$targetFolder = CONFIGURACION::docs_path;  // Relative to the root
 $archivo= $_SESSION['uid']."_".time().".pdf";
 $_SESSION['investigacion_file']=$archivo;
 

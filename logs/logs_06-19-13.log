@@ -1,0 +1,157 @@
+Wed Jun 19 0:56:59 UTC 2013: Sessions -> logged_in
+Wed Jun 19 0:56:59 UTC 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='6a246b41f1d87f179e188d97bd6fe873' AND session='nighhf14tov951eottiuarirc6' AND ip='127.0.0.1'
+Wed Jun 19 0:56:59 UTC 2013: Sessions -> Session chequed for :cbustamantem@gmail.com from 127.0.0.1
+Wed Jun 19 0:57:07 UTC 2013: Sessions -> Default
+Wed Jun 19 0:57:07 UTC 2013: Sessions -> logged_in
+Wed Jun 19 0:57:07 UTC 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='nighhf14tov951eottiuarirc6' AND ip='127.0.0.1'
+Wed Jun 19 0:57:07 UTC 2013: Session Logout
+Wed Jun 19 23:13:48 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:13:48 PYT 2013: Sessions -> Default
+Wed Jun 19 23:13:48 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:13:48 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:13:48 PYT 2013: Session Logout
+Wed Jun 19 23:13:48 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed Jun 19 23:13:57 PYT 2013: --- OPERACIONES --
+Wed Jun 19 23:13:57 PYT 2013: --- OPERACIONES: Validar usuario  --
+Wed Jun 19 23:13:57 PYT 2013: Check Login 
+Wed Jun 19 23:13:57 PYT 2013: Check Login > set variables
+Wed Jun 19 23:13:57 PYT 2013: Check Login > user cbustamantem@gmail.com 
+Wed Jun 19 23:13:57 PYT 2013: Check Login > all variables set 
+Wed Jun 19 23:13:57 PYT 2013: Sessions -> set data session 
+Wed Jun 19 23:13:57 PYT 2013: Check Login > login success for user cbustamantem@gmail.com
+Wed Jun 19 23:13:57 PYT 2013: --- OPERACIONES: usuario valido--
+Wed Jun 19 23:13:57 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:13:57 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:13:57 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='dbb05d4a1198d334ff88ef49f0cb9b2d' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:13:57 PYT 2013: Sessions -> Session chequed for :cbustamantem@gmail.com from 127.0.0.1
+Wed Jun 19 23:13:57 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed Jun 19 23:14:10 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:14:10 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:14:10 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='dbb05d4a1198d334ff88ef49f0cb9b2d' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:14:10 PYT 2013: Sessions -> Session chequed for :cbustamantem@gmail.com from 127.0.0.1
+Wed Jun 19 23:14:10 PYT 2013: Seccion SALIR 
+Wed Jun 19 23:14:10 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:14:10 PYT 2013: Sessions -> Default
+Wed Jun 19 23:14:10 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:14:10 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:14:10 PYT 2013: Session Logout
+Wed Jun 19 23:14:10 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed Jun 19 23:14:14 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:14:14 PYT 2013: Sessions -> Default
+Wed Jun 19 23:14:14 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:14:14 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:14:14 PYT 2013: Session Logout
+Wed Jun 19 23:14:14 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed Jun 19 23:14:16 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:14:16 PYT 2013: Sessions -> Default
+Wed Jun 19 23:14:16 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:14:16 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:14:16 PYT 2013: Session Logout
+Wed Jun 19 23:14:16 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed Jun 19 23:14:17 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:14:17 PYT 2013: Sessions -> Default
+Wed Jun 19 23:14:17 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:14:17 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:14:17 PYT 2013: Session Logout
+Wed Jun 19 23:14:17 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed Jun 19 23:14:18 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:14:18 PYT 2013: Sessions -> Default
+Wed Jun 19 23:14:18 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:14:18 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:14:18 PYT 2013: Session Logout
+Wed Jun 19 23:14:18 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed Jun 19 23:14:18 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:14:18 PYT 2013: Sessions -> Default
+Wed Jun 19 23:14:18 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:14:18 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:14:18 PYT 2013: Session Logout
+Wed Jun 19 23:14:18 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed Jun 19 23:14:20 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:14:20 PYT 2013: Sessions -> Default
+Wed Jun 19 23:14:20 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:14:20 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:14:20 PYT 2013: Session Logout
+Wed Jun 19 23:14:20 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed Jun 19 23:14:22 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:14:22 PYT 2013: Sessions -> Default
+Wed Jun 19 23:14:22 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:14:22 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:14:22 PYT 2013: Session Logout
+Wed Jun 19 23:14:22 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed Jun 19 23:14:35 PYT 2013: --- OPERACIONES --
+Wed Jun 19 23:14:35 PYT 2013: --- OPERACIONES: Validar usuario  --
+Wed Jun 19 23:14:35 PYT 2013: Check Login 
+Wed Jun 19 23:14:35 PYT 2013: Check Login > set variables
+Wed Jun 19 23:14:35 PYT 2013: Check Login > user cbustamantem@gmail.com 
+Wed Jun 19 23:14:35 PYT 2013: Check Login > all variables set 
+Wed Jun 19 23:14:35 PYT 2013: Sessions -> set data session 
+Wed Jun 19 23:14:35 PYT 2013: Check Login > login success for user cbustamantem@gmail.com
+Wed Jun 19 23:14:35 PYT 2013: --- OPERACIONES: usuario valido--
+Wed Jun 19 23:14:35 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:14:35 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:14:35 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='b6b1207b423125ed281cb4ad947e7d50' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:14:35 PYT 2013: Sessions -> Session chequed for :cbustamantem@gmail.com from 127.0.0.1
+Wed Jun 19 23:14:35 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Wed Jun 19 23:14:40 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:14:40 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:14:40 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='b6b1207b423125ed281cb4ad947e7d50' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:14:40 PYT 2013: Sessions -> Session chequed for :cbustamantem@gmail.com from 127.0.0.1
+Wed Jun 19 23:14:40 PYT 2013: Seccion administracion 
+Wed Jun 19 23:14:40 PYT 2013: Web: 
+Wed Jun 19 23:14:40 PYT 2013: Web: menu principal 
+Wed Jun 19 23:14:42 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:14:42 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:14:42 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='b6b1207b423125ed281cb4ad947e7d50' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:14:42 PYT 2013: Sessions -> Session chequed for :cbustamantem@gmail.com from 127.0.0.1
+Wed Jun 19 23:14:42 PYT 2013: Seccion administracion 
+Wed Jun 19 23:14:42 PYT 2013: Web: 
+Wed Jun 19 23:14:42 PYT 2013: Web: menu principal 
+Wed Jun 19 23:14:43 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:14:43 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:14:43 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='b6b1207b423125ed281cb4ad947e7d50' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:14:43 PYT 2013: Sessions -> Session chequed for :cbustamantem@gmail.com from 127.0.0.1
+Wed Jun 19 23:14:43 PYT 2013: Seccion administracion 
+Wed Jun 19 23:14:43 PYT 2013: Web: 
+Wed Jun 19 23:14:43 PYT 2013: BUSCAR_DOCUMENTOS
+Wed Jun 19 23:14:43 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Wed Jun 19 23:14:43 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Wed Jun 19 23:14:46 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:14:46 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:14:46 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='b6b1207b423125ed281cb4ad947e7d50' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:14:46 PYT 2013: Sessions -> Session chequed for :cbustamantem@gmail.com from 127.0.0.1
+Wed Jun 19 23:14:46 PYT 2013: Seccion administracion 
+Wed Jun 19 23:14:46 PYT 2013: Web: 
+Wed Jun 19 23:14:46 PYT 2013: Web: seccion subcategorias
+Wed Jun 19 23:14:46 PYT 2013: Asignando el template:
+Wed Jun 19 23:14:48 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:14:48 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:14:48 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='b6b1207b423125ed281cb4ad947e7d50' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:14:48 PYT 2013: Sessions -> Session chequed for :cbustamantem@gmail.com from 127.0.0.1
+Wed Jun 19 23:14:48 PYT 2013: Seccion administracion 
+Wed Jun 19 23:14:48 PYT 2013: Web: 
+Wed Jun 19 23:14:48 PYT 2013: Web: seccion categorias
+Wed Jun 19 23:14:48 PYT 2013: Asignando el template:
+Wed Jun 19 23:14:49 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:14:49 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:14:49 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='b6b1207b423125ed281cb4ad947e7d50' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:14:49 PYT 2013: Sessions -> Session chequed for :cbustamantem@gmail.com from 127.0.0.1
+Wed Jun 19 23:14:49 PYT 2013: Seccion administracion 
+Wed Jun 19 23:14:49 PYT 2013: Web: 
+Wed Jun 19 23:14:49 PYT 2013: Web: menu principal 
+Wed Jun 19 23:53:08 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:53:08 PYT 2013: Sessions -> Default
+Wed Jun 19 23:53:08 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:53:08 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:53:08 PYT 2013: Session Logout
+Wed Jun 19 23:53:08 PYT 2013: Seccion administracion 
+Wed Jun 19 23:53:08 PYT 2013: Web: 
+Wed Jun 19 23:53:08 PYT 2013: Web: menu principal 
+Wed Jun 19 23:53:15 PYT 2013: INCICIO SISTEMA
+Wed Jun 19 23:53:15 PYT 2013: Sessions -> Default
+Wed Jun 19 23:53:15 PYT 2013: Sessions -> logged_in
+Wed Jun 19 23:53:15 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='k5t4i7ovaas3ts21gjv7c0d7v1' AND ip='127.0.0.1'
+Wed Jun 19 23:53:15 PYT 2013: Session Logout
+Wed Jun 19 23:53:15 PYT 2013: Seccion administracion 
+Wed Jun 19 23:53:15 PYT 2013: Web: 
+Wed Jun 19 23:53:15 PYT 2013: Web: menu principal 

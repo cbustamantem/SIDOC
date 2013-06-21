@@ -1,6 +1,6 @@
 <?php
 
-class CONFIG
+class CONFIGURACION
 {
 	const db_dbname	  = "bd_sidoc";
 	const db_username = "bd_sidoc";

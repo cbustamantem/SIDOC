@@ -11,13 +11,12 @@ class CLASS_ABM_USUARIOS
     private $vlc_direccion;    
     private $vlc_cedula;    
     private $vlc_registro_medico;
-    private $vlc_db_conexion;          
-    private $vlc_tratamiento;
-    private $vlc_especialidad;
+    private $vlc_db_cn;          
+
     
     function __construct($vp_conexion)
     {
-    	$this->vlc_db_conexion =$vp_conexion;
+    	$this->vlc_db_cn =$vp_conexion;
 	$this->MTD_LIMPIAR_VARIABLES();
         //$this->MTD_INICIALIZAR_PAGINA();
         
@@ -56,7 +55,125 @@ class CLASS_ABM_USUARIOS
     	}
     	
     }
-    function MTD_INICIALIZAR_PAGINA ()
+    function MTD_INICIALIZAR_PAGINA_ADM()
+    {
+       $historial="";
+       $investigacion="";
+       $investigacion= FN_RECIBIR_VARIABLES("documento");
+       $this->vlc_codigo_html = FN_LEER_TPL('tpl/tpl-adm-usuarios.html');
+       $busqueda= FN_RECIBIR_VARIABLES("busqueda");
+       $datos="";
+       if ($busqueda)
+       {
+            $datos= utf8_encode($this->MTD_BUSCAR_USUARIOS());
+       }
+      else
+      {
+            $datos = $this->MTD_BUSCAR_LISTA_USUARIOS_ADM();
+       }
+       $this->vlc_codigo_html = FN_REEMPLAZAR("{tpl-busqueda}", $busqueda, $this->vlc_codigo_html );
+       $this->vlc_codigo_html = FN_REEMPLAZAR("{tpl-datos}",$datos,$this->vlc_codigo_html);
+        
+    }
+     function MTD_BUSCAR_USUARIOS()
+    {
+        LOGGER::LOG("BUSCAR_USUARIOS");
+        $tipo = FN_RECIBIR_VARIABLES("tipo_busqueda");
+        $busqueda= FN_RECIBIR_VARIABLES("busqueda");
+        LOGGER::LOG("BUSCAR_USUARIOS > TIPO:".$tipo);
+        LOGGER::LOG("BUSCAR_USUARIOS > Busqueda:".$busqueda);
+        $arreglo = array();
+        $sql="SELECT 
+                id_usuario, 
+                nombre_usuario, 
+                apellido_usuario FROM usuarios 
+                WHERE
+                nombre_usuario like '%$busqueda%' or apellido_usuario like '%$busqueda%';";
+        $arreglo = FN_RUN_QUERY($sql,3, $this->vlc_db_cn);      
+        //$arreglo_datos= FN_RUN_QUERY($sql, 3, $this->vlc_db_cn);
+        $contador =0;
+        $html="";
+        if ($arreglo)
+        {
+            $html='<table  cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%" >
+            <thead>
+            <tr>
+            <th>Titulo</th>
+            <th>Descripcion</th>            
+            </tr>
+            </thead>
+            <tbody>';
+            foreach ($arreglo as $datos)
+            {
+                $html.="<TR><TD>".substr($datos[1],0,70)."</TD><TD><a href=''>".substr($datos[2],0,50)."</a></TD>
+                ";
+            }
+            $html.="</tbody></table>";
+             
+        }
+        else
+        {
+            $html='<table  cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%" >
+            <thead>
+            <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            </tr>
+            </thead>
+            <tbody>
+            <TR><TD >No se encontraron registros</TD><TD></TD></TR>';
+            
+            $html.="</tbody></table>";
+             
+        }
+        LOGGER::LOG("BUSCAR_USUARIOS :\n".$html);
+        return utf8_decode($html);
+    }
+    function MTD_BUSCAR_LISTA_USUARIOS_ADM()
+    {
+        LOGGER::LOG("BUSCAR_USUARIOS");
+        $busqueda= FN_RECIBIR_VARIABLES("busqueda");        
+        LOGGER::LOG("BUSCAR_USUARIOS > Busqueda:".$busqueda);
+        $arreglo = array();
+        $sql="SELECT 
+                id_usuario, 
+                nombre_usuario, 
+                apellido_usuario FROM usuarios ";
+        $arreglo = FN_RUN_QUERY($sql,3, $this->vlc_db_cn);
+        //$arreglo_datos= FN_RUN_QUERY($sql, 3, $this->vlc_db_cn);
+        $contador =0;
+        $html="";
+        if ($arreglo)
+        {
+            $html='<table  cellpadding="0" cellspacing="0" border="0" class="display" id="example" width="100%" >
+            <thead>
+            <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Opciones</th>
+            </tr>
+            </thead>
+            <tbody>';
+            foreach ($arreglo as $datos)
+            {
+                $html.="<TR><TD>".$datos[0]."</TD><TD>".substr($datos[1],0,70)."</TD><TD><a href='index.php?=".$datos[0]."'>".substr($datos[2],0,50)."</a></TD> 
+                ".'<td>
+      
+                  <div class="btn-group">
+                    <a class="btn" href="#Editar" onclick="javascript:MTD_EDITAR_PERFIL('.$datos[0].')"><i class="icon-edit"></i></a>
+                    <a class="btn" href="#Eliminar" onclick="javascript:MTD_ELIMINAR_PERFIL('.$datos[0].')"><i class="icon-remove-circle"></i></a>                                       
+                  </div>
+                
+            </td>
+                </TR>';
+            }
+            $html.="</tbody></table>";           
+        }
+        LOGGER::LOG("BUSCAR_USUARIOS :\n");
+        return $html;
+    }
+    function MTD_INICIALIZAR_PAGINA_REGISTRO ()
     {
         /*
          * TODO: 
@@ -177,6 +294,27 @@ class CLASS_ABM_USUARIOS
    		$this->MTD_LIMPIAR_VARIABLES();
    		return $vlf_resultado;
    	}
+    function MTD_ELIMINAR_PERFIL()
+    { 
+        /*
+         * ================================
+         * ACTUALIZAR REGISTROS
+         * ================================
+         */
+        $this->MTD_RECIBIR_DATOS();
+        $vlf_resultado = "";
+
+        if ($this->MTD_DB_ELIMINAR())
+        {
+            $vlf_resultado = "<br><br><br>Se actualizo correctamente el Registro";
+        }
+        else
+        {
+            $vlf_resultado = "<br><br><br>Atencion Ocurrio un error durante la operacion, verifique los datos";
+        }
+        $this->MTD_LIMPIAR_VARIABLES();
+        return $vlf_resultado;
+    }
     function MTD_APLICAR_TEMPLATE ($vp_codigo_html)
     {    		   
     	$vp_codigo_html = FN_REEMPLAZAR('{tb-nombre-usuario}', $this->vlc_nombre_usuario, $vp_codigo_html);
@@ -209,6 +347,7 @@ class CLASS_ABM_USUARIOS
 		$this->vlc_registro_medico				= FN_RECIBIR_VARIABLES('registro_medico');		
 		$this->vlc_tratamiento					= FN_RECIBIR_VARIABLES('tratamiento');
 		$this->vlc_especialidad					= FN_RECIBIR_VARIABLES('especialidad');
+        $this->vlc_id_usuario                 = FN_RECIBIR_VARIABLES('id_usuario');
 		LOGGER::LOG("ABM USUARIOS: Recibir datos: OK");
 			   
     }
@@ -220,11 +359,9 @@ class CLASS_ABM_USUARIOS
         $this->vlc_apellido_usuario			= $vp_arreglo_datos[0][2];        
         $this->vlc_telefono_particular		= $vp_arreglo_datos[0][3];
         $this->vlc_telefono_movil			= $vp_arreglo_datos[0][4];
-        $this->vlc_direccion				= $vp_arreglo_datos[0][5];         
-        $this->vlc_registro_medico			= $vp_arreglo_datos[0][6];
-	    $this->vlc_cedula					= $vp_arreglo_datos[0][7];
-	    $this->vlc_tratamiento				= $vp_arreglo_datos[0][8];
-	    $this->vlc_especialidad				= $vp_arreglo_datos[0][9];	    	    	    	        	    	            		  		           
+        $this->vlc_direccion				= $vp_arreglo_datos[0][5];                 
+	    $this->vlc_cedula					= $vp_arreglo_datos[0][7];	
+	    	    	    	    	        	    	            		
     }    
     function MTD_DB_LISTAR ($vp_filtrar = false)
     {  
@@ -238,13 +375,10 @@ class CLASS_ABM_USUARIOS
 			apellido_usuario,
 			telparticular,
 			telmovil,
-			direccion,
-			registromedico,
-			cedula,
-			tratamiento,
-			id_especialidad
+			direccion,			
+			cedula			
 			FROM usuarios
-			where id_usuario =" . $_SESSION['uid'];
+			where id_usuario =".FN_RECIBIR_VARIABLES("id_usuario");
         }
         else
         {
@@ -255,14 +389,11 @@ class CLASS_ABM_USUARIOS
 			apellido_usuario,
 			telparticular,
 			telmovil,
-			direccion,
-			registromedico,
-			cedula,
-			tratamiento,
-			id_especialidad
+			direccion,		
+			cedula			
 			FROM usuarios;";
         }
-        $vlf_arreglo_datos = FN_RUN_QUERY($vlf_sql,10, $this->vlc_db_conexion );
+        $vlf_arreglo_datos = FN_RUN_QUERY($vlf_sql,7, $this->vlc_db_cn );
         return $vlf_arreglo_datos;
     }
     function MTD_DB_AGREGAR ()
@@ -276,12 +407,8 @@ class CLASS_ABM_USUARIOS
         passwd,      
         telparticular,
         telmovil,
-        direccion,           
-        registromedico,  
-        cedula,rol_usuario,
-        tratamiento,
-        id_especialidad,
-        encabezado_membrete             
+        direccion,                   
+        cedula,rol_usuario    
         ) values (
         '" . $this->vlc_nombre_usuario . "',
         '" . $this->vlc_apellido_usuario . "',
@@ -289,15 +416,11 @@ class CLASS_ABM_USUARIOS
         MD5('". $this->vlc_passwd. "'),         
         '" . $this->vlc_telefono_particular. "',
         '" . $this->vlc_telefono_movil. "',
-        '" . $this->vlc_direccion. "',
-        '" . $this->vlc_registro_medico. "',
-        '" . $this->vlc_cedula. "','usuario',
-        '" . $this->vlc_tratamiento. "',
-        " . $this->vlc_especialidad. ",
-        '".$membrete."'        
+        '" . $this->vlc_direccion. "',        
+        '" . $this->vlc_cedula. "','usuario'    
         )";
         //echo "sql: $vlf_sql";
-        $resultado = FN_RUN_NONQUERY($vlf_sql, $this->vlc_db_conexion );   
+        $resultado = FN_RUN_NONQUERY($vlf_sql, $this->vlc_db_cn );   
         LOGGER::LOG("ABM USUARIOS: SQL:$vlf_sql");
         return $resultado;
     }
@@ -306,25 +429,22 @@ class CLASS_ABM_USUARIOS
         $resultado = false;        
         $vlf_sql = "UPDATE usuarios set 
         nombre_usuario ='" . 	$this->vlc_nombre_usuario . "',
-		apellido_usuario ='" . 	$this->vlc_apellido_usuario . "',
-		id_especialidad=" . 		$this->vlc_especialidad. ",
-		registromedico='" . 	$this->vlc_registro_medico. "',
+		apellido_usuario ='" . 	$this->vlc_apellido_usuario . "',				
 		cedula='" . 			$this->vlc_cedula. "',		
 		telparticular='" . 		$this->vlc_telefono_particular. "',
 		telmovil='" . 			$this->vlc_telefono_movil. "',
-		direccion='" . 			$this->vlc_direccion. "',
-		tratamiento='" . 		$this->vlc_tratamiento. "'					                  
-        where id_usuario=" . 	$_SESSION['uid'];
+		direccion='" . 			$this->vlc_direccion. "'			                 
+        where id_usuario=" . 	$this->vlc_id_usuario;
 		//cho "SQL: $vlf_sql";
         LOGGER::LOG("ABM USUARIOS: SQL:$vlf_sql");
-        $resultado = FN_RUN_NONQUERY($vlf_sql, $this->vlc_db_conexion );		              
+        $resultado = FN_RUN_NONQUERY($vlf_sql, $this->vlc_db_cn );		              
         return $resultado;
     }
     function MTD_DB_ELIMINAR ()
     {
         $resultado = false;
         $vlf_sql = "DELETE FROM usuarios  where id_usuario =" . $this->vlc_id_usuario;
-        $resultado = FN_RUN_NONQUERY($vlf_sql, $this->vlc_db_conexion );
+        $resultado = FN_RUN_NONQUERY($vlf_sql, $this->vlc_db_cn );
         return $resultado;
     }
 	function MTD_RETORNAR_RUTA_PROFUNDIDAD()
@@ -344,7 +464,7 @@ class CLASS_ABM_USUARIOS
     {    	
     	$username= FN_RECIBIR_VARIABLES("direccioncorreo");
     	$sql= "SELECT nombre_usuario,apellido_usuario, username from usuarios where username='$username'";
-    	$resultado=FN_RUN_QUERY($sql, 1,$this->vlc_db_conexion);
+    	$resultado=FN_RUN_QUERY($sql, 1,$this->vlc_db_cn);
     	if ($resultado)
     	{
     		$newpassword="";
@@ -360,7 +480,7 @@ class CLASS_ABM_USUARIOS
 	    	$password= md5($newpassword);
 	    	$nombre = $resultado[0][0]." ".$resultado[0][1];
 	    	$sql="update usuarios set passwd='$password' where username ='$username' limit 1";
-	    	FN_RUN_NONQUERY($sql,$this->vlc_db_conexion);
+	    	FN_RUN_NONQUERY($sql,$this->vlc_db_cn);
 	    	LOGGER::LOG("ACTUALIZANDO ELPASSWORD:");
 	    	$contenidomail="<h3>Consultorio Medico </h3> <br>
 	    					<b>Cambio de password </b><br>
@@ -391,84 +511,12 @@ class CLASS_ABM_USUARIOS
     	$template= $this->MTD_LEER_TPL('tpl/tpl-editar-datos-personales.html');    	
     	$registros = $this->MTD_DB_LISTAR(true);
     	$this->MTD_RECIBIR_DATOS_DB($registros);
+        $template = FN_REEMPLAZAR("{tpl-id-usuario}",FN_RECIBIR_VARIABLES("id_usuario"),$template);
     	$template = FN_REEMPLAZAR("{tpl-nombre}",$this->vlc_nombre_usuario,$template);
-    	$template = FN_REEMPLAZAR("{tpl-apellido}",$this->vlc_apellido_usuario,$template);
-    	$template = FN_REEMPLAZAR("{tpl-registro-medico}",$this->vlc_registro_medico,$template);
-    	
-    	$sql="SELECT idespecializacion, nombre from especializacion";
-    	$arreglo= FN_RUN_QUERY($sql, 2,$this->vlc_db_conexion);    	
-    	if ($arreglo)
-    	{
-    		$opciones="";
-    		$selected="";
-    		foreach ($arreglo as $dato)
-    		{
-    			if ($dato[0] == $this->vlc_especialidad)
-    			{
-    				$selected=" selected" ;
-    			}
-    			else
-    			{
-    				$selected="";
-    			}	
-    			$opciones.="<option value='".$dato[0]."' $selected>".$dato[1]."</option>";
-    		}
-    		    		
-    		$template = FN_REEMPLAZAR("{tpl-opciones-especialidad}", $opciones, $template);
-    	}
-    	
-    	
-    	$template = FN_REEMPLAZAR("{tpl-especialidad}",$this->vlc_nombre_usuario,$template);
-    	
-    	//Tratamiento
-    	
-    	$opc_dr="";
-    	$opc_dra="";
-    	$opc_profdr="";
-    	$opc_profdra="";
-    	$opc_lic="";
-    	
-    	if($this->vlc_tratamiento == "Dr.")
-    	{
-    		$opc_dr="selected";
-    	}
-    	elseif($this->vlc_tratamiento == "Dra.")
-    	{
-    		$opc_dra="selected";
-    	}
-    	elseif($this->vlc_tratamiento == "Prof. Dr.")
-    	{
-    		$opc_profdr="selected";
-    	}
-    	elseif($this->vlc_tratamiento == "Prof. Dra.")
-    	{
-    		$opc_profdra="selected";
-    	}
-    	elseif($this->vlc_tratamiento == "Lic.")
-    	{
-    		$opc_lic="selected";
-    	}
-    	
-    	$opciones_tratamiento='<option value="Dr." '.$opc_dr.' >Dr.</option>
-						<option value="Dra." '.$opc_dra.'>Dra.</option>
-						<option value="Prof. Dr." '.$opc_profdr.'>Prof. Dr.</option>
-						<option value="Prof. Dra." '.$opc_profdra.'>Prof. Dra.</option>
-    					<option value="Lic." '.$opc_lic.'>Lic.</option>';
-    	
-    	$template = FN_REEMPLAZAR("{tpl-opciones-tratamiento}",$opciones_tratamiento,$template);
+    	$template = FN_REEMPLAZAR("{tpl-apellido}",$this->vlc_apellido_usuario,$template);    	
     	
     	$template = FN_REEMPLAZAR("{tpl-celular}",$this->vlc_telefono_movil,$template);
-    	$sql="SELECT idespecializacion, nombre from especializacion";
-    	$arreglo= FN_RUN_QUERY($sql, 2,$this->vlc_db_conexion);
-    	if ($arreglo)
-    	{
-    		$opciones="";
-    		foreach ($arreglo as $dato)
-    		{
-    			$opciones.="<option value='".$dato[0]."'>".$dato[1]."</option>";
-    		}
-    		$vl_cod_html_base = FN_REEMPLAZAR("{tpl-opciones-especialidad}", $opciones, $vl_cod_html_base);
-    	}
+    	
     	
     	$template = FN_REEMPLAZAR("{tpl-cedula}",$this->vlc_cedula,$template);
     	$template = FN_REEMPLAZAR("{tpl-direccion}",$this->vlc_direccion,$template);
@@ -476,6 +524,12 @@ class CLASS_ABM_USUARIOS
     	
     	$template = FN_REEMPLAZAR("{tpl-nombre}",$this->vlc_nombre_usuario,$template);
     	return $template;
+    }
+    function MTD_MOSTRAR_AGREGAR_USUARIO()
+    {
+        LOGGER::LOG("MTD_MOSTRAR_AGREGAR_USUARIO:");   
+        $template= $this->MTD_LEER_TPL('tpl/tpl-registro.html');
+        return $template;
     }
     function  MTD_MOSTRAR_PERFIL_DOCTOR()
     {
@@ -488,7 +542,7 @@ class CLASS_ABM_USUARIOS
     	encabezado_membrete,
     	pie_membrete    	
     	FROM usuarios where id_usuario = $id_doctor;";    	
-    	$arreglo = FN_RUN_QUERY($vlf_sql,2, $this->vlc_db_conexion );
+    	$arreglo = FN_RUN_QUERY($vlf_sql,2, $this->vlc_db_cn );
     	if ($arreglo)
     	{
     		$encabezado=$arreglo[0][0];
@@ -513,7 +567,7 @@ class CLASS_ABM_USUARIOS
     	$sql= "update usuarios set passwd= MD5('$password') where id_usuario = ".$_SESSION['uid']." limit 1;";
     	$result=false;
     	LOGGER::LOG("CAMBIAR_PASSWORD: sql:$sql");
-    	$result= FN_RUN_NONQUERY($sql,$this->vlc_db_conexion);
+    	$result= FN_RUN_NONQUERY($sql,$this->vlc_db_cn);
     	return "<b> Contrase&ntilde;a cambiada exitosamente </b>";
     }
     function MTD_LEER_TPL($vp_template)

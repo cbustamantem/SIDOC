@@ -45,9 +45,9 @@ class CLASS_SESSION
 	function check_login($username, $password)
 	{
 
-		$sql_check_login="SELECT u.username,u.passwd,u.id_usuario,u.rol_usuario, u.nombre_usuario, u.apellido_usuario, u.id_especialidad FROM usuarios as u WHERE u.username= '$username' AND u.passwd = MD5('$password')";
+		$sql_check_login="SELECT u.username,u.passwd,u.id_usuario,u.rol_usuario, u.nombre_usuario, u.apellido_usuario FROM usuarios as u WHERE u.username= '$username' AND u.passwd = MD5('$password')";
 		//echo "FUK SQL: $sql_check_login";
-		$arreglo_datos= FN_RUN_QUERY($sql_check_login,7,$this->vlc_db_conexion );
+		$arreglo_datos= FN_RUN_QUERY($sql_check_login,6,$this->vlc_db_conexion );
 		//print_r($arreglo_datos);
 		if ($arreglo_datos[0][0] ==  $username)
 		{
@@ -127,7 +127,7 @@ class CLASS_SESSION
 		$_SESSION['apellido_usuario']=$vp_db_datos[0][5];
 		$_SESSION['ip']=$ip;
 		$_SESSION['logged_in'] = true;	
-		$_SESSION['especialidad'] = $vp_db_datos[0][6];
+		
 	}
 	
 	function check_remembered($cookie)
@@ -224,7 +224,6 @@ class CLASS_SESSION
 		unset ( $_SESSION['vs_permisos_asignados'] );
 		unset ( $_SESSION['nombre_usuario'] );
 		unset ( $_SESSION['apellido_usuario'] );
-		unset ( $_SESSION['especialidad'] );
 		unset ( $_SESSION['sesion'] );
 		unset (	$_SESSION['vs_menues_habilitados'] );
 		

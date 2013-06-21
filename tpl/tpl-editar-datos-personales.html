@@ -1,20 +1,18 @@
 <div id="contenedor_resultado">
-<h3>Actualizaci&oacute;n de Datos Personales</h3>
+<h3>Actualizaci&oacute;n de Datos de Usuarios</h3>
 
 	<div id="contact2" style='height:350px;width:580px;margin-left:0px; padding-left:0px;'>
 			<ul style='padding:5px;'>
 				<li>			
 					<label for="nombre" id="lb_nombre" >*Nombre:</label>
 					<input type="text" id="nombre" name="nombre" placeholder="Ingrese su Nombre" value="{tpl-nombre}"/>
+					<input type="hidden" id="id_usuario" name="id_usuario" value="{tpl-id-usuario}"/>
 				</li>
 				<li>	
 					<label for="nombre" id="lb_apellido">*Apellido:</label>
 					<input type="text" id="apellido" name="apellido" placeholder="Ingrese su Apellido" value="{tpl-apellido}"/>
 				</li>			
-				<li>
-					<label for="registroMedico" id="lb_registro_medico">*Registro M&eacute;dico:</label>
-					<input type="text" id="registro_medico" name="registro_medico" placeholder="ingrese su Registro Medico" value="{tpl-registro-medico}"/>
-				</li>
+				
 				<li>
 					<label for="cedula" id="lb_cedula">*Cedula:</label>
 					<input type="text" id="cedula" name="cedula" placeholder="Ingrese su nro de cedula" value="{tpl-cedula}" />			
@@ -26,19 +24,7 @@
 				<li>
 					<label for="telefono">Tel&eacute;fono:</label>
 					<input type="text" id="telefono" name="telefono" placeholder="Ingrese su nro telefonico"  value="{tpl-nro-telefono}"/>			
-				</li>
-				<li>
-					<label for="especializacion" id="especializacion">*Especialidad</label>
-					<select id="especialidades" name="especialidades" style="width:250px;">
-						{tpl-opciones-especialidad}
-					</select>			
-				</li>
-				<li>
-				<label for="tratam" id="tratam">Tratamiento</label>
-					<select id="tratamiento" name="tratamiento" style="width:200px;">
-						{tpl-opciones-tratamiento}
-					</select>			
-				</li>
+				</li>								
 				<li>
 					<label for="telefonoCelular" id="lb_telefono_celular">Tel&eacute;fono celular:</label>
 					<input type="text" id="telefono_celular" name="telefono_celular" placeholder="Ingrese su nro telefonico movil"  value="{tpl-celular}"/>			
@@ -53,14 +39,7 @@
 	$(document).ready(function(){
 		$("#btnActualizar").click(function() {
 			MTD_ACTUALIZAR_DATOS_PERSONALES();
-			});
-		
-        $('#bubble_actualizar').CreateBubblePopup({
-                       themePath: '/composite.templates/consultorio/archivos_de_disenho/images/jquerybubblepopup-theme/',
-                       themeName: 'all-azure',
-                       position : 'right-middle',
-                       innerHtml: 'Se ha agregado <br>el producto al carrito ', mouseOver: 'hide'
-        });
+			});		       
 	});			
 //-->
 </script>

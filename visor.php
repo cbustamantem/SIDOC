@@ -1,9 +1,27 @@
 <?php
+session_start();
 /* This section can be removed if you would like to reuse the PHP example outside of this PHP sample application */
-require_once("lib/config.php");
-require_once("lib/common.php");
-exit;
+require_once("php/lib/config.php");
+require_once("php/lib/common.php");
+include_once ('includes/FN_CONFIGURACION.php');
+include_once ('includes/FN_DB_CONEXION.php');
+include_once ('includes/FN_DB_QUERY.php');
+include_once ('class/LOGGER.php');
+include_once ('class/CLASS_SESSION.php');
+$vlf_mysql_conexion= FN_DB_MYSQL_CONEXION();
+$obj_session = new CLASS_SESSION($vlf_mysql_conexion);
+$vlf_session_activada = $obj_session->MTD_START();
+if ($vlf_session_activada == true)
+{ 
+	
+}
+else
+{
+	echo "<h1> Atencion, deber&aacute; ingresar para visualizar el documento</h1><a href='index.php'>Click aqui para continuar </a>";
+	exit;
+}
 $configManager = new Config();
+
 if($configManager->getConfig('admin.password')==null){
 	$url = 'setup.php';
 	header("Location: $url");
@@ -20,10 +38,10 @@ if($configManager->getConfig('admin.password')==null){
 			#flashContent { display:none; }
         </style>
 
-		<link rel="stylesheet" type="text/css" href="../css/flexpaper.css" />
-		<script type="text/javascript" src="../js/jquery.min.js"></script>
-		<script type="text/javascript" src="../js/flexpaper.js"></script>
-		<script type="text/javascript" src="../js/flexpaper_handlers.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/flexpaper.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/flexpaper.js"></script>
+		<script type="text/javascript" src="js/flexpaper_handlers.js"></script>
     </head>
     <body>
     <div style="">
@@ -31,11 +49,11 @@ if($configManager->getConfig('admin.password')==null){
 
 	        <script type="text/javascript">
 		        function getDocumentUrl(document){
-					return "services/view.php?doc={doc}&format={format}&page={page}".replace("{doc}",document);
+					return "php/services/view.php?doc={doc}&format={format}&page={page}".replace("{doc}",document);
 		        }
 
 		        function getDocQueryServiceUrl(document){
-		        	return "services/swfsize.php?doc={doc}&page={page}".replace("{doc}",document);
+		        	return "php/services/swfsize.php?doc={doc}&page={page}".replace("{doc}",document);
 		        }
 
 		        var startDocument = "<?php if(isset($_GET["doc"])){echo $_GET["doc"];}else{?>Paper.pdf<?php } ?>";
@@ -66,9 +84,9 @@ if($configManager->getConfig('admin.password')==null){
 						 SearchToolsVisible : true,
 						 PrintToolsVisible : false,
 
-  						 DocSizeQueryService : 'services/swfsize.php?doc=' + startDocument,
-						 jsDirectory : '../js/',
-						 localeDirectory : '../locale/',
+  						 DocSizeQueryService : 'php/services/swfsize.php?doc=' + startDocument,
+						 jsDirectory : 'js/',
+						 localeDirectory : 'locale/',
 
 						 JSONDataType : 'jsonp',
 						 key : '<?php echo $configManager->getConfig('licensekey') ?>',

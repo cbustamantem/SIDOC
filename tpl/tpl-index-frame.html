@@ -34,8 +34,9 @@
     <script type="text/javascript" src="js/flexpaper_handlers.js"></script>
    <script type="text/javascript"  src="js/jquery.simplemodal.js"></script>
    <script type="text/javascript"  src="js/bootstrap-buttons.js"></script>
-   
-   <script type="text/javascript"  src="js/basic.js"></script>
+   <script type="text/javascript"  src="js/bootstrap-dropdown.js"></script>
+   <script type="text/javascript"  src="js/bootstrap-popover.js"></script>
+      <script type="text/javascript"  src="js/basic.js"></script>
    <link href="css/basic.css" rel="stylesheet" type="text/css" />
 <!--Fin Flex-->
 
@@ -60,20 +61,8 @@
 <!-- Productos-Detalles -  Fancybox -->
 
     <script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-    <script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.js"></script>
-    <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
     
-    <script type="text/javascript">
-        $(document).ready(function() {
-
-            $("a.ampliar").fancybox({
-                'overlayShow'   : true,
-                'transitionIn'  : 'elastic',
-                'transitionOut' : 'none'
-            });
-            
-        });
-    </script><!-- easySlider 1.7 -->
+        
 <link type="text/css" href="js/easySlider/screen.css" rel="stylesheet" media="screen" />    
    
 <meta http-equiv="content-type" content="text/html;charset=utf-8">
@@ -91,15 +80,6 @@
 <script type="text/javascript" src="js/DT_bootstrap.js"></script>
 
 <link rel="stylesheet" type="text/css" href="css/DT_bootstrap.css">
-<script type="text/javascript">
-
-    // initialise plugins
-    jQuery(function(){
-        jQuery('ul.sf-menu').superfish();
-    });
-
-</script>
-
 </head>
 
 <body class="esp" id="quienes">
@@ -113,38 +93,15 @@
                     <ul class="botonera">
                         <li><a href="./" title="Inicio"><img src="images/btn_inicio.png" width="36" height="37" alt="Inicio" /></a></li>
                         <li><a id="btn_quienes" href="index.php" title="INICIO">INICIO</a></li>
-                        <li><a id="btn_involucrate" href="index.php?seccion=administracion&administracion=1" title="ADMINISTRACION">ADMINISTRACION</a></li>
+                       {tpl-link-administracion}
                         
                     </ul><!-- fin botonera -->
 
-<!--{tpl-login} --> 
-
-<div class="navbar navbar-fixed-top">
-    <div class="container"><!-- Collapsable nav bar -->
-      <!-- Start of the nav bar content -->
-      <div class="nav-collapse"><!-- Other nav bar content -->
-        <!-- The drop down menu -->
-        <ul class="nav pull-right">
-          <li class="divider-vertical"></li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" href="#" data-toggle="dropdown">Ingresar<strong class="caret"></strong></a>
-            <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-              <!-- Login form here -->
-              <form action="[YOUR ACTION]" method="post" accept-charset="UTF-8">
-                <input id="user_username" style="margin-bottom: 15px;" type="text" name="user[username]" size="30" />
-                <input id="user_password" style="margin-bottom: 15px;" type="password" name="user[password]" size="30" />
-                <input id="user_remember_me" style="float: left; margin-right: 10px;" type="checkbox" name="user[remember_me]" value="1" />
-                <label class="string optional" for="user_remember_me"> Remember me</label>
-
-                <input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign In" />
-                </form>
-
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+<!--tpl-login --> 
+<div id="contenedor_login">
+{tpl-login}
 </div>
+
 
                 </div><!-- fin headertop -->
                             <div class="headerbottom">
@@ -232,6 +189,74 @@
                 
         </div><!-- fin footer -->
     </div><!-- fin bgfooter -->
+<script language="javascript">
+$(document).ready(function()
+{
+   /* $('.dropdown-toggle').dropdown();*/
+
+    $('.dropdown-menu').find('form').click(function (e) {
+        e.stopPropagation();
+      });
+    $("#btnValidarUsuario").click(function() {
+            MTD_VALIDAR_USUARIO();
+            });     
+        
+});
+function validateEmail(email) { 
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+} 
+function MTD_VALIDAR_USUARIO()
+{
+    
+    var usuario ="";
+    var password="";    
+    usuario     =$("#username").val();
+    password    =$("#password").val();
+    var mensaje_error="";
+    if (!validateEmail(usuario))
+    {       
+        mensaje_error="Atencion, el usuario debe ser una direccion de email";               
+    }
+     else if (password == "")
+    {
+        mensaje_error="Atencion, debe ingresar su password";
+    }
+    
+        
+    if (!mensaje_error =="")
+    {
+        
+        alert ("Error:" + mensaje_error);
+    }
+    else 
+    {   
+        
+        var parametros  = {operacion: "validar_usuario",usuario: usuario, password: password};  
+        $.ajax({
+            url: "operaciones.php",data: parametros,type: "POST",cache: false,async: true,
+            success: function(data) 
+            {
+                if (data == "0")
+                {
+                
+                    window.location = "index.php?id=registro";
+                    //ENVIAR AL SITIO
+                }
+                else
+                {
+                    alert ("Atencion, usuario o password incorrectos");
+                    
+                }
+                    
+                            
+            }
+        });  
+    }
+    
+  
+}
+</script>
 
 
 </body>

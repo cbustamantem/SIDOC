@@ -58,6 +58,13 @@ class CLASS_WEB_INTRANET
 		    	$obj_perfil->MTD_INICIALIZAR_PAGINA();
 		    	$this->vlc_codigo_html = $obj_perfil->MTD_RETORNAR_CODIGO_HTML();
 		    }
+		    elseif ($vlf_seccion == 'usuarios')
+		    {		    			    			    	
+		    	include ('CLASS_ABM_USUARIOS.php');
+		    	$obj_usuarios = new CLASS_ABM_USUARIOS($this->vlc_db_conexion );
+		    	$obj_usuarios->MTD_INICIALIZAR_PAGINA_ADM();
+		    	$this->vlc_codigo_html = $obj_usuarios->MTD_RETORNAR_CODIGO_HTML();
+		    }
 		    elseif ($vlf_seccion == 'salir')
 		    {
 		 		$obj_session->logout();

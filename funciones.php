@@ -1,4 +1,5 @@
 <?
+session_start();
 /*
 
               Datos de la Etiqueta
@@ -66,12 +67,34 @@ function formulario_sistema_medico()
 	//-----------------------------
 	$vlf_codigo_html_principal = FN_LEER_TPL('tpl/tpl-index-frame.html');
 	$vlf_codigo_html_contenido = FN_LEER_TPL('tpl/tpl-index-contenido.html');
-	$vl_cod_html_login 	   = FN_LEER_TPL('tpl/tpl-index-login.html');
+	$vl_cod_html_login 	   = "";
 	
 
 	$obj_session = new CLASS_SESSION($vlf_mysql_conexion);
 	// -> se va a la seccion admin
-	
+	$vlf_session_activada = $obj_session->MTD_START();
+	if ($vlf_session_activada == true)
+	{ 
+
+		$vl_cod_html_login 	   =FN_LEER_TPL('tpl/tpl-index-loggedin.html');
+		$username=split("@",$_SESSION['username']);
+		$vl_cod_html_login = FN_REEMPLAZAR("{username}",$username[0],$vl_cod_html_login );
+
+		if ($_SESSION['rol_usuario'] == "administrador")
+		{
+
+			$vlf_codigo_html_principal= FN_REEMPLAZAR("{tpl-link-administracion}",' <li><a id="btn_involucrate" href="index.php?seccion=administracion&administracion=1" title="ADMINISTRACION">ADMINISTRACION</a></li>',$vlf_codigo_html_principal);
+		}
+		else
+		{
+			$vlf_codigo_html_principal= FN_REEMPLAZAR("{tpl-link-administracion}",' ',$vlf_codigo_html_principal);
+		}			
+	}
+	else
+	{
+		$vl_cod_html_login 	   =FN_LEER_TPL('tpl/tpl-index-login.html');
+		$vlf_codigo_html_principal= FN_REEMPLAZAR("{tpl-link-administracion}",'',$vlf_codigo_html_principal);
+	}
 	//---------------------------
 	// MENU PRINCIPAL 
 	//---------------------------	
@@ -116,18 +139,29 @@ function formulario_sistema_medico()
    	}
    	else if(isset($_GET['administracion']))
    	{
-   		LOGGER::LOG("Seccion administracion ");
-   		//TODO: mostrar subcategorias
-   		$vlf_session_activada = true;
-		if ($vlf_session_activada == true)
+   		if ($_SESSION['rol_usuario'] == "administrador")
 		{
-			$obj_intranet = new CLASS_WEB_INTRANET ($vlf_mysql_conexion);
-			$body= $obj_intranet->MTD_RETORNAR_CODIGO_HTML ();
+
+	   		LOGGER::LOG("Seccion administracion ");
+	   		//TODO: mostrar subcategorias	   		
+			if ($vlf_session_activada == true)
+			{
+				$obj_intranet = new CLASS_WEB_INTRANET ($vlf_mysql_conexion);
+				$body= $obj_intranet->MTD_RETORNAR_CODIGO_HTML ();
+			}
 		}
 		else
 		{
+			 header ( "Location: index.php" );
 			//$vlf_codigo_html_principal  = FN_LOGIN();
 		}
+	}
+
+   	else if(isset($_GET['salir']))
+   	{
+   		LOGGER::LOG("Seccion SALIR ");
+   		$obj_session->logout();
+		 header ( "Location: index.php" );
    	}
    	else
    	{
