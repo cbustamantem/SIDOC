@@ -1,0 +1,1018 @@
+Mon Jun 24 2:27:48 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:27:48 PYT 2013: Sessions -> Default
+Mon Jun 24 2:27:48 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:27:48 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:27:48 PYT 2013: Session Logout
+Mon Jun 24 2:27:48 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:27:52 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:27:52 PYT 2013: --- OPERACIONES: Validar usuario  --
+Mon Jun 24 2:27:52 PYT 2013: Check Login 
+Mon Jun 24 2:27:52 PYT 2013: Check Login > set variables
+Mon Jun 24 2:27:52 PYT 2013: Check Login > user cbustamantem 
+Mon Jun 24 2:27:52 PYT 2013: Check Login > all variables set 
+Mon Jun 24 2:27:52 PYT 2013: Sessions -> set data session 
+Mon Jun 24 2:27:52 PYT 2013: Check Login > login success for user cbustamantem
+Mon Jun 24 2:27:52 PYT 2013: --- OPERACIONES: usuario valido--
+Mon Jun 24 2:27:52 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:27:52 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:27:52 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:27:52 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:27:52 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:28:37 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:28:37 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:28:37 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:28:37 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:28:37 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:29:05 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:29:05 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:29:05 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:29:05 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:29:05 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:29:46 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:29:46 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:29:46 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:29:46 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:29:46 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:29:47 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:29:47 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:29:47 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:29:47 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:29:47 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:29:55 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:29:55 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:29:55 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:29:55 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:29:55 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:30:28 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:30:28 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:30:28 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:30:28 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:30:28 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:30:54 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:30:54 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:30:54 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:30:54 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:30:54 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:31:20 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:31:20 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:31:20 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:31:20 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:31:20 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:31:26 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:31:26 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:31:26 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:31:26 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:31:26 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:32:02 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:32:02 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:32:02 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:32:02 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:32:02 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:32:23 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:32:23 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:32:23 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:32:23 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:32:23 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:32:25 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:32:25 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:32:25 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:32:25 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 2:32:25 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 2:32:25 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 2:33:29 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:33:29 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:33:29 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:33:29 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:33:29 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:33:31 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:33:31 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:33:31 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:33:31 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 2:33:31 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 2:33:31 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 2:34:05 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:34:05 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:34:05 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:34:05 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:34:05 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:39:12 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:39:12 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:39:12 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:39:12 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:39:12 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:39:23 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:39:23 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:39:23 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:39:23 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 2:39:23 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 2:39:23 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 2:39:40 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:39:40 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:39:40 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:39:40 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 2:39:40 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 2:39:40 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 2:40:40 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:40:40 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:40:40 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:40:40 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:40:40 PYT 2013: Seccion administracion 
+Mon Jun 24 2:40:40 PYT 2013: Web: 
+Mon Jun 24 2:40:40 PYT 2013: Web: menu principal 
+Mon Jun 24 2:40:44 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:40:44 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:40:44 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:40:44 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:40:44 PYT 2013: Seccion administracion 
+Mon Jun 24 2:40:44 PYT 2013: Web: 
+Mon Jun 24 2:40:44 PYT 2013: BUSCAR_USUARIOS
+Mon Jun 24 2:40:44 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Mon Jun 24 2:40:44 PYT 2013: BUSCAR_USUARIOS :
+
+Mon Jun 24 2:40:46 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:40:46 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:40:46 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:40:46 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 2:40:46 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 2:40:46 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 2:47:30 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:47:30 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:47:30 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:47:30 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:47:30 PYT 2013: Seccion administracion 
+Mon Jun 24 2:47:30 PYT 2013: Web: 
+Mon Jun 24 2:47:30 PYT 2013: BUSCAR_USUARIOS
+Mon Jun 24 2:47:30 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Mon Jun 24 2:47:30 PYT 2013: BUSCAR_USUARIOS :
+
+Mon Jun 24 2:47:39 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:47:39 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:47:39 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:47:39 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 2:47:39 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 2:47:43 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:47:43 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:47:43 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:47:43 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 2:47:43 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 2:47:43 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 2:48:46 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:48:46 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:48:46 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:48:46 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 2:48:46 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 2:48:46 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 2:48:50 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:48:50 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:48:50 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:48:50 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 2:48:50 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 2:48:50 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 2:54:56 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:54:56 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:54:56 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:54:56 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 2:54:56 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 2:54:56 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 2:55:49 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:55:49 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:55:49 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:55:49 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:55:49 PYT 2013: Seccion administracion 
+Mon Jun 24 2:55:49 PYT 2013: Web: 
+Mon Jun 24 2:55:49 PYT 2013: BUSCAR_USUARIOS
+Mon Jun 24 2:55:49 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Mon Jun 24 2:55:49 PYT 2013: BUSCAR_USUARIOS :
+
+Mon Jun 24 2:55:51 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:55:51 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:55:51 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:55:51 PYT 2013: --- OPERACIONES: Cambiar Password --
+Mon Jun 24 2:55:51 PYT 2013: CAMBIAR_PASSWORD: sql:update usuarios set passwd= MD5('') where id_usuario = 70 limit 1;
+Mon Jun 24 2:55:53 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:55:54 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:55:54 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:55:54 PYT 2013: --- OPERACIONES: Cambiar Password --
+Mon Jun 24 2:55:54 PYT 2013: CAMBIAR_PASSWORD: sql:update usuarios set passwd= MD5('') where id_usuario = 70 limit 1;
+Mon Jun 24 2:56:00 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:56:00 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:56:00 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:56:00 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 2:56:00 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 2:56:03 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:56:03 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:56:03 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:56:03 PYT 2013: --- OPERACIONES: Cambiar Password --
+Mon Jun 24 2:56:03 PYT 2013: CAMBIAR_PASSWORD: sql:update usuarios set passwd= MD5('') where id_usuario = 70 limit 1;
+Mon Jun 24 2:56:30 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:56:30 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:56:30 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:56:30 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:56:30 PYT 2013: Seccion administracion 
+Mon Jun 24 2:56:30 PYT 2013: Web: 
+Mon Jun 24 2:56:30 PYT 2013: BUSCAR_USUARIOS
+Mon Jun 24 2:56:30 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Mon Jun 24 2:56:30 PYT 2013: BUSCAR_USUARIOS :
+
+Mon Jun 24 2:56:33 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:56:33 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:56:33 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:56:33 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 2:56:33 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 2:56:33 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 2:56:38 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:56:38 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:56:38 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:56:38 PYT 2013: --- OPERACIONES: Cambiar Password --
+Mon Jun 24 2:56:38 PYT 2013: CAMBIAR_PASSWORD: sql:update usuarios set passwd= MD5('megachot') where id_usuario = 70 limit 1;
+Mon Jun 24 2:56:40 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:56:40 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:56:40 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:56:40 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:56:40 PYT 2013: Seccion administracion 
+Mon Jun 24 2:56:40 PYT 2013: Web: 
+Mon Jun 24 2:56:40 PYT 2013: BUSCAR_USUARIOS
+Mon Jun 24 2:56:40 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Mon Jun 24 2:56:40 PYT 2013: BUSCAR_USUARIOS :
+
+Mon Jun 24 2:56:42 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:56:42 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:56:42 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='807f242c3fea435dfb6b5f00818d0d9c' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:56:42 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:56:42 PYT 2013: Seccion SALIR 
+Mon Jun 24 2:56:42 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:56:42 PYT 2013: Sessions -> Default
+Mon Jun 24 2:56:42 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:56:42 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:56:42 PYT 2013: Session Logout
+Mon Jun 24 2:56:42 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:56:47 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:56:47 PYT 2013: --- OPERACIONES: Validar usuario  --
+Mon Jun 24 2:56:47 PYT 2013: Check Login 
+Mon Jun 24 2:56:47 PYT 2013: Check Login > set variables
+Mon Jun 24 2:56:47 PYT 2013: Check Login > user cbustamantem 
+Mon Jun 24 2:56:47 PYT 2013: Check Login > all variables set 
+Mon Jun 24 2:56:47 PYT 2013: Sessions -> set data session 
+Mon Jun 24 2:56:47 PYT 2013: Check Login > login success for user cbustamantem
+Mon Jun 24 2:56:47 PYT 2013: --- OPERACIONES: usuario valido--
+Mon Jun 24 2:56:47 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:56:47 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:56:47 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:56:47 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:56:47 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:57:18 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:57:18 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:57:18 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:57:18 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:57:18 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:57:20 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:57:20 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:57:20 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:57:20 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 2:57:20 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 2:57:24 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:57:24 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:57:24 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:57:24 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 2:57:24 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 2:57:26 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:57:26 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:57:26 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:57:26 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 2:57:26 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 2:57:44 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:57:44 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:57:44 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:57:44 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:57:44 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:57:46 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:57:46 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:57:46 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:57:46 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 2:57:46 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 2:58:06 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:58:06 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:58:06 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:58:06 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 2:58:06 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 2:58:07 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:58:07 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:58:07 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:58:07 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 2:58:07 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 2:58:07 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 2:58:28 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:58:28 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:58:28 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:58:28 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:58:28 PYT 2013: Seccion administracion 
+Mon Jun 24 2:58:28 PYT 2013: Web: 
+Mon Jun 24 2:58:28 PYT 2013: Web: menu principal 
+Mon Jun 24 2:58:30 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:58:30 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:58:30 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:58:30 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:58:30 PYT 2013: Seccion administracion 
+Mon Jun 24 2:58:30 PYT 2013: Web: 
+Mon Jun 24 2:58:30 PYT 2013: BUSCAR_USUARIOS
+Mon Jun 24 2:58:30 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Mon Jun 24 2:58:30 PYT 2013: BUSCAR_USUARIOS :
+
+Mon Jun 24 2:58:32 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:58:32 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:58:32 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:58:32 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 2:58:32 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 2:58:34 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:58:34 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:58:34 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:58:34 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 2:58:34 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 2:58:34 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 2:58:41 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:58:41 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:58:41 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:58:41 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:58:41 PYT 2013: Seccion administracion 
+Mon Jun 24 2:58:41 PYT 2013: Web: 
+Mon Jun 24 2:58:41 PYT 2013: BUSCAR_DOCUMENTOS
+Mon Jun 24 2:58:41 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Mon Jun 24 2:58:41 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Mon Jun 24 2:58:42 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:58:42 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:58:42 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:58:42 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 2:58:42 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 2:58:45 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:58:45 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:58:45 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:58:45 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:58:45 PYT 2013: Seccion administracion 
+Mon Jun 24 2:58:45 PYT 2013: Web: 
+Mon Jun 24 2:58:45 PYT 2013: Web: seccion categorias
+Mon Jun 24 2:58:45 PYT 2013: Asignando el template:
+Mon Jun 24 2:58:46 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:58:46 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:58:46 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:58:46 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 2:58:46 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 2:58:48 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:58:48 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:58:48 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:58:48 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:58:48 PYT 2013: Seccion administracion 
+Mon Jun 24 2:58:48 PYT 2013: Web: 
+Mon Jun 24 2:58:48 PYT 2013: Web: seccion categorias
+Mon Jun 24 2:58:48 PYT 2013: Asignando el template:
+Mon Jun 24 2:58:50 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:58:50 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:58:50 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:58:50 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 2:58:50 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 2:58:53 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:58:53 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:58:53 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:58:53 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:58:53 PYT 2013: Seccion administracion 
+Mon Jun 24 2:58:53 PYT 2013: Web: 
+Mon Jun 24 2:58:53 PYT 2013: Web: seccion subcategorias
+Mon Jun 24 2:58:53 PYT 2013: Asignando el template:
+Mon Jun 24 2:58:54 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:58:54 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:58:54 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:58:54 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 2:58:54 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 2:58:56 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:58:56 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:58:56 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:58:56 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:58:56 PYT 2013: Seccion administracion 
+Mon Jun 24 2:58:56 PYT 2013: Web: 
+Mon Jun 24 2:58:56 PYT 2013: BUSCAR_DOCUMENTOS
+Mon Jun 24 2:58:56 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Mon Jun 24 2:58:56 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Mon Jun 24 2:58:58 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:58:58 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:58:58 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:58:58 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 2:58:58 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 2:59:45 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:59:45 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:59:45 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:59:45 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:59:45 PYT 2013: Seccion administracion 
+Mon Jun 24 2:59:45 PYT 2013: Web: 
+Mon Jun 24 2:59:45 PYT 2013: BUSCAR_DOCUMENTOS
+Mon Jun 24 2:59:45 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Mon Jun 24 2:59:45 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Mon Jun 24 2:59:48 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:59:48 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:59:48 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:59:48 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:59:48 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:59:50 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:59:50 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:59:50 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:59:50 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 2:59:50 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 2:59:50 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 2:59:52 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 2:59:52 PYT 2013: Sessions -> logged_in
+Mon Jun 24 2:59:52 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:59:52 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:59:52 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 2:59:53 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:59:53 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:59:53 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:59:53 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 2:59:53 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 2:59:53 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 2:59:55 PYT 2013: --- OPERACIONES --
+Mon Jun 24 2:59:55 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 2:59:55 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 2:59:55 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 2:59:55 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:01:07 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:01:07 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:01:07 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:01:07 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:01:07 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:01:08 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:01:08 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:01:08 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:01:08 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:01:08 PYT 2013: Seccion administracion 
+Mon Jun 24 3:01:08 PYT 2013: Web: 
+Mon Jun 24 3:01:08 PYT 2013: Web: menu principal 
+Mon Jun 24 3:01:10 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:01:10 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:01:10 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:01:10 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:01:10 PYT 2013: Seccion administracion 
+Mon Jun 24 3:01:10 PYT 2013: Web: 
+Mon Jun 24 3:01:10 PYT 2013: BUSCAR_USUARIOS
+Mon Jun 24 3:01:10 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Mon Jun 24 3:01:10 PYT 2013: BUSCAR_USUARIOS :
+
+Mon Jun 24 3:01:12 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:01:12 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:01:12 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:01:12 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:01:12 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:01:15 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:01:15 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:01:15 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:01:15 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:01:15 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:01:47 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:01:47 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:01:47 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:01:47 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:01:47 PYT 2013: Seccion administracion 
+Mon Jun 24 3:01:47 PYT 2013: Web: 
+Mon Jun 24 3:01:47 PYT 2013: Web: menu principal 
+Mon Jun 24 3:01:49 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:01:49 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:01:49 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:01:49 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:01:49 PYT 2013: Seccion administracion 
+Mon Jun 24 3:01:49 PYT 2013: Web: 
+Mon Jun 24 3:01:49 PYT 2013: BUSCAR_USUARIOS
+Mon Jun 24 3:01:49 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Mon Jun 24 3:01:49 PYT 2013: BUSCAR_USUARIOS :
+
+Mon Jun 24 3:01:50 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:01:50 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:01:50 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:01:50 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:01:50 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:01:54 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:01:54 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:01:54 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:01:54 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:01:54 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:02:22 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:02:22 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:02:22 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:02:22 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:02:22 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:02:23 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:02:23 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:02:23 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:02:23 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:02:23 PYT 2013: Seccion administracion 
+Mon Jun 24 3:02:23 PYT 2013: Web: 
+Mon Jun 24 3:02:23 PYT 2013: Web: menu principal 
+Mon Jun 24 3:02:24 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:02:24 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:02:24 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:02:24 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:02:24 PYT 2013: Seccion administracion 
+Mon Jun 24 3:02:24 PYT 2013: Web: 
+Mon Jun 24 3:02:24 PYT 2013: BUSCAR_USUARIOS
+Mon Jun 24 3:02:24 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Mon Jun 24 3:02:24 PYT 2013: BUSCAR_USUARIOS :
+
+Mon Jun 24 3:02:27 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:02:27 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:02:27 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:02:27 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:02:27 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:02:54 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:02:54 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:02:54 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:02:54 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:02:54 PYT 2013: Seccion administracion 
+Mon Jun 24 3:02:54 PYT 2013: Web: 
+Mon Jun 24 3:02:54 PYT 2013: Web: seccion subcategorias
+Mon Jun 24 3:02:54 PYT 2013: Asignando el template:
+Mon Jun 24 3:02:56 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:02:56 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:02:56 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:02:56 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:02:56 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:02:58 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:02:58 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:02:58 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:02:58 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:02:58 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:03:00 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:03:00 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:03:00 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:03:00 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:03:00 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:04:00 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:04:00 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:04:00 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:04:00 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:04:00 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:04:02 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:04:02 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:04:02 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:04:02 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:04:02 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:04:19 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:04:19 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:04:19 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:04:19 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:04:19 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:04:21 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:04:21 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:04:21 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:04:21 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:04:21 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:04:24 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:04:24 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:04:24 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:04:24 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:04:24 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:04:48 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:04:48 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:04:48 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:04:48 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:04:48 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:04:49 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:04:49 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:04:49 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:04:49 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:04:49 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:05:02 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:05:02 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:05:02 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:05:02 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:05:02 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:05:46 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:05:46 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:05:46 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:05:46 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:05:46 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:05:59 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:05:59 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:05:59 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:05:59 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:05:59 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:06:01 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:06:01 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:06:01 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:06:01 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:06:01 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:06:41 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:06:41 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:06:41 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:06:41 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:06:41 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 7:06:43 UTC 2013: Sessions -> logged_in
+Mon Jun 24 7:06:43 UTC 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 7:06:43 UTC 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:06:46 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:06:46 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:06:46 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:06:46 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:06:46 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:06:49 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:06:49 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:06:49 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:06:49 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:06:49 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:06:52 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:06:52 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:06:52 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:06:52 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 3:06:52 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 3:06:52 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 3:06:55 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:06:55 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:06:55 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:06:55 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 3:06:55 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 3:06:55 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 3:14:17 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:14:17 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:14:17 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:14:17 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:14:17 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:14:18 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:14:18 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:14:18 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:14:18 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:14:18 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:14:20 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:14:20 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:14:20 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:14:20 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:14:20 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:14:23 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:14:23 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:14:23 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:14:23 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:14:23 PYT 2013: Seccion administracion 
+Mon Jun 24 3:14:23 PYT 2013: Web: 
+Mon Jun 24 3:14:23 PYT 2013: Web: menu principal 
+Mon Jun 24 3:14:25 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:14:25 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:14:25 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:14:25 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:14:25 PYT 2013: Seccion administracion 
+Mon Jun 24 3:14:25 PYT 2013: Web: 
+Mon Jun 24 3:14:25 PYT 2013: Web: seccion categorias
+Mon Jun 24 3:14:25 PYT 2013: Asignando el template:
+Mon Jun 24 3:14:27 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:14:27 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:14:27 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:14:27 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:14:27 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:14:30 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:14:30 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:14:30 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:14:30 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:14:30 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:14:32 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:14:32 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:14:32 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:14:32 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 3:14:32 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 3:14:32 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 3:15:30 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:15:30 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:15:30 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:15:30 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 3:15:30 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 3:15:30 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 3:15:49 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:15:49 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:15:49 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:15:49 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:15:49 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:15:51 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:15:51 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:15:51 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:15:51 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:15:51 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:16:02 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:16:02 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:16:02 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:16:02 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 3:16:02 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 3:16:02 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 3:16:04 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:16:04 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:16:04 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:16:04 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:16:04 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:16:08 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:16:08 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:16:08 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:16:08 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:16:08 PYT 2013: Seccion administracion 
+Mon Jun 24 3:16:08 PYT 2013: Web: 
+Mon Jun 24 3:16:08 PYT 2013: Web: menu principal 
+Mon Jun 24 3:16:10 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:16:10 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:16:10 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:16:10 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:16:10 PYT 2013: Seccion administracion 
+Mon Jun 24 3:16:10 PYT 2013: Web: 
+Mon Jun 24 3:16:10 PYT 2013: Web: menu principal 
+Mon Jun 24 3:16:11 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:16:11 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:16:11 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:16:11 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:16:11 PYT 2013: Seccion administracion 
+Mon Jun 24 3:16:11 PYT 2013: Web: 
+Mon Jun 24 3:16:11 PYT 2013: BUSCAR_USUARIOS
+Mon Jun 24 3:16:11 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Mon Jun 24 3:16:11 PYT 2013: BUSCAR_USUARIOS :
+
+Mon Jun 24 3:16:12 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:16:12 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:16:12 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:16:12 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 3:16:12 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 3:16:12 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 3:16:16 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:16:16 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:16:16 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:16:16 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:16:16 PYT 2013: Seccion administracion 
+Mon Jun 24 3:16:16 PYT 2013: Web: 
+Mon Jun 24 3:16:16 PYT 2013: Web: seccion subcategorias
+Mon Jun 24 3:16:16 PYT 2013: Asignando el template:
+Mon Jun 24 3:16:18 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:16:18 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:16:18 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:16:18 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 3:16:18 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 3:16:18 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 3:17:08 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:17:08 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:17:08 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:17:08 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:17:08 PYT 2013: Seccion administracion 
+Mon Jun 24 3:17:08 PYT 2013: Web: 
+Mon Jun 24 3:17:08 PYT 2013: Web: seccion subcategorias
+Mon Jun 24 3:17:08 PYT 2013: Asignando el template:
+Mon Jun 24 3:17:10 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:17:10 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:17:10 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:17:10 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:17:10 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:17:12 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:17:12 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:17:12 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:17:12 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 3:17:12 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 3:17:12 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 3:17:14 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:17:14 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:17:14 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:17:14 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:17:14 PYT 2013: Seccion administracion 
+Mon Jun 24 3:17:14 PYT 2013: Web: 
+Mon Jun 24 3:17:14 PYT 2013: Web: menu principal 
+Mon Jun 24 3:17:16 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:17:16 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:17:16 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:17:16 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:17:16 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:17:19 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:17:19 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:17:19 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:17:19 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 3:17:19 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 3:17:19 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 3:17:22 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:17:22 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:17:22 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:17:22 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:17:22 PYT 2013: Seccion administracion 
+Mon Jun 24 3:17:22 PYT 2013: Web: 
+Mon Jun 24 3:17:22 PYT 2013: Web: seccion subcategorias
+Mon Jun 24 3:17:22 PYT 2013: Asignando el template:
+Mon Jun 24 3:17:23 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:17:23 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:17:23 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:17:23 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:17:23 PYT 2013: Seccion administracion 
+Mon Jun 24 3:17:23 PYT 2013: Web: 
+Mon Jun 24 3:17:23 PYT 2013: BUSCAR_DOCUMENTOS
+Mon Jun 24 3:17:23 PYT 2013: BUSCAR_DOCUMENTOS > Busqueda:
+Mon Jun 24 3:17:23 PYT 2013: BUSCAR_DOCUMENTOS :
+
+Mon Jun 24 3:17:24 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:17:24 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:17:24 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:17:24 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:17:24 PYT 2013: Seccion administracion 
+Mon Jun 24 3:17:24 PYT 2013: Web: 
+Mon Jun 24 3:17:24 PYT 2013: BUSCAR_USUARIOS
+Mon Jun 24 3:17:24 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Mon Jun 24 3:17:24 PYT 2013: BUSCAR_USUARIOS :
+
+Mon Jun 24 3:18:08 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:18:08 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:18:08 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:18:08 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:18:08 PYT 2013: Seccion administracion 
+Mon Jun 24 3:18:08 PYT 2013: Web: 
+Mon Jun 24 3:18:08 PYT 2013: BUSCAR_USUARIOS
+Mon Jun 24 3:18:08 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Mon Jun 24 3:18:08 PYT 2013: BUSCAR_USUARIOS :
+
+Mon Jun 24 3:18:09 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:18:09 PYT 2013: --- OPERACIONES: MOSTRAR Agregar Usuario  --
+Mon Jun 24 3:18:09 PYT 2013: MTD_MOSTRAR_AGREGAR_USUARIO:
+Mon Jun 24 3:18:09 PYT 2013: LEER TPL:tpl/tpl-registro.html
+Mon Jun 24 3:18:39 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:18:39 PYT 2013: --- OPERACIONES: Agregar Usuario  --
+Mon Jun 24 3:18:39 PYT 2013: ABM USUARIOS: MTD Agregar 
+Mon Jun 24 3:18:39 PYT 2013: ABM USUARIOS: Recibir datos: OK
+Mon Jun 24 3:18:39 PYT 2013: ABM USUARIOS: SQL:INSERT INTO usuarios (        
+        nombre_usuario,
+        apellido_usuario,
+        username,
+        passwd,      
+        telparticular,
+        telmovil,
+        direccion,                   
+        cedula,rol_usuario    
+        ) values (
+        'ads',
+        'asd',
+        'asd',
+        MD5('123'),         
+        '123',
+        '123',
+        '123',        
+        '123','usuario'    
+        )
+Mon Jun 24 3:18:39 PYT 2013: ABM USUARIOS: MTD Agregar OK
+Mon Jun 24 3:18:39 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:18:39 PYT 2013: --- OPERACIONES: Agregar Usuario  --
+Mon Jun 24 3:18:39 PYT 2013: ABM USUARIOS: MTD Agregar 
+Mon Jun 24 3:18:39 PYT 2013: ABM USUARIOS: Recibir datos: OK
+Mon Jun 24 3:18:39 PYT 2013: ABM USUARIOS: SQL:INSERT INTO usuarios (        
+        nombre_usuario,
+        apellido_usuario,
+        username,
+        passwd,      
+        telparticular,
+        telmovil,
+        direccion,                   
+        cedula,rol_usuario    
+        ) values (
+        'ads',
+        'asd',
+        'asd',
+        MD5('123'),         
+        '123',
+        '123',
+        '123',        
+        '123','usuario'    
+        )
+Mon Jun 24 3:18:39 PYT 2013: ABM USUARIOS: MTD Agregar FAIL
+Mon Jun 24 3:18:39 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:18:39 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:18:39 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:18:39 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:18:39 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:18:42 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:18:42 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:18:42 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:18:42 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:18:42 PYT 2013: Seccion administracion 
+Mon Jun 24 3:18:42 PYT 2013: Web: 
+Mon Jun 24 3:18:42 PYT 2013: Web: menu principal 
+Mon Jun 24 3:18:44 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:18:44 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:18:44 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:18:44 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:18:44 PYT 2013: Seccion administracion 
+Mon Jun 24 3:18:44 PYT 2013: Web: 
+Mon Jun 24 3:18:44 PYT 2013: BUSCAR_USUARIOS
+Mon Jun 24 3:18:44 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Mon Jun 24 3:18:44 PYT 2013: BUSCAR_USUARIOS :
+
+Mon Jun 24 3:18:49 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:18:49 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:18:49 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:18:49 PYT 2013: --- OPERACIONES: eliminar perfil --
+Mon Jun 24 3:18:49 PYT 2013: ABM USUARIOS: Recibir datos: OK
+Mon Jun 24 3:18:51 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:18:51 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:18:51 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:18:51 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:18:51 PYT 2013: Seccion administracion 
+Mon Jun 24 3:18:51 PYT 2013: Web: 
+Mon Jun 24 3:18:51 PYT 2013: BUSCAR_USUARIOS
+Mon Jun 24 3:18:51 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Mon Jun 24 3:18:51 PYT 2013: BUSCAR_USUARIOS :
+
+Mon Jun 24 3:19:08 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:19:08 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:19:08 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:19:08 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:19:08 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:19:11 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:19:11 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:19:11 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:19:11 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:19:11 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:19:14 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:19:14 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:19:14 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:19:14 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 3:19:14 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 3:19:14 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 3:19:17 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:19:17 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:19:17 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='379ba6943745e9ef130addb6df5872a3' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:19:17 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:19:17 PYT 2013: Seccion SALIR 
+Mon Jun 24 3:19:17 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:19:17 PYT 2013: Sessions -> Default
+Mon Jun 24 3:19:17 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:19:17 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:19:17 PYT 2013: Session Logout
+Mon Jun 24 3:19:17 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:19:19 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:19:19 PYT 2013: Sessions -> Default
+Mon Jun 24 3:19:19 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:19:19 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:19:19 PYT 2013: Session Logout
+Mon Jun 24 3:19:19 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:19:20 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:19:20 PYT 2013: Sessions -> Default
+Mon Jun 24 3:19:20 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:19:20 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:19:20 PYT 2013: Session Logout
+Mon Jun 24 3:19:20 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:19:23 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:19:23 PYT 2013: Sessions -> Default
+Mon Jun 24 3:19:23 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:19:23 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:19:23 PYT 2013: Session Logout
+Mon Jun 24 3:19:23 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:19:31 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:19:31 PYT 2013: --- OPERACIONES: Validar usuario  --
+Mon Jun 24 3:19:31 PYT 2013: Check Login 
+Mon Jun 24 3:19:31 PYT 2013: Check Login > set variables
+Mon Jun 24 3:19:31 PYT 2013: Check Login > user cbustamantem 
+Mon Jun 24 3:19:31 PYT 2013: Check Login > all variables set 
+Mon Jun 24 3:19:31 PYT 2013: Check Login > login fail 
+Mon Jun 24 3:19:31 PYT 2013: --- OPERACIONES: usuario no valido--
+Mon Jun 24 3:19:36 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:19:36 PYT 2013: --- OPERACIONES: Validar usuario  --
+Mon Jun 24 3:19:36 PYT 2013: Check Login 
+Mon Jun 24 3:19:36 PYT 2013: Check Login > set variables
+Mon Jun 24 3:19:36 PYT 2013: Check Login > user cbustamantem 
+Mon Jun 24 3:19:36 PYT 2013: Check Login > all variables set 
+Mon Jun 24 3:19:36 PYT 2013: Sessions -> set data session 
+Mon Jun 24 3:19:36 PYT 2013: Check Login > login success for user cbustamantem
+Mon Jun 24 3:19:36 PYT 2013: --- OPERACIONES: usuario valido--
+Mon Jun 24 3:19:36 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:19:36 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:19:36 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='9a5948c2befb9af2fad6c2d6270ffcca' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:19:36 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:19:36 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:20:47 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:20:47 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:20:47 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='9a5948c2befb9af2fad6c2d6270ffcca' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:20:47 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:20:47 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:20:49 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:20:49 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='9a5948c2befb9af2fad6c2d6270ffcca' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:20:49 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:20:49 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Mon Jun 24 3:20:49 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Mon Jun 24 3:20:52 PYT 2013: --- OPERACIONES --
+Mon Jun 24 3:20:52 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='9a5948c2befb9af2fad6c2d6270ffcca' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:20:52 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:20:52 PYT 2013: --- OPERACIONES: Mostrar Cambiar Password --
+Mon Jun 24 3:20:52 PYT 2013: MTD_MOSTRAR_CAMBIAR_PASSWORD:
+Mon Jun 24 3:20:52 PYT 2013: LEER TPL:tpl/tpl-cambiar-password.html
+Mon Jun 24 3:20:54 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:20:54 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:20:54 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='9a5948c2befb9af2fad6c2d6270ffcca' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:20:54 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Mon Jun 24 3:20:54 PYT 2013: Seccion SALIR 
+Mon Jun 24 3:20:54 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:20:54 PYT 2013: Sessions -> Default
+Mon Jun 24 3:20:54 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:20:54 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:20:54 PYT 2013: Session Logout
+Mon Jun 24 3:20:54 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:20:57 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:20:57 PYT 2013: Sessions -> Default
+Mon Jun 24 3:20:57 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:20:57 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:20:57 PYT 2013: Session Logout
+Mon Jun 24 3:20:57 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Mon Jun 24 3:20:57 PYT 2013: INCICIO SISTEMA
+Mon Jun 24 3:20:57 PYT 2013: Sessions -> Default
+Mon Jun 24 3:20:57 PYT 2013: Sessions -> logged_in
+Mon Jun 24 3:20:57 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='erntvc6hpmdcf47g2tcuihmr60' AND ip='127.0.0.1'
+Mon Jun 24 3:20:57 PYT 2013: Session Logout
+Mon Jun 24 3:20:57 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar

@@ -32,11 +32,13 @@
     
     <script type="text/javascript" src="js/flexpaper.js"></script>
     <script type="text/javascript" src="js/flexpaper_handlers.js"></script>
-   <script type="text/javascript"  src="js/jquery.simplemodal.js"></script>
+ 
    <script type="text/javascript"  src="js/bootstrap-buttons.js"></script>
    <script type="text/javascript"  src="js/bootstrap-dropdown.js"></script>
    <script type="text/javascript"  src="js/bootstrap-popover.js"></script>
-      <script type="text/javascript"  src="js/basic.js"></script>
+    <script type="text/javascript"  src="js/basic.js"></script>
+    <script type="text/javascript"  src="js/services.js"></script>
+
    <link href="css/basic.css" rel="stylesheet" type="text/css" />
 <!--Fin Flex-->
 
@@ -80,6 +82,7 @@
 <script type="text/javascript" src="js/DT_bootstrap.js"></script>
 
 <link rel="stylesheet" type="text/css" href="css/DT_bootstrap.css">
+    <script type="text/javascript"  src="js/jquery.simplemodal.js"></script>
 </head>
 
 <body class="esp" id="quienes">
@@ -202,62 +205,9 @@ $(document).ready(function()
             });     
         
 });
-function validateEmail(email) { 
-    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
-} 
-function MTD_VALIDAR_USUARIO()
-{
-    
-    var usuario ="";
-    var password="";    
-    usuario     =$("#username").val();
-    password    =$("#password").val();
-    var mensaje_error="";
-    if (!validateEmail(usuario))
-    {       
-        mensaje_error="Atencion, el usuario debe ser una direccion de email";               
-    }
-     else if (password == "")
-    {
-        mensaje_error="Atencion, debe ingresar su password";
-    }
-    
-        
-    if (!mensaje_error =="")
-    {
-        
-        alert ("Error:" + mensaje_error);
-    }
-    else 
-    {   
-        
-        var parametros  = {operacion: "validar_usuario",usuario: usuario, password: password};  
-        $.ajax({
-            url: "operaciones.php",data: parametros,type: "POST",cache: false,async: true,
-            success: function(data) 
-            {
-                if (data == "0")
-                {
-                
-                    window.location = "index.php?id=registro";
-                    //ENVIAR AL SITIO
-                }
-                else
-                {
-                    alert ("Atencion, usuario o password incorrectos");
-                    
-                }
-                    
-                            
-            }
-        });  
-    }
-    
-  
-}
 </script>
-
+<div id ="basic-modal-content">&nbsp;</div>
+<div id ="contenedor-resultado">&nbsp;</div>
 
 </body>
 </html>

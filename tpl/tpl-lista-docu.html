@@ -1,4 +1,3 @@
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <style type="text/css">
 	.mostrar-mas{
 		text-align: center;
@@ -12,32 +11,6 @@
 	}
 </style>
 
-<!--<script type="text/javascript">
-	$(function function_name (argument) {
-		var paginacion = $('.pagination');
-		paginacion.hide();//ocultamos la páginación
-
-		//link mostrar más
-		paginacion.after('<div class="mostrar-mas"><a href="#">mostrar más</a></div>');
-
-		$('.mostrar-mas a').on('click', function(e){
-			e.preventDefault();
-			$ajax({
-				type: 	'GET',
-				url:	$('.pagination li.next a').attr('href'),
-				success: function(html) {
-					//obtener nuevos registros
-					var nuevosDocs 	= $(html).find('.row'),
-						nuevaPag 	= $(html).find('.pagination'),
-						libros		= $('.spn3');
-
-					libros.find('.row').append(nuevosDocs.html());
-				}
-			});
-		});
-
-	});
-</script>-->
 <link rel="stylesheet" type="text/css" href="css/book.css">
 <div class="books" style="text-align:center;">
 	<div class="container-fluid" style="background:white; margin:0 auto 0 auto;">

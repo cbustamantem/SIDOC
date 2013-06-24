@@ -378,7 +378,7 @@ class CLASS_ABM_USUARIOS
 			direccion,			
 			cedula			
 			FROM usuarios
-			where id_usuario =".FN_RECIBIR_VARIABLES("id_usuario");
+			where id_usuario =".$this->vlc_id_usuario;
         }
         else
         {
@@ -509,6 +509,14 @@ class CLASS_ABM_USUARIOS
     function  MTD_MOSTRAR_EDITAR_DATOS_PERSONALES()
     {
     	$template= $this->MTD_LEER_TPL('tpl/tpl-editar-datos-personales.html');    	
+        if (FN_RECIBIR_VARIABLES("id_usuario") == "")
+        {
+            $this->vlc_id_usuario= $_SESSION["uid"];
+        }
+        else
+        {
+            $this->vlc_id_usuario=FN_RECIBIR_VARIABLES("id_usuario");
+        }
     	$registros = $this->MTD_DB_LISTAR(true);
     	$this->MTD_RECIBIR_DATOS_DB($registros);
         $template = FN_REEMPLAZAR("{tpl-id-usuario}",FN_RECIBIR_VARIABLES("id_usuario"),$template);
