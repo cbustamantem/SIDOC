@@ -63,7 +63,18 @@ class CLASS_LISTADO_DOCUMENTOS
 		$paginacion->labels('Anterior', 'Siguiente');
 		$paginacion->records($totaldocumentos);
 		$paginacion->records_per_page($this->paginas);
-
+		$busqueda="";
+		$filtro=" ";
+		if (isset($_GET['busqueda']))
+		{
+			$busqueda=FN_RECIBIR_VARIABLES("busqueda");
+			$filtro="WHERE
+			etiquetas like '%".$busqueda."%'
+			OR
+			titulo like '%".$busqueda."%'
+			OR
+			descripcion like '%".$busqueda."%'  " ;
+		}
 		$sql="
 			SELECT
 			iddocumento,
@@ -77,6 +88,8 @@ class CLASS_LISTADO_DOCUMENTOS
 			rutaimagen,
 			etiquetas
 			FROM documentos
+			".$filtro."
+			ORDER BY titulo
  		     ";
 		
 
@@ -100,7 +113,7 @@ class CLASS_LISTADO_DOCUMENTOS
 		$this->setNroPaginas($paginacion->render(true));
 		return $datos;
 	}
-
+	
 	function MTD_RETORNAR_CODIGO_HTML()
 	{
 		return $this->vlc_codigo_html;

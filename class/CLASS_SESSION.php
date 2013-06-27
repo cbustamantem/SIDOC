@@ -36,7 +36,7 @@ class CLASS_SESSION
 				$this->vlc_logged_in= $this->check_session ();
 				//echo "CHKSESSION-> chequeo sesion con resultado: $resultado <br>";
 		}
-		$this->vlc_db_conexion = $vpp_db_conexion;
+		//$this->vlc_db_conexion = $vpp_db_conexion;
 		
 		$resultado = $this->vlc_logged_in;
 		

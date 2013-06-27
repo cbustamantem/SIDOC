@@ -2,12 +2,9 @@
 class CLASS_ABM_PERFIL
 {
     private $vlc_codigo_html;
-    private $vlc_nombre_cliente;
-    private $vlc_apellido_cliente;
-    private $vlc_holding;
-    private $vlc_empresa;
-    private $vlc_sucursal;
-    private $vlc_id_cliente;
+    private $vlc_id_perfil;
+    private $vlc_descripcion;
+
     private $vlc_db_cn;
     function __construct ($vp_cn)
     {
@@ -19,12 +16,8 @@ class CLASS_ABM_PERFIL
     {
     	$this->vlc_codigo_html = "";
         $this->vlc_codigo_html="";
-	    $this->vlc_nombre_cliente="";
-	    $this->vlc_apellido_cliente="";
-	    $this->vlc_holding="";
-	    $this->vlc_empresa="";
-	    $this->vlc_sucursal="";
-	    $this->vlc_id_cliente="";				
+	    $this->vlc_id_perfil="";
+	    $this->vlc_descripcion="";	    
     }
     function MTD_INICIALIZAR_PAGINA ()
     {

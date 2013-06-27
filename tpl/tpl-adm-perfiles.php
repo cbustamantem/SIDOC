@@ -1,7 +1,7 @@
 
-<h2>Lista de Usuarios</h2>
+<h2>Perfiles de Usuarios</h2>
 <div style='float:right;margin-top:-20px;'>
-	<button  type="button" class="btn btn-info" id="btnAgregar"><i class="icon-edit icon-white"></i> Agregar Usuarios</button>	
+	<button  type="button" class="btn btn-info" id="btnAgregar"><i class="icon-edit icon-white"></i> Agregar Perfil</button>	
 </div>
 <span>Busqueda </span><br>
 <form>
@@ -27,11 +27,11 @@
 			});
 				       
         $("#btnAgregar").click(function() {
-        	MTD_MOSTRAR_FORMULARIO_USUARIOS();
+        	MTD_MOSTRAR_FORMULARIO_PERFILES();
 			});	
 	
 	});					 
-	function MTD_MOSTRAR_FORMULARIO_USUARIOS()
+	function MTD_MOSTRAR_FORMULARIO_PERFILES()
 	{
 		var codigo ="";
 	    var mensaje_error="";    
@@ -39,7 +39,7 @@
 	    
 	    // Load dialog on click	
 	    //$('#basic-modal-content').modal();
-		var parametros 	= {operacion: "mostrar_agregar_usuarios"};	
+		var parametros 	= {operacion: "mostrar_agregar_perfiles"};	
 		$.ajax({
 	        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
 	        success: function(data) 
@@ -53,7 +53,7 @@
 	   
 	  	
 	}	
-	function MTD_EDITAR_PERFIL(id_usuario)
+	function MTD_EDITAR_PERFIL(id_perfil)
 	{
 		var codigo ="";
 	    var mensaje_error="";    
@@ -61,7 +61,7 @@
 	    
 	    // Load dialog on click	
 	    //$('#basic-modal-content').modal();
-		var parametros 	= {operacion: "mostrar_editar_datos_personales",id_usuario : id_usuario};	
+		var parametros 	= {operacion: "mostrar_editar_datos_personales",id_perfil : id_perfil};	
 		$.ajax({
 	        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
 	        success: function(data) 
@@ -148,7 +148,7 @@
 	    
 	    if (mensaje_error == '')
 	    {    
-		    var parametros 	= {operacion: "agregar_usuario",
+		    var parametros 	= {operacion: "agregar_perfil",
 		    		nombre: nombre, 
 		    		apellido: apellido,
 		    		registro_medico:registro_medico,
@@ -195,11 +195,11 @@
 	}
 
 		
-	function MTD_ELIMINAR_PERFIL(id_usuario)
+	function MTD_ELIMINAR_PERFIL(id_perfil)
 	{
-		var answer = confirm("Esta seguro de eliminar el usuario?")
+		var answer = confirm("Esta seguro de eliminar el perfil?")
 		if (answer){
-			var parametros 	= {operacion: "eliminar_perfil",id_usuario: id_usuario};	
+			var parametros 	= {operacion: "eliminar_perfil",id_perfil: id_perfil};	
 			$.ajax({
 		        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
 		        success: function(data) 

@@ -348,6 +348,11 @@ class CLASS_ABM_USUARIOS
 		$this->vlc_tratamiento					= FN_RECIBIR_VARIABLES('tratamiento');
 		$this->vlc_especialidad					= FN_RECIBIR_VARIABLES('especialidad');
         $this->vlc_id_usuario                 = FN_RECIBIR_VARIABLES('id_usuario');
+
+        if ($this->vlc_id_usuario == "")
+        {
+            $this->vlc_id_usuario=$_SESSION["uid"];
+        }
 		LOGGER::LOG("ABM USUARIOS: Recibir datos: OK");
 			   
     }

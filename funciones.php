@@ -77,8 +77,8 @@ function formulario_sistema_medico()
 	{ 
 
 		$vl_cod_html_login 	   =FN_LEER_TPL('tpl/tpl-index-loggedin.html');
-		$username=split("@",$_SESSION['username']);
-		$vl_cod_html_login = FN_REEMPLAZAR("{username}",$username[0],$vl_cod_html_login );
+		$username=$_SESSION['username'];
+		$vl_cod_html_login = FN_REEMPLAZAR("{username}",$username,$vl_cod_html_login );
 
 		if ($_SESSION['rol_usuario'] == "administrador")
 		{

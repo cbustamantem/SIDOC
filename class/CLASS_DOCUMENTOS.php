@@ -107,7 +107,7 @@ class CLASS_DOCUMENTOS
     		<tbody>';
     		foreach ($arreglo as $datos)
     		{
-    			$html.="<TR><TD>".substr($datos[1],0,70)."</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=".$datos[0]."'>".substr($datos[2],0,50)."</a></TD>
+    			$html.="<TR><TD>".substr($datos[1],0,10)."</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=".$datos[0]."'>".substr($datos[2],0,50)."</a></TD>
                 ";
     		}
     		$html.="</tbody></table>";
@@ -144,7 +144,7 @@ class CLASS_DOCUMENTOS
             documento,
             fecha,
             idsubcategoria
-            FROM documentos ";
+            FROM documentos order by titulo";
     	$arreglo = FN_RUN_QUERY($sql,6, $this->vlc_db_cn);
     	//$arreglo_datos= FN_RUN_QUERY($sql, 3, $this->vlc_db_cn);
     	$contador =0;
@@ -163,7 +163,7 @@ class CLASS_DOCUMENTOS
     		<tbody>';
     		foreach ($arreglo as $datos)
     		{
-    			$html.="<TR><TD>".$datos[0]."</TD><TD>".substr($datos[1],0,70)."</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=".$datos[0]."'>".substr($datos[2],0,50)."</a></TD> 
+    			$html.="<TR><TD>".$datos[0]."</TD><TD>".substr($datos[1],0,50)."</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=".$datos[0]."'>".substr($datos[2],0,50)."</a></TD> 
                 ".'<td>
       
                   <div class="btn-group">
