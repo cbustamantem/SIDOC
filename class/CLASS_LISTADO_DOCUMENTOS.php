@@ -88,8 +88,7 @@ class CLASS_LISTADO_DOCUMENTOS
 			rutaimagen,
 			etiquetas
 			FROM documentos
-			".$filtro."
-			ORDER BY titulo
+			".$filtro."			 
  		     ";
 		
 
@@ -104,7 +103,7 @@ class CLASS_LISTADO_DOCUMENTOS
 			$where .=  " AND idsubcategoria=".FN_RECIBIR_VARIABLES('subcategoria'); 
 
 		}
-		$where .=  " LIMIT ".((($paginacion->get_page() - 1) * 
+		$where .=  " ORDER BY titulo LIMIT ".((($paginacion->get_page() - 1) * 
 				$this->paginas) . ', ' . $this->paginas);
 		$datos = array();
 		$datos = FN_RUN_QUERY($sql.$where,10,$this->vlc_db_cn);

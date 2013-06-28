@@ -677,3 +677,58 @@ Thu Jun 27 1:08:31 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
 Thu Jun 27 5:08:33 UTC 2013: Sessions -> logged_in
 Thu Jun 27 5:08:33 UTC 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='de4d00d1f6058199b702b1f44c1b2a8f' AND session='mgr9brq5n9d7g85h2us3cuq0u2' AND ip='127.0.0.1'
 Thu Jun 27 5:08:33 UTC 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Thu Jun 27 23:20:32 PYT 2013: INCICIO SISTEMA
+Thu Jun 27 23:20:32 PYT 2013: Sessions -> Default
+Thu Jun 27 23:20:32 PYT 2013: Sessions -> logged_in
+Thu Jun 27 23:20:32 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='i3mabb0iij7qn79jhc6320v3n7' AND ip='127.0.0.1'
+Thu Jun 27 23:20:32 PYT 2013: Session Logout
+Thu Jun 27 23:20:32 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Thu Jun 27 23:20:54 PYT 2013: INCICIO SISTEMA
+Thu Jun 27 23:20:54 PYT 2013: Sessions -> Default
+Thu Jun 27 23:20:54 PYT 2013: Sessions -> logged_in
+Thu Jun 27 23:20:54 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='i3mabb0iij7qn79jhc6320v3n7' AND ip='127.0.0.1'
+Thu Jun 27 23:20:54 PYT 2013: Session Logout
+Thu Jun 27 23:20:54 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Thu Jun 27 23:38:32 PYT 2013: --- OPERACIONES --
+Thu Jun 27 23:38:32 PYT 2013: --- OPERACIONES: Validar usuario  --
+Thu Jun 27 23:38:32 PYT 2013: Check Login 
+Thu Jun 27 23:38:32 PYT 2013: Check Login > set variables
+Thu Jun 27 23:38:32 PYT 2013: Check Login > user cbustamantem 
+Thu Jun 27 23:38:32 PYT 2013: Check Login > all variables set 
+Thu Jun 27 23:38:32 PYT 2013: Check Login > login fail 
+Thu Jun 27 23:38:32 PYT 2013: --- OPERACIONES: usuario no valido--
+Thu Jun 27 23:38:41 PYT 2013: --- OPERACIONES --
+Thu Jun 27 23:38:41 PYT 2013: --- OPERACIONES: Validar usuario  --
+Thu Jun 27 23:38:41 PYT 2013: Check Login 
+Thu Jun 27 23:38:41 PYT 2013: Check Login > set variables
+Thu Jun 27 23:38:41 PYT 2013: Check Login > user cbustamantem 
+Thu Jun 27 23:38:41 PYT 2013: Check Login > all variables set 
+Thu Jun 27 23:38:41 PYT 2013: Check Login > login fail 
+Thu Jun 27 23:38:41 PYT 2013: --- OPERACIONES: usuario no valido--
+Thu Jun 27 23:38:49 PYT 2013: --- OPERACIONES --
+Thu Jun 27 23:38:49 PYT 2013: --- OPERACIONES: Validar usuario  --
+Thu Jun 27 23:38:49 PYT 2013: Check Login 
+Thu Jun 27 23:38:49 PYT 2013: Check Login > set variables
+Thu Jun 27 23:38:49 PYT 2013: Check Login > user cbustamantem 
+Thu Jun 27 23:38:49 PYT 2013: Check Login > all variables set 
+Thu Jun 27 23:38:49 PYT 2013: Check Login > login fail 
+Thu Jun 27 23:38:49 PYT 2013: --- OPERACIONES: usuario no valido--
+Thu Jun 27 23:38:56 PYT 2013: --- OPERACIONES --
+Thu Jun 27 23:38:56 PYT 2013: --- OPERACIONES: Validar usuario  --
+Thu Jun 27 23:38:56 PYT 2013: Check Login 
+Thu Jun 27 23:38:56 PYT 2013: Check Login > set variables
+Thu Jun 27 23:38:56 PYT 2013: Check Login > user cbustamantem 
+Thu Jun 27 23:38:56 PYT 2013: Check Login > all variables set 
+Thu Jun 27 23:38:56 PYT 2013: Sessions -> set data session 
+Thu Jun 27 23:38:56 PYT 2013: Check Login > login success for user cbustamantem
+Thu Jun 27 23:38:56 PYT 2013: --- OPERACIONES: usuario valido--
+Thu Jun 27 23:38:56 PYT 2013: INCICIO SISTEMA
+Thu Jun 27 23:38:56 PYT 2013: Sessions -> logged_in
+Thu Jun 27 23:38:56 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='a8d7a1c9b05bba3070cc9d3bba76117e' AND session='i3mabb0iij7qn79jhc6320v3n7' AND ip='127.0.0.1'
+Thu Jun 27 23:38:56 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Thu Jun 27 23:38:56 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Thu Jun 27 23:39:01 PYT 2013: --- OPERACIONES --
+Thu Jun 27 23:39:01 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='a8d7a1c9b05bba3070cc9d3bba76117e' AND session='i3mabb0iij7qn79jhc6320v3n7' AND ip='127.0.0.1'
+Thu Jun 27 23:39:01 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Thu Jun 27 23:39:01 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Thu Jun 27 23:39:01 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
