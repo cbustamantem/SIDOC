@@ -1,0 +1,26 @@
+<div id="contenedor_resultado">
+<h3>Actualizaci&oacute;n de Perfil de usuario</h3>
+
+	<div id="contact2" style='height:350px;width:580px;margin-left:0px; padding-left:0px;'>
+			<ul style='padding:5px;'>
+				<li>			
+					<label for="nombre" id="lb_nombre" >*Categoria / Subcategoria:</label>
+					<input type="hidden" id="id_usuario" value="{tpl-id-usuario}"/>
+					{tpl-lista-perfiles}
+				</li>					
+			</ul>				
+			<button id="btnActualizar">Agregar Perfil</button>							
+
+	</div>	
+<script type="text/javascript">
+	<!--
+	$(document).ready(function(){
+		
+		$("#btnActualizar").click(function() {
+			MTD_ACTUALIZAR_PERFIL_USUARIO();
+			});		       
+	});			
+//-->
+</script>
+
+</div>

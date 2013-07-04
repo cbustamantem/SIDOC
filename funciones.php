@@ -123,14 +123,14 @@ function formulario_sistema_medico()
     	$body = $obj_listado->MTD_RETORNAR_CODIGO_HTML();
    		//TODO: mostrar resultados de busqueda
    	}
-   	else if( (isset($_GET['categoria'])) &&   (! isset($_GET['subcategoria'])) )
+   	else if( (isset($_GET['categoria'])) && (! isset($_GET['subcategoria'])) )
    	{
    			//TODO: mostrar el documento
     	$obj_listado = new CLASS_LISTADO_DOCUMENTOS($vlf_mysql_conexion);
     	$body = $obj_listado->MTD_RETORNAR_CODIGO_HTML();
    		//TODO: mostrar categorias
    	}
-   	else if( (isset($_GET['categoria'])) &&   (isset($_GET['subcategoria'])) )
+   	else if( (isset($_GET['categoria'])) && (isset($_GET['subcategoria'])) )
    	{
    			//TODO: mostrar el documento
     	$obj_listado = new CLASS_LISTADO_DOCUMENTOS($vlf_mysql_conexion);
@@ -152,11 +152,9 @@ function formulario_sistema_medico()
 		}
 		else
 		{
-			 header ( "Location: index.php" );
-			//$vlf_codigo_html_principal  = FN_LOGIN();
+			 header ( "Location: index.php" );			
 		}
 	}
-
    	else if(isset($_GET['salir']))
    	{
    		LOGGER::LOG("Seccion SALIR ");

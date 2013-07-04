@@ -1,0 +1,6 @@
+Wed Jul 3 17:20:52 PYT 2013: INCICIO SISTEMA
+Wed Jul 3 17:20:52 PYT 2013: Sessions -> Default
+Wed Jul 3 17:20:52 PYT 2013: Sessions -> logged_in
+Wed Jul 3 17:20:52 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='cjh63ksciqd9d80vcmv1hs7eh6' AND ip='127.0.0.1'
+Wed Jul 3 17:20:52 PYT 2013: Session Logout
+Wed Jul 3 17:20:52 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar

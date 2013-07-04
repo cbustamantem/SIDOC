@@ -1,0 +1,675 @@
+Tue Jul 2 0:06:29 PYT 2013: --- OPERACIONES --
+Tue Jul 2 0:06:29 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='e7ff9055cc4473c4053f1e4f1de27c2a' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:06:29 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:06:29 PYT 2013: --- OPERACIONES: mostrar_editar_datos_personales--
+Tue Jul 2 0:06:29 PYT 2013: LEER TPL:tpl/tpl-editar-datos-personales.html
+Tue Jul 2 0:06:33 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 0:06:33 PYT 2013: Sessions -> logged_in
+Tue Jul 2 0:06:33 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='e7ff9055cc4473c4053f1e4f1de27c2a' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:06:33 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:06:33 PYT 2013: Seccion administracion 
+Tue Jul 2 0:06:33 PYT 2013: Web: 
+Tue Jul 2 0:06:33 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 0:06:33 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 0:06:33 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 0:06:33 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 0:06:33 PYT 2013: Sessions -> logged_in
+Tue Jul 2 0:06:33 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='e7ff9055cc4473c4053f1e4f1de27c2a' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:06:33 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:06:33 PYT 2013: Seccion administracion 
+Tue Jul 2 0:06:33 PYT 2013: Web: 
+Tue Jul 2 0:06:33 PYT 2013: Asignando el template:
+Tue Jul 2 0:06:42 PYT 2013: --- OPERACIONES --
+Tue Jul 2 0:06:42 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='e7ff9055cc4473c4053f1e4f1de27c2a' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:06:42 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:06:42 PYT 2013: --- OPERACIONES: Agregar Perfil  --
+Tue Jul 2 0:06:42 PYT 2013: Asignando el template:
+Tue Jul 2 0:06:42 PYT 2013: AGREGAR PERFILES
+Tue Jul 2 0:06:42 PYT 2013: AGREGAR PERFILES: SQL:INSERT INTO perfiles_usuarios (perfil) values ('Finanzas');
+Tue Jul 2 0:06:42 PYT 2013: --- OPERACIONES --
+Tue Jul 2 0:06:42 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='e7ff9055cc4473c4053f1e4f1de27c2a' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:06:42 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:06:42 PYT 2013: --- OPERACIONES: Listar PERFILES  --
+Tue Jul 2 0:06:42 PYT 2013: Asignando el template:
+Tue Jul 2 0:06:44 PYT 2013: --- OPERACIONES --
+Tue Jul 2 0:06:44 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='e7ff9055cc4473c4053f1e4f1de27c2a' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:06:44 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:06:44 PYT 2013: --- OPERACIONES: mostrar_permisos--
+Tue Jul 2 0:06:44 PYT 2013: Asignando el template:
+Tue Jul 2 0:06:44 PYT 2013: MOSTRAR PERMISOS
+Tue Jul 2 0:06:44 PYT 2013: MOSTRAR SELECCION CATEGORIAS
+Tue Jul 2 0:06:44 PYT 2013: MOSTRAR PERMISOS > ID: 5
+Tue Jul 2 0:06:44 PYT 2013: MOSTRAR PERMISO: SQL:SELECT perm.id_permiso, cat.categoria, sub.subcategoria  
+                FROM perfiles_permisos as perm
+                LEFT JOIN categorias as cat ON (perm.idcategoria =  cat.idcategoria)
+                LEFT JOIN subcategorias as sub ON (perm.idsubcategoria = sub.idsubcategoria)
+                WHERE  id_perfil =5
+Tue Jul 2 0:12:16 PYT 2013: --- OPERACIONES --
+Tue Jul 2 0:12:16 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='e7ff9055cc4473c4053f1e4f1de27c2a' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:12:16 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:12:16 PYT 2013: --- OPERACIONES: Agregar Permiso  --
+Tue Jul 2 0:12:16 PYT 2013: Asignando el template:
+Tue Jul 2 0:12:16 PYT 2013: AGREGAR PERMISOS
+Tue Jul 2 0:12:16 PYT 2013: AGREGAR PERMISOS: SQL:INSERT INTO perfiles_permisos (id_perfil,idcategoria) values (5,6);
+Tue Jul 2 0:12:16 PYT 2013: --- OPERACIONES --
+Tue Jul 2 0:12:16 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='e7ff9055cc4473c4053f1e4f1de27c2a' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:12:16 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:12:16 PYT 2013: --- OPERACIONES: mostrar_permisos--
+Tue Jul 2 0:12:16 PYT 2013: Asignando el template:
+Tue Jul 2 0:12:16 PYT 2013: MOSTRAR PERMISOS
+Tue Jul 2 0:12:16 PYT 2013: MOSTRAR SELECCION CATEGORIAS
+Tue Jul 2 0:12:16 PYT 2013: MOSTRAR PERMISOS > ID: 5
+Tue Jul 2 0:12:16 PYT 2013: MOSTRAR PERMISO: SQL:SELECT perm.id_permiso, cat.categoria, sub.subcategoria  
+                FROM perfiles_permisos as perm
+                LEFT JOIN categorias as cat ON (perm.idcategoria =  cat.idcategoria)
+                LEFT JOIN subcategorias as sub ON (perm.idsubcategoria = sub.idsubcategoria)
+                WHERE  id_perfil =5
+Tue Jul 2 0:46:39 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 0:46:39 PYT 2013: Sessions -> Default
+Tue Jul 2 0:46:39 PYT 2013: Sessions -> logged_in
+Tue Jul 2 0:46:39 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:46:39 PYT 2013: Session Logout
+Tue Jul 2 0:46:39 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 0:46:39 PYT 2013: Sessions -> Default
+Tue Jul 2 0:46:39 PYT 2013: Sessions -> logged_in
+Tue Jul 2 0:46:39 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:46:39 PYT 2013: Session Logout
+Tue Jul 2 0:46:39 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Tue Jul 2 0:46:48 PYT 2013: --- OPERACIONES --
+Tue Jul 2 0:46:48 PYT 2013: --- OPERACIONES: Validar usuario  --
+Tue Jul 2 0:46:48 PYT 2013: Check Login 
+Tue Jul 2 0:46:48 PYT 2013: Check Login > set variables
+Tue Jul 2 0:46:48 PYT 2013: Check Login > user cbustamantem 
+Tue Jul 2 0:46:48 PYT 2013: Check Login > all variables set 
+Tue Jul 2 0:46:48 PYT 2013: Sessions -> set data session 
+Tue Jul 2 0:46:48 PYT 2013: Check Login > login success for user cbustamantem
+Tue Jul 2 0:46:48 PYT 2013: --- OPERACIONES: usuario valido--
+Tue Jul 2 0:46:48 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 0:46:48 PYT 2013: Sessions -> logged_in
+Tue Jul 2 0:46:48 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:46:48 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:46:48 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Tue Jul 2 0:46:49 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 0:46:49 PYT 2013: Sessions -> logged_in
+Tue Jul 2 0:46:49 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:46:49 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:46:49 PYT 2013: Seccion administracion 
+Tue Jul 2 0:46:49 PYT 2013: Web: 
+Tue Jul 2 0:46:49 PYT 2013: Web: menu principal 
+Tue Jul 2 0:46:56 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 0:46:56 PYT 2013: Sessions -> logged_in
+Tue Jul 2 0:46:56 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:46:56 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:46:56 PYT 2013: Seccion administracion 
+Tue Jul 2 0:46:56 PYT 2013: Web: 
+Tue Jul 2 0:46:56 PYT 2013: Asignando el template:
+Tue Jul 2 0:47:00 PYT 2013: --- OPERACIONES --
+Tue Jul 2 0:47:00 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:47:00 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:47:00 PYT 2013: --- OPERACIONES: mostrar_permisos--
+Tue Jul 2 0:47:00 PYT 2013: Asignando el template:
+Tue Jul 2 0:47:00 PYT 2013: MOSTRAR PERMISOS
+Tue Jul 2 0:47:00 PYT 2013: MOSTRAR SELECCION CATEGORIAS
+Tue Jul 2 0:47:00 PYT 2013: MOSTRAR PERMISOS > ID: 5
+Tue Jul 2 0:47:00 PYT 2013: MOSTRAR PERMISO: SQL:SELECT perm.id_permiso, cat.categoria, sub.subcategoria  
+                FROM perfiles_permisos as perm
+                LEFT JOIN categorias as cat ON (perm.idcategoria =  cat.idcategoria)
+                LEFT JOIN subcategorias as sub ON (perm.idsubcategoria = sub.idsubcategoria)
+                WHERE  id_perfil =5
+Tue Jul 2 0:47:26 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 0:47:26 PYT 2013: Sessions -> logged_in
+Tue Jul 2 0:47:26 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:47:26 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:47:26 PYT 2013: Seccion administracion 
+Tue Jul 2 0:47:26 PYT 2013: Web: 
+Tue Jul 2 0:47:26 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 0:47:26 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 0:47:26 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 0:47:30 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 0:47:30 PYT 2013: Sessions -> logged_in
+Tue Jul 2 0:47:30 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:47:30 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:47:30 PYT 2013: Seccion administracion 
+Tue Jul 2 0:47:30 PYT 2013: Web: 
+Tue Jul 2 0:47:30 PYT 2013: Asignando el template:
+Tue Jul 2 0:47:39 PYT 2013: --- OPERACIONES --
+Tue Jul 2 0:47:39 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:47:39 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:47:39 PYT 2013: --- OPERACIONES: mostrar_permisos--
+Tue Jul 2 0:47:39 PYT 2013: Asignando el template:
+Tue Jul 2 0:47:39 PYT 2013: MOSTRAR PERMISOS
+Tue Jul 2 0:47:39 PYT 2013: MOSTRAR SELECCION CATEGORIAS
+Tue Jul 2 0:47:39 PYT 2013: MOSTRAR PERMISOS > ID: 5
+Tue Jul 2 0:47:39 PYT 2013: MOSTRAR PERMISO: SQL:SELECT perm.id_permiso, cat.categoria, sub.subcategoria  
+                FROM perfiles_permisos as perm
+                LEFT JOIN categorias as cat ON (perm.idcategoria =  cat.idcategoria)
+                LEFT JOIN subcategorias as sub ON (perm.idsubcategoria = sub.idsubcategoria)
+                WHERE  id_perfil =5
+Tue Jul 2 0:47:46 PYT 2013: --- OPERACIONES --
+Tue Jul 2 0:47:46 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:47:46 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:47:46 PYT 2013: --- OPERACIONES: Agregar Permiso  --
+Tue Jul 2 0:47:46 PYT 2013: Asignando el template:
+Tue Jul 2 0:47:46 PYT 2013: AGREGAR PERMISOS
+Tue Jul 2 0:47:46 PYT 2013: AGREGAR PERMISOS: SQL:INSERT INTO perfiles_permisos (id_perfil,idcategoria,idsubcategoria) values (5,1,1);
+Tue Jul 2 0:47:46 PYT 2013: --- OPERACIONES --
+Tue Jul 2 0:47:46 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:47:46 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:47:46 PYT 2013: --- OPERACIONES: mostrar_permisos--
+Tue Jul 2 0:47:46 PYT 2013: Asignando el template:
+Tue Jul 2 0:47:46 PYT 2013: MOSTRAR PERMISOS
+Tue Jul 2 0:47:46 PYT 2013: MOSTRAR SELECCION CATEGORIAS
+Tue Jul 2 0:47:46 PYT 2013: MOSTRAR PERMISOS > ID: 5
+Tue Jul 2 0:47:46 PYT 2013: MOSTRAR PERMISO: SQL:SELECT perm.id_permiso, cat.categoria, sub.subcategoria  
+                FROM perfiles_permisos as perm
+                LEFT JOIN categorias as cat ON (perm.idcategoria =  cat.idcategoria)
+                LEFT JOIN subcategorias as sub ON (perm.idsubcategoria = sub.idsubcategoria)
+                WHERE  id_perfil =5
+Tue Jul 2 0:47:54 PYT 2013: --- OPERACIONES --
+Tue Jul 2 0:47:54 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:47:54 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:47:54 PYT 2013: --- OPERACIONES: Agregar Permiso  --
+Tue Jul 2 0:47:54 PYT 2013: Asignando el template:
+Tue Jul 2 0:47:54 PYT 2013: AGREGAR PERMISOS
+Tue Jul 2 0:47:54 PYT 2013: AGREGAR PERMISOS: SQL:INSERT INTO perfiles_permisos (id_perfil,idcategoria,idsubcategoria) values (5,1,2);
+Tue Jul 2 0:47:54 PYT 2013: --- OPERACIONES --
+Tue Jul 2 0:47:54 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:47:54 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:47:54 PYT 2013: --- OPERACIONES: mostrar_permisos--
+Tue Jul 2 0:47:54 PYT 2013: Asignando el template:
+Tue Jul 2 0:47:54 PYT 2013: MOSTRAR PERMISOS
+Tue Jul 2 0:47:54 PYT 2013: MOSTRAR SELECCION CATEGORIAS
+Tue Jul 2 0:47:54 PYT 2013: MOSTRAR PERMISOS > ID: 5
+Tue Jul 2 0:47:54 PYT 2013: MOSTRAR PERMISO: SQL:SELECT perm.id_permiso, cat.categoria, sub.subcategoria  
+                FROM perfiles_permisos as perm
+                LEFT JOIN categorias as cat ON (perm.idcategoria =  cat.idcategoria)
+                LEFT JOIN subcategorias as sub ON (perm.idsubcategoria = sub.idsubcategoria)
+                WHERE  id_perfil =5
+Tue Jul 2 0:47:58 PYT 2013: --- OPERACIONES --
+Tue Jul 2 0:47:58 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:47:58 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:47:58 PYT 2013: --- OPERACIONES: Agregar Permiso  --
+Tue Jul 2 0:47:58 PYT 2013: Asignando el template:
+Tue Jul 2 0:47:58 PYT 2013: AGREGAR PERMISOS
+Tue Jul 2 0:47:58 PYT 2013: AGREGAR PERMISOS: SQL:INSERT INTO perfiles_permisos (id_perfil,idcategoria,idsubcategoria) values (5,1,3);
+Tue Jul 2 0:47:58 PYT 2013: --- OPERACIONES --
+Tue Jul 2 0:47:58 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:47:58 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:47:58 PYT 2013: --- OPERACIONES: mostrar_permisos--
+Tue Jul 2 0:47:58 PYT 2013: Asignando el template:
+Tue Jul 2 0:47:58 PYT 2013: MOSTRAR PERMISOS
+Tue Jul 2 0:47:58 PYT 2013: MOSTRAR SELECCION CATEGORIAS
+Tue Jul 2 0:47:58 PYT 2013: MOSTRAR PERMISOS > ID: 5
+Tue Jul 2 0:47:58 PYT 2013: MOSTRAR PERMISO: SQL:SELECT perm.id_permiso, cat.categoria, sub.subcategoria  
+                FROM perfiles_permisos as perm
+                LEFT JOIN categorias as cat ON (perm.idcategoria =  cat.idcategoria)
+                LEFT JOIN subcategorias as sub ON (perm.idsubcategoria = sub.idsubcategoria)
+                WHERE  id_perfil =5
+Tue Jul 2 0:59:07 PYT 2013: --- OPERACIONES --
+Tue Jul 2 0:59:07 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:59:07 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:59:07 PYT 2013: --- OPERACIONES: mostrar_permisos--
+Tue Jul 2 0:59:07 PYT 2013: Asignando el template:
+Tue Jul 2 0:59:07 PYT 2013: MOSTRAR PERMISOS
+Tue Jul 2 0:59:07 PYT 2013: MOSTRAR SELECCION CATEGORIAS
+Tue Jul 2 0:59:07 PYT 2013: MOSTRAR PERMISOS > ID: 5
+Tue Jul 2 0:59:07 PYT 2013: MOSTRAR PERMISO: SQL:SELECT perm.id_permiso, cat.categoria, sub.subcategoria  
+                FROM perfiles_permisos as perm
+                LEFT JOIN categorias as cat ON (perm.idcategoria =  cat.idcategoria)
+                LEFT JOIN subcategorias as sub ON (perm.idsubcategoria = sub.idsubcategoria)
+                WHERE  id_perfil =5
+Tue Jul 2 0:59:10 PYT 2013: --- OPERACIONES --
+Tue Jul 2 0:59:10 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 0:59:10 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 0:59:10 PYT 2013: --- OPERACIONES: Eliminar Permiso  --
+Tue Jul 2 0:59:10 PYT 2013: Asignando el template:
+Tue Jul 2 0:59:10 PYT 2013: ELIMINAR PERMISO
+Tue Jul 2 0:59:10 PYT 2013: ELIMINAR PERMISO: SQL:DELETE  from perfiles_permisos where id_perfil=  limit 1;
+Tue Jul 2 1:09:01 PYT 2013: --- OPERACIONES --
+Tue Jul 2 1:09:01 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:09:01 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:09:01 PYT 2013: --- OPERACIONES: mostrar_permisos--
+Tue Jul 2 1:09:01 PYT 2013: Asignando el template:
+Tue Jul 2 1:09:01 PYT 2013: MOSTRAR PERMISOS
+Tue Jul 2 1:09:01 PYT 2013: MOSTRAR SELECCION CATEGORIAS
+Tue Jul 2 1:09:01 PYT 2013: MOSTRAR PERMISOS > ID: 5
+Tue Jul 2 1:09:01 PYT 2013: MOSTRAR PERMISO: SQL:SELECT perm.id_permiso, cat.categoria, sub.subcategoria  
+                FROM perfiles_permisos as perm
+                LEFT JOIN categorias as cat ON (perm.idcategoria =  cat.idcategoria)
+                LEFT JOIN subcategorias as sub ON (perm.idsubcategoria = sub.idsubcategoria)
+                WHERE  id_perfil =5
+Tue Jul 2 1:09:03 PYT 2013: --- OPERACIONES --
+Tue Jul 2 1:09:03 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:09:03 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:09:03 PYT 2013: --- OPERACIONES: Eliminar Permiso  --
+Tue Jul 2 1:09:03 PYT 2013: Asignando el template:
+Tue Jul 2 1:09:03 PYT 2013: ELIMINAR PERMISO
+Tue Jul 2 1:09:03 PYT 2013: ELIMINAR PERMISO: SQL:DELETE  from perfiles_permisos where id_perfil=  limit 1;
+Tue Jul 2 1:10:20 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 1:10:20 PYT 2013: Sessions -> logged_in
+Tue Jul 2 1:10:20 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:10:20 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:10:20 PYT 2013: Seccion administracion 
+Tue Jul 2 1:10:20 PYT 2013: Web: 
+Tue Jul 2 1:10:20 PYT 2013: Asignando el template:
+Tue Jul 2 1:10:22 PYT 2013: --- OPERACIONES --
+Tue Jul 2 1:10:22 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:10:22 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:10:22 PYT 2013: --- OPERACIONES: mostrar_permisos--
+Tue Jul 2 1:10:22 PYT 2013: Asignando el template:
+Tue Jul 2 1:10:22 PYT 2013: MOSTRAR PERMISOS
+Tue Jul 2 1:10:22 PYT 2013: MOSTRAR SELECCION CATEGORIAS
+Tue Jul 2 1:10:22 PYT 2013: MOSTRAR PERMISOS > ID: 5
+Tue Jul 2 1:10:22 PYT 2013: MOSTRAR PERMISO: SQL:SELECT perm.id_permiso, cat.categoria, sub.subcategoria  
+                FROM perfiles_permisos as perm
+                LEFT JOIN categorias as cat ON (perm.idcategoria =  cat.idcategoria)
+                LEFT JOIN subcategorias as sub ON (perm.idsubcategoria = sub.idsubcategoria)
+                WHERE  id_perfil =5
+Tue Jul 2 1:10:26 PYT 2013: --- OPERACIONES --
+Tue Jul 2 1:10:26 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:10:26 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:10:26 PYT 2013: --- OPERACIONES: Eliminar Permiso  --
+Tue Jul 2 1:10:26 PYT 2013: Asignando el template:
+Tue Jul 2 1:10:26 PYT 2013: ELIMINAR PERMISO
+Tue Jul 2 1:10:26 PYT 2013: ELIMINAR PERMISO: SQL:DELETE  from perfiles_permisos where id_perfil=  limit 1;
+Tue Jul 2 1:11:54 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 1:11:54 PYT 2013: Sessions -> logged_in
+Tue Jul 2 1:11:54 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:11:54 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:11:54 PYT 2013: Seccion administracion 
+Tue Jul 2 1:11:54 PYT 2013: Web: 
+Tue Jul 2 1:11:54 PYT 2013: Asignando el template:
+Tue Jul 2 1:11:56 PYT 2013: --- OPERACIONES --
+Tue Jul 2 1:11:56 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:11:56 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:11:56 PYT 2013: --- OPERACIONES: mostrar_permisos--
+Tue Jul 2 1:11:56 PYT 2013: Asignando el template:
+Tue Jul 2 1:11:56 PYT 2013: MOSTRAR PERMISOS
+Tue Jul 2 1:11:56 PYT 2013: MOSTRAR SELECCION CATEGORIAS
+Tue Jul 2 1:11:56 PYT 2013: MOSTRAR PERMISOS > ID: 4
+Tue Jul 2 1:11:56 PYT 2013: MOSTRAR PERMISO: SQL:SELECT perm.id_permiso, cat.categoria, sub.subcategoria  
+                FROM perfiles_permisos as perm
+                LEFT JOIN categorias as cat ON (perm.idcategoria =  cat.idcategoria)
+                LEFT JOIN subcategorias as sub ON (perm.idsubcategoria = sub.idsubcategoria)
+                WHERE  id_perfil =4
+Tue Jul 2 1:12:08 PYT 2013: --- OPERACIONES --
+Tue Jul 2 1:12:08 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:12:08 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:12:08 PYT 2013: --- OPERACIONES: mostrar_permisos--
+Tue Jul 2 1:12:08 PYT 2013: Asignando el template:
+Tue Jul 2 1:12:08 PYT 2013: MOSTRAR PERMISOS
+Tue Jul 2 1:12:08 PYT 2013: MOSTRAR SELECCION CATEGORIAS
+Tue Jul 2 1:12:08 PYT 2013: MOSTRAR PERMISOS > ID: 5
+Tue Jul 2 1:12:08 PYT 2013: MOSTRAR PERMISO: SQL:SELECT perm.id_permiso, cat.categoria, sub.subcategoria  
+                FROM perfiles_permisos as perm
+                LEFT JOIN categorias as cat ON (perm.idcategoria =  cat.idcategoria)
+                LEFT JOIN subcategorias as sub ON (perm.idsubcategoria = sub.idsubcategoria)
+                WHERE  id_perfil =5
+Tue Jul 2 1:12:12 PYT 2013: --- OPERACIONES --
+Tue Jul 2 1:12:12 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:12:12 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:12:12 PYT 2013: --- OPERACIONES: Eliminar Permiso  --
+Tue Jul 2 1:12:12 PYT 2013: Asignando el template:
+Tue Jul 2 1:12:12 PYT 2013: ELIMINAR PERMISO
+Tue Jul 2 1:12:12 PYT 2013: ELIMINAR PERMISO: SQL:DELETE  from perfiles_permisos where id_permiso= 17 limit 1;
+Tue Jul 2 1:12:22 PYT 2013: --- OPERACIONES --
+Tue Jul 2 1:12:22 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:12:22 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:12:22 PYT 2013: --- OPERACIONES: mostrar_permisos--
+Tue Jul 2 1:12:22 PYT 2013: Asignando el template:
+Tue Jul 2 1:12:22 PYT 2013: MOSTRAR PERMISOS
+Tue Jul 2 1:12:22 PYT 2013: MOSTRAR SELECCION CATEGORIAS
+Tue Jul 2 1:12:22 PYT 2013: MOSTRAR PERMISOS > ID: 5
+Tue Jul 2 1:12:22 PYT 2013: MOSTRAR PERMISO: SQL:SELECT perm.id_permiso, cat.categoria, sub.subcategoria  
+                FROM perfiles_permisos as perm
+                LEFT JOIN categorias as cat ON (perm.idcategoria =  cat.idcategoria)
+                LEFT JOIN subcategorias as sub ON (perm.idsubcategoria = sub.idsubcategoria)
+                WHERE  id_perfil =5
+Tue Jul 2 1:13:21 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 1:13:21 PYT 2013: Sessions -> logged_in
+Tue Jul 2 1:13:21 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:13:21 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:13:21 PYT 2013: Seccion administracion 
+Tue Jul 2 1:13:21 PYT 2013: Web: 
+Tue Jul 2 1:13:21 PYT 2013: Asignando el template:
+Tue Jul 2 1:13:22 PYT 2013: --- OPERACIONES --
+Tue Jul 2 1:13:22 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:13:22 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:13:22 PYT 2013: --- OPERACIONES: mostrar_permisos--
+Tue Jul 2 1:13:22 PYT 2013: Asignando el template:
+Tue Jul 2 1:13:22 PYT 2013: MOSTRAR PERMISOS
+Tue Jul 2 1:13:22 PYT 2013: MOSTRAR SELECCION CATEGORIAS
+Tue Jul 2 1:13:22 PYT 2013: MOSTRAR PERMISOS > ID: 4
+Tue Jul 2 1:13:22 PYT 2013: MOSTRAR PERMISO: SQL:SELECT perm.id_permiso, cat.categoria, sub.subcategoria  
+                FROM perfiles_permisos as perm
+                LEFT JOIN categorias as cat ON (perm.idcategoria =  cat.idcategoria)
+                LEFT JOIN subcategorias as sub ON (perm.idsubcategoria = sub.idsubcategoria)
+                WHERE  id_perfil =4
+Tue Jul 2 1:14:32 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 1:14:32 PYT 2013: Sessions -> logged_in
+Tue Jul 2 1:14:32 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:14:32 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:14:32 PYT 2013: Seccion administracion 
+Tue Jul 2 1:14:32 PYT 2013: Web: 
+Tue Jul 2 1:14:32 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 1:14:32 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 1:14:32 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 1:21:47 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 1:21:47 PYT 2013: Sessions -> logged_in
+Tue Jul 2 1:21:47 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:21:47 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:21:47 PYT 2013: Seccion administracion 
+Tue Jul 2 1:21:47 PYT 2013: Web: 
+Tue Jul 2 1:21:47 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 1:21:47 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 1:21:47 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 1:35:38 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 1:35:38 PYT 2013: Sessions -> logged_in
+Tue Jul 2 1:35:38 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:35:38 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:35:38 PYT 2013: Seccion administracion 
+Tue Jul 2 1:35:38 PYT 2013: Web: 
+Tue Jul 2 1:35:38 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 1:35:38 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 1:35:59 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 1:35:59 PYT 2013: Sessions -> logged_in
+Tue Jul 2 1:35:59 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:35:59 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:35:59 PYT 2013: Seccion administracion 
+Tue Jul 2 1:35:59 PYT 2013: Web: 
+Tue Jul 2 1:35:59 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 1:35:59 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 1:36:30 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 1:36:30 PYT 2013: Sessions -> logged_in
+Tue Jul 2 1:36:30 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:36:30 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:36:30 PYT 2013: Seccion administracion 
+Tue Jul 2 1:36:30 PYT 2013: Web: 
+Tue Jul 2 1:36:30 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 1:36:30 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 1:36:30 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 1:37:24 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 1:37:24 PYT 2013: Sessions -> logged_in
+Tue Jul 2 1:37:24 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:37:24 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:37:24 PYT 2013: Seccion administracion 
+Tue Jul 2 1:37:24 PYT 2013: Web: 
+Tue Jul 2 1:37:24 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 1:37:24 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 1:37:24 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 1:37:59 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 1:37:59 PYT 2013: Sessions -> logged_in
+Tue Jul 2 1:37:59 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:37:59 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:37:59 PYT 2013: Seccion administracion 
+Tue Jul 2 1:37:59 PYT 2013: Web: 
+Tue Jul 2 1:37:59 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 1:37:59 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 1:37:59 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 1:39:17 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 1:39:17 PYT 2013: Sessions -> logged_in
+Tue Jul 2 1:39:17 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:39:17 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:39:17 PYT 2013: Seccion administracion 
+Tue Jul 2 1:39:17 PYT 2013: Web: 
+Tue Jul 2 1:39:17 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 1:39:17 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 1:39:17 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 1:39:38 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 1:39:38 PYT 2013: Sessions -> logged_in
+Tue Jul 2 1:39:38 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:39:38 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:39:38 PYT 2013: Seccion administracion 
+Tue Jul 2 1:39:38 PYT 2013: Web: 
+Tue Jul 2 1:39:38 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 1:39:38 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 1:39:38 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 1:39:47 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 1:39:47 PYT 2013: Sessions -> logged_in
+Tue Jul 2 1:39:47 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:39:47 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:39:47 PYT 2013: Seccion administracion 
+Tue Jul 2 1:39:47 PYT 2013: Web: 
+Tue Jul 2 1:39:47 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 1:39:47 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 1:39:47 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 1:40:13 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 1:40:13 PYT 2013: Sessions -> logged_in
+Tue Jul 2 1:40:13 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:40:13 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:40:13 PYT 2013: Seccion administracion 
+Tue Jul 2 1:40:13 PYT 2013: Web: 
+Tue Jul 2 1:40:13 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 1:40:13 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 1:40:13 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 1:40:26 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 1:40:26 PYT 2013: Sessions -> logged_in
+Tue Jul 2 1:40:26 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:40:26 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:40:26 PYT 2013: Seccion administracion 
+Tue Jul 2 1:40:26 PYT 2013: Web: 
+Tue Jul 2 1:40:26 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 1:40:26 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 1:40:26 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 1:40:35 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 1:40:35 PYT 2013: Sessions -> logged_in
+Tue Jul 2 1:40:35 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:40:35 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:40:35 PYT 2013: Seccion administracion 
+Tue Jul 2 1:40:35 PYT 2013: Web: 
+Tue Jul 2 1:40:35 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 1:40:35 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 1:40:35 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 1:42:30 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 1:42:30 PYT 2013: Sessions -> logged_in
+Tue Jul 2 1:42:30 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='cd4191e1e7c525a1f174b5899d4d712e' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 1:42:30 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 1:42:30 PYT 2013: Seccion administracion 
+Tue Jul 2 1:42:30 PYT 2013: Web: 
+Tue Jul 2 1:42:30 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 1:42:30 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 1:42:30 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 2:14:32 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:14:32 PYT 2013: Sessions -> Default
+Tue Jul 2 2:14:32 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:14:32 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:14:32 PYT 2013: Session Logout
+Tue Jul 2 2:14:32 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:14:32 PYT 2013: Sessions -> Default
+Tue Jul 2 2:14:32 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:14:32 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:14:32 PYT 2013: Session Logout
+Tue Jul 2 2:14:32 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Tue Jul 2 2:14:39 PYT 2013: --- OPERACIONES --
+Tue Jul 2 2:14:39 PYT 2013: --- OPERACIONES: Validar usuario  --
+Tue Jul 2 2:14:39 PYT 2013: Check Login 
+Tue Jul 2 2:14:39 PYT 2013: Check Login > set variables
+Tue Jul 2 2:14:39 PYT 2013: Check Login > user cbustamantem 
+Tue Jul 2 2:14:39 PYT 2013: Check Login > all variables set 
+Tue Jul 2 2:14:39 PYT 2013: Sessions -> set data session 
+Tue Jul 2 2:14:39 PYT 2013: Check Login > login success for user cbustamantem
+Tue Jul 2 2:14:39 PYT 2013: --- OPERACIONES: usuario valido--
+Tue Jul 2 2:14:39 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:14:39 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:14:39 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:14:39 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:14:39 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Tue Jul 2 2:14:41 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:14:41 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:14:41 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:14:41 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:14:41 PYT 2013: Seccion administracion 
+Tue Jul 2 2:14:41 PYT 2013: Web: 
+Tue Jul 2 2:14:41 PYT 2013: Web: menu principal 
+Tue Jul 2 2:14:43 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:14:43 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:14:43 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:14:43 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:14:43 PYT 2013: Seccion administracion 
+Tue Jul 2 2:14:43 PYT 2013: Web: 
+Tue Jul 2 2:14:43 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 2:14:43 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 2:14:43 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 2:15:33 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:15:33 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:15:33 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:15:33 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:15:33 PYT 2013: Seccion administracion 
+Tue Jul 2 2:15:33 PYT 2013: Web: 
+Tue Jul 2 2:15:33 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 2:15:33 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 2:15:33 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 2:15:39 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:15:39 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:15:39 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:15:39 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:15:39 PYT 2013: Seccion administracion 
+Tue Jul 2 2:15:39 PYT 2013: Web: 
+Tue Jul 2 2:15:39 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 2:15:39 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 2:15:39 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 2:16:15 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:16:15 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:16:15 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:16:15 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:16:15 PYT 2013: Seccion administracion 
+Tue Jul 2 2:16:15 PYT 2013: Web: 
+Tue Jul 2 2:16:15 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 2:16:15 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 2:16:15 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 2:33:54 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:33:54 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:33:54 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:33:54 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:33:54 PYT 2013: Seccion administracion 
+Tue Jul 2 2:33:54 PYT 2013: Web: 
+Tue Jul 2 2:33:54 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 2:33:54 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 2:33:54 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 2:39:36 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:39:36 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:39:36 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:39:36 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:39:36 PYT 2013: Seccion administracion 
+Tue Jul 2 2:39:36 PYT 2013: Web: 
+Tue Jul 2 2:39:37 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:39:37 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:39:37 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:39:37 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:39:37 PYT 2013: Seccion administracion 
+Tue Jul 2 2:39:37 PYT 2013: Web: 
+Tue Jul 2 2:40:05 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:40:05 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:40:05 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:40:05 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:40:05 PYT 2013: Seccion administracion 
+Tue Jul 2 2:40:05 PYT 2013: Web: 
+Tue Jul 2 2:40:05 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 2:40:05 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 2:40:05 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 2:40:07 PYT 2013: --- OPERACIONES --
+Tue Jul 2 2:40:07 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:40:07 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:40:07 PYT 2013: --- OPERACIONES: Usuarios perfiles  --
+Tue Jul 2 2:40:24 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:40:24 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:40:24 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:40:24 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:40:24 PYT 2013: Seccion administracion 
+Tue Jul 2 2:40:24 PYT 2013: Web: 
+Tue Jul 2 2:40:24 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 2:40:24 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 2:40:24 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 2:40:52 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:40:52 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:40:52 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:40:52 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:40:52 PYT 2013: Seccion administracion 
+Tue Jul 2 2:40:52 PYT 2013: Web: 
+Tue Jul 2 2:40:52 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 2:40:52 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 2:40:52 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 2:41:10 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:41:10 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:41:10 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:41:10 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:41:10 PYT 2013: Seccion administracion 
+Tue Jul 2 2:41:10 PYT 2013: Web: 
+Tue Jul 2 2:41:10 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 2:41:10 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 2:41:10 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 2:41:11 PYT 2013: --- OPERACIONES --
+Tue Jul 2 2:41:11 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:41:11 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:41:11 PYT 2013: --- OPERACIONES: Usuarios perfiles  --
+Tue Jul 2 2:41:34 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:41:34 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:41:34 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:41:34 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:41:34 PYT 2013: Seccion administracion 
+Tue Jul 2 2:41:34 PYT 2013: Web: 
+Tue Jul 2 2:41:34 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 2:41:34 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 2:41:34 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 2:41:36 PYT 2013: --- OPERACIONES --
+Tue Jul 2 2:41:36 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:41:36 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:41:36 PYT 2013: --- OPERACIONES: Usuarios perfiles  --
+Tue Jul 2 2:41:36 PYT 2013: MTD_MOSTRAR_perfiles usuarios
+Tue Jul 2 2:41:36 PYT 2013: MOSTRAR SELECCION PERFILES
+Tue Jul 2 2:42:32 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:42:32 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:42:32 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:42:33 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:42:33 PYT 2013: Seccion administracion 
+Tue Jul 2 2:42:33 PYT 2013: Web: 
+Tue Jul 2 2:42:33 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 2:42:33 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 2:42:33 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 2:42:34 PYT 2013: --- OPERACIONES --
+Tue Jul 2 2:42:34 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:42:34 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:42:34 PYT 2013: --- OPERACIONES: Usuarios perfiles  --
+Tue Jul 2 2:42:34 PYT 2013: MTD_MOSTRAR_perfiles usuarios
+Tue Jul 2 2:42:34 PYT 2013: MOSTRAR SELECCION PERFILES
+Tue Jul 2 2:44:17 PYT 2013: INCICIO SISTEMA
+Tue Jul 2 2:44:17 PYT 2013: Sessions -> logged_in
+Tue Jul 2 2:44:17 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:44:17 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:44:17 PYT 2013: Seccion administracion 
+Tue Jul 2 2:44:17 PYT 2013: Web: 
+Tue Jul 2 2:44:17 PYT 2013: BUSCAR_USUARIOS
+Tue Jul 2 2:44:17 PYT 2013: BUSCAR_USUARIOS > Busqueda:
+Tue Jul 2 2:44:17 PYT 2013: BUSCAR_USUARIOS :
+
+Tue Jul 2 2:44:52 PYT 2013: --- OPERACIONES --
+Tue Jul 2 2:44:52 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 77 AND token='81b720563e3b5e27e078979f6e0bfa7d' AND session='p6nmvkgeq3dq0d0ts91hlvavk4' AND ip='127.0.0.1'
+Tue Jul 2 2:44:52 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Tue Jul 2 2:44:52 PYT 2013: --- OPERACIONES: Usuarios perfiles  --
+Tue Jul 2 2:44:52 PYT 2013: MTD_MOSTRAR_perfiles usuarios
+Tue Jul 2 2:44:52 PYT 2013: MOSTRAR SELECCION PERFILES

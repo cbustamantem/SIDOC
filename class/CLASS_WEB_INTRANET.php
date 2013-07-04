@@ -65,6 +65,12 @@ class CLASS_WEB_INTRANET
 		    	$obj_usuarios->MTD_INICIALIZAR_PAGINA_ADM();
 		    	$this->vlc_codigo_html = $obj_usuarios->MTD_RETORNAR_CODIGO_HTML();
 		    }
+		    elseif ($vlf_seccion == 'perfiles')
+		    {		    			    			    	
+		    	include ('CLASS_ABM_PERFILES.php');
+		    	$obj_perfil = new CLASS_ABM_PERFILES($this->vlc_db_conexion );		    
+		        $this->vlc_codigo_html  = $obj_perfil->MTD_RETORNAR_CODIGO_HTML();
+		    }
 		    elseif ($vlf_seccion == 'salir')
 		    {
 		 		$obj_session->logout();

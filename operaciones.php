@@ -216,6 +216,10 @@ if (isset($_POST['operacion']))
 					$vl_cod_html_base = utf8_encode( $obj->MTD_ACTUALIZAR_DOCUMENTO());
 					MTD_RETORNAR_HTML($vl_cod_html_base);
 				break;
+
+				//**************************************
+				//USUARIOS
+				//******************************************
 				case "mostrar_cambiar_contrasenha":
 					LOGGER::LOG("--- OPERACIONES: Mostrar Cambiar Password --");
 					include ('class/CLASS_ABM_USUARIOS.php');
@@ -228,6 +232,20 @@ if (isset($_POST['operacion']))
 					$obj = new CLASS_ABM_USUARIOS($vlf_mysql_conexion);
 					echo utf8_encode($obj->MTD_MOSTRAR_EDITAR_DATOS_PERSONALES());
 					break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 				case "mostrar_editar_pacientes":
 					LOGGER::LOG("--- OPERACIONES: mostrar_editar_pacientes--");
 					include ('class/CLASS_ABM_PACIENTES.php');
@@ -240,12 +258,19 @@ if (isset($_POST['operacion']))
 					$obj = new CLASS_ABM_PACIENTES($vlf_mysql_conexion);
 					echo $obj->MTD_MOSTRAR_PERFIL_PACIENTE();
 					break;			
+
+
+
 				case "actualizar_datos_personales":
 					LOGGER::LOG("--- OPERACIONES: actualizar_datos_personales --");
 					include ('class/CLASS_ABM_USUARIOS.php');
 					$obj = new CLASS_ABM_USUARIOS($vlf_mysql_conexion);
 					echo utf8_encode($obj->MTD_ACTUALIZAR_DATOS_PERSONALES());
 					break;
+
+
+
+
 				case "eliminar_perfil":
 				LOGGER::LOG("--- OPERACIONES: eliminar perfil --");
 				include ('class/CLASS_ABM_USUARIOS.php');
@@ -266,7 +291,67 @@ if (isset($_POST['operacion']))
 					$vl_cod_html_base = utf8_encode( $obj->MTD_CONSULTAR_HISTORICO());
 					MTD_RETORNAR_HTML($vl_cod_html_base);
 				break;
-						
+
+
+				//**************************************************
+				//* SECCION : PERFILES
+				//**************************************************
+				case "agregar_perfil":
+					LOGGER::LOG("--- OPERACIONES: Agregar Perfil  --");
+					include ('class/CLASS_ABM_PERFILES.php');
+					$obj = new CLASS_ABM_PERFILES($vlf_mysql_conexion );
+					MTD_RETORNAR_HTML($obj->MTD_AGREGAR_PERFILES()); 																
+				break;
+				
+
+				case "listar_perfiles":
+					LOGGER::LOG("--- OPERACIONES: Listar PERFILES  --");
+					include ('class/CLASS_ABM_PERFILES.php');
+					$obj = new CLASS_ABM_PERFILES($vlf_mysql_conexion );					
+					$vl_cod_html_base = $obj->MTD_LISTAR_PERFILES();
+					MTD_RETORNAR_HTML($vl_cod_html_base); 
+				//$vl_cod_html_seccion= $obj_web_busqueda->MTD_REALIZAR_BUSQUEDA();
+				break;
+
+				case "eliminar_perfil_usuario":
+					LOGGER::LOG("--- OPERACIONES: Eliminar PERFILES  --");
+					include ('class/CLASS_ABM_PERFILES.php');
+					$obj = new CLASS_ABM_PERFILES($vlf_mysql_conexion );					
+					MTD_RETORNAR_HTML($obj->MTD_ELIMINAR_PERFILES()); 
+				//$vl_cod_html_seccion= $obj_web_busqueda->MTD_REALIZAR_BUSQUEDA();
+				break;
+				
+				case "mostrar_permisos":
+					LOGGER::LOG("--- OPERACIONES: mostrar_permisos--");
+					include ('class/CLASS_ABM_PERFILES.php');
+					$obj = new CLASS_ABM_PERFILES($vlf_mysql_conexion);
+					echo  $obj->MTD_MOSTRAR_PERMISOS();
+					break;	
+				case "agregar_permisos":
+					LOGGER::LOG("--- OPERACIONES: Agregar Permiso  --");
+					include ('class/CLASS_ABM_PERFILES.php');
+					$obj = new CLASS_ABM_PERFILES($vlf_mysql_conexion );
+					MTD_RETORNAR_HTML($obj->MTD_AGREGAR_PERMISOS()); 																
+				break;
+				case "eliminar_permisos":
+					LOGGER::LOG("--- OPERACIONES: Eliminar Permiso  --");
+					include ('class/CLASS_ABM_PERFILES.php');
+					$obj = new CLASS_ABM_PERFILES($vlf_mysql_conexion );
+					MTD_RETORNAR_HTML($obj->MTD_ELIMINAR_PERMISOS()); 																
+				break;	
+				case "mostrar_editar_perfil_usuario":
+					LOGGER::LOG("--- OPERACIONES: Usuarios perfiles  --");
+					include ('class/CLASS_ABM_USUARIOS.php');
+					$obj = new CLASS_ABM_USUARIOS($vlf_mysql_conexion );
+					MTD_RETORNAR_HTML($obj->MTD_MOSTRAR_PERFILES()); 																
+				break;	
+				case "actualizar_perfil_usuario":
+					LOGGER::LOG("--- OPERACIONES: Usuarios perfiles  --");
+					include ('class/CLASS_ABM_USUARIOS.php');
+					$obj = new CLASS_ABM_USUARIOS($vlf_mysql_conexion );
+					MTD_RETORNAR_HTML($obj->MTD_ACTUALIZAR_PERFIL_USUARIO()); 																
+				break;
+
 							
 			}
 		}

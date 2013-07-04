@@ -137,9 +137,12 @@ class CLASS_ABM_USUARIOS
         $arreglo = array();
         $sql="SELECT 
                 id_usuario, 
-                nombre_usuario, 
-                apellido_usuario FROM usuarios ";
-        $arreglo = FN_RUN_QUERY($sql,3, $this->vlc_db_cn);
+                nombre_usuario,                
+                apellido_usuario,
+                perf.perfil  
+                FROM usuarios 
+                LEFT JOIN perfiles_usuarios as perf ON (usuarios.perfil_usuario = perf.id_perfil) ";
+        $arreglo = FN_RUN_QUERY($sql,4, $this->vlc_db_cn);
         //$arreglo_datos= FN_RUN_QUERY($sql, 3, $this->vlc_db_cn);
         $contador =0;
         $html="";
@@ -151,18 +154,23 @@ class CLASS_ABM_USUARIOS
             <th>#</th>
             <th>Nombre</th>
             <th>Apellido</th>
+            <th>Perfil</th>
             <th>Opciones</th>
             </tr>
             </thead>
             <tbody>';
             foreach ($arreglo as $datos)
             {
-                $html.="<TR><TD>".$datos[0]."</TD><TD>".substr($datos[1],0,70)."</TD><TD><a href='index.php?=".$datos[0]."'>".substr($datos[2],0,50)."</a></TD> 
+                $html.="<TR><TD>".$datos[0]."</TD>
+                <TD>".substr($datos[1],0,70)."</TD>
+                <TD>".substr($datos[2],0,70)."</TD>                
+                <TD><a href='index.php?=".$datos[0]."'>".substr($datos[3],0,50)."</a></TD> 
                 ".'<td>
       
                   <div class="btn-group">
                     <a class="btn" href="#Editar" onclick="javascript:MTD_EDITAR_PERFIL('.$datos[0].')"><i class="icon-edit"></i></a>
-                    <a class="btn" href="#Eliminar" onclick="javascript:MTD_ELIMINAR_PERFIL('.$datos[0].')"><i class="icon-remove-circle"></i></a>                                       
+                    <a class="btn" href="#Eliminar" onclick="javascript:MTD_ELIMINAR_PERFIL('.$datos[0].')"><i class="icon-remove-circle"></i></a>
+                    <a class="btn" href="#Perfil" onclick="javascript:MTD_MOSTRAR_PERFILES('.$datos[0].')"><i class="icon-check"></i></a>                                       
                   </div>
                 
             </td>
@@ -544,29 +552,55 @@ class CLASS_ABM_USUARIOS
         $template= $this->MTD_LEER_TPL('tpl/tpl-registro.html');
         return $template;
     }
-    function  MTD_MOSTRAR_PERFIL_DOCTOR()
+    function MTD_MOSTRAR_PERFILES()
     {
-    	LOGGER::LOG("MTD_MOSTRAR_PERFIL_DOCTOR:");
-    	$template= $this->MTD_LEER_TPL('tpl/tpl-perfil-doctor.html');
-    	$id_doctor = FN_RECIBIR_VARIABLES("id_doctor");
-    	$arreglo= array();
-    	$vlf_sql = "
-    	SELECT
-    	encabezado_membrete,
-    	pie_membrete    	
-    	FROM usuarios where id_usuario = $id_doctor;";    	
-    	$arreglo = FN_RUN_QUERY($vlf_sql,2, $this->vlc_db_cn );
-    	if ($arreglo)
-    	{
-    		$encabezado=$arreglo[0][0];
-    		$encabezado= FN_REEMPLAZAR("\n", "<br>", $encabezado);
-    		$pie = $arreglo[0][1];
-    		$pie = FN_REEMPLAZAR("\n", "<br>", $pie);
-    		$template= FN_REEMPLAZAR("{tb-encabezado-membrete}", $encabezado,$template);
-    		$template= FN_REEMPLAZAR("{tb-pie-membrete}", $pie,$template);
-    	}    	
-    	
-    	return $template;
+        LOGGER::LOG("MTD_MOSTRAR_perfiles usuarios");
+        $id_usuario = FN_RECIBIR_VARIABLES("id_usuario");
+        $html= FN_LEER_TPL("tpl/tpl-abm-usuarios-perfiles.html");
+        $html= FN_REEMPLAZAR("{tpl-lista-perfiles}", $this->MTD_SELECCION_PERFILES(),$html);
+        $html= FN_REEMPLAZAR("{tpl-id-usuario}", $id_usuario,$html);
+        return $html;        
+    }
+    function MTD_SELECCION_PERFILES()
+    {
+        LOGGER::LOG("MOSTRAR SELECCION PERFILES");
+        $codigo_html="";
+        $datos = array();
+        $datos = FN_RUN_QUERY("SELECT 
+                        id_perfil,
+                        perfil
+                        from perfiles_usuarios
+                        " , 2 , $this->vlc_db_cn);
+        
+        $codigo_html="<select id='lst_perfiles'>";
+
+       
+        foreach($datos as $key => $value)
+        {
+            $seleccion="";
+            if (!$value[2])
+            {
+                $value[2]="0";
+            }
+                        
+            
+
+            $codigo_html.="<option value='".$value[0]."'  >".$value[1]."</option>";
+        }
+        $codigo_html.="</select>";
+        return $codigo_html;
+    }
+    function MTD_ACTUALIZAR_PERFIL_USUARIO()
+    {
+        LOGGER::LOG("ACTUALIZAR PERFIL USUARIO");
+        $id_usuario = FN_RECIBIR_VARIABLES("id_usuario");
+        $perfil     = FN_RECIBIR_VARIABLES("perfil");
+
+        $sql= "update usuarios set perfil_usuario=".$perfil." where id_usuario=".$id_usuario." limit 1";
+        LOGGER::LOG("ACTUALIZAR PERFIL USUARIO SQL: ".$sql);
+        FN_RUN_NONQUERY($sql,$this->vlc_db_cn);
+        LOGGER::LOG("ACTUALIZAR PERFIL USUARIO");
+        return "<h1> perfil actualizado exitosamente </h1>";
     }
     function  MTD_MOSTRAR_CAMBIAR_PASSWORD()
     {

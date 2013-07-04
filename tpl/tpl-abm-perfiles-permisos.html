@@ -1,0 +1,36 @@
+<div id="contenedor_resultado">
+<h3>Actualizaci&oacute;n de Permisos del Perfil</h3>
+
+	<div id="contact2" style='height:350px;width:580px;margin-left:0px; padding-left:0px;'>
+			<ul style='padding:5px;'>
+				<li>			
+					<label for="nombre" id="lb_nombre" >*Categoria / Subcategoria:</label>
+					<input type="hidden" id="id_perfil" value="{tpl-id-perfil}"/>
+					{tpl-lista-categoria}
+
+				</li>					
+			</ul>				
+			<button id="btnActualizar">Agregar Perfil</button>							
+			{tpl-lista-permisos}
+
+	</div>	
+<script type="text/javascript">
+	<!--
+	$(document).ready(function(){
+
+		$('#perfiles').dataTable( {
+		"sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
+		"sPaginationType": "bootstrap",
+		
+		"oLanguage": {
+			"sLengthMenu": "_MENU_ records per page"
+		}
+		} );
+		$("#btnActualizar").click(function() {
+			MTD_AGREGAR_PERMISOS();
+			});		       
+	});			
+//-->
+</script>
+
+</div>

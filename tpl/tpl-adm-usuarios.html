@@ -193,8 +193,42 @@
 	    	 $('#bubble_registrar').ShowBubblePopup();*/
 	    }
 	}
+	function MTD_MOSTRAR_PERFILES(vp_id_usuario)
+	{
+		var codigo ="";
+	    var mensaje_error="";    
 
-		
+	    
+	    // Load dialog on click	
+	    //$('#basic-modal-content').modal();
+		var parametros 	= {operacion: "mostrar_editar_perfil_usuario",id_usuario : vp_id_usuario};	
+		$.ajax({
+	        url: "operaciones.php",data: parametros,type: "POST",cache: false,async: true,
+	        success: function(data) 
+	        {
+	        	$("#basic-modal-content").empty();
+	        	$("#basic-modal-content").append(data);
+	        	$('#basic-modal-content').modal();    	
+	        	
+	         }
+	    });
+	}
+	function MTD_ACTUALIZAR_PERFIL_USUARIO()
+	{
+			var id_usuario =$("#id_usuario").val();
+			var perfil =$("#lst_perfiles :selected").val();
+	
+			var parametros 	= {operacion: "actualizar_perfil_usuario",id_usuario: id_usuario, perfil: perfil};	
+			$.ajax({
+		        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+		        success: function(data) 
+		        {
+		        	$("#contenedor_resultado").empty();
+		       	 	$("#contenedor_resultado").append(data);	  
+		         }
+		    });	 	
+	  
+	}	
 	function MTD_ELIMINAR_PERFIL(id_usuario)
 	{
 		var answer = confirm("Esta seguro de eliminar el usuario?")

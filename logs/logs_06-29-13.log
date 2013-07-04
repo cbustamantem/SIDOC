@@ -1,0 +1,147 @@
+Sat Jun 29 17:23:03 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 17:23:03 PYT 2013: Sessions -> Default
+Sat Jun 29 17:23:03 PYT 2013: Sessions -> logged_in
+Sat Jun 29 17:23:03 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 17:23:03 PYT 2013: Session Logout
+Sat Jun 29 17:23:03 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 18:07:26 PYT 2013: --- OPERACIONES --
+Sat Jun 29 18:07:26 PYT 2013: --- OPERACIONES: Validar usuario  --
+Sat Jun 29 18:07:26 PYT 2013: Check Login 
+Sat Jun 29 18:07:26 PYT 2013: Check Login > set variables
+Sat Jun 29 18:07:26 PYT 2013: Check Login > user cbustamantem 
+Sat Jun 29 18:07:26 PYT 2013: Check Login > all variables set 
+Sat Jun 29 18:07:26 PYT 2013: Check Login > login fail 
+Sat Jun 29 18:07:26 PYT 2013: --- OPERACIONES: usuario no valido--
+Sat Jun 29 18:07:30 PYT 2013: --- OPERACIONES --
+Sat Jun 29 18:07:30 PYT 2013: --- OPERACIONES: Validar usuario  --
+Sat Jun 29 18:07:30 PYT 2013: Check Login 
+Sat Jun 29 18:07:30 PYT 2013: Check Login > set variables
+Sat Jun 29 18:07:30 PYT 2013: Check Login > user cbustamantem 
+Sat Jun 29 18:07:30 PYT 2013: Check Login > all variables set 
+Sat Jun 29 18:07:30 PYT 2013: Check Login > login fail 
+Sat Jun 29 18:07:30 PYT 2013: --- OPERACIONES: usuario no valido--
+Sat Jun 29 18:07:34 PYT 2013: --- OPERACIONES --
+Sat Jun 29 18:07:34 PYT 2013: --- OPERACIONES: Validar usuario  --
+Sat Jun 29 18:07:34 PYT 2013: Check Login 
+Sat Jun 29 18:07:34 PYT 2013: Check Login > set variables
+Sat Jun 29 18:07:34 PYT 2013: Check Login > user cbustamantem 
+Sat Jun 29 18:07:34 PYT 2013: Check Login > all variables set 
+Sat Jun 29 18:07:34 PYT 2013: Sessions -> set data session 
+Sat Jun 29 18:07:34 PYT 2013: Check Login > login success for user cbustamantem
+Sat Jun 29 18:07:34 PYT 2013: --- OPERACIONES: usuario valido--
+Sat Jun 29 18:07:34 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 18:07:34 PYT 2013: Sessions -> logged_in
+Sat Jun 29 18:07:34 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='9192833936169af76ade37944ee1015f' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 18:07:34 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Sat Jun 29 18:07:34 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 18:07:36 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 18:07:36 PYT 2013: Sessions -> logged_in
+Sat Jun 29 18:07:36 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='9192833936169af76ade37944ee1015f' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 18:07:36 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Sat Jun 29 18:07:36 PYT 2013: Seccion administracion 
+Sat Jun 29 18:07:36 PYT 2013: Web: 
+Sat Jun 29 18:07:36 PYT 2013: Web: menu principal 
+Sat Jun 29 18:07:37 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 18:07:37 PYT 2013: Sessions -> logged_in
+Sat Jun 29 18:07:37 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='9192833936169af76ade37944ee1015f' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 18:07:37 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Sat Jun 29 18:07:37 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 18:09:27 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 18:09:27 PYT 2013: Sessions -> logged_in
+Sat Jun 29 18:09:27 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='9192833936169af76ade37944ee1015f' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 18:09:27 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Sat Jun 29 18:09:27 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 18:09:29 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 18:09:29 PYT 2013: Sessions -> logged_in
+Sat Jun 29 18:09:29 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='9192833936169af76ade37944ee1015f' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 18:09:29 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Sat Jun 29 18:09:29 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 18:09:31 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 18:09:31 PYT 2013: Sessions -> logged_in
+Sat Jun 29 18:09:31 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='9192833936169af76ade37944ee1015f' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 18:09:31 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Sat Jun 29 18:09:31 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 18:09:35 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 18:09:35 PYT 2013: Sessions -> logged_in
+Sat Jun 29 18:09:35 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='9192833936169af76ade37944ee1015f' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 18:09:35 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Sat Jun 29 18:09:35 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 18:09:36 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 18:09:36 PYT 2013: Sessions -> logged_in
+Sat Jun 29 18:09:36 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='9192833936169af76ade37944ee1015f' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 18:09:36 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Sat Jun 29 18:09:36 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 18:09:37 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 18:09:37 PYT 2013: Sessions -> logged_in
+Sat Jun 29 18:09:37 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='9192833936169af76ade37944ee1015f' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 18:09:37 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Sat Jun 29 18:09:38 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 18:09:39 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 18:09:39 PYT 2013: Sessions -> logged_in
+Sat Jun 29 18:09:39 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='9192833936169af76ade37944ee1015f' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 18:09:39 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Sat Jun 29 18:09:39 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 18:09:44 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 18:09:44 PYT 2013: Sessions -> logged_in
+Sat Jun 29 18:09:44 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='9192833936169af76ade37944ee1015f' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 18:09:44 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Sat Jun 29 18:09:44 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 18:09:49 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 18:09:49 PYT 2013: Sessions -> logged_in
+Sat Jun 29 18:09:49 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 70 AND token='9192833936169af76ade37944ee1015f' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 18:09:49 PYT 2013: Sessions -> Session chequed for :cbustamantem from 127.0.0.1
+Sat Jun 29 18:09:49 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 18:50:28 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 18:50:28 PYT 2013: Sessions -> Default
+Sat Jun 29 18:50:28 PYT 2013: Sessions -> logged_in
+Sat Jun 29 18:50:28 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 18:50:28 PYT 2013: Session Logout
+Sat Jun 29 18:50:28 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 18:53:24 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 18:53:24 PYT 2013: Sessions -> Default
+Sat Jun 29 18:53:24 PYT 2013: Sessions -> logged_in
+Sat Jun 29 18:53:24 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 18:53:24 PYT 2013: Session Logout
+Sat Jun 29 18:53:24 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 18:53:28 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 18:53:28 PYT 2013: Sessions -> Default
+Sat Jun 29 18:53:28 PYT 2013: Sessions -> logged_in
+Sat Jun 29 18:53:28 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 18:53:28 PYT 2013: Session Logout
+Sat Jun 29 18:53:28 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 18:54:22 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 18:54:22 PYT 2013: Sessions -> Default
+Sat Jun 29 18:54:22 PYT 2013: Sessions -> logged_in
+Sat Jun 29 18:54:22 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 18:54:22 PYT 2013: Session Logout
+Sat Jun 29 18:54:22 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 19:41:19 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 19:41:19 PYT 2013: Sessions -> Default
+Sat Jun 29 19:41:19 PYT 2013: Sessions -> logged_in
+Sat Jun 29 19:41:19 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 19:41:19 PYT 2013: Session Logout
+Sat Jun 29 19:41:19 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 19:45:22 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 19:45:22 PYT 2013: Sessions -> Default
+Sat Jun 29 19:45:22 PYT 2013: Sessions -> logged_in
+Sat Jun 29 19:45:22 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 19:45:22 PYT 2013: Session Logout
+Sat Jun 29 19:45:22 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 19:45:45 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 19:45:45 PYT 2013: Sessions -> Default
+Sat Jun 29 19:45:45 PYT 2013: Sessions -> logged_in
+Sat Jun 29 19:45:45 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 19:45:45 PYT 2013: Session Logout
+Sat Jun 29 19:45:45 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 19:45:50 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 19:45:50 PYT 2013: Sessions -> Default
+Sat Jun 29 19:45:50 PYT 2013: Sessions -> logged_in
+Sat Jun 29 19:45:50 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 19:45:50 PYT 2013: Session Logout
+Sat Jun 29 19:45:50 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar
+Sat Jun 29 19:46:03 PYT 2013: INCICIO SISTEMA
+Sat Jun 29 19:46:03 PYT 2013: Sessions -> Default
+Sat Jun 29 19:46:03 PYT 2013: Sessions -> logged_in
+Sat Jun 29 19:46:03 PYT 2013: Session query: SELECT username,token,session,ip,id_usuario FROM usuarios WHERE id_usuario= 0 AND token='' AND session='lqjtu5gbt6gd562pj326f8u1j4' AND ip='127.0.0.1'
+Sat Jun 29 19:46:03 PYT 2013: Session Logout
+Sat Jun 29 19:46:03 PYT 2013: CLASS_LISTA_DOCUMENTOS Inicializar

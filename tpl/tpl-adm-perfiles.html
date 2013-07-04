@@ -1,0 +1,221 @@
+<h3>Registro de Perfiles</h3>
+
+	<form class="form-horizontal" action="">
+  <div class="control-group">
+    <label class="control-label"  for="inputDescripcion">Descripcion</label>
+    <div class="controls">
+      <input type="hidden" id="id_documento" value="{tpl-id-documento}">
+      <input type="text" id="descripcion" placeholder="Ingrese la descripcion del perfil" value="">
+      <button  type="button" class="btn btn-info" id="btnIngresar"><i class="icon-check icon-white"></i> Agregar</button>
+      
+    </div>
+  </div>   
+</form>
+<script type="text/javascript" charset="utf-8">
+
+/* Table initialisation 
+$(document).ready(function() {
+
+} );
+*/
+	var operaciones_ajax="operaciones.php";
+	$(document).ready(function(){
+		$('#example').dataTable( {
+		"sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
+		"sPaginationType": "bootstrap",
+		
+		"oLanguage": {
+			"sLengthMenu": "_MENU_ records per page"
+		}
+		} );
+		$("#btnIngresar").click(function() {
+			MTD_AGREGAR_PERFIL();
+			});		
+		$("#btnActualizar").click(function() {
+			MTD_ACTUALIZAR_PERFIL();
+			});			
+	});			
+	function MTD_AGREGAR_PERFIL()
+	{
+		var descripcion ="";
+	    var mensaje_error="";    
+	    descripcion     		=$("#descripcion").val();
+	    // Load dialog on click	
+	    //$('#basic-modal-content').modal();
+		var parametros 	= {operacion: "agregar_perfil", descripcion: descripcion};	
+		$.ajax({
+	        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+	        success: function(data) 
+	        {
+	        	
+	        	if (data == "0")
+                    {
+                    	//location.href="index.php?id=registro&seccion=consultorio";
+                        //ENVIAR AL FORMULARIO DE LOGIN
+                        //TODO ACTUALIZAR GRILLA
+                        MTD_LISTAR_PERFIL();
+                    }
+                    else 
+                    {
+
+                    }
+	         }
+	    });	    	   	
+	}
+
+	function MTD_LISTAR_PERFIL()
+	{		
+	    var mensaje_error="";    
+		var parametros 	= {operacion: "listar_perfiles"};	
+		$.ajax({
+	        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+	        success: function(data) 
+	        {
+	        	$("#resultado_perfiles").empty();
+        	 	$("#resultado_perfiles").append(data);     
+        	 	$('#example').dataTable( {
+					"sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
+					"sPaginationType": "bootstrap",
+					
+					"oLanguage": {
+						"sLengthMenu": "_MENU_ records per page"
+					}
+				} );   	 	        	        
+         	}
+    });
+	}
+
+	function MTD_ELIMINAR_PERFIL(vp_id_perfil)
+	{
+		var descripcion ="";
+	    var mensaje_error="";    
+
+	    descripcion     		=$("#descripcion").val();
+	    // Load dialog on click	
+	    //$('#basic-modal-content').modal();
+	    var conf = confirm("Esta seguro de eliminar el perfil #" + vp_id_perfil);
+
+	    if(conf == true)
+	    {
+
+			    var parametros 	= {operacion: "eliminar_perfil_usuario", idperfil: vp_id_perfil};	
+				$.ajax({
+			        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+			        success: function(data) 
+			        {
+			        	
+			        	if (data == "0")
+		                    {
+		                    	//location.href="index.php?id=registro&seccion=consultorio";
+		                        //ENVIAR AL FORMULARIO DE LOGIN
+		                        //TODO ACTUALIZAR GRILLA
+		                        MTD_LISTAR_PERFIL();
+		                    }
+		                    else 
+		                    {
+		                    	
+		                    }
+			         }
+			    });	  
+
+	    }
+
+		  	   	
+	}
+	function MTD_MOSTRAR_PERMISOS(vp_id_perfil)
+	{
+		var codigo ="";
+	    var mensaje_error="";    
+
+	    
+	    // Load dialog on click	
+	    //$('#basic-modal-content').modal();
+		var parametros 	= {operacion: "mostrar_permisos", id_perfil: vp_id_perfil};	
+		$.ajax({
+	        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+	        success: function(data) 
+	        {
+	        	$("#basic-modal-content").empty();
+	        	$("#basic-modal-content").append(data);
+	        	$('#basic-modal-content').modal();    		        
+	         }
+	    });  	
+	}
+	function MTD_AGREGAR_PERMISOS()
+	{
+		var codigo ="";
+	    var mensaje_error="";    
+	    var categoria ="";
+	    var id_perfil_permiso ="";
+	    id_perfil = $("#id_perfil").val();
+	    categoria = $("#lst_categorias :selected").val();
+	    
+	    // Load dialog on click	
+	    //$('#basic-modal-content').modal();
+		var parametros 	= {operacion: "agregar_permisos", id_perfil: id_perfil, categorias: categoria};	
+		$.ajax({
+	        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+	        success: function(data) 
+	        {
+	        	if (data == "0")
+	        	{	        
+
+					var parametros 	= {operacion: "mostrar_permisos", id_perfil: id_perfil};	
+							$.ajax({
+						        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+						        success: function(data) 
+						        {
+						        	$("#contenedor_resultado").empty();
+		        					$("#contenedor_resultado").append(data);		        
+						         }
+						    });  	
+							        		        	  		       
+		        }
+		        else
+		        {
+		        	$("#contenedor_resultado").empty();
+		        	$("#contenedor_resultado").append(data);	        	  		       
+		        }
+	         }
+	    });  	
+	}
+	function MTD_ELIMINAR_PERMISO(vp_id_permiso)
+	{
+		var codigo ="";
+	    var mensaje_error="";    
+	    var categoria ="";
+	    var id_perfil_permiso ="";
+	    id_permiso = vp_id_permiso;	    
+	    // Load dialog on click	
+	    //$('#basic-modal-content').modal();
+		var parametros 	= {operacion: "eliminar_permisos", id_permiso: id_permiso};	
+		$.ajax({
+	        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+	        success: function(data) 
+	        {
+	        	if (data == "0")
+	        	{	        
+
+					var parametros 	= {operacion: "mostrar_permisos", id_perfil: id_perfil};	
+							$.ajax({
+						        url: operaciones_ajax,data: parametros,type: "POST",cache: false,async: true,
+						        success: function(data) 
+						        {
+						        	$("#contenedor_resultado").empty();
+		        					$("#contenedor_resultado").append(data);		        
+						         }
+						    });  	
+							        		        	  		       
+		        }
+		        else
+		        {
+		        	$("#contenedor_resultado").empty();
+		        	$("#contenedor_resultado").append(data);	        	  		       
+		        }
+	         }
+	    });  	
+	}
+</script>
+<div id="resultado_perfiles">
+{tpl-lista-perfiles}
+</div>
