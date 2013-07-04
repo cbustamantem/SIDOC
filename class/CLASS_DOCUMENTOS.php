@@ -163,7 +163,7 @@ class CLASS_DOCUMENTOS
     		<tbody>';
     		foreach ($arreglo as $datos)
     		{
-    			$html.="<TR><TD>".$datos[0]."</TD><TD>".substr($datos[1],0,50)."</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=".$datos[0]."'>".substr($datos[2],0,50)."</a></TD> 
+    			$html.="<TR><TD>".$datos[0]."</TD><TD>".substr($datos[1],0,30)."</TD><TD><a href='index.php?id=registro&seccion=investigaciones&investigacion=".$datos[0]."'>".substr($datos[2],0,30)."</a></TD> 
                 ".'<td>
       
                   <div class="btn-group">
