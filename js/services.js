@@ -53,15 +53,19 @@ function MTD_VALIDAR_USUARIO()
     
   
 }
-function MTD_MOSTRAR_CAMBIAR_CONTRASENHA()
+function MTD_MOSTRAR_CAMBIAR_CONTRASENHA(vp_id_usuario)
 {
     var codigo ="";
     var mensaje_error="";    
-    
+    var id_usuario="-1";
+    if (vp_id_usuario != "")
+    {
+       id_usuario = vp_id_usuario; 
+    }  
     
     // Load dialog on click 
     //$('#basic-modal-content').modal();
-    var parametros  = {operacion: "mostrar_cambiar_contrasenha"};   
+    var parametros  = {operacion: "mostrar_cambiar_contrasenha",id_usuario: id_usuario};   
     $.ajax({
         url: "operaciones.php",data: parametros,type: "POST",cache: false,async: true,
         success: function(data) 
@@ -80,13 +84,15 @@ function MTD_CAMBIAR_CONTRASENHA()
     var mensaje_error="";    
     var password1="";
     var password2="";
+    var id_usuario="";
+    id_usuario=$("#id_usuario").val();
     password1=$("#password1").val();
     password2=$("#password2").val();
     if (password1 == password2)
     {
         //Load dialog on click  
         //$('#basic-modal-content').modal();
-        var parametros  = {operacion: "cambiar_password", password: password2};
+        var parametros  = {operacion: "cambiar_password", password: password2, id_usuario: id_usuario};
      
         // Load dialog on click 
         //$('#basic-modal-content').modal();

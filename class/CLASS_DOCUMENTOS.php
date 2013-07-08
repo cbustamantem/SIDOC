@@ -168,7 +168,8 @@ class CLASS_DOCUMENTOS
       
                   <div class="btn-group">
                     <a class="btn" href="#Editar" onclick="javascript:MTD_EDITAR_DOCUMENTO('.$datos[0].')"><i class="icon-edit"></i></a>
-                    <a class="btn" href="#Eliminar" onclick="javascript:MTD_ELIMINAR_DOCUMENTO('.$datos[0].')"><i class="icon-remove-circle"></i></a>                                       
+                    <a class="btn" href="#Eliminar" onclick="javascript:MTD_ELIMINAR_DOCUMENTO('.$datos[0].')"><i class="icon-remove-circle"></i></a>
+                    <a class="btn"  title="Visitas" target="_blank" href="index.php?administracion=1&seccion=visitas&id_documento='.$datos[0].'"><i class="icon-star"></i></a>                                       
                   </div>
                 
             </td>

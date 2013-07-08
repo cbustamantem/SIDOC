@@ -8,6 +8,8 @@ include_once ('includes/FN_DB_CONEXION.php');
 include_once ('includes/FN_DB_QUERY.php');
 include_once ('class/LOGGER.php');
 include_once ('class/CLASS_SESSION.php');
+include_once ('includes/FN_REEMPLAZAR.php');
+include_once ('includes/FN_RECIBIR_VARIABLES.php');
 $vlf_mysql_conexion= FN_DB_MYSQL_CONEXION();
 $obj_session = new CLASS_SESSION($vlf_mysql_conexion);
 $vlf_session_activada = $obj_session->MTD_START();
@@ -27,6 +29,17 @@ if($configManager->getConfig('admin.password')==null){
 	header("Location: $url");
 	exit;
 }
+
+if (isset($_GET['cod']))
+{
+	$id_doc = FN_RECIBIR_VARIABLES("cod");
+	$sql= "INSERT INTO  documentos_visitas 
+			(id_documento, id_usuario,fechahora) 
+			VALUES ($id_doc ,".$_SESSION["uid"]." ,NOW());";
+	FN_RUN_NONQUERY($sql,$vlf_mysql_conexion);
+}
+//registrar visita
+
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
     <head>

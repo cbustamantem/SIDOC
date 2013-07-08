@@ -168,9 +168,10 @@ class CLASS_ABM_USUARIOS
                 ".'<td>
       
                   <div class="btn-group">
-                    <a class="btn" href="#Editar" onclick="javascript:MTD_EDITAR_PERFIL('.$datos[0].')"><i class="icon-edit"></i></a>
-                    <a class="btn" href="#Eliminar" onclick="javascript:MTD_ELIMINAR_PERFIL('.$datos[0].')"><i class="icon-remove-circle"></i></a>
-                    <a class="btn" href="#Perfil" onclick="javascript:MTD_MOSTRAR_PERFILES('.$datos[0].')"><i class="icon-check"></i></a>                                       
+                    <a class="btn" title="Editar" href="#Editar" onclick="javascript:MTD_EDITAR_PERFIL('.$datos[0].')"><i class="icon-edit"></i></a>
+                    <a class="btn" title="Eliminar" href="#Eliminar" onclick="javascript:MTD_ELIMINAR_PERFIL('.$datos[0].')"><i class="icon-remove-circle"></i></a>
+                    <a class="btn" title="Editar" href="#Perfil" onclick="javascript:MTD_MOSTRAR_PERFILES('.$datos[0].')"><i class="icon-check"></i></a>                                       
+                    <a class="btn" title="Cambiar Password" href="#Password" onclick="javascript:MTD_MOSTRAR_CAMBIAR_CONTRASENHA('.$datos[0].')"><i class="icon-cog"></i></a>
                   </div>
                 
             </td>
@@ -604,18 +605,39 @@ class CLASS_ABM_USUARIOS
     }
     function  MTD_MOSTRAR_CAMBIAR_PASSWORD()
     {
+        $id_usuario= FN_RECIBIR_VARIABLES("id_usuario");
+        if (!$id_usuario)
+        {
+            $id_usuario="";
+        }
     	LOGGER::LOG("MTD_MOSTRAR_CAMBIAR_PASSWORD:");
     	$template= $this->MTD_LEER_TPL('tpl/tpl-cambiar-password.html');
+        $template= FN_REEMPLAZAR("{tpl-id-usuario}",$id_usuario,$template);
     	return $template;
     }
     function  MTD_CAMBIAR_PASSWORD()
     {
+        $id_usuario = FN_RECIBIR_VARIABLES('id_usuario'); 
     	$password = FN_RECIBIR_VARIABLES('password');
-    	$sql= "update usuarios set passwd= MD5('$password') where id_usuario = ".$_SESSION['uid']." limit 1;";
+        if (!$id_usuario)
+        {
+            $id_usuario = $_SESSION["uid"];
+        }
+
+        if ($id_usuario != $_SESSION["uid"])
+        {
+            if ($_SESSION["rol_usuario"] != "administrador")
+            {
+                return (" Error al procesar el cambio de password");
+            }
+        }
+
+        $sql= "update usuarios set passwd= MD5('$password') where id_usuario = ".$id_usuario." limit 1;";
     	$result=false;
     	LOGGER::LOG("CAMBIAR_PASSWORD: sql:$sql");
     	$result= FN_RUN_NONQUERY($sql,$this->vlc_db_cn);
     	return "<b> Contrase&ntilde;a cambiada exitosamente </b>";
+
     }
     function MTD_LEER_TPL($vp_template)
     {
